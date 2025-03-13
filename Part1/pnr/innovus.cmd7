@@ -1,0 +1,92 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed Mar 12 17:35:12 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v15.23-s045_1 (64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute 15.23-s045_1 NR160414-1105/15_23-UB (database version 2.30, 317.6.1) {superthreading v1.26}
+#@(#)CDS: AAE 15.23-s014 (64bit) 04/22/2016 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 15.23-s022_1 () Apr 22 2016 09:38:45 ( )
+#@(#)CDS: SYNTECH 15.23-s008_1 () Apr 12 2016 21:52:59 ( )
+#@(#)CDS: CPE v15.23-s045
+#@(#)CDS: IQRC/TQRC 15.1.4-s213 (64bit) Tue Feb  9 17:31:28 PST 2016 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getDrawView
+loadWorkspace -name Physical
+win
+restoreDesign /home/linux/ieng6/ee260bwi25/jjl028/ece260_project/pnr/floorplan.enc.dat fullchip
+saveDesign floorplan.enc
+setPlaceMode -timingDriven true -reorderScan false -congEffort medium -modulePlan false
+setOptMode -effort medium -powerEffort high -leakageToDynamicRatio 0.5 -fixFanoutLoad true -restruct false -verbose true
+place_opt_design
+addFiller -cell {DCAP DCAP4 DCAP8 DCAP16 DCAP32} -merge true
+saveDesign placement.enc
+set_ccopt_property -update_io_latency false
+set_ccopt_property -update_io_latency false
+create_ccopt_clock_tree_spec -file ./constraints/fullchip.ccopt
+ccopt_design
+set_propagated_clock [all_clocks]
+optDesign -postCTS -hold
+saveDesign cts.enc
+setNanoRouteMode -quiet -drouteAllowMergedWireAtPin false
+setNanoRouteMode -quiet -drouteFixAntenna true
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeWithSiDriven true
+setNanoRouteMode -quiet -routeSiEffort medium
+setNanoRouteMode -quiet -routeWithSiPostRouteFix false
+setNanoRouteMode -quiet -drouteAutoStop true
+setNanoRouteMode -quiet -routeSelectedNetOnly false
+setNanoRouteMode -quiet -drouteStartIteration default
+routeDesign
+setExtractRCMode -engine postRoute
+extractRC
+setAnalysisMode -analysisType onChipVariation -cppr both
+optDesign -postRoute -setup -hold
+optDesign -postRoute -drv
+optDesign -postRoute -inc
+saveDesign route.enc
+verifyGeometry
+verifyConnectivity
+verifyConnectivity
+verifyGeometry
+optDesign -postRoute -drv
+verifyGeometry
+optDesign -postRoute -inc
+verifyGeometry
+getNanoRouteMode -quiet -routeWithSiDriven
+getNanoRouteMode -quiet -routeSiEffort
+getNanoRouteMode -quiet -timing_engine
+getNanoRouteMode -quiet -routeWithTimingDriven
+getNanoRouteMode -quiet -routeWithEco
+trialRoute -handlePreroute
+setCteReport
+writeDesignTiming /tmp/innovus_temp_3622_ieng6-ece-19.ucsd.edu_jjl028_qyMIoi/.timing_fileTm8KMm.tif
+setNanoRouteMode -quiet -timingEngine /tmp/innovus_temp_3622_ieng6-ece-19.ucsd.edu_jjl028_qyMIoi/.timing_fileTm8KMm.tif
+nanoroute -route_with_si_driven
+verifyGeometry
+optDesign -postRoute -drv
+verifyGeometry
+saveDesign route.enc
+verifyGeometry
+verifyConnectivity
+verifyGeometry
+verifyConnectivity
+report_timing -max_paths 5 > fullchip.post_route.timing.rpt
+report_power -outfile fullchip.post_route.power.rpt
+summaryReport -nohtml -outfile fullchip.post_route.summary.rpt
+streamOut fullchip.gds2
+write_lef_abstract fullchip.lef
+defOut -netlist -routing fullchip.def
+saveNetlist fullchip.pnr.v
+setAnalysisMode -setup
+set_analysis_view -setup WC_VIEW -hold WC_VIEW
+do_extract_model -view WC_VIEW -format dotlib fullchip_WC.lib
+write_sdf -view WC_VIEW fullchip_WC.sdf
+setAnalysisMode -hold
+set_analysis_view -setup BC_VIEW -hold BC_VIEW
+do_extract_model -view BC_VIEW -format dotlib fullchip_BC.lib
+write_sdf -view BC_VIEW fullchip_BC.sdf

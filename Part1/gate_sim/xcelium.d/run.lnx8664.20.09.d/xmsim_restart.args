@@ -1,0 +1,34 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++xmoveride_timescale
++gui
++access+rwc
++xm64bit
++xmstatus
++xmtimescale+1ns/1ps
++xmseq_udp_delay+20ps
+-gui
+-STATUS
+-MESSAGES
+-XMINITIALIZE
+rand_2state:1
++EMGRLOG
+xrun.log
+-XLSTIME
+1741838791
+-XLKEEP
+-XLMODE
+./xcelium.d/run.lnx8664.20.09.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/run.lnx8664.20.09.d/cds.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.20.09.d/hdl.var
+-XLNAME
+xrun
+-XLVERSION
+"TOOL:	xrun(64)	20.09-s017"
+-XLNAME
+./xcelium.d/run.lnx8664.20.09.d/ieng6-ece-19.ucsd.edu_2227

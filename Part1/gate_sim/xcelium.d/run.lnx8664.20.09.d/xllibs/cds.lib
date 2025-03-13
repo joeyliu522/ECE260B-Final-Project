@@ -1,0 +1,9 @@
+define tcbn65gplus ./tcbn65gplus
+define ofifo ./ofifo
+define fifo_mux_8_1 ./fifo_mux_8_1
+define fifo_mux_2_1 ./fifo_mux_2_1
+define fifo_mux_16_1 ./fifo_mux_16_1
+define fifo_depth16 ./fifo_depth16
+define sram_160b_w16 ./sram_160b_w16
+define sram_w16 ./sram_w16
+define fullchip ./fullchip

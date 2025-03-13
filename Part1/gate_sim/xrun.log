@@ -1,0 +1,378 @@
+xrun(64): 20.09-s017: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s017: Started on Mar 12, 2025 at 21:06:31 PDT
+xrun
+	-define INITIALIZE_MEMORY
+	-xminitialize rand_2state:1
+	+gui
+	+access+rwc
+	+xm64bit
+	+xmstatus
+	+xmtimescale+1ns/1ps
+	+xmoveride_timescale
+	+xmseq_udp_delay+20ps
+	-v /home/linux/ieng6/ee260bwi25/jjl028/ece260_project/gate_sim/netlist/fullchip.pnr.v
+	-v /home/linux/ieng6/ee260bwi25/jjl028/ece260_project/verilog/sram_w16.v
+	-v /home/linux/ieng6/ee260bwi25/jjl028/ece260_project/verilog/sram_160b_w16.v
+	-v /home/linux/ieng6/ee260bwi25/jjl028/ece260_project/verilog/fifo_depth16.v
+	-v /home/linux/ieng6/ee260bwi25/jjl028/ece260_project/verilog/fifo_mux_16_1.v
+	-v /home/linux/ieng6/ee260bwi25/jjl028/ece260_project/verilog/fifo_mux_2_1.v
+	-v /home/linux/ieng6/ee260bwi25/jjl028/ece260_project/verilog/fifo_mux_8_1.v
+	-v /home/linux/ieng6/ee260bwi25/jjl028/ece260_project/verilog/ofifo.v
+	-v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v
+	./netlist/fullchip_tb.v
+
+   User defined plus("+") options:
+	+xmoveride_timescale
+
+xmelab: *N,INFSUD: -NOSPECIFY is automatically used with -SEQ_UDP_DELAY.
+		Caching library 'fullchip' ....... Done
+		Caching library 'worklib' ....... Done
+		Caching library 'tcbn65gplus' ....... Done
+	Elaborating the design hierarchy:
+   FA1D4 U805 (.A(n2760),
+            |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,7633|12): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9877): CO
+
+   DFD2 cnt_q_reg_2_ (.CP(clk_clone1),
+                   |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,15110|19): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5860): Q
+
+   DFD1 cnt_q_reg_0_ (.CP(clk_clone2),
+                   |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,31113|19): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+   DFD1 cnt_q_reg_0_ (.CP(clk),
+                   |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,47447|19): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+   DFD2 cnt_q_reg_0_ (.CP(clk_clone1),
+                   |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,63508|19): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5860): Q
+
+   DFD2 cnt_q_reg_0_ (.CP(clk_clone1),
+                   |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,95781|19): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5860): Q
+
+   DFD1 cnt_q_reg_3_ (.CP(clk),
+                   |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,95886|19): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): QN
+
+   DFD1 cnt_q_reg_0_ (.CP(clk),
+                   |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,128557|19): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): Q
+
+   ofifo_col8_bw20 ofifo_inst (.in({ FE_OCPN9253_array_out_159_,
+                            |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,237746|28): 2 output ports were not connected:
+xmelab: (./netlist/fullchip.pnr.v,169414): o_valid
+xmelab: (./netlist/fullchip.pnr.v,169416): o_full
+
+   fifo_depth16_bw20_simd1_7 col_idx_0__fifo_instance (.in({ in[19],
+                                                    |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,169555|52): 2 output ports were not connected:
+xmelab: (./netlist/fullchip.pnr.v,136391): o_full
+xmelab: (./netlist/fullchip.pnr.v,136392): o_empty
+
+   DFD1 rd_ptr_reg_1_ (.CP(CTS_14),
+                    |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,136852|20): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): QN
+
+   fifo_depth16_bw20_simd1_6 col_idx_1__fifo_instance (.in({ in[39],
+                                                    |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,169608|52): 2 output ports were not connected:
+xmelab: (./netlist/fullchip.pnr.v,140700): o_full
+xmelab: (./netlist/fullchip.pnr.v,140701): o_empty
+
+   DFD1 rd_ptr_reg_1_ (.CP(rd_clk_clone6),
+                    |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,141229|20): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): QN
+
+   fifo_depth16_bw20_simd1_5 col_idx_2__fifo_instance (.in({ in[59],
+                                                    |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,169659|52): 2 output ports were not connected:
+xmelab: (./netlist/fullchip.pnr.v,166842): o_full
+xmelab: (./netlist/fullchip.pnr.v,166843): o_empty
+
+   DFD1 rd_ptr_reg_1_ (.CP(rd_clk_clone4),
+                    |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,167332|20): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): QN
+
+   fifo_depth16_bw20_simd1_4 col_idx_3__fifo_instance (.rd_clk(clk_clone4),
+                                                    |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,169711|52): 2 output ports were not connected:
+xmelab: (./netlist/fullchip.pnr.v,162426): o_full
+xmelab: (./netlist/fullchip.pnr.v,162427): o_empty
+
+   DFD2 rd_ptr_reg_1_ (.CP(CTS_24),
+                    |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,162844|20): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5860): QN
+
+   fifo_depth16_bw20_simd1_3 col_idx_4__fifo_instance (.in({ in[99],
+                                                    |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,169755|52): 2 output ports were not connected:
+xmelab: (./netlist/fullchip.pnr.v,158044): o_full
+xmelab: (./netlist/fullchip.pnr.v,158045): o_empty
+
+   DFD2 rd_ptr_reg_1_ (.CP(rd_clk),
+                    |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,158478|20): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5860): QN
+
+   fifo_depth16_bw20_simd1_2 col_idx_5__fifo_instance (.in({ in[119],
+                                                    |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,169800|52): 2 output ports were not connected:
+xmelab: (./netlist/fullchip.pnr.v,153723): o_full
+xmelab: (./netlist/fullchip.pnr.v,153724): o_empty
+
+   DFD2 rd_ptr_reg_1_ (.CP(CTS_17),
+                    |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,154184|20): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5860): QN
+
+   fifo_depth16_bw20_simd1_1 col_idx_6__fifo_instance (.in({ in[139],
+                                                    |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,169847|52): 2 output ports were not connected:
+xmelab: (./netlist/fullchip.pnr.v,149400): o_full
+xmelab: (./netlist/fullchip.pnr.v,149401): o_empty
+
+   DFD1 rd_ptr_reg_1_ (.CP(rd_clk_clone8),
+                    |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,149812|20): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5821): QN
+
+   fifo_depth16_bw20_simd1_0 col_idx_7__fifo_instance (.in({ in[159],
+                                                    |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,169899|52): 2 output ports were not connected:
+xmelab: (./netlist/fullchip.pnr.v,145055): o_full
+xmelab: (./netlist/fullchip.pnr.v,145056): o_empty
+
+   DFD2 rd_ptr_reg_1_ (.CP(rd_clk),
+                    |
+xmelab: *W,CUVWSP (./netlist/fullchip.pnr.v,145513|20): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,5860): QN
+
+	Top level design units:
+		fullchip_tb
+      .sum_out(sum_out),
+                     |
+xmelab: *W,CUVMPW (./netlist/fullchip_tb.v,78|21): port sizes differ in port connection(1/24) for the instance(fullchip_tb) .
+      .out(out)
+             |
+xmelab: *W,CUVMPW (./netlist/fullchip_tb.v,79|13): port sizes differ in port connection(1/160) for the instance(fullchip_tb) .
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.fullchip_tb:v <0x37708d1a>
+			streams:  28, words: 40997
+		fullchip.fifo_mux_16_1_bw20_simd1_0:v <0x0f778525>
+			streams:   0, words:     0
+		fullchip.fifo_depth16_bw20_simd1_0:v <0x02c2c125>
+			streams:   0, words:     0
+		fullchip.fifo_mux_16_1_bw20_simd1_1:v <0x5a6dd0ff>
+			streams:   0, words:     0
+		fullchip.fifo_depth16_bw20_simd1_1:v <0x4baa64e5>
+			streams:   0, words:     0
+		fullchip.fifo_mux_16_1_bw20_simd1_2:v <0x3a1f84dd>
+			streams:   0, words:     0
+		fullchip.fifo_depth16_bw20_simd1_2:v <0x2438d9ad>
+			streams:   0, words:     0
+		fullchip.fifo_mux_16_1_bw20_simd1_3:v <0x5687f9c6>
+			streams:   0, words:     0
+		fullchip.fifo_depth16_bw20_simd1_3:v <0x38f7f4aa>
+			streams:   0, words:     0
+		fullchip.fifo_mux_16_1_bw20_simd1_4:v <0x57aeaaff>
+			streams:   0, words:     0
+		fullchip.fifo_depth16_bw20_simd1_4:v <0x11de078e>
+			streams:   0, words:     0
+		fullchip.fifo_mux_16_1_bw20_simd1_5:v <0x5ab67d22>
+			streams:   0, words:     0
+		fullchip.fifo_depth16_bw20_simd1_5:v <0x65259a79>
+			streams:   0, words:     0
+		fullchip.fifo_mux_16_1_bw20_simd1_6:v <0x14c025d9>
+			streams:   0, words:     0
+		fullchip.fifo_depth16_bw20_simd1_6:v <0x03b3ce32>
+			streams:   0, words:     0
+		fullchip.fifo_mux_16_1_bw20_simd1_7:v <0x3f7676c5>
+			streams:   0, words:     0
+		fullchip.fifo_depth16_bw20_simd1_7:v <0x6a9a3428>
+			streams:   0, words:     0
+		fullchip.ofifo_col8_bw20:v <0x25bc0a36>
+			streams:   0, words:     0
+		fullchip.mac_col_bw8_bw_psum20_pr16_col_id8:v <0x61ebef38>
+			streams:   0, words:     0
+		fullchip.mac_col_bw8_bw_psum20_pr16_col_id7:v <0x1ae86277>
+			streams:   0, words:     0
+		fullchip.mac_col_bw8_bw_psum20_pr16_col_id6:v <0x4334b7b3>
+			streams:   0, words:     0
+		fullchip.mac_col_bw8_bw_psum20_pr16_col_id5:v <0x7c107641>
+			streams:   0, words:     0
+		fullchip.mac_col_bw8_bw_psum20_pr16_col_id4:v <0x6d99d2a8>
+			streams:   0, words:     0
+		fullchip.mac_col_bw8_bw_psum20_pr16_col_id3:v <0x4ab2ac9e>
+			streams:   0, words:     0
+		fullchip.mac_col_bw8_bw_psum20_pr16_col_id2:v <0x06ed2b04>
+			streams:   0, words:     0
+		fullchip.mac_col_bw8_bw_psum20_pr16_col_id1:v <0x2f4e5ce1>
+			streams:   0, words:     0
+		fullchip.mac_array_col8_bw8_bw_psum20_pr16:v <0x4a38672f>
+			streams:   0, words:     0
+		fullchip.core_col8_bw8_bw_psum20_pr16:v <0x3b21dd0d>
+			streams:   0, words:     0
+		fullchip.fullchip:v <0x133663b3>
+			streams:   0, words:     0
+		tcbn65gplus.MUX2ND0:v <0x006f8b2a>
+			streams:   0, words:     0
+		tcbn65gplus.CKMUX2D2:v <0x2ce99c3b>
+			streams:   0, words:     0
+		tcbn65gplus.MUX2D2:v <0x619bccd2>
+			streams:   0, words:     0
+		tcbn65gplus.CKMUX2D4:v <0x202e1945>
+			streams:   0, words:     0
+		tcbn65gplus.MUX2D4:v <0x2cb0e14c>
+			streams:   0, words:     0
+		tcbn65gplus.HA1D0:v <0x7eeff47c>
+			streams:   0, words:     0
+		tcbn65gplus.XNR3D1:v <0x68c83fc6>
+			streams:   0, words:     0
+		tcbn65gplus.XNR3D2:v <0x5c9c44bc>
+			streams:   0, words:     0
+		tcbn65gplus.CKMUX2D0:v <0x09efc00d>
+			streams:   0, words:     0
+		tcbn65gplus.CKXOR2D0:v <0x6a73c778>
+			streams:   0, words:     0
+		tcbn65gplus.FA1D0:v <0x1eb311f8>
+			streams:   0, words:     0
+		tcbn65gplus.CKXOR2D2:v <0x05bf8b21>
+			streams:   0, words:     0
+		tcbn65gplus.XOR2D1:v <0x73f16baf>
+			streams:   0, words:     0
+		tcbn65gplus.FCICIND1:v <0x408ccb75>
+			streams:   0, words:     0
+		tcbn65gplus.CKMUX2D1:v <0x327906cd>
+			streams:   0, words:     0
+		tcbn65gplus.MUX2D1:v <0x5ffd0254>
+			streams:   0, words:     0
+		tcbn65gplus.MUX2D0:v <0x4d16f57b>
+			streams:   0, words:     0
+		tcbn65gplus.DFD2:v <0x039c4322>
+			streams:   0, words:     0
+		tcbn65gplus.DFQD1:v <0x7e049845>
+			streams:   0, words:     0
+		tcbn65gplus.EDFQD4:v <0x2b2e2727>
+			streams:   0, words:     0
+		tcbn65gplus.EDFQD1:v <0x2ca3ace8>
+			streams:   0, words:     0
+		tcbn65gplus.EDFQD2:v <0x18f7d792>
+			streams:   0, words:     0
+		tcbn65gplus.DFD1:v <0x057ed475>
+			streams:   0, words:     0
+		tcbn65gplus.DFQD4:v <0x5c63e147>
+			streams:   0, words:     0
+		tcbn65gplus.DFQD2:v <0x3e9d6fa7>
+			streams:   0, words:     0
+		tcbn65gplus.DFKCNQD1:v <0x36fcb39c>
+			streams:   0, words:     0
+		tcbn65gplus.DFKCNQD4:v <0x0cdac996>
+			streams:   0, words:     0
+		tcbn65gplus.DFKCNQD2:v <0x5828d737>
+			streams:   0, words:     0
+		tcbn65gplus.CKXOR2D4:v <0x6110a9d1>
+			streams:   0, words:     0
+		tcbn65gplus.HA1D1:v <0x33a92e5f>
+			streams:   0, words:     0
+		tcbn65gplus.HA1D2:v <0x36feb791>
+			streams:   0, words:     0
+		tcbn65gplus.XOR3D4:v <0x64f7e31f>
+			streams:   0, words:     0
+		tcbn65gplus.XOR2D0:v <0x4c9be404>
+			streams:   0, words:     0
+		tcbn65gplus.HA1D4:v <0x3c51840d>
+			streams:   0, words:     0
+		tcbn65gplus.CKXOR2D1:v <0x0499ab43>
+			streams:   0, words:     0
+		tcbn65gplus.XNR2D0:v <0x73b988e2>
+			streams:   0, words:     0
+		tcbn65gplus.XOR2D2:v <0x0af29c37>
+			streams:   0, words:     0
+		tcbn65gplus.XOR2D4:v <0x1b381223>
+			streams:   0, words:     0
+		tcbn65gplus.XNR3D4:v <0x6f45b409>
+			streams:   0, words:     0
+		tcbn65gplus.FA1D2:v <0x6e21157d>
+			streams:   0, words:     0
+		tcbn65gplus.XOR3D1:v <0x637a68d0>
+			streams:   0, words:     0
+		tcbn65gplus.FA1D1:v <0x0b42909a>
+			streams:   0, words:     0
+		tcbn65gplus.FA1D4:v <0x24e61eb3>
+			streams:   0, words:     0
+		tcbn65gplus.XNR2D2:v <0x35d0f0d1>
+			streams:   0, words:     0
+		tcbn65gplus.XNR2D4:v <0x241a7ec5>
+			streams:   0, words:     0
+		tcbn65gplus.XNR2D1:v <0x4cd30749>
+			streams:   0, words:     0
+		tcbn65gplus.XOR3D2:v <0x572e13aa>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                50147     383
+		UDPs:                   31831       3
+		Primitives:            111880       9
+		Registers:              11858      46
+		Scalar wires:           22542       -
+		Expanded wires:           136       3
+		Initial blocks:            14      14
+		Cont. assignments:         11      14
+		Pseudo assignments:         3       3
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.fullchip_tb:v
+xmelab: Memory Usage - Final: 79.1M, Peak: 88.5M, Peak virtual: 210.1M
+xmelab: CPU Usage - 0.2s system + 4.7s user = 4.9s total (5.0s, 97.8% cpu)
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /software/ECE/XCELIUM-2009/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm fullchip_tb.fullchip_instance.core_instance.ofifo_inst.in fullchip_tb.fullchip_instance.core_instance.ofifo_inst.o_valid fullchip_tb.fullchip_instance.core_instance.ofifo_inst.o_full fullchip_tb.fullchip_instance.core_instance.ofifo_inst.out fullchip_tb.fullchip_instance.core_instance.ofifo_inst.rd fullchip_tb.fullchip_instance.core_instance.ofifo_inst.reset fullchip_tb.fullchip_instance.core_instance.ofifo_inst.wr
+Created probe 1
+xcelium> run
+##### Q data txt reading #####
+##### K data txt reading #####
+##### Estimated multiplication result #####
+prd @cycle 0: 0000700044fffa20003500028000280002800028
+prd @cycle 1: fff960003bfff8dfffe9fff9cfff9cfff9cfff9c
+prd @cycle 2: 000680007900035fffc800008000080000800008
+prd @cycle 3: 00050fffe10002e0001cffffcffffcffffcffffc
+prd @cycle 4: 00016fffdc000030000b00040000400004000040
+prd @cycle 5: 00016fffdc000030000b00040000400004000040
+prd @cycle 6: 00016fffdc000030000b00040000400004000040
+prd @cycle 7: 00016fffdc000030000b00040000400004000040
+##### Qmem writing  #####
+##### Kmem writing #####
+##### K data loading to processor #####
+##### execute #####
+##### move ofifo to pmem #####
+Simulation complete via $finish(1) at time 91 NS + 0
+./netlist/fullchip_tb.v:370   #10 $finish;
+xcelium> ...Regained control from SimVision
+-------------------------------------
+xmsim: Memory Usage - Final: 177.0M, Peak: 183.9M, Peak virtual: 516.8M
+xmsim: Main Thread CPU Usage - 868.0s system + 443.4s user = 1311.5s total
+xmsim: CPU Usage - 868.0s system + 443.2s user = 1311.1s total (43294.6s, 3.0% cpu)
+TOOL:	xrun(64)	20.09-s017: Exiting on Mar 13, 2025 at 09:08:11 PDT  (total: 12:01:40)

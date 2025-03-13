@@ -1,0 +1,11 @@
+define LIB_MAP ( $LIB_MAP \
+, ../../../../../../public/PDKdata/verilog/tcbn65gplus.v => tcbn65gplus \
+, ../../../../verilog/ofifo.v => ofifo \
+, ../../../../verilog/fifo_mux_8_1.v => fifo_mux_8_1 \
+, ../../../../verilog/fifo_mux_2_1.v => fifo_mux_2_1 \
+, ../../../../verilog/fifo_mux_16_1.v => fifo_mux_16_1 \
+, ../../../../verilog/fifo_depth16.v => fifo_depth16 \
+, ../../../../verilog/sram_160b_w16.v => sram_160b_w16 \
+, ../../../../verilog/sram_w16.v => sram_w16 \
+, ../../../netlist/fullchip.pnr.v => fullchip \
+)

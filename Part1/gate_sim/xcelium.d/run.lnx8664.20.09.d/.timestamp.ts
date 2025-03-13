@@ -1,0 +1,10 @@
+1740964867 /home/linux/ieng6/ee260bwi25/jjl028/ece260_project/verilog/fifo_depth16.v
+1737007846 /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v
+1740964867 /home/linux/ieng6/ee260bwi25/jjl028/ece260_project/verilog/fifo_mux_16_1.v
+1741835573 /home/linux/ieng6/ee260bwi25/jjl028/ece260_project/gate_sim/netlist/fullchip_tb.v
+1740964867 /home/linux/ieng6/ee260bwi25/jjl028/ece260_project/verilog/ofifo.v
+1740964867 /home/linux/ieng6/ee260bwi25/jjl028/ece260_project/verilog/sram_160b_w16.v
+1740964867 /home/linux/ieng6/ee260bwi25/jjl028/ece260_project/verilog/fifo_mux_8_1.v
+1741835900 /home/linux/ieng6/ee260bwi25/jjl028/ece260_project/gate_sim/netlist/fullchip.pnr.v
+1740964867 /home/linux/ieng6/ee260bwi25/jjl028/ece260_project/verilog/sram_w16.v
+1740964867 /home/linux/ieng6/ee260bwi25/jjl028/ece260_project/verilog/fifo_mux_2_1.v
