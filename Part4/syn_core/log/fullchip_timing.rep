@@ -1,0 +1,2019 @@
+Warning: Design 'fullchip' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 100
+        -transition_time
+        -capacitance
+Design : fullchip
+Version: K-2015.06-SP2
+Date   : Fri Mar 14 14:29:11 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM   Library: tcbn65gpluswc
+Wire Load Model Mode: segmented
+
+  Startpoint: sum_out[23] (internal pin)
+  Endpoint: sum_out[23]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[23] (out)                                 0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: sum_out[22] (internal pin)
+  Endpoint: sum_out[22]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[22] (out)                                 0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: sum_out[21] (internal pin)
+  Endpoint: sum_out[21]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[21] (out)                                 0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: sum_out[20] (internal pin)
+  Endpoint: sum_out[20]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[20] (out)                                 0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: sum_out[19] (internal pin)
+  Endpoint: sum_out[19]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[19] (out)                                 0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: sum_out[18] (internal pin)
+  Endpoint: sum_out[18]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[18] (out)                                 0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: sum_out[17] (internal pin)
+  Endpoint: sum_out[17]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[17] (out)                                 0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: sum_out[16] (internal pin)
+  Endpoint: sum_out[16]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[16] (out)                                 0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: sum_out[15] (internal pin)
+  Endpoint: sum_out[15]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[15] (out)                                 0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: sum_out[14] (internal pin)
+  Endpoint: sum_out[14]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[14] (out)                                 0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: sum_out[13] (internal pin)
+  Endpoint: sum_out[13]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[13] (out)                                 0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: sum_out[12] (internal pin)
+  Endpoint: sum_out[12]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[12] (out)                                 0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: sum_out[11] (internal pin)
+  Endpoint: sum_out[11]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[11] (out)                                 0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: sum_out[10] (internal pin)
+  Endpoint: sum_out[10]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[10] (out)                                 0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: sum_out[9] (internal pin)
+  Endpoint: sum_out[9] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[9] (out)                                  0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: sum_out[8] (internal pin)
+  Endpoint: sum_out[8] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[8] (out)                                  0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: sum_out[7] (internal pin)
+  Endpoint: sum_out[7] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[7] (out)                                  0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: sum_out[6] (internal pin)
+  Endpoint: sum_out[6] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[6] (out)                                  0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: sum_out[5] (internal pin)
+  Endpoint: sum_out[5] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[5] (out)                                  0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: sum_out[4] (internal pin)
+  Endpoint: sum_out[4] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[4] (out)                                  0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: sum_out[3] (internal pin)
+  Endpoint: sum_out[3] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[3] (out)                                  0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: sum_out[2] (internal pin)
+  Endpoint: sum_out[2] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[2] (out)                                  0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: sum_out[1] (internal pin)
+  Endpoint: sum_out[1] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[1] (out)                                  0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: sum_out[0] (internal pin)
+  Endpoint: sum_out[0] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  sum_out[0] (out)                                  0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[159] (internal pin)
+  Endpoint: out[159] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[159] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[159] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[159] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[159] (net)                                         0.050               0.000      0.000 r
+  out[159] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[158] (internal pin)
+  Endpoint: out[158] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[158] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[158] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[158] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[158] (net)                                         0.050               0.000      0.000 r
+  out[158] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[157] (internal pin)
+  Endpoint: out[157] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[157] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[157] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[157] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[157] (net)                                         0.050               0.000      0.000 r
+  out[157] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[156] (internal pin)
+  Endpoint: out[156] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[156] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[156] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[156] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[156] (net)                                         0.050               0.000      0.000 r
+  out[156] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[155] (internal pin)
+  Endpoint: out[155] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[155] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[155] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[155] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[155] (net)                                         0.050               0.000      0.000 r
+  out[155] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[154] (internal pin)
+  Endpoint: out[154] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[154] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[154] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[154] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[154] (net)                                         0.050               0.000      0.000 r
+  out[154] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[153] (internal pin)
+  Endpoint: out[153] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[153] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[153] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[153] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[153] (net)                                         0.050               0.000      0.000 r
+  out[153] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[152] (internal pin)
+  Endpoint: out[152] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[152] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[152] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[152] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[152] (net)                                         0.050               0.000      0.000 r
+  out[152] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[151] (internal pin)
+  Endpoint: out[151] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[151] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[151] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[151] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[151] (net)                                         0.050               0.000      0.000 r
+  out[151] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[150] (internal pin)
+  Endpoint: out[150] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[150] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[150] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[150] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[150] (net)                                         0.050               0.000      0.000 r
+  out[150] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[149] (internal pin)
+  Endpoint: out[149] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[149] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[149] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[149] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[149] (net)                                         0.050               0.000      0.000 r
+  out[149] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[148] (internal pin)
+  Endpoint: out[148] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[148] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[148] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[148] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[148] (net)                                         0.050               0.000      0.000 r
+  out[148] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[147] (internal pin)
+  Endpoint: out[147] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[147] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[147] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[147] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[147] (net)                                         0.050               0.000      0.000 r
+  out[147] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[146] (internal pin)
+  Endpoint: out[146] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[146] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[146] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[146] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[146] (net)                                         0.050               0.000      0.000 r
+  out[146] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[145] (internal pin)
+  Endpoint: out[145] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[145] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[145] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[145] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[145] (net)                                         0.050               0.000      0.000 r
+  out[145] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[144] (internal pin)
+  Endpoint: out[144] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[144] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[144] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[144] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[144] (net)                                         0.050               0.000      0.000 r
+  out[144] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[143] (internal pin)
+  Endpoint: out[143] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[143] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[143] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[143] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[143] (net)                                         0.050               0.000      0.000 r
+  out[143] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[142] (internal pin)
+  Endpoint: out[142] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[142] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[142] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[142] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[142] (net)                                         0.050               0.000      0.000 r
+  out[142] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[141] (internal pin)
+  Endpoint: out[141] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[141] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[141] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[141] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[141] (net)                                         0.050               0.000      0.000 r
+  out[141] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[140] (internal pin)
+  Endpoint: out[140] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[140] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[140] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[140] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[140] (net)                                         0.050               0.000      0.000 r
+  out[140] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[139] (internal pin)
+  Endpoint: out[139] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[139] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[139] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[139] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[139] (net)                                         0.050               0.000      0.000 r
+  out[139] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[138] (internal pin)
+  Endpoint: out[138] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[138] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[138] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[138] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[138] (net)                                         0.050               0.000      0.000 r
+  out[138] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[137] (internal pin)
+  Endpoint: out[137] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[137] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[137] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[137] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[137] (net)                                         0.050               0.000      0.000 r
+  out[137] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[136] (internal pin)
+  Endpoint: out[136] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[136] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[136] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[136] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[136] (net)                                         0.050               0.000      0.000 r
+  out[136] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[135] (internal pin)
+  Endpoint: out[135] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[135] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[135] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[135] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[135] (net)                                         0.050               0.000      0.000 r
+  out[135] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[134] (internal pin)
+  Endpoint: out[134] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[134] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[134] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[134] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[134] (net)                                         0.050               0.000      0.000 r
+  out[134] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[133] (internal pin)
+  Endpoint: out[133] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[133] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[133] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[133] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[133] (net)                                         0.050               0.000      0.000 r
+  out[133] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[132] (internal pin)
+  Endpoint: out[132] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[132] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[132] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[132] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[132] (net)                                         0.050               0.000      0.000 r
+  out[132] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[131] (internal pin)
+  Endpoint: out[131] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[131] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[131] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[131] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[131] (net)                                         0.050               0.000      0.000 r
+  out[131] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[130] (internal pin)
+  Endpoint: out[130] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[130] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[130] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[130] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[130] (net)                                         0.050               0.000      0.000 r
+  out[130] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[129] (internal pin)
+  Endpoint: out[129] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[129] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[129] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[129] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[129] (net)                                         0.050               0.000      0.000 r
+  out[129] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[128] (internal pin)
+  Endpoint: out[128] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[128] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[128] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[128] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[128] (net)                                         0.050               0.000      0.000 r
+  out[128] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[127] (internal pin)
+  Endpoint: out[127] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[127] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[127] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[127] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[127] (net)                                         0.050               0.000      0.000 r
+  out[127] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[126] (internal pin)
+  Endpoint: out[126] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[126] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[126] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[126] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[126] (net)                                         0.050               0.000      0.000 r
+  out[126] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[125] (internal pin)
+  Endpoint: out[125] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[125] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[125] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[125] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[125] (net)                                         0.050               0.000      0.000 r
+  out[125] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[124] (internal pin)
+  Endpoint: out[124] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[124] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[124] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[124] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[124] (net)                                         0.050               0.000      0.000 r
+  out[124] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[123] (internal pin)
+  Endpoint: out[123] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[123] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[123] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[123] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[123] (net)                                         0.050               0.000      0.000 r
+  out[123] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[122] (internal pin)
+  Endpoint: out[122] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[122] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[122] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[122] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[122] (net)                                         0.050               0.000      0.000 r
+  out[122] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[121] (internal pin)
+  Endpoint: out[121] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[121] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[121] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[121] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[121] (net)                                         0.050               0.000      0.000 r
+  out[121] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[120] (internal pin)
+  Endpoint: out[120] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[120] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[120] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[120] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[120] (net)                                         0.050               0.000      0.000 r
+  out[120] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[119] (internal pin)
+  Endpoint: out[119] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[119] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[119] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[119] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[119] (net)                                         0.050               0.000      0.000 r
+  out[119] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[118] (internal pin)
+  Endpoint: out[118] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[118] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[118] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[118] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[118] (net)                                         0.050               0.000      0.000 r
+  out[118] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[117] (internal pin)
+  Endpoint: out[117] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[117] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[117] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[117] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[117] (net)                                         0.050               0.000      0.000 r
+  out[117] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[116] (internal pin)
+  Endpoint: out[116] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[116] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[116] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[116] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[116] (net)                                         0.050               0.000      0.000 r
+  out[116] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[115] (internal pin)
+  Endpoint: out[115] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[115] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[115] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[115] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[115] (net)                                         0.050               0.000      0.000 r
+  out[115] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[114] (internal pin)
+  Endpoint: out[114] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[114] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[114] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[114] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[114] (net)                                         0.050               0.000      0.000 r
+  out[114] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[113] (internal pin)
+  Endpoint: out[113] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[113] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[113] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[113] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[113] (net)                                         0.050               0.000      0.000 r
+  out[113] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[112] (internal pin)
+  Endpoint: out[112] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[112] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[112] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[112] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[112] (net)                                         0.050               0.000      0.000 r
+  out[112] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[111] (internal pin)
+  Endpoint: out[111] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[111] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[111] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[111] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[111] (net)                                         0.050               0.000      0.000 r
+  out[111] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[110] (internal pin)
+  Endpoint: out[110] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[110] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[110] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[110] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[110] (net)                                         0.050               0.000      0.000 r
+  out[110] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[109] (internal pin)
+  Endpoint: out[109] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[109] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[109] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[109] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[109] (net)                                         0.050               0.000      0.000 r
+  out[109] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[108] (internal pin)
+  Endpoint: out[108] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[108] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[108] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[108] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[108] (net)                                         0.050               0.000      0.000 r
+  out[108] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[107] (internal pin)
+  Endpoint: out[107] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[107] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[107] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[107] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[107] (net)                                         0.050               0.000      0.000 r
+  out[107] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[106] (internal pin)
+  Endpoint: out[106] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[106] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[106] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[106] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[106] (net)                                         0.050               0.000      0.000 r
+  out[106] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[105] (internal pin)
+  Endpoint: out[105] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[105] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[105] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[105] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[105] (net)                                         0.050               0.000      0.000 r
+  out[105] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[104] (internal pin)
+  Endpoint: out[104] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[104] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[104] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[104] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[104] (net)                                         0.050               0.000      0.000 r
+  out[104] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[103] (internal pin)
+  Endpoint: out[103] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[103] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[103] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[103] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[103] (net)                                         0.050               0.000      0.000 r
+  out[103] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[102] (internal pin)
+  Endpoint: out[102] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[102] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[102] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[102] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[102] (net)                                         0.050               0.000      0.000 r
+  out[102] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[101] (internal pin)
+  Endpoint: out[101] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[101] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[101] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[101] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[101] (net)                                         0.050               0.000      0.000 r
+  out[101] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[100] (internal pin)
+  Endpoint: out[100] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[100] (sram_w16)                0.000     0.000      0.000 r
+  core_instance/out[100] (net)                  1        0.050               0.000      0.000 r
+  core_instance/out[100] (core_col8_bw8_bw_psum20_pr16)                      0.000      0.000 r
+  out[100] (net)                                         0.050               0.000      0.000 r
+  out[100] (out)                                                   0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[99] (internal pin)
+  Endpoint: out[99] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[99] (sram_w16)                 0.000     0.000      0.000 r
+  core_instance/out[99] (net)                   1        0.050               0.000      0.000 r
+  core_instance/out[99] (core_col8_bw8_bw_psum20_pr16)                       0.000      0.000 r
+  out[99] (net)                                          0.050               0.000      0.000 r
+  out[99] (out)                                                    0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[98] (internal pin)
+  Endpoint: out[98] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[98] (sram_w16)                 0.000     0.000      0.000 r
+  core_instance/out[98] (net)                   1        0.050               0.000      0.000 r
+  core_instance/out[98] (core_col8_bw8_bw_psum20_pr16)                       0.000      0.000 r
+  out[98] (net)                                          0.050               0.000      0.000 r
+  out[98] (out)                                                    0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[97] (internal pin)
+  Endpoint: out[97] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[97] (sram_w16)                 0.000     0.000      0.000 r
+  core_instance/out[97] (net)                   1        0.050               0.000      0.000 r
+  core_instance/out[97] (core_col8_bw8_bw_psum20_pr16)                       0.000      0.000 r
+  out[97] (net)                                          0.050               0.000      0.000 r
+  out[97] (out)                                                    0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[96] (internal pin)
+  Endpoint: out[96] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[96] (sram_w16)                 0.000     0.000      0.000 r
+  core_instance/out[96] (net)                   1        0.050               0.000      0.000 r
+  core_instance/out[96] (core_col8_bw8_bw_psum20_pr16)                       0.000      0.000 r
+  out[96] (net)                                          0.050               0.000      0.000 r
+  out[96] (out)                                                    0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[95] (internal pin)
+  Endpoint: out[95] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[95] (sram_w16)                 0.000     0.000      0.000 r
+  core_instance/out[95] (net)                   1        0.050               0.000      0.000 r
+  core_instance/out[95] (core_col8_bw8_bw_psum20_pr16)                       0.000      0.000 r
+  out[95] (net)                                          0.050               0.000      0.000 r
+  out[95] (out)                                                    0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[94] (internal pin)
+  Endpoint: out[94] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[94] (sram_w16)                 0.000     0.000      0.000 r
+  core_instance/out[94] (net)                   1        0.050               0.000      0.000 r
+  core_instance/out[94] (core_col8_bw8_bw_psum20_pr16)                       0.000      0.000 r
+  out[94] (net)                                          0.050               0.000      0.000 r
+  out[94] (out)                                                    0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[93] (internal pin)
+  Endpoint: out[93] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[93] (sram_w16)                 0.000     0.000      0.000 r
+  core_instance/out[93] (net)                   1        0.050               0.000      0.000 r
+  core_instance/out[93] (core_col8_bw8_bw_psum20_pr16)                       0.000      0.000 r
+  out[93] (net)                                          0.050               0.000      0.000 r
+  out[93] (out)                                                    0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[92] (internal pin)
+  Endpoint: out[92] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[92] (sram_w16)                 0.000     0.000      0.000 r
+  core_instance/out[92] (net)                   1        0.050               0.000      0.000 r
+  core_instance/out[92] (core_col8_bw8_bw_psum20_pr16)                       0.000      0.000 r
+  out[92] (net)                                          0.050               0.000      0.000 r
+  out[92] (out)                                                    0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[91] (internal pin)
+  Endpoint: out[91] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[91] (sram_w16)                 0.000     0.000      0.000 r
+  core_instance/out[91] (net)                   1        0.050               0.000      0.000 r
+  core_instance/out[91] (core_col8_bw8_bw_psum20_pr16)                       0.000      0.000 r
+  out[91] (net)                                          0.050               0.000      0.000 r
+  out[91] (out)                                                    0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[90] (internal pin)
+  Endpoint: out[90] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[90] (sram_w16)                 0.000     0.000      0.000 r
+  core_instance/out[90] (net)                   1        0.050               0.000      0.000 r
+  core_instance/out[90] (core_col8_bw8_bw_psum20_pr16)                       0.000      0.000 r
+  out[90] (net)                                          0.050               0.000      0.000 r
+  out[90] (out)                                                    0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[89] (internal pin)
+  Endpoint: out[89] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[89] (sram_w16)                 0.000     0.000      0.000 r
+  core_instance/out[89] (net)                   1        0.050               0.000      0.000 r
+  core_instance/out[89] (core_col8_bw8_bw_psum20_pr16)                       0.000      0.000 r
+  out[89] (net)                                          0.050               0.000      0.000 r
+  out[89] (out)                                                    0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[88] (internal pin)
+  Endpoint: out[88] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[88] (sram_w16)                 0.000     0.000      0.000 r
+  core_instance/out[88] (net)                   1        0.050               0.000      0.000 r
+  core_instance/out[88] (core_col8_bw8_bw_psum20_pr16)                       0.000      0.000 r
+  out[88] (net)                                          0.050               0.000      0.000 r
+  out[88] (out)                                                    0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[87] (internal pin)
+  Endpoint: out[87] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[87] (sram_w16)                 0.000     0.000      0.000 r
+  core_instance/out[87] (net)                   1        0.050               0.000      0.000 r
+  core_instance/out[87] (core_col8_bw8_bw_psum20_pr16)                       0.000      0.000 r
+  out[87] (net)                                          0.050               0.000      0.000 r
+  out[87] (out)                                                    0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[86] (internal pin)
+  Endpoint: out[86] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[86] (sram_w16)                 0.000     0.000      0.000 r
+  core_instance/out[86] (net)                   1        0.050               0.000      0.000 r
+  core_instance/out[86] (core_col8_bw8_bw_psum20_pr16)                       0.000      0.000 r
+  out[86] (net)                                          0.050               0.000      0.000 r
+  out[86] (out)                                                    0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[85] (internal pin)
+  Endpoint: out[85] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[85] (sram_w16)                 0.000     0.000      0.000 r
+  core_instance/out[85] (net)                   1        0.050               0.000      0.000 r
+  core_instance/out[85] (core_col8_bw8_bw_psum20_pr16)                       0.000      0.000 r
+  out[85] (net)                                          0.050               0.000      0.000 r
+  out[85] (out)                                                    0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance/psum_mem_instance/Q[84] (internal pin)
+  Endpoint: out[84] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_col8_bw8_bw_psum20_pr16 ZeroWireload tcbn65gpluswc
+  fullchip           ZeroWireload          tcbn65gpluswc
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  core_instance/psum_mem_instance/Q[84] (sram_w16)                 0.000     0.000      0.000 r
+  core_instance/out[84] (net)                   1        0.050               0.000      0.000 r
+  core_instance/out[84] (core_col8_bw8_bw_psum20_pr16)                       0.000      0.000 r
+  out[84] (net)                                          0.050               0.000      0.000 r
+  out[84] (out)                                                    0.000     0.000      0.000 r
+  data arrival time                                                                     0.000
+  ----------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
