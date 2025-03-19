@@ -1,1 +1,0 @@
-/home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/constraints/core.sdc

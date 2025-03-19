@@ -17,3 +17,5 @@ addStripe -nets {VDD VSS} -layer M4 -direction horizontal -width 1.8 -spacing 1.
 
 sroute
 
+
+
