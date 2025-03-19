@@ -90,3 +90,42 @@ saveDesign floorplan.enc
 setPlaceMode -timingDriven true -reorderScan false -congEffort medium -modulePlan True -placeIOPins false
 setOptMode -effort high -powerEffort high -leakageToDynamicRatio 0.5 -fixFanoutLoad true -restruct true -verbose true
 place_opt_design
+addFiller -cell {DCAP DCAP4 DCAP8 DCAP16 DCAP32} -merge true
+saveDesign placement.enc
+set_ccopt_property -update_io_latency false
+create_ccopt_clock_tree_spec -file /home/linux/ieng6/ee260bwi25/public/DESIGNdata/constraints/core.ccopt
+setNanoRouteMode -quiet -drouteAllowMergedWireAtPin false
+setNanoRouteMode -quiet -drouteFixAntenna true
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeWithSiDriven true
+setNanoRouteMode -quiet -routeSiEffort medium
+setNanoRouteMode -quiet -routeWithSiPostRouteFix false
+setNanoRouteMode -quiet -drouteAutoStop true
+setNanoRouteMode -quiet -routeSelectedNetOnly false
+setNanoRouteMode -quiet -drouteStartIteration default
+routeDesign
+setExtractRCMode -engine postRoute
+extractRC
+setAnalysisMode -analysisType onChipVariation -cppr both
+optDesign -postRoute -setup -hold
+optDesign -postRoute -drv
+optDesign -postRoute -inc
+saveDesign route.enc
+verify_connectivity
+verifyGeometry
+verify_drc
+optDesign -postRoute -drv
+optDesign -postRoute -inc
+verify_drc
+verifyGeometry
+verifyConnectivity
+report_timing -max_paths 5 > ${design}.post_route.timing.rpt
+report_power -outfile core.post_route.power.rpt
+summaryReport -nohtml -outfile core.post_route.summary.rpt
+streamOut core.gds2
+write_lef_abstract -stripePin -PGPinLayers 4 -extractBlockPGPinLayers 4 core.lef -specifyTopLayer 4
+defOut -netlist -routing core.def
+saveNetlist core.pnr.v
+setAnalysisMode -setup
+set_analysis_view -setup WC_VIEW -hold WC_VIEW
+do_extract_model -view WC_VIEW -format dotlib ${design}_WC.lib
