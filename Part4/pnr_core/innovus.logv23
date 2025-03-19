@@ -1,0 +1,1216 @@
+[03/19 08:31:38      0] 
+[03/19 08:31:38      0] Cadence Innovus(TM) Implementation System.
+[03/19 08:31:38      0] Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+[03/19 08:31:38      0] 
+[03/19 08:31:38      0] Version:	v15.23-s045_1, built Fri Apr 22 12:32:52 PDT 2016
+[03/19 08:31:38      0] Options:	
+[03/19 08:31:38      0] Date:		Wed Mar 19 08:31:38 2025
+[03/19 08:31:38      0] Host:		ieng6-ece-02.ucsd.edu (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (4cores*8cpus*Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz 25344KB)
+[03/19 08:31:38      0] OS:		CentOS Linux release 7.9.2009 (Core)
+[03/19 08:31:38      0] 
+[03/19 08:31:38      0] License:
+[03/19 08:31:38      0] 		invs	Innovus Implementation System	15.2	checkout succeeded
+[03/19 08:31:38      0] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[03/19 08:31:39      0] **ERROR: (IMPOAX-142):	Could not open shared library libinnovusoax22.so : /acsnfs3/software/cadence-innovus152/tools/lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE
+[03/19 08:31:39      0] 
+[03/19 08:31:39      0] **ERROR: (IMPOAX-142):	Could not open shared library libcdsSkillPcell.so : (null)
+[03/19 08:31:39      0] 
+[03/19 08:31:39      0] **ERROR: (IMPOAX-142):	OA features will be disabled in this session.
+[03/19 08:31:39      0] 
+[03/19 08:31:47      7] @(#)CDS: Innovus v15.23-s045_1 (64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5)
+[03/19 08:31:47      7] @(#)CDS: NanoRoute 15.23-s045_1 NR160414-1105/15_23-UB (database version 2.30, 317.6.1) {superthreading v1.26}
+[03/19 08:31:47      7] @(#)CDS: AAE 15.23-s014 (64bit) 04/22/2016 (Linux 2.6.18-194.el5)
+[03/19 08:31:47      7] @(#)CDS: CTE 15.23-s022_1 () Apr 22 2016 09:38:45 ( )
+[03/19 08:31:47      7] @(#)CDS: SYNTECH 15.23-s008_1 () Apr 12 2016 21:52:59 ( )
+[03/19 08:31:47      7] @(#)CDS: CPE v15.23-s045
+[03/19 08:31:47      7] @(#)CDS: IQRC/TQRC 15.1.4-s213 (64bit) Tue Feb  9 17:31:28 PST 2016 (Linux 2.6.18-194.el5)
+[03/19 08:31:47      7] @(#)CDS: OA 22.50-p036 Tue Nov  3 09:29:52 2015
+[03/19 08:31:47      7] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[03/19 08:31:47      7] @(#)CDS: RCDB 11.7
+[03/19 08:31:47      7] --- Running on ieng6-ece-02.ucsd.edu (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (4cores*8cpus*Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz 25344KB) ---
+[03/19 08:31:47      7] Create and set the environment variable TMPDIR to /tmp/innovus_temp_17238_ieng6-ece-02.ucsd.edu_maquilina_B1XXZp.
+
+[03/19 08:31:48      8] 
+[03/19 08:31:48      8] **INFO:  MMMC transition support version v31-84 
+[03/19 08:31:48      8] 
+[03/19 08:31:48      8] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[03/19 08:31:48      8] <CMD> suppressMessage ENCEXT-2799
+[03/19 08:31:48      8] <CMD> getDrawView
+[03/19 08:31:48      8] <CMD> loadWorkspace -name Physical
+[03/19 08:31:48      8] <CMD> win
+[03/19 08:31:52      8] <CMD> set init_pwr_net VDD
+[03/19 08:31:52      8] <CMD> set init_gnd_net VSS
+[03/19 08:31:52      8] <CMD> set init_verilog ./netlist/core.out.v
+[03/19 08:31:52      8] <CMD> set init_design_netlisttype Verilog
+[03/19 08:31:52      8] <CMD> set init_design_settop 1
+[03/19 08:31:52      8] <CMD> set init_top_cell core
+[03/19 08:31:52      8] <CMD> set init_lef_file {/home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef ./subckt/sram_w16.lef}
+[03/19 08:31:52      8] <CMD> create_library_set -name WC_LIB -timing "$worst_timing_lib ./subckt/sram_w16_WC.lib"
+[03/19 08:31:52      8] <CMD> create_library_set -name BC_LIB -timing "$best_timing_lib ./subckt/sram_w16_BC.lib"
+[03/19 08:31:52      8] <CMD> create_rc_corner -name Cmax -cap_table $worst_captbl -T 125
+[03/19 08:31:52      8] <CMD> create_rc_corner -name Cmin -cap_table $best_captbl -T -40
+[03/19 08:31:52      8] <CMD> create_delay_corner -name WC -library_set WC_LIB -rc_corner Cmax
+[03/19 08:31:52      8] <CMD> create_delay_corner -name BC -library_set BC_LIB -rc_corner Cmin
+[03/19 08:31:52      8] <CMD> create_constraint_mode -name CON -sdc_file [list $sdc]
+[03/19 08:31:52      8] <CMD> create_analysis_view -name WC_VIEW -delay_corner WC -constraint_mode CON
+[03/19 08:31:52      8] <CMD> create_analysis_view -name BC_VIEW -delay_corner BC -constraint_mode CON
+[03/19 08:31:52      8] <CMD> init_design -setup WC_VIEW -hold BC_VIEW
+[03/19 08:31:52      8] **ERROR: (IMPOAX-820):	The OA features are disabled in the current session of Innovus because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Innovus either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+[03/19 08:31:52      8] 
+[03/19 08:31:52      8] **ERROR: (IMPOAX-850):	oaxCreateCdsLibArray command cannot be run as OA features are disabled in this session.
+[03/19 08:31:52      8] 
+[03/19 08:31:52      8] Loading LEF file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef ...
+[03/19 08:31:52      8] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+[03/19 08:31:52      8] The LEF parser will ignore this statement.
+[03/19 08:31:52      8] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 28.
+[03/19 08:31:52      8] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 08:31:52      8] The LEF parser will ignore this statement.
+[03/19 08:31:52      8] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 867.
+[03/19 08:31:52      8] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 08:31:52      8] The LEF parser will ignore this statement.
+[03/19 08:31:52      8] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 877.
+[03/19 08:31:52      8] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 08:31:52      8] The LEF parser will ignore this statement.
+[03/19 08:31:52      8] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1014.
+[03/19 08:31:52      8] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 08:31:52      8] The LEF parser will ignore this statement.
+[03/19 08:31:52      8] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1024.
+[03/19 08:31:52      8] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 08:31:52      8] The LEF parser will ignore this statement.
+[03/19 08:31:52      8] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1161.
+[03/19 08:31:52      8] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 08:31:52      8] The LEF parser will ignore this statement.
+[03/19 08:31:52      8] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1171.
+[03/19 08:31:52      8] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 08:31:52      8] The LEF parser will ignore this statement.
+[03/19 08:31:52      8] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1308.
+[03/19 08:31:52      8] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 08:31:52      8] The LEF parser will ignore this statement.
+[03/19 08:31:52      8] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1318.
+[03/19 08:31:52      8] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 08:31:52      8] The LEF parser will ignore this statement.
+[03/19 08:31:52      8] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1372.
+[03/19 08:31:52      8] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 08:31:52      8] The LEF parser will ignore this statement.
+[03/19 08:31:52      8] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1383.
+[03/19 08:31:52      8] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 08:31:52      8] The LEF parser will ignore this statement.
+[03/19 08:31:52      8] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1604.
+[03/19 08:31:52      8] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 08:31:52      8] The LEF parser will ignore this statement.
+[03/19 08:31:52      8] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1614.
+[03/19 08:31:52      8] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/19 08:31:52      8] The LEF parser will ignore this statement.
+[03/19 08:31:52      8] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1769.
+[03/19 08:31:52      8] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/19 08:31:52      8] The LEF parser will ignore this statement.
+[03/19 08:31:52      8] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1771.
+[03/19 08:31:52      8] WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+[03/19 08:31:52      8] The LEF parser will ignore this statement.
+[03/19 08:31:52      8] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1772.
+[03/19 08:31:52      8] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/19 08:31:52      8] The LEF parser will ignore this statement.
+[03/19 08:31:52      8] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1776.
+[03/19 08:31:52      8] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/19 08:31:52      8] The LEF parser will ignore this statement.
+[03/19 08:31:52      8] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1778.
+[03/19 08:31:52      8] WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+[03/19 08:31:52      8] The LEF parser will ignore this statement.
+[03/19 08:31:52      8] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1779.
+[03/19 08:31:52      8] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/19 08:31:52      8] The LEF parser will ignore this statement.
+[03/19 08:31:52      8] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1783.
+[03/19 08:31:52      8] Set DBUPerIGU to M2 pitch 400.
+[03/19 08:31:52      9] 
+[03/19 08:31:52      9] Loading LEF file ./subckt/sram_w16.lef ...
+[03/19 08:31:52      9] **WARN: (IMPLF-200):	Pin 'CLK' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-200' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-200):	Pin 'D[127]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-200' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-200):	Pin 'D[126]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-200' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-200):	Pin 'D[125]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-200' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-200):	Pin 'D[124]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-200' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-200):	Pin 'D[123]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-200' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-200):	Pin 'D[122]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-200' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-200):	Pin 'D[121]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-200' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-200):	Pin 'D[120]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-200' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-200):	Pin 'D[119]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-200' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-200):	Pin 'D[118]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-200' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-200):	Pin 'D[117]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-200' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-200):	Pin 'D[116]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-200' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-200):	Pin 'D[115]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-200' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-200):	Pin 'D[114]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-200' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-200):	Pin 'D[113]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-200' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-200):	Pin 'D[112]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-200' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-200):	Pin 'D[111]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-200' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-200):	Pin 'D[110]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-200' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-200):	Pin 'D[109]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-200' for more detail.
+[03/19 08:31:52      9] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[03/19 08:31:52      9] To increase the message display limit, refer to the product command reference manual.
+[03/19 08:31:52      9] **WARN: (IMPLF-201):	Pin 'Q[127]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-201' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-201):	Pin 'Q[126]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-201' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-201):	Pin 'Q[125]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-201' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-201):	Pin 'Q[124]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-201' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-201):	Pin 'Q[123]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-201' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-201):	Pin 'Q[122]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-201' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-201):	Pin 'Q[121]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-201' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-201):	Pin 'Q[120]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-201' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-201):	Pin 'Q[119]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-201' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-201):	Pin 'Q[118]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-201' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-201):	Pin 'Q[117]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-201' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-201):	Pin 'Q[116]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-201' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-201):	Pin 'Q[115]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-201' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-201):	Pin 'Q[114]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-201' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-201):	Pin 'Q[113]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-201' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-201):	Pin 'Q[112]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-201' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-201):	Pin 'Q[111]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-201' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-201):	Pin 'Q[110]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-201' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-201):	Pin 'Q[109]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-201' for more detail.
+[03/19 08:31:52      9] **WARN: (IMPLF-201):	Pin 'Q[108]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 08:31:52      9] Type 'man IMPLF-201' for more detail.
+[03/19 08:31:52      9] **WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+[03/19 08:31:52      9] To increase the message display limit, refer to the product command reference manual.
+[03/19 08:31:52      9] 
+[03/19 08:31:52      9] viaInitial starts at Wed Mar 19 08:31:52 2025
+viaInitial ends at Wed Mar 19 08:31:52 2025
+Reading WC_LIB timing library '/home/linux/ieng6/ee260bwi25/public/PDKdata/lib/tcbn65gpluswc.lib' ...
+[03/19 08:31:52      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D0' is not defined in the library.
+[03/19 08:31:52      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D1' is not defined in the library.
+[03/19 08:31:52      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D2' is not defined in the library.
+[03/19 08:31:52      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D4' is not defined in the library.
+[03/19 08:31:52      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D8' is not defined in the library.
+[03/19 08:31:52      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2XD1' is not defined in the library.
+[03/19 08:31:52      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D0' is not defined in the library.
+[03/19 08:31:52      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D1' is not defined in the library.
+[03/19 08:31:52      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D2' is not defined in the library.
+[03/19 08:31:52      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D4' is not defined in the library.
+[03/19 08:31:52      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D8' is not defined in the library.
+[03/19 08:31:52      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3XD1' is not defined in the library.
+[03/19 08:31:52      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D0' is not defined in the library.
+[03/19 08:31:52      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D1' is not defined in the library.
+[03/19 08:31:52      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D2' is not defined in the library.
+[03/19 08:31:52      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D4' is not defined in the library.
+[03/19 08:31:52      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D8' is not defined in the library.
+[03/19 08:31:52      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4XD1' is not defined in the library.
+[03/19 08:31:52      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D0' is not defined in the library.
+[03/19 08:31:52      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D1' is not defined in the library.
+[03/19 08:31:52      9] Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+[03/19 08:31:53     10] Read 811 cells in library 'tcbn65gpluswc' 
+[03/19 08:31:53     10] Reading WC_LIB timing library '/home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/subckt/sram_w16_WC.lib' ...
+[03/19 08:31:53     10] Read 1 cells in library 'sram_w16' 
+[03/19 08:31:53     10] Reading BC_LIB timing library '/home/linux/ieng6/ee260bwi25/public/PDKdata/lib/tcbn65gplusbc.lib' ...
+[03/19 08:31:54     11] Read 811 cells in library 'tcbn65gplusbc' 
+[03/19 08:31:54     11] Reading BC_LIB timing library '/home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/subckt/sram_w16_BC.lib' ...
+[03/19 08:31:54     11] Read 1 cells in library 'sram_w16' 
+[03/19 08:31:54     11] *** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.19min, fe_real=0.27min, fe_mem=466.1M) ***
+[03/19 08:31:54     11] *** Begin netlist parsing (mem=466.1M) ***
+[03/19 08:31:54     11] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D4' is defined in LEF but not in the timing library.
+[03/19 08:31:54     11] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D4' is defined in LEF but not in the timing library.
+[03/19 08:31:54     11] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D2' is defined in LEF but not in the timing library.
+[03/19 08:31:54     11] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D2' is defined in LEF but not in the timing library.
+[03/19 08:31:54     11] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D1' is defined in LEF but not in the timing library.
+[03/19 08:31:54     11] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D1' is defined in LEF but not in the timing library.
+[03/19 08:31:54     11] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D0' is defined in LEF but not in the timing library.
+[03/19 08:31:54     11] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D0' is defined in LEF but not in the timing library.
+[03/19 08:31:54     11] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D4' is defined in LEF but not in the timing library.
+[03/19 08:31:54     11] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D4' is defined in LEF but not in the timing library.
+[03/19 08:31:54     11] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+[03/19 08:31:54     11] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+[03/19 08:31:54     11] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+[03/19 08:31:54     11] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+[03/19 08:31:54     11] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D0' is defined in LEF but not in the timing library.
+[03/19 08:31:54     11] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D0' is defined in LEF but not in the timing library.
+[03/19 08:31:54     11] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D4' is defined in LEF but not in the timing library.
+[03/19 08:31:54     11] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D4' is defined in LEF but not in the timing library.
+[03/19 08:31:54     11] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+[03/19 08:31:54     11] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+[03/19 08:31:54     11] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[03/19 08:31:54     11] To increase the message display limit, refer to the product command reference manual.
+[03/19 08:31:54     11] Created 812 new cells from 4 timing libraries.
+[03/19 08:31:54     11] Reading netlist ...
+[03/19 08:31:54     11] Backslashed names will retain backslash and a trailing blank character.
+[03/19 08:31:54     11] Reading verilog netlist './netlist/core.out.v'
+[03/19 08:31:55     11] **WARN: (IMPVL-209):	In Verilog file './netlist/core.out.v', check line 89835 near the text ) for the issue: 'width-mismatched port connection'.  Update the text accordingly.
+[03/19 08:31:55     11] Type 'man IMPVL-209' for more detail.
+[03/19 08:31:55     11] **WARN: (IMPVL-361):	Number of nets (160) more than bus (D) pin number (128).  The extra upper nets will be ignored.
+[03/19 08:31:55     11] **WARN: (IMPVL-209):	In Verilog file './netlist/core.out.v', check line 89835 near the text ) for the issue: 'width-mismatched port connection'.  Update the text accordingly.
+[03/19 08:31:55     11] Type 'man IMPVL-209' for more detail.
+[03/19 08:31:55     11] **WARN: (IMPVL-361):	Number of nets (160) more than bus (Q) pin number (128).  The extra upper nets will be ignored.
+[03/19 08:31:55     11] 
+[03/19 08:31:55     11] *** Memory Usage v#1 (Current mem = 513.777M, initial mem = 149.258M) ***
+[03/19 08:31:55     11] *** End netlist parsing (cpu=0:00:00.5, real=0:00:01.0, mem=513.8M) ***
+[03/19 08:31:55     11] Set top cell to core.
+[03/19 08:31:55     12] Hooked 1624 DB cells to tlib cells.
+[03/19 08:31:55     12] Starting recursive module instantiation check.
+[03/19 08:31:55     12] No recursion found.
+[03/19 08:31:55     12] Building hierarchical netlist for Cell core ...
+[03/19 08:31:55     12] *** Netlist is unique.
+[03/19 08:31:55     12] ** info: there are 1869 modules.
+[03/19 08:31:55     12] ** info: there are 62507 stdCell insts.
+[03/19 08:31:55     12] ** info: there are 3 macros.
+[03/19 08:31:55     12] 
+[03/19 08:31:55     12] *** Memory Usage v#1 (Current mem = 602.789M, initial mem = 149.258M) ***
+[03/19 08:31:55     12] **WARN: (IMPFP-3961):	The techSite 'dcore' has no related cells in LEF/OA library. Cannot make calculations for this site type unless cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[03/19 08:31:55     12] Type 'man IMPFP-3961' for more detail.
+[03/19 08:31:55     12] **WARN: (IMPFP-3961):	The techSite 'ccore' has no related cells in LEF/OA library. Cannot make calculations for this site type unless cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[03/19 08:31:55     12] Type 'man IMPFP-3961' for more detail.
+[03/19 08:31:55     12] Set Default Net Delay as 1000 ps.
+[03/19 08:31:55     12] Set Default Net Load as 0.5 pF. 
+[03/19 08:31:55     12] Set Default Input Pin Transition as 0.1 ps.
+[03/19 08:31:56     12] Initializing multi-corner RC extraction with 2 active RC Corners ...
+[03/19 08:31:56     12] Reading Capacitance Table File /home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cworst.captable ...
+[03/19 08:31:56     12] **WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/19 08:31:56     12] **WARN: (IMPEXT-2771):	Via VIA_8 specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/19 08:31:56     12] **WARN: (IMPEXT-2801):	Resistance values are not provided in the Cap Table. Sheet resistance defined in the LEF file will be used.
+[03/19 08:31:56     12] **WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+[03/19 08:31:56     12] Reading Capacitance Table File /home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cbest.captable ...
+[03/19 08:31:56     12] **WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/19 08:31:56     12] **WARN: (IMPEXT-2771):	Via VIA_8 specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/19 08:31:56     12] **WARN: (IMPEXT-2801):	Resistance values are not provided in the Cap Table. Sheet resistance defined in the LEF file will be used.
+[03/19 08:31:56     12] **WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+[03/19 08:31:56     12] Importing multi-corner RC tables ... 
+[03/19 08:31:56     12] Summary of Active RC-Corners : 
+[03/19 08:31:56     12]  
+[03/19 08:31:56     12]  Analysis View: WC_VIEW
+[03/19 08:31:56     12]     RC-Corner Name        : Cmax
+[03/19 08:31:56     12]     RC-Corner Index       : 0
+[03/19 08:31:56     12]     RC-Corner Temperature : 125 Celsius
+[03/19 08:31:56     12]     RC-Corner Cap Table   : '/home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cworst.captable'
+[03/19 08:31:56     12]     RC-Corner PreRoute Res Factor         : 1
+[03/19 08:31:56     12]     RC-Corner PreRoute Cap Factor         : 1
+[03/19 08:31:56     12]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[03/19 08:31:56     12]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[03/19 08:31:56     12]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[03/19 08:31:56     12]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[03/19 08:31:56     12]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[03/19 08:31:56     12]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[03/19 08:31:56     12]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[03/19 08:31:56     12]  
+[03/19 08:31:56     12]  Analysis View: BC_VIEW
+[03/19 08:31:56     12]     RC-Corner Name        : Cmin
+[03/19 08:31:56     12]     RC-Corner Index       : 1
+[03/19 08:31:56     12]     RC-Corner Temperature : -40 Celsius
+[03/19 08:31:56     12]     RC-Corner Cap Table   : '/home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cbest.captable'
+[03/19 08:31:56     12]     RC-Corner PreRoute Res Factor         : 1
+[03/19 08:31:56     12]     RC-Corner PreRoute Cap Factor         : 1
+[03/19 08:31:56     12]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[03/19 08:31:56     12]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[03/19 08:31:56     12]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[03/19 08:31:56     12]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[03/19 08:31:56     12]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[03/19 08:31:56     12]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[03/19 08:31:56     12]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[03/19 08:31:56     12] *Info: initialize multi-corner CTS.
+[03/19 08:31:56     12] Reading timing constraints file './constraints/core.sdc' ...
+[03/19 08:31:56     12] Current (total cpu=0:00:13.0, real=0:00:18.0, peak res=360.0M, current mem=727.4M)
+[03/19 08:31:56     13] **WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ./constraints/core.sdc, Line 9).
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[23]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[22]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[21]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[20]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[19]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[18]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[17]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[16]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[15]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[14]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[13]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[12]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[11]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[10]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[9]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[8]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[7]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[6]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[5]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[4]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] Message <TCLCMD-979> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this. (File ./constraints/core.sdc, Line 9).
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] INFO (CTE): Reading of timing constraints file ./constraints/core.sdc completed, with 1 Warnings and 20 Errors.
+[03/19 08:31:56     13] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=375.2M, current mem=744.6M)
+[03/19 08:31:56     13] Current (total cpu=0:00:13.1, real=0:00:18.0, peak res=375.2M, current mem=744.6M)
+[03/19 08:31:56     13] Summary for sequential cells idenfication: 
+[03/19 08:31:56     13] Identified SBFF number: 199
+[03/19 08:31:56     13] Identified MBFF number: 0
+[03/19 08:31:56     13] Not identified SBFF number: 0
+[03/19 08:31:56     13] Not identified MBFF number: 0
+[03/19 08:31:56     13] Number of sequential cells which are not FFs: 104
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] Total number of combinational cells: 492
+[03/19 08:31:56     13] Total number of sequential cells: 303
+[03/19 08:31:56     13] Total number of tristate cells: 11
+[03/19 08:31:56     13] Total number of level shifter cells: 0
+[03/19 08:31:56     13] Total number of power gating cells: 0
+[03/19 08:31:56     13] Total number of isolation cells: 0
+[03/19 08:31:56     13] Total number of power switch cells: 0
+[03/19 08:31:56     13] Total number of pulse generator cells: 0
+[03/19 08:31:56     13] Total number of always on buffers: 0
+[03/19 08:31:56     13] Total number of retention cells: 0
+[03/19 08:31:56     13] List of usable buffers: BUFFD1 BUFFD0 BUFFD2 BUFFD3 BUFFD4 BUFFD6 BUFFD8 BUFFD12 BUFFD16 CKBD1 CKBD0 CKBD2 CKBD3 CKBD4 CKBD6 CKBD8 CKBD12 CKBD16
+[03/19 08:31:56     13] Total number of usable buffers: 18
+[03/19 08:31:56     13] List of unusable buffers: BUFFD20 BUFFD24 CKBD20 CKBD24 GBUFFD1 GBUFFD3 GBUFFD2 GBUFFD4 GBUFFD8
+[03/19 08:31:56     13] Total number of unusable buffers: 9
+[03/19 08:31:56     13] List of usable inverters: CKND1 CKND0 CKND2 CKND3 CKND4 CKND6 CKND8 CKND12 CKND16 INVD1 INVD0 INVD2 INVD3 INVD4 INVD6 INVD8 INVD12 INVD16
+[03/19 08:31:56     13] Total number of usable inverters: 18
+[03/19 08:31:56     13] List of unusable inverters: CKND20 CKND24 GINVD2 GINVD1 GINVD4 GINVD3 GINVD8 INVD20 INVD24
+[03/19 08:31:56     13] Total number of unusable inverters: 9
+[03/19 08:31:56     13] List of identified usable delay cells:
+[03/19 08:31:56     13] Total number of identified usable delay cells: 0
+[03/19 08:31:56     13] List of identified unusable delay cells: DEL0 DEL005 DEL01 DEL015 DEL02 DEL1 DEL2 DEL3 DEL4
+[03/19 08:31:56     13] Total number of identified unusable delay cells: 9
+[03/19 08:31:56     13] All delay cells are dont_use. Buffers will be used to fix hold violations.
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] *** Summary of all messages that are not suppressed in this session:
+[03/19 08:31:56     13] Severity  ID               Count  Summary                                  
+[03/19 08:31:56     13] WARNING   IMPLF-200          136  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[03/19 08:31:56     13] WARNING   IMPLF-201          128  Pin '%s' in macro '%s' has no ANTENNADIF...
+[03/19 08:31:56     13] WARNING   IMPFP-3961           2  The techSite '%s' has no related cells i...
+[03/19 08:31:56     13] WARNING   IMPEXT-2710          2  Basic Cap table for layer M%d is ignored...
+[03/19 08:31:56     13] WARNING   IMPEXT-2760          2  Layer M%d specified in the cap table is ...
+[03/19 08:31:56     13] WARNING   IMPEXT-2771          2  Via %s specified in the cap table is ign...
+[03/19 08:31:56     13] WARNING   IMPEXT-2801          2  Resistance values are not provided in th...
+[03/19 08:31:56     13] WARNING   IMPVL-209            2  In Verilog file '%s', check line %d near...
+[03/19 08:31:56     13] WARNING   IMPVL-159         1624  Pin '%s' of cell '%s' is defined in LEF ...
+[03/19 08:31:56     13] WARNING   IMPVL-361            2  Number of nets (%d) more than bus (%s) p...
+[03/19 08:31:56     13] ERROR     IMPOAX-820           1  The OA features are disabled in the curr...
+[03/19 08:31:56     13] ERROR     IMPOAX-850           1  %s command cannot be run as OA features ...
+[03/19 08:31:56     13] *** Message Summary: 1902 warning(s), 2 error(s)
+[03/19 08:31:56     13] 
+[03/19 08:31:56     13] <CMD> set_interactive_constraint_modes {CON}
+[03/19 08:31:56     13] <CMD> setDesignMode -process 65
+[03/19 08:31:56     13] Applying the recommended capacitance filtering threshold values for 65nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+[03/19 08:31:56     13] 	These values will be used by all post-route extraction engines, including tQuantus, IQRC and Quantus QRC extraction.
+[03/19 08:31:56     13] 	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+[03/19 08:31:56     13] 	The accuracy mode for postRoute effortLevel low extraction will be set to 'high'.
+[03/19 08:31:56     13] 	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode will be 'medium' if Quantus QRC technology file is specified else 'low'.
+[03/19 08:31:56     13] Updating process node dependent CCOpt properties for the 65nm process node.
+[03/19 08:31:58     13] <CMD> floorPlan -site core -s 1000 1600 10.0 10.0 10.0 10.0
+[03/19 08:31:58     13] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[03/19 08:31:58     13] <CMD> timeDesign -preplace -prefix preplace
+[03/19 08:31:58     13] **WARN: (IMPOPT-7136):	timing_socv_statistical_min_max_mode 'statistical' is not supported by Innovus. Setting it to 'mean_and_three_sigma_bounded'.
+[03/19 08:31:58     13] Set Using Default Delay Limit as 101.
+[03/19 08:31:58     13] **WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+[03/19 08:31:58     13] Setting High Fanout Nets ( > 100 ) as ideal temporarily for -prePlace option
+[03/19 08:31:58     13] Set Default Net Delay as 0 ps.
+[03/19 08:31:58     13] Set Default Net Load as 0 pF. 
+[03/19 08:31:58     13] Effort level <high> specified for reg2reg path_group
+[03/19 08:32:00     15] #################################################################################
+[03/19 08:32:00     15] # Design Stage: PreRoute
+[03/19 08:32:00     15] # Design Name: core
+[03/19 08:32:00     15] # Design Mode: 65nm
+[03/19 08:32:00     15] # Analysis Mode: MMMC Non-OCV 
+[03/19 08:32:00     15] # Parasitics Mode: No SPEF/RCDB
+[03/19 08:32:00     15] # Signoff Settings: SI Off 
+[03/19 08:32:00     15] #################################################################################
+[03/19 08:32:01     16] AAE_INFO: 1 threads acquired from CTE.
+[03/19 08:32:01     16] Calculate delays in BcWc mode...
+[03/19 08:32:01     16] Topological Sorting (CPU = 0:00:00.1, MEM = 984.3M, InitMEM = 971.7M)
+[03/19 08:32:10     25] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[03/19 08:32:10     25] End delay calculation. (MEM=1193.05 CPU=0:00:08.1 REAL=0:00:08.0)
+[03/19 08:32:10     25] *** CDM Built up (cpu=0:00:09.4  real=0:00:10.0  mem= 1193.0M) ***
+[03/19 08:32:11     26] *** Done Building Timing Graph (cpu=0:00:10.7 real=0:00:11.0 totSessionCpu=0:00:26.6 mem=1193.0M)
+[03/19 08:32:13     28] 
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ WC_VIEW 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| -4.745  | -4.745  | -4.571  |
+|           TNS (ns):| -3960.2 | -3960.2 |-300.940 |
+|    Violating Paths:|  2915   |  2915   |   137   |
+|          All Paths:|  12087  |  11723  |  5257   |
++--------------------+---------+---------+---------+
+
+Density: 0.000%
+------------------------------------------------------------
+Set Using Default Delay Limit as 1000.
+[03/19 08:32:13     28] Resetting back High Fanout Nets as non-ideal
+[03/19 08:32:13     28] Set Default Net Delay as 1000 ps.
+[03/19 08:32:13     28] Set Default Net Load as 0.5 pF. 
+[03/19 08:32:13     28] Reported timing to dir ./timingReports
+[03/19 08:32:13     28] Total CPU time: 14.76 sec
+[03/19 08:32:13     28] Total Real time: 15.0 sec
+[03/19 08:32:13     28] Total Memory Usage: 1085.675781 Mbytes
+[03/19 08:32:13     28] <CMD> globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+[03/19 08:32:13     28] 62510 new pwr-pin connections were made to global net 'VDD'.
+[03/19 08:32:13     28] <CMD> globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+[03/19 08:32:13     28] 62510 new gnd-pin connections were made to global net 'VSS'.
+[03/19 08:32:13     28] <CMD> setAddStripeMode -break_at block_ring
+[03/19 08:32:13     28] Stripe will break at block ring.
+[03/19 08:32:13     28] <CMD> addStripe -number_of_sets 10 -spacing 6 -layer M4 -width 2 -nets { VSS VDD }
+[03/19 08:32:13     28] 
+[03/19 08:32:13     28] Starting stripe generation ...
+[03/19 08:32:13     28] Non-Default setAddStripeOption Settings :
+[03/19 08:32:13     28]   NONE
+[03/19 08:32:13     28] The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[03/19 08:32:13     28] The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[03/19 08:32:13     28] Stripe generation is complete; vias are now being generated.
+[03/19 08:32:13     28] The power planner created 20 wires.
+[03/19 08:32:13     28] *** Ending Stripe Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 1085.7M) ***
+[03/19 08:32:13     28] <CMD> setObjFPlanBox Instance kmem_instance 100 1100 900 1500
+[03/19 08:32:13     28] <CMD> setObjFPlanBox Instance qmem_instance 100 600 900 1000
+[03/19 08:32:13     28] <CMD> setObjFPlanBox Instance psum_mem_instance 100 100 900 500
+[03/19 08:32:13     28] <CMD> addHaloToBlock {10 10 10 10} qmem_instance
+[03/19 08:32:13     28] <CMD> addHaloToBlock {10 10 10 10} kmem_instance
+[03/19 08:32:13     28] <CMD> addHaloToBlock {10 10 10 10} psum_mem_instance
+[03/19 08:32:13     28] <CMD> globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+[03/19 08:32:13     28] 0 new pwr-pin connection was made to global net 'VDD'.
+[03/19 08:32:13     28] <CMD> globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+[03/19 08:32:13     28] 0 new gnd-pin connection was made to global net 'VSS'.
+[03/19 08:32:13     28] <CMD> globalNetConnect VDD -type pgpin -pin VDD -sinst qmem_instance -verbose -override
+[03/19 08:32:13     28] 0 new pwr-pin connection was made to global net 'VDD'.
+[03/19 08:32:13     28] <CMD> globalNetConnect VSS -type pgpin -pin VSS -sinst qmem_instance -verbose -override
+[03/19 08:32:13     28] 0 new gnd-pin connection was made to global net 'VSS'.
+[03/19 08:32:13     28] <CMD> globalNetConnect VDD -type pgpin -pin VDD -sinst kmem_instance -verbose -override
+[03/19 08:32:13     28] 0 new pwr-pin connection was made to global net 'VDD'.
+[03/19 08:32:13     28] <CMD> globalNetConnect VSS -type pgpin -pin VSS -sinst kmem_instance -verbose -override
+[03/19 08:32:13     28] 0 new gnd-pin connection was made to global net 'VSS'.
+[03/19 08:32:13     28] <CMD> globalNetConnect VDD -type pgpin -pin VDD -sinst psum_mem_instance -verbose -override
+[03/19 08:32:13     28] 0 new pwr-pin connection was made to global net 'VDD'.
+[03/19 08:32:13     28] <CMD> globalNetConnect VSS -type pgpin -pin VSS -sinst psum_mem_instance -verbose -override
+[03/19 08:32:13     28] 0 new gnd-pin connection was made to global net 'VSS'.
+[03/19 08:32:13     28] <CMD> sroute
+[03/19 08:32:13     28] *** Begin SPECIAL ROUTE on Wed Mar 19 08:32:13 2025 ***
+[03/19 08:32:13     28] SPECIAL ROUTE ran on directory: /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core
+[03/19 08:32:13     28] SPECIAL ROUTE ran on machine: ieng6-ece-02.ucsd.edu (Linux 3.10.0-1160.119.1.el7.x86_64 Xeon 2.19Ghz)
+[03/19 08:32:13     28] 
+[03/19 08:32:13     28] Begin option processing ...
+[03/19 08:32:13     28] srouteConnectPowerBump set to false
+[03/19 08:32:13     28] routeSpecial set to true
+[03/19 08:32:13     28] srouteConnectConverterPin set to false
+[03/19 08:32:13     28] srouteFollowCorePinEnd set to 3
+[03/19 08:32:13     28] srouteJogControl set to "preferWithChanges differentLayer"
+[03/19 08:32:13     28] sroutePadPinAllPorts set to true
+[03/19 08:32:13     28] sroutePreserveExistingRoutes set to true
+[03/19 08:32:13     28] srouteRoutePowerBarPortOnBothDir set to true
+[03/19 08:32:13     28] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1970.00 megs.
+[03/19 08:32:13     28] 
+[03/19 08:32:13     28] Reading DB technology information...
+[03/19 08:32:14     29] Finished reading DB technology information.
+[03/19 08:32:14     29] Reading floorplan and netlist information...
+[03/19 08:32:14     29] Finished reading floorplan and netlist information.
+[03/19 08:32:14     29] Read in 17 layers, 8 routing layers, 1 overlap layer
+[03/19 08:32:14     29] Read in 847 macros, 201 used
+[03/19 08:32:14     29] Read in 203 components
+[03/19 08:32:14     29]   200 core components: 200 unplaced, 0 placed, 0 fixed
+[03/19 08:32:14     29]   3 block/ring components: 0 unplaced, 3 placed, 0 fixed
+[03/19 08:32:14     29] Read in 358 logical pins
+[03/19 08:32:14     29] Read in 4 blockages
+[03/19 08:32:14     29] Read in 358 nets
+[03/19 08:32:14     29] Read in 2 special nets, 2 routed
+[03/19 08:32:14     29] Read in 406 terminals
+[03/19 08:32:14     29] Begin power routing ...
+[03/19 08:32:14     29] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[03/19 08:32:14     29] Type 'man IMPSR-1256' for more detail.
+[03/19 08:32:14     29] Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[03/19 08:32:14     29] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[03/19 08:32:14     29] Type 'man IMPSR-1256' for more detail.
+[03/19 08:32:14     29] Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[03/19 08:32:14     29] CPU time for FollowPin 0 seconds
+[03/19 08:32:14     29] CPU time for FollowPin 0 seconds
+[03/19 08:32:15     30]   Number of IO ports routed: 0
+[03/19 08:32:15     30]   Number of Block ports routed: 0
+[03/19 08:32:15     30]   Number of Stripe ports routed: 0  open: 40
+[03/19 08:32:15     30]   Number of Core ports routed: 1464  open: 1778
+[03/19 08:32:15     30]   Number of Pad ports routed: 0
+[03/19 08:32:15     30]   Number of Power Bump ports routed: 0
+[03/19 08:32:15     30]   Number of Followpin connections: 1621
+[03/19 08:32:15     30] End power routing: cpu: 0:00:02, real: 0:00:01, peak: 1997.00 megs.
+[03/19 08:32:15     30] 
+[03/19 08:32:15     30] 
+[03/19 08:32:15     30] 
+[03/19 08:32:15     30]  Begin updating DB with routing results ...
+[03/19 08:32:15     30]  Updating DB with 112 via definition ...Extracting standard cell pins and blockage ...... 
+[03/19 08:32:15     30] Pin and blockage extraction finished
+[03/19 08:32:15     30] 
+[03/19 08:32:15     30] 
+sroute post-processing starts at Wed Mar 19 08:32:15 2025
+The viaGen is rebuilding shadow vias for net VSS.
+[03/19 08:32:15     30] **WARN: (IMPPP-531):	ViaGen Warning: SPACING rule violation, no via created on layer VIA4 at (122.00, 101.64) (122.00, 101.96)
+[03/19 08:32:15     30] **WARN: (IMPPP-531):	ViaGen Warning: SPACING rule violation, no via created on layer VIA4 at (891.88, 101.64) (891.88, 101.96)
+[03/19 08:32:15     30] **WARN: (IMPPP-531):	ViaGen Warning: SPACING rule violation, no via created on layer VIA4 at (122.00, 105.24) (122.00, 105.57)
+[03/19 08:32:15     30] **WARN: (IMPPP-531):	ViaGen Warning: SPACING rule violation, no via created on layer VIA4 at (891.88, 105.24) (891.88, 105.57)
+[03/19 08:32:15     30] **WARN: (IMPPP-531):	ViaGen Warning: SPACING rule violation, no via created on layer VIA4 at (122.00, 108.83) (122.00, 109.17)
+[03/19 08:32:15     30] **WARN: (IMPPP-531):	ViaGen Warning: SPACING rule violation, no via created on layer VIA4 at (891.88, 108.83) (891.88, 109.17)
+[03/19 08:32:15     30] **WARN: (IMPPP-531):	ViaGen Warning: SPACING rule violation, no via created on layer VIA4 at (122.00, 112.43) (122.00, 112.76)
+[03/19 08:32:15     30] **WARN: (IMPPP-531):	ViaGen Warning: SPACING rule violation, no via created on layer VIA4 at (891.88, 112.43) (891.88, 112.76)
+[03/19 08:32:15     30] **WARN: (IMPPP-531):	ViaGen Warning: SPACING rule violation, no via created on layer VIA4 at (122.00, 116.04) (122.00, 116.36)
+[03/19 08:32:15     30] **WARN: (IMPPP-531):	ViaGen Warning: SPACING rule violation, no via created on layer VIA4 at (891.88, 116.04) (891.88, 116.36)
+[03/19 08:32:15     30] **WARN: (IMPPP-531):	ViaGen Warning: SPACING rule violation, no via created on layer VIA4 at (122.00, 119.64) (122.00, 119.96)
+[03/19 08:32:15     30] **WARN: (IMPPP-531):	ViaGen Warning: SPACING rule violation, no via created on layer VIA4 at (891.88, 119.64) (891.88, 119.96)
+[03/19 08:32:15     30] **WARN: (IMPPP-531):	ViaGen Warning: SPACING rule violation, no via created on layer VIA4 at (122.00, 123.24) (122.00, 123.57)
+[03/19 08:32:15     30] **WARN: (IMPPP-531):	ViaGen Warning: SPACING rule violation, no via created on layer VIA4 at (891.88, 123.24) (891.88, 123.57)
+[03/19 08:32:15     30] **WARN: (IMPPP-531):	ViaGen Warning: SPACING rule violation, no via created on layer VIA4 at (122.00, 126.83) (122.00, 127.17)
+[03/19 08:32:15     30] **WARN: (IMPPP-531):	ViaGen Warning: SPACING rule violation, no via created on layer VIA4 at (891.88, 126.83) (891.88, 127.17)
+[03/19 08:32:15     30] **WARN: (IMPPP-531):	ViaGen Warning: SPACING rule violation, no via created on layer VIA4 at (122.00, 130.43) (122.00, 130.76)
+[03/19 08:32:15     30] **WARN: (IMPPP-531):	ViaGen Warning: SPACING rule violation, no via created on layer VIA4 at (891.88, 130.43) (891.88, 130.76)
+[03/19 08:32:15     30] **WARN: (IMPPP-531):	ViaGen Warning: SPACING rule violation, no via created on layer VIA4 at (122.00, 134.04) (122.00, 134.37)
+[03/19 08:32:15     30] **WARN: (IMPPP-531):	ViaGen Warning: SPACING rule violation, no via created on layer VIA4 at (891.88, 134.04) (891.88, 134.37)
+[03/19 08:32:15     30] **WARN: (EMS-27):	Message (IMPPP-531) has exceeded the current message display limit of 20.
+[03/19 08:32:15     30] To increase the message display limit, refer to the product command reference manual.
+[03/19 08:32:16     31] sroute post-processing ends at Wed Mar 19 08:32:16 2025
+
+sroute post-processing starts at Wed Mar 19 08:32:16 2025
+The viaGen is rebuilding shadow vias for net VDD.
+[03/19 08:32:16     31] sroute post-processing ends at Wed Mar 19 08:32:16 2025
+sroute: Total CPU time used = 0:0:2
+[03/19 08:32:16     31] sroute: Total Real time used = 0:0:3
+[03/19 08:32:16     31] sroute: Total Memory used = 22.36 megs
+[03/19 08:32:16     31] sroute: Total Peak Memory used = 1108.04 megs
+[03/19 08:32:27     34] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[03/19 08:32:50     39] <CMD> setPinAssignMode -pinEditInBatch true
+[03/19 08:32:50     39] <CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 1 -spreadType center -spacing 4 -pin {clk fifo_ext_rd {mem_in[0]} {mem_in[1]} {mem_in[2]} {mem_in[3]} {mem_in[4]} {mem_in[5]} {mem_in[6]} {mem_in[7]} {mem_in[8]} {mem_in[9]} {mem_in[10]} {mem_in[11]} {mem_in[12]} {mem_in[13]} {mem_in[14]} {mem_in[15]} {mem_in[16]} {mem_in[17]} {mem_in[18]} {mem_in[19]} {mem_in[20]} {mem_in[21]} {mem_in[22]} {mem_in[23]} {mem_in[24]} {mem_in[25]} {mem_in[26]} {mem_in[27]} {mem_in[28]} {mem_in[29]} {mem_in[30]} {mem_in[31]} {mem_in[32]} {mem_in[33]} {mem_in[34]} {mem_in[35]} {mem_in[36]} {mem_in[37]} {mem_in[38]} {mem_in[39]} {mem_in[40]} {mem_in[41]} {mem_in[42]} {mem_in[43]} {mem_in[44]} {mem_in[45]} {mem_in[46]} {mem_in[47]} {mem_in[48]} {mem_in[49]} {mem_in[50]} {mem_in[51]} {mem_in[52]} {mem_in[53]} {mem_in[54]} {mem_in[55]} {mem_in[56]} {mem_in[57]} {mem_in[58]} {mem_in[59]} {mem_in[60]} {mem_in[61]} {mem_in[62]} {mem_in[63]} {mem_in[64]} {mem_in[65]} {mem_in[66]} {mem_in[67]} {mem_in[68]} {mem_in[69]} {mem_in[70]} {mem_in[71]} {mem_in[72]} {mem_in[73]} {mem_in[74]} {mem_in[75]} {mem_in[76]} {mem_in[77]} {mem_in[78]} {mem_in[79]} {mem_in[80]} {mem_in[81]} {mem_in[82]} {mem_in[83]} {mem_in[84]} {mem_in[85]} {mem_in[86]} {mem_in[87]} {mem_in[88]} {mem_in[89]} {mem_in[90]} {mem_in[91]} {mem_in[92]} {mem_in[93]} {mem_in[94]} {mem_in[95]} {mem_in[96]} {mem_in[97]} {mem_in[98]} {mem_in[99]} {mem_in[100]} {mem_in[101]} {mem_in[102]} {mem_in[103]} {mem_in[104]} {mem_in[105]} {mem_in[106]} {mem_in[107]} {mem_in[108]} {mem_in[109]} {mem_in[110]} {mem_in[111]} {mem_in[112]} {mem_in[113]} {mem_in[114]} {mem_in[115]} {mem_in[116]} {mem_in[117]} {mem_in[118]} {mem_in[119]} {mem_in[120]} {mem_in[121]} {mem_in[122]} {mem_in[123]} {mem_in[124]} {mem_in[125]} {mem_in[126]} {mem_in[127]} {inst[0]} {inst[1]} {inst[2]} {inst[3]} {inst[4]} {inst[5]} {inst[6]} {inst[7]} {inst[8]} {inst[9]} {inst[10]} {inst[11]} {inst[12]} {inst[13]} {inst[14]} {inst[15]} {inst[16]} {inst[17]} {inst[18]} reset {sum_in[0]} {sum_in[1]} {sum_in[2]} {sum_in[3]} {sum_in[4]} {sum_in[5]} {sum_in[6]} {sum_in[7]} {sum_in[8]} {sum_in[9]} {sum_in[10]} {sum_in[11]} {sum_in[12]} {sum_in[13]} {sum_in[14]} {sum_in[15]} {sum_in[16]} {sum_in[17]} {sum_in[18]} {sum_in[19]} {sum_in[20]} {sum_in[21]} {sum_in[22]} {sum_in[23]}}
+[03/19 08:32:50     39] Successfully spread [174] pins.
+[03/19 08:32:50     39] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1124.5M).
+[03/19 08:32:58     41] <CMD> setPinAssignMode -pinEditInBatch true
+[03/19 08:32:58     41] <CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 1 -spreadType center -spacing 4.0 -pin {{out[0]} {out[1]} {out[2]} {out[3]} {out[4]} {out[5]} {out[6]} {out[7]} {out[8]} {out[9]} {out[10]} {out[11]} {out[12]} {out[13]} {out[14]} {out[15]} {out[16]} {out[17]} {out[18]} {out[19]} {out[20]} {out[21]} {out[22]} {out[23]} {out[24]} {out[25]} {out[26]} {out[27]} {out[28]} {out[29]} {out[30]} {out[31]} {out[32]} {out[33]} {out[34]} {out[35]} {out[36]} {out[37]} {out[38]} {out[39]} {out[40]} {out[41]} {out[42]} {out[43]} {out[44]} {out[45]} {out[46]} {out[47]} {out[48]} {out[49]} {out[50]} {out[51]} {out[52]} {out[53]} {out[54]} {out[55]} {out[56]} {out[57]} {out[58]} {out[59]} {out[60]} {out[61]} {out[62]} {out[63]} {out[64]} {out[65]} {out[66]} {out[67]} {out[68]} {out[69]} {out[70]} {out[71]} {out[72]} {out[73]} {out[74]} {out[75]} {out[76]} {out[77]} {out[78]} {out[79]} {out[80]} {out[81]} {out[82]} {out[83]} {out[84]} {out[85]} {out[86]} {out[87]} {out[88]} {out[89]} {out[90]} {out[91]} {out[92]} {out[93]} {out[94]} {out[95]} {out[96]} {out[97]} {out[98]} {out[99]} {out[100]} {out[101]} {out[102]} {out[103]} {out[104]} {out[105]} {out[106]} {out[107]} {out[108]} {out[109]} {out[110]} {out[111]} {out[112]} {out[113]} {out[114]} {out[115]} {out[116]} {out[117]} {out[118]} {out[119]} {out[120]} {out[121]} {out[122]} {out[123]} {out[124]} {out[125]} {out[126]} {out[127]} {out[128]} {out[129]} {out[130]} {out[131]} {out[132]} {out[133]} {out[134]} {out[135]} {out[136]} {out[137]} {out[138]} {out[139]} {out[140]} {out[141]} {out[142]} {out[143]} {out[144]} {out[145]} {out[146]} {out[147]} {out[148]} {out[149]} {out[150]} {out[151]} {out[152]} {out[153]} {out[154]} {out[155]} {out[156]} {out[157]} {out[158]} {out[159]} {sum_out[0]} {sum_out[1]} {sum_out[2]} {sum_out[3]} {sum_out[4]} {sum_out[5]} {sum_out[6]} {sum_out[7]} {sum_out[8]} {sum_out[9]} {sum_out[10]} {sum_out[11]} {sum_out[12]} {sum_out[13]} {sum_out[14]} {sum_out[15]} {sum_out[16]} {sum_out[17]} {sum_out[18]} {sum_out[19]} {sum_out[20]} {sum_out[21]} {sum_out[22]} {sum_out[23]}}
+[03/19 08:32:58     41] Successfully spread [184] pins.
+[03/19 08:32:58     41] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1126.5M).
+[03/19 08:33:02     42] <CMD> checkPinAssignment
+[03/19 08:33:02     42] **WARN: (IMPPTN-3034):	Only editPin command should be used with 'setPinAssignMode -pinEditInBatch true' setting. Current command will reset the persistent database. Subsequent editPin command will run slow. To speed up editPin command again, wrap all editPin commands within 'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+[03/19 08:33:02     42] Checking pins of top cell core ... completed
+[03/19 08:33:02     42] 
+[03/19 08:33:02     42] ===========================================================================================================================
+[03/19 08:33:02     42]                                                 checkPinAssignment Summary
+[03/19 08:33:02     42] ===========================================================================================================================
+[03/19 08:33:02     42] Partition   | pads  | pins   | legal  | illegal | internal | internal illegal | FT     | FT illegal | constant | unplaced |
+[03/19 08:33:02     42] ===========================================================================================================================
+[03/19 08:33:02     42] core        |     0 |    358 |      0 |     358 |        0 |                0 |      0 |          0 |        0 |        0 |
+[03/19 08:33:02     42] ===========================================================================================================================
+[03/19 08:33:02     42] TOTAL       |     0 |    358 |      0 |     358 |        0 |                0 |      0 |          0 |        0 |        0 |
+[03/19 08:33:02     42] ===========================================================================================================================
+[03/19 08:33:02     42] checkPinAssignment : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1126.5M).
+[03/19 08:33:06     43] <CMD> legalizePin
+[03/19 08:33:06     43] 
+[03/19 08:33:06     43] Start pin legalization for the partition [core]:
+[03/19 08:33:06     43] Moving Pin [clk] to LEGAL location (   0.000  463.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[23]] to LEGAL location (   0.000 1155.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[22]] to LEGAL location (   0.000 1151.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[21]] to LEGAL location (   0.000 1147.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[20]] to LEGAL location (   0.000 1143.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[19]] to LEGAL location (   0.000 1139.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[18]] to LEGAL location (   0.000 1135.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[17]] to LEGAL location (   0.000 1131.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[16]] to LEGAL location (   0.000 1127.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[15]] to LEGAL location (   0.000 1123.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[14]] to LEGAL location (   0.000 1119.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[13]] to LEGAL location (   0.000 1115.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[12]] to LEGAL location (   0.000 1111.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[11]] to LEGAL location (   0.000 1107.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[10]] to LEGAL location (   0.000 1103.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[9]] to LEGAL location (   0.000 1099.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[8]] to LEGAL location (   0.000 1095.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[7]] to LEGAL location (   0.000 1091.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[6]] to LEGAL location (   0.000 1087.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[5]] to LEGAL location (   0.000 1083.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[4]] to LEGAL location (   0.000 1079.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[3]] to LEGAL location (   0.000 1075.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[2]] to LEGAL location (   0.000 1071.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[1]] to LEGAL location (   0.000 1067.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_in[0]] to LEGAL location (   0.000 1063.800 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[23]] to LEGAL location (1020.000  444.200 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[22]] to LEGAL location (1020.000  448.200 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[21]] to LEGAL location (1020.000  452.200 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[20]] to LEGAL location (1020.000  456.200 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[19]] to LEGAL location (1020.000  460.200 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[18]] to LEGAL location (1020.000  464.200 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[17]] to LEGAL location (1020.000  468.200 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[16]] to LEGAL location (1020.000  472.200 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[15]] to LEGAL location (1020.000  476.200 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[14]] to LEGAL location (1020.000  480.200 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[13]] to LEGAL location (1020.000  484.200 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[12]] to LEGAL location (1020.000  488.200 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[11]] to LEGAL location (1020.000  492.200 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[10]] to LEGAL location (1020.000  496.200 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[9]] to LEGAL location (1020.000  500.200 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[8]] to LEGAL location (1020.000  504.200 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[7]] to LEGAL location (1020.000  508.200 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[6]] to LEGAL location (1020.000  512.200 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[5]] to LEGAL location (1020.000  516.200 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[4]] to LEGAL location (1020.000  520.200 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[3]] to LEGAL location (1020.000  524.200 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[2]] to LEGAL location (1020.000  528.200 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[1]] to LEGAL location (1020.000  532.200 3 )
+[03/19 08:33:06     43] Moving Pin [sum_out[0]] to LEGAL location (1020.000  536.200 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[127]] to LEGAL location (   0.000  979.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[126]] to LEGAL location (   0.000  975.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[125]] to LEGAL location (   0.000  971.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[124]] to LEGAL location (   0.000  967.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[123]] to LEGAL location (   0.000  963.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[122]] to LEGAL location (   0.000  959.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[121]] to LEGAL location (   0.000  955.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[120]] to LEGAL location (   0.000  951.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[119]] to LEGAL location (   0.000  947.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[118]] to LEGAL location (   0.000  943.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[117]] to LEGAL location (   0.000  939.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[116]] to LEGAL location (   0.000  935.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[115]] to LEGAL location (   0.000  931.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[114]] to LEGAL location (   0.000  927.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[113]] to LEGAL location (   0.000  923.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[112]] to LEGAL location (   0.000  919.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[111]] to LEGAL location (   0.000  915.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[110]] to LEGAL location (   0.000  911.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[109]] to LEGAL location (   0.000  907.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[108]] to LEGAL location (   0.000  903.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[107]] to LEGAL location (   0.000  899.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[106]] to LEGAL location (   0.000  895.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[105]] to LEGAL location (   0.000  891.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[104]] to LEGAL location (   0.000  887.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[103]] to LEGAL location (   0.000  883.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[102]] to LEGAL location (   0.000  879.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[101]] to LEGAL location (   0.000  875.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[100]] to LEGAL location (   0.000  871.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[99]] to LEGAL location (   0.000  867.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[98]] to LEGAL location (   0.000  863.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[97]] to LEGAL location (   0.000  859.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[96]] to LEGAL location (   0.000  855.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[95]] to LEGAL location (   0.000  851.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[94]] to LEGAL location (   0.000  847.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[93]] to LEGAL location (   0.000  843.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[92]] to LEGAL location (   0.000  839.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[91]] to LEGAL location (   0.000  835.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[90]] to LEGAL location (   0.000  831.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[89]] to LEGAL location (   0.000  827.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[88]] to LEGAL location (   0.000  823.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[87]] to LEGAL location (   0.000  819.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[86]] to LEGAL location (   0.000  815.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[85]] to LEGAL location (   0.000  811.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[84]] to LEGAL location (   0.000  807.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[83]] to LEGAL location (   0.000  803.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[82]] to LEGAL location (   0.000  799.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[81]] to LEGAL location (   0.000  795.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[80]] to LEGAL location (   0.000  791.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[79]] to LEGAL location (   0.000  787.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[78]] to LEGAL location (   0.000  783.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[77]] to LEGAL location (   0.000  779.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[76]] to LEGAL location (   0.000  775.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[75]] to LEGAL location (   0.000  771.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[74]] to LEGAL location (   0.000  767.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[73]] to LEGAL location (   0.000  763.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[72]] to LEGAL location (   0.000  759.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[71]] to LEGAL location (   0.000  755.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[70]] to LEGAL location (   0.000  751.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[69]] to LEGAL location (   0.000  747.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[68]] to LEGAL location (   0.000  743.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[67]] to LEGAL location (   0.000  739.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[66]] to LEGAL location (   0.000  735.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[65]] to LEGAL location (   0.000  731.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[64]] to LEGAL location (   0.000  727.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[63]] to LEGAL location (   0.000  723.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[62]] to LEGAL location (   0.000  719.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[61]] to LEGAL location (   0.000  715.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[60]] to LEGAL location (   0.000  711.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[59]] to LEGAL location (   0.000  707.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[58]] to LEGAL location (   0.000  703.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[57]] to LEGAL location (   0.000  699.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[56]] to LEGAL location (   0.000  695.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[55]] to LEGAL location (   0.000  691.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[54]] to LEGAL location (   0.000  687.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[53]] to LEGAL location (   0.000  683.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[52]] to LEGAL location (   0.000  679.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[51]] to LEGAL location (   0.000  675.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[50]] to LEGAL location (   0.000  671.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[49]] to LEGAL location (   0.000  667.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[48]] to LEGAL location (   0.000  663.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[47]] to LEGAL location (   0.000  659.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[46]] to LEGAL location (   0.000  655.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[45]] to LEGAL location (   0.000  651.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[44]] to LEGAL location (   0.000  647.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[43]] to LEGAL location (   0.000  643.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[42]] to LEGAL location (   0.000  639.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[41]] to LEGAL location (   0.000  635.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[40]] to LEGAL location (   0.000  631.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[39]] to LEGAL location (   0.000  627.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[38]] to LEGAL location (   0.000  623.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[37]] to LEGAL location (   0.000  619.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[36]] to LEGAL location (   0.000  615.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[35]] to LEGAL location (   0.000  611.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[34]] to LEGAL location (   0.000  607.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[33]] to LEGAL location (   0.000  603.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[32]] to LEGAL location (   0.000  599.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[31]] to LEGAL location (   0.000  595.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[30]] to LEGAL location (   0.000  591.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[29]] to LEGAL location (   0.000  587.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[28]] to LEGAL location (   0.000  583.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[27]] to LEGAL location (   0.000  579.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[26]] to LEGAL location (   0.000  575.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[25]] to LEGAL location (   0.000  571.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[24]] to LEGAL location (   0.000  567.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[23]] to LEGAL location (   0.000  563.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[22]] to LEGAL location (   0.000  559.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[21]] to LEGAL location (   0.000  555.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[20]] to LEGAL location (   0.000  551.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[19]] to LEGAL location (   0.000  547.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[18]] to LEGAL location (   0.000  543.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[17]] to LEGAL location (   0.000  539.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[16]] to LEGAL location (   0.000  535.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[15]] to LEGAL location (   0.000  531.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[14]] to LEGAL location (   0.000  527.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[13]] to LEGAL location (   0.000  523.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[12]] to LEGAL location (   0.000  519.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[11]] to LEGAL location (   0.000  515.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[10]] to LEGAL location (   0.000  511.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[9]] to LEGAL location (   0.000  507.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[8]] to LEGAL location (   0.000  503.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[7]] to LEGAL location (   0.000  499.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[6]] to LEGAL location (   0.000  495.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[5]] to LEGAL location (   0.000  491.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[4]] to LEGAL location (   0.000  487.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[3]] to LEGAL location (   0.000  483.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[2]] to LEGAL location (   0.000  479.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[1]] to LEGAL location (   0.000  475.800 3 )
+[03/19 08:33:06     43] Moving Pin [mem_in[0]] to LEGAL location (   0.000  471.800 3 )
+[03/19 08:33:06     43] Moving Pin [out[159]] to LEGAL location (1020.000  540.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[158]] to LEGAL location (1020.000  544.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[157]] to LEGAL location (1020.000  548.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[156]] to LEGAL location (1020.000  552.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[155]] to LEGAL location (1020.000  556.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[154]] to LEGAL location (1020.000  560.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[153]] to LEGAL location (1020.000  564.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[152]] to LEGAL location (1020.000  568.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[151]] to LEGAL location (1020.000  572.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[150]] to LEGAL location (1020.000  576.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[149]] to LEGAL location (1020.000  580.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[148]] to LEGAL location (1020.000  584.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[147]] to LEGAL location (1020.000  588.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[146]] to LEGAL location (1020.000  592.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[145]] to LEGAL location (1020.000  596.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[144]] to LEGAL location (1020.000  600.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[143]] to LEGAL location (1020.000  604.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[142]] to LEGAL location (1020.000  608.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[141]] to LEGAL location (1020.000  612.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[140]] to LEGAL location (1020.000  616.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[139]] to LEGAL location (1020.000  620.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[138]] to LEGAL location (1020.000  624.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[137]] to LEGAL location (1020.000  628.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[136]] to LEGAL location (1020.000  632.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[135]] to LEGAL location (1020.000  636.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[134]] to LEGAL location (1020.000  640.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[133]] to LEGAL location (1020.000  644.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[132]] to LEGAL location (1020.000  648.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[131]] to LEGAL location (1020.000  652.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[130]] to LEGAL location (1020.000  656.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[129]] to LEGAL location (1020.000  660.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[128]] to LEGAL location (1020.000  664.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[127]] to LEGAL location (1020.000  668.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[126]] to LEGAL location (1020.000  672.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[125]] to LEGAL location (1020.000  676.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[124]] to LEGAL location (1020.000  680.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[123]] to LEGAL location (1020.000  684.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[122]] to LEGAL location (1020.000  688.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[121]] to LEGAL location (1020.000  692.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[120]] to LEGAL location (1020.000  696.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[119]] to LEGAL location (1020.000  700.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[118]] to LEGAL location (1020.000  704.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[117]] to LEGAL location (1020.000  708.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[116]] to LEGAL location (1020.000  712.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[115]] to LEGAL location (1020.000  716.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[114]] to LEGAL location (1020.000  720.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[113]] to LEGAL location (1020.000  724.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[112]] to LEGAL location (1020.000  728.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[111]] to LEGAL location (1020.000  732.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[110]] to LEGAL location (1020.000  736.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[109]] to LEGAL location (1020.000  740.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[108]] to LEGAL location (1020.000  744.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[107]] to LEGAL location (1020.000  748.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[106]] to LEGAL location (1020.000  752.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[105]] to LEGAL location (1020.000  756.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[104]] to LEGAL location (1020.000  760.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[103]] to LEGAL location (1020.000  764.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[102]] to LEGAL location (1020.000  768.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[101]] to LEGAL location (1020.000  772.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[100]] to LEGAL location (1020.000  776.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[99]] to LEGAL location (1020.000  780.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[98]] to LEGAL location (1020.000  784.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[97]] to LEGAL location (1020.000  788.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[96]] to LEGAL location (1020.000  792.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[95]] to LEGAL location (1020.000  796.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[94]] to LEGAL location (1020.000  800.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[93]] to LEGAL location (1020.000  804.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[92]] to LEGAL location (1020.000  808.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[91]] to LEGAL location (1020.000  812.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[90]] to LEGAL location (1020.000  816.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[89]] to LEGAL location (1020.000  820.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[88]] to LEGAL location (1020.000  824.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[87]] to LEGAL location (1020.000  828.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[86]] to LEGAL location (1020.000  832.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[85]] to LEGAL location (1020.000  836.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[84]] to LEGAL location (1020.000  840.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[83]] to LEGAL location (1020.000  844.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[82]] to LEGAL location (1020.000  848.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[81]] to LEGAL location (1020.000  852.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[80]] to LEGAL location (1020.000  856.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[79]] to LEGAL location (1020.000  860.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[78]] to LEGAL location (1020.000  864.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[77]] to LEGAL location (1020.000  868.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[76]] to LEGAL location (1020.000  872.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[75]] to LEGAL location (1020.000  876.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[74]] to LEGAL location (1020.000  880.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[73]] to LEGAL location (1020.000  884.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[72]] to LEGAL location (1020.000  888.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[71]] to LEGAL location (1020.000  892.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[70]] to LEGAL location (1020.000  896.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[69]] to LEGAL location (1020.000  900.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[68]] to LEGAL location (1020.000  904.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[67]] to LEGAL location (1020.000  908.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[66]] to LEGAL location (1020.000  912.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[65]] to LEGAL location (1020.000  916.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[64]] to LEGAL location (1020.000  920.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[63]] to LEGAL location (1020.000  924.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[62]] to LEGAL location (1020.000  928.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[61]] to LEGAL location (1020.000  932.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[60]] to LEGAL location (1020.000  936.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[59]] to LEGAL location (1020.000  940.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[58]] to LEGAL location (1020.000  944.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[57]] to LEGAL location (1020.000  948.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[56]] to LEGAL location (1020.000  952.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[55]] to LEGAL location (1020.000  956.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[54]] to LEGAL location (1020.000  960.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[53]] to LEGAL location (1020.000  964.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[52]] to LEGAL location (1020.000  968.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[51]] to LEGAL location (1020.000  972.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[50]] to LEGAL location (1020.000  976.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[49]] to LEGAL location (1020.000  980.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[48]] to LEGAL location (1020.000  984.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[47]] to LEGAL location (1020.000  988.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[46]] to LEGAL location (1020.000  992.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[45]] to LEGAL location (1020.000  996.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[44]] to LEGAL location (1020.000 1000.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[43]] to LEGAL location (1020.000 1004.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[42]] to LEGAL location (1020.000 1008.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[41]] to LEGAL location (1020.000 1012.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[40]] to LEGAL location (1020.000 1016.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[39]] to LEGAL location (1020.000 1020.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[38]] to LEGAL location (1020.000 1024.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[37]] to LEGAL location (1020.000 1028.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[36]] to LEGAL location (1020.000 1032.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[35]] to LEGAL location (1020.000 1036.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[34]] to LEGAL location (1020.000 1040.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[33]] to LEGAL location (1020.000 1044.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[32]] to LEGAL location (1020.000 1048.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[31]] to LEGAL location (1020.000 1052.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[30]] to LEGAL location (1020.000 1056.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[29]] to LEGAL location (1020.000 1060.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[28]] to LEGAL location (1020.000 1064.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[27]] to LEGAL location (1020.000 1068.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[26]] to LEGAL location (1020.000 1072.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[25]] to LEGAL location (1020.000 1076.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[24]] to LEGAL location (1020.000 1080.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[23]] to LEGAL location (1020.000 1084.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[22]] to LEGAL location (1020.000 1088.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[21]] to LEGAL location (1020.000 1092.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[20]] to LEGAL location (1020.000 1096.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[19]] to LEGAL location (1020.000 1100.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[18]] to LEGAL location (1020.000 1104.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[17]] to LEGAL location (1020.000 1108.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[16]] to LEGAL location (1020.000 1112.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[15]] to LEGAL location (1020.000 1116.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[14]] to LEGAL location (1020.000 1120.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[13]] to LEGAL location (1020.000 1124.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[12]] to LEGAL location (1020.000 1128.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[11]] to LEGAL location (1020.000 1132.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[10]] to LEGAL location (1020.000 1136.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[9]] to LEGAL location (1020.000 1140.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[8]] to LEGAL location (1020.000 1144.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[7]] to LEGAL location (1020.000 1148.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[6]] to LEGAL location (1020.000 1152.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[5]] to LEGAL location (1020.000 1156.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[4]] to LEGAL location (1020.000 1160.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[3]] to LEGAL location (1020.000 1164.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[2]] to LEGAL location (1020.000 1168.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[1]] to LEGAL location (1020.000 1172.200 3 )
+[03/19 08:33:06     43] Moving Pin [out[0]] to LEGAL location (1020.000 1176.200 3 )
+[03/19 08:33:06     43] Moving Pin [inst[18]] to LEGAL location (   0.000 1055.800 3 )
+[03/19 08:33:06     43] Moving Pin [inst[17]] to LEGAL location (   0.000 1051.800 3 )
+[03/19 08:33:06     43] Moving Pin [inst[16]] to LEGAL location (   0.000 1047.800 3 )
+[03/19 08:33:06     43] Moving Pin [inst[15]] to LEGAL location (   0.000 1043.800 3 )
+[03/19 08:33:06     43] Moving Pin [inst[14]] to LEGAL location (   0.000 1039.800 3 )
+[03/19 08:33:06     43] Moving Pin [inst[13]] to LEGAL location (   0.000 1035.800 3 )
+[03/19 08:33:06     43] Moving Pin [inst[12]] to LEGAL location (   0.000 1031.800 3 )
+[03/19 08:33:06     43] Moving Pin [inst[11]] to LEGAL location (   0.000 1027.800 3 )
+[03/19 08:33:06     43] Moving Pin [inst[10]] to LEGAL location (   0.000 1023.800 3 )
+[03/19 08:33:06     43] Moving Pin [inst[9]] to LEGAL location (   0.000 1019.800 3 )
+[03/19 08:33:06     43] Moving Pin [inst[8]] to LEGAL location (   0.000 1015.800 3 )
+[03/19 08:33:06     43] Moving Pin [inst[7]] to LEGAL location (   0.000 1011.800 3 )
+[03/19 08:33:06     43] Moving Pin [inst[6]] to LEGAL location (   0.000 1007.800 3 )
+[03/19 08:33:06     43] Moving Pin [inst[5]] to LEGAL location (   0.000 1003.800 3 )
+[03/19 08:33:06     43] Moving Pin [inst[4]] to LEGAL location (   0.000  999.800 3 )
+[03/19 08:33:06     43] Moving Pin [inst[3]] to LEGAL location (   0.000  995.800 3 )
+[03/19 08:33:06     43] Moving Pin [inst[2]] to LEGAL location (   0.000  991.800 3 )
+[03/19 08:33:06     43] Moving Pin [inst[1]] to LEGAL location (   0.000  987.800 3 )
+[03/19 08:33:06     43] Moving Pin [inst[0]] to LEGAL location (   0.000  983.800 3 )
+[03/19 08:33:06     43] Moving Pin [reset] to LEGAL location (   0.000 1059.800 3 )
+[03/19 08:33:06     43] Moving Pin [fifo_ext_rd] to LEGAL location (   0.000  467.800 3 )
+[03/19 08:33:06     43] Summary report for top level: [core] 
+[03/19 08:33:06     43] 	Total Pads                         : 0
+[03/19 08:33:06     43] 	Total Pins                         : 358
+[03/19 08:33:06     43] 	Legally Assigned Pins              : 358
+[03/19 08:33:06     43] 	Illegally Assigned Pins            : 0
+[03/19 08:33:06     43] 	Unplaced Pins                      : 0
+[03/19 08:33:06     43] 	Constant/Spl Net Pins              : 0
+[03/19 08:33:06     43] 	Internal Pins                      : 0
+[03/19 08:33:06     43] 	Legally Assigned Feedthrough Pins  : 0
+[03/19 08:33:06     43] 	Illegally Assigned Feedthrough Pins: 0
+[03/19 08:33:06     43] End of Summary report
+[03/19 08:33:06     43] 358 pin(s) of the Partition core were legalized.
+[03/19 08:33:06     43] End pin legalization for the partition [core].
+[03/19 08:33:06     43] 
+[03/19 08:33:06     43] legalizePin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1126.5M).
+[03/19 08:33:15     45] <CMD> setPinAssignMode -pinEditInBatch true
+[03/19 08:33:15     45] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType center -spacing 0.2 -pin clk
+[03/19 08:33:15     45] Successfully spread [1] pins.
+[03/19 08:33:15     45] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1126.5M).
+[03/19 08:33:17     45] <CMD> setPinAssignMode -pinEditInBatch true
+[03/19 08:33:17     45] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType center -spacing 0.2 -pin fifo_ext_rd
+[03/19 08:33:17     45] Successfully spread [1] pins.
+[03/19 08:33:17     45] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1126.5M).
+[03/19 08:33:30     48] <CMD> setPinAssignMode -pinEditInBatch true
+[03/19 08:33:30     48] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -layer 1 -pin {{sum_out[0]} {sum_out[1]} {sum_out[2]} {sum_out[3]} {sum_out[4]} {sum_out[5]} {sum_out[6]} {sum_out[7]} {sum_out[8]} {sum_out[9]} {sum_out[10]} {sum_out[11]} {sum_out[12]} {sum_out[13]} {sum_out[14]} {sum_out[15]} {sum_out[16]} {sum_out[17]} {sum_out[18]} {sum_out[19]} {sum_out[20]} {sum_out[21]} {sum_out[22]} {sum_out[23]}}
+[03/19 08:33:30     48] Updated attributes of 24 pin(s) of partition core
+[03/19 08:33:30     48] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1126.5M).
+[03/19 08:33:32     49] <CMD> setPinAssignMode -pinEditInBatch true
+[03/19 08:33:32     49] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -layer 3 -pin {{sum_in[0]} {sum_in[1]} {sum_in[2]} {sum_in[3]} {sum_in[4]} {sum_in[5]} {sum_in[6]} {sum_in[7]} {sum_in[8]} {sum_in[9]} {sum_in[10]} {sum_in[11]} {sum_in[12]} {sum_in[13]} {sum_in[14]} {sum_in[15]} {sum_in[16]} {sum_in[17]} {sum_in[18]} {sum_in[19]} {sum_in[20]} {sum_in[21]} {sum_in[22]} {sum_in[23]}}
+[03/19 08:33:32     49] Updated attributes of 24 pin(s) of partition core
+[03/19 08:33:32     49] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1126.5M).
+[03/19 08:33:34     49] <CMD> setPinAssignMode -pinEditInBatch true
+[03/19 08:33:34     49] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -layer 3 -pin reset
+[03/19 08:33:34     49] Updated attributes of 1 pin(s) of partition core
+[03/19 08:33:34     49] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1126.5M).
+[03/19 08:33:37     50] <CMD> setPinAssignMode -pinEditInBatch true
+[03/19 08:33:37     50] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -layer 3 -pin {{out[0]} {out[1]} {out[2]} {out[3]} {out[4]} {out[5]} {out[6]} {out[7]} {out[8]} {out[9]} {out[10]} {out[11]} {out[12]} {out[13]} {out[14]} {out[15]} {out[16]} {out[17]} {out[18]} {out[19]} {out[20]} {out[21]} {out[22]} {out[23]} {out[24]} {out[25]} {out[26]} {out[27]} {out[28]} {out[29]} {out[30]} {out[31]} {out[32]} {out[33]} {out[34]} {out[35]} {out[36]} {out[37]} {out[38]} {out[39]} {out[40]} {out[41]} {out[42]} {out[43]} {out[44]} {out[45]} {out[46]} {out[47]} {out[48]} {out[49]} {out[50]} {out[51]} {out[52]} {out[53]} {out[54]} {out[55]} {out[56]} {out[57]} {out[58]} {out[59]} {out[60]} {out[61]} {out[62]} {out[63]} {out[64]} {out[65]} {out[66]} {out[67]} {out[68]} {out[69]} {out[70]} {out[71]} {out[72]} {out[73]} {out[74]} {out[75]} {out[76]} {out[77]} {out[78]} {out[79]} {out[80]} {out[81]} {out[82]} {out[83]} {out[84]} {out[85]} {out[86]} {out[87]} {out[88]} {out[89]} {out[90]} {out[91]} {out[92]} {out[93]} {out[94]} {out[95]} {out[96]} {out[97]} {out[98]} {out[99]} {out[100]} {out[101]} {out[102]} {out[103]} {out[104]} {out[105]} {out[106]} {out[107]} {out[108]} {out[109]} {out[110]} {out[111]} {out[112]} {out[113]} {out[114]} {out[115]} {out[116]} {out[117]} {out[118]} {out[119]} {out[120]} {out[121]} {out[122]} {out[123]} {out[124]} {out[125]} {out[126]} {out[127]} {out[128]} {out[129]} {out[130]} {out[131]} {out[132]} {out[133]} {out[134]} {out[135]} {out[136]} {out[137]} {out[138]} {out[139]} {out[140]} {out[141]} {out[142]} {out[143]} {out[144]} {out[145]} {out[146]} {out[147]} {out[148]} {out[149]} {out[150]} {out[151]} {out[152]} {out[153]} {out[154]} {out[155]} {out[156]} {out[157]} {out[158]} {out[159]}}
+[03/19 08:33:37     50] Updated attributes of 160 pin(s) of partition core
+[03/19 08:33:37     50] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1126.5M).
+[03/19 08:33:38     50] <CMD> setPinAssignMode -pinEditInBatch true
+[03/19 08:33:38     50] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -layer 3 -pin {{mem_in[0]} {mem_in[1]} {mem_in[2]} {mem_in[3]} {mem_in[4]} {mem_in[5]} {mem_in[6]} {mem_in[7]} {mem_in[8]} {mem_in[9]} {mem_in[10]} {mem_in[11]} {mem_in[12]} {mem_in[13]} {mem_in[14]} {mem_in[15]} {mem_in[16]} {mem_in[17]} {mem_in[18]} {mem_in[19]} {mem_in[20]} {mem_in[21]} {mem_in[22]} {mem_in[23]} {mem_in[24]} {mem_in[25]} {mem_in[26]} {mem_in[27]} {mem_in[28]} {mem_in[29]} {mem_in[30]} {mem_in[31]} {mem_in[32]} {mem_in[33]} {mem_in[34]} {mem_in[35]} {mem_in[36]} {mem_in[37]} {mem_in[38]} {mem_in[39]} {mem_in[40]} {mem_in[41]} {mem_in[42]} {mem_in[43]} {mem_in[44]} {mem_in[45]} {mem_in[46]} {mem_in[47]} {mem_in[48]} {mem_in[49]} {mem_in[50]} {mem_in[51]} {mem_in[52]} {mem_in[53]} {mem_in[54]} {mem_in[55]} {mem_in[56]} {mem_in[57]} {mem_in[58]} {mem_in[59]} {mem_in[60]} {mem_in[61]} {mem_in[62]} {mem_in[63]} {mem_in[64]} {mem_in[65]} {mem_in[66]} {mem_in[67]} {mem_in[68]} {mem_in[69]} {mem_in[70]} {mem_in[71]} {mem_in[72]} {mem_in[73]} {mem_in[74]} {mem_in[75]} {mem_in[76]} {mem_in[77]} {mem_in[78]} {mem_in[79]} {mem_in[80]} {mem_in[81]} {mem_in[82]} {mem_in[83]} {mem_in[84]} {mem_in[85]} {mem_in[86]} {mem_in[87]} {mem_in[88]} {mem_in[89]} {mem_in[90]} {mem_in[91]} {mem_in[92]} {mem_in[93]} {mem_in[94]} {mem_in[95]} {mem_in[96]} {mem_in[97]} {mem_in[98]} {mem_in[99]} {mem_in[100]} {mem_in[101]} {mem_in[102]} {mem_in[103]} {mem_in[104]} {mem_in[105]} {mem_in[106]} {mem_in[107]} {mem_in[108]} {mem_in[109]} {mem_in[110]} {mem_in[111]} {mem_in[112]} {mem_in[113]} {mem_in[114]} {mem_in[115]} {mem_in[116]} {mem_in[117]} {mem_in[118]} {mem_in[119]} {mem_in[120]} {mem_in[121]} {mem_in[122]} {mem_in[123]} {mem_in[124]} {mem_in[125]} {mem_in[126]} {mem_in[127]}}
+[03/19 08:33:38     50] Updated attributes of 128 pin(s) of partition core
+[03/19 08:33:38     50] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1126.5M).
+[03/19 08:33:40     51] <CMD> setPinAssignMode -pinEditInBatch true
+[03/19 08:33:40     51] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -layer 3 -pin {{inst[0]} {inst[1]} {inst[2]} {inst[3]} {inst[4]} {inst[5]} {inst[6]} {inst[7]} {inst[8]} {inst[9]} {inst[10]} {inst[11]} {inst[12]} {inst[13]} {inst[14]} {inst[15]} {inst[16]} {inst[17]} {inst[18]}}
+[03/19 08:33:40     51] Updated attributes of 19 pin(s) of partition core
+[03/19 08:33:40     51] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1126.5M).
+[03/19 08:33:47     52] <CMD> checkPinAssignment
+[03/19 08:33:47     52] **WARN: (IMPPTN-3034):	Only editPin command should be used with 'setPinAssignMode -pinEditInBatch true' setting. Current command will reset the persistent database. Subsequent editPin command will run slow. To speed up editPin command again, wrap all editPin commands within 'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+[03/19 08:33:47     52] Checking pins of top cell core ... completed
+[03/19 08:33:47     53] 
+[03/19 08:33:47     53] ===========================================================================================================================
+[03/19 08:33:47     53]                                                 checkPinAssignment Summary
+[03/19 08:33:47     53] ===========================================================================================================================
+[03/19 08:33:47     53] Partition   | pads  | pins   | legal  | illegal | internal | internal illegal | FT     | FT illegal | constant | unplaced |
+[03/19 08:33:47     53] ===========================================================================================================================
+[03/19 08:33:47     53] core        |     0 |    358 |    332 |      26 |        0 |                0 |      0 |          0 |        0 |        0 |
+[03/19 08:33:47     53] ===========================================================================================================================
+[03/19 08:33:47     53] TOTAL       |     0 |    358 |    332 |      26 |        0 |                0 |      0 |          0 |        0 |        0 |
+[03/19 08:33:47     53] ===========================================================================================================================
+[03/19 08:33:47     53] checkPinAssignment : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1126.5M).
+[03/19 08:34:05     56] ambiguous command name "legalize": legalizeFPlan legalizePin
+[03/19 08:34:06     56] <CMD> legalizePin
+[03/19 08:34:06     56] 
+[03/19 08:34:06     56] Start pin legalization for the partition [core]:
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [clk] is [FIXED] at location (   0.000,  809.800 3 ) has MIN-PIN-SPACING VIOLATION with pin fifo_ext_rd.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[23]] is [FIXED] at location (1020.000,  444.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[22]] is [FIXED] at location (1020.000,  448.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[21]] is [FIXED] at location (1020.000,  452.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[20]] is [FIXED] at location (1020.000,  456.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[19]] is [FIXED] at location (1020.000,  460.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[18]] is [FIXED] at location (1020.000,  464.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[17]] is [FIXED] at location (1020.000,  468.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[16]] is [FIXED] at location (1020.000,  472.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[15]] is [FIXED] at location (1020.000,  476.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[14]] is [FIXED] at location (1020.000,  480.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[13]] is [FIXED] at location (1020.000,  484.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[12]] is [FIXED] at location (1020.000,  488.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[11]] is [FIXED] at location (1020.000,  492.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[10]] is [FIXED] at location (1020.000,  496.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[9]] is [FIXED] at location (1020.000,  500.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[8]] is [FIXED] at location (1020.000,  504.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[7]] is [FIXED] at location (1020.000,  508.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[6]] is [FIXED] at location (1020.000,  512.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[5]] is [FIXED] at location (1020.000,  516.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[4]] is [FIXED] at location (1020.000,  520.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[3]] is [FIXED] at location (1020.000,  524.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[2]] is [FIXED] at location (1020.000,  528.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[1]] is [FIXED] at location (1020.000,  532.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [sum_out[0]] is [FIXED] at location (1020.000,  536.200 1 ) is NOT ON ALLOWED PIN LAYER.
+[03/19 08:34:06     56] **WARN: (IMPPTN-562):	Pin [fifo_ext_rd] is [FIXED] at location (   0.000,  809.600 3 ) has MIN-PIN-SPACING VIOLATION with pin clk.
+[03/19 08:34:06     56] Summary report for top level: [core] 
+[03/19 08:34:06     56] 	Total Pads                         : 0
+[03/19 08:34:06     56] 	Total Pins                         : 358
+[03/19 08:34:06     56] 	Legally Assigned Pins              : 332
+[03/19 08:34:06     56] 	Illegally Assigned Pins            : 26
+[03/19 08:34:06     56] 	Unplaced Pins                      : 0
+[03/19 08:34:06     56] 	Constant/Spl Net Pins              : 0
+[03/19 08:34:06     56] 	Internal Pins                      : 0
+[03/19 08:34:06     56] 	Legally Assigned Feedthrough Pins  : 0
+[03/19 08:34:06     56] 	Illegally Assigned Feedthrough Pins: 0
+[03/19 08:34:06     56] End of Summary report
+[03/19 08:34:06     56] 26 pin(s) of the Partition core could not be legalized.
+[03/19 08:34:06     56] End pin legalization for the partition [core].
+[03/19 08:34:06     56] 
+[03/19 08:34:06     56] legalizePin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1126.5M).
+[03/19 08:34:21     60] <CMD> setPinAssignMode -pinEditInBatch true
+[03/19 08:34:21     60] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixOverlap 1 -layer 1 -pin {{sum_out[0]} {sum_out[1]} {sum_out[2]} {sum_out[3]} {sum_out[4]} {sum_out[5]} {sum_out[6]} {sum_out[7]} {sum_out[8]} {sum_out[9]} {sum_out[10]} {sum_out[11]} {sum_out[12]} {sum_out[13]} {sum_out[14]} {sum_out[15]} {sum_out[16]} {sum_out[17]} {sum_out[18]} {sum_out[19]} {sum_out[20]} {sum_out[21]} {sum_out[22]} {sum_out[23]}}
+[03/19 08:34:21     60] Updated attributes of 24 pin(s) of partition core
+[03/19 08:34:21     60] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1126.5M).
+[03/19 08:34:43     65] <CMD> setPinAssignMode -pinEditInBatch true
+[03/19 08:34:43     65] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -layer 5 -pin fifo_ext_rd
+[03/19 08:34:43     65] Updated attributes of 1 pin(s) of partition core
+[03/19 08:34:43     65] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1127.5M).
+[03/19 08:34:45     66] <CMD> setPinAssignMode -pinEditInBatch true
+[03/19 08:34:45     66] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -layer 5 -pin {{inst[0]} {inst[1]} {inst[2]} {inst[3]} {inst[4]} {inst[5]} {inst[6]} {inst[7]} {inst[8]} {inst[9]} {inst[10]} {inst[11]} {inst[12]} {inst[13]} {inst[14]} {inst[15]} {inst[16]} {inst[17]} {inst[18]}}
+[03/19 08:34:45     66] Updated attributes of 19 pin(s) of partition core
+[03/19 08:34:45     66] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1127.5M).
+[03/19 08:34:48     67] <CMD> setPinAssignMode -pinEditInBatch true
+[03/19 08:34:48     67] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -layer 5 -pin {{mem_in[0]} {mem_in[1]} {mem_in[2]} {mem_in[3]} {mem_in[4]} {mem_in[5]} {mem_in[6]} {mem_in[7]} {mem_in[8]} {mem_in[9]} {mem_in[10]} {mem_in[11]} {mem_in[12]} {mem_in[13]} {mem_in[14]} {mem_in[15]} {mem_in[16]} {mem_in[17]} {mem_in[18]} {mem_in[19]} {mem_in[20]} {mem_in[21]} {mem_in[22]} {mem_in[23]} {mem_in[24]} {mem_in[25]} {mem_in[26]} {mem_in[27]} {mem_in[28]} {mem_in[29]} {mem_in[30]} {mem_in[31]} {mem_in[32]} {mem_in[33]} {mem_in[34]} {mem_in[35]} {mem_in[36]} {mem_in[37]} {mem_in[38]} {mem_in[39]} {mem_in[40]} {mem_in[41]} {mem_in[42]} {mem_in[43]} {mem_in[44]} {mem_in[45]} {mem_in[46]} {mem_in[47]} {mem_in[48]} {mem_in[49]} {mem_in[50]} {mem_in[51]} {mem_in[52]} {mem_in[53]} {mem_in[54]} {mem_in[55]} {mem_in[56]} {mem_in[57]} {mem_in[58]} {mem_in[59]} {mem_in[60]} {mem_in[61]} {mem_in[62]} {mem_in[63]} {mem_in[64]} {mem_in[65]} {mem_in[66]} {mem_in[67]} {mem_in[68]} {mem_in[69]} {mem_in[70]} {mem_in[71]} {mem_in[72]} {mem_in[73]} {mem_in[74]} {mem_in[75]} {mem_in[76]} {mem_in[77]} {mem_in[78]} {mem_in[79]} {mem_in[80]} {mem_in[81]} {mem_in[82]} {mem_in[83]} {mem_in[84]} {mem_in[85]} {mem_in[86]} {mem_in[87]} {mem_in[88]} {mem_in[89]} {mem_in[90]} {mem_in[91]} {mem_in[92]} {mem_in[93]} {mem_in[94]} {mem_in[95]} {mem_in[96]} {mem_in[97]} {mem_in[98]} {mem_in[99]} {mem_in[100]} {mem_in[101]} {mem_in[102]} {mem_in[103]} {mem_in[104]} {mem_in[105]} {mem_in[106]} {mem_in[107]} {mem_in[108]} {mem_in[109]} {mem_in[110]} {mem_in[111]} {mem_in[112]} {mem_in[113]} {mem_in[114]} {mem_in[115]} {mem_in[116]} {mem_in[117]} {mem_in[118]} {mem_in[119]} {mem_in[120]} {mem_in[121]} {mem_in[122]} {mem_in[123]} {mem_in[124]} {mem_in[125]} {mem_in[126]} {mem_in[127]}}
+[03/19 08:34:48     67] Updated attributes of 128 pin(s) of partition core
+[03/19 08:34:48     67] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1125.5M).
+[03/19 08:34:50     67] <CMD> setPinAssignMode -pinEditInBatch true
+[03/19 08:34:50     67] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -layer 5 -pin {{out[0]} {out[1]} {out[2]} {out[3]} {out[4]} {out[5]} {out[6]} {out[7]} {out[8]} {out[9]} {out[10]} {out[11]} {out[12]} {out[13]} {out[14]} {out[15]} {out[16]} {out[17]} {out[18]} {out[19]} {out[20]} {out[21]} {out[22]} {out[23]} {out[24]} {out[25]} {out[26]} {out[27]} {out[28]} {out[29]} {out[30]} {out[31]} {out[32]} {out[33]} {out[34]} {out[35]} {out[36]} {out[37]} {out[38]} {out[39]} {out[40]} {out[41]} {out[42]} {out[43]} {out[44]} {out[45]} {out[46]} {out[47]} {out[48]} {out[49]} {out[50]} {out[51]} {out[52]} {out[53]} {out[54]} {out[55]} {out[56]} {out[57]} {out[58]} {out[59]} {out[60]} {out[61]} {out[62]} {out[63]} {out[64]} {out[65]} {out[66]} {out[67]} {out[68]} {out[69]} {out[70]} {out[71]} {out[72]} {out[73]} {out[74]} {out[75]} {out[76]} {out[77]} {out[78]} {out[79]} {out[80]} {out[81]} {out[82]} {out[83]} {out[84]} {out[85]} {out[86]} {out[87]} {out[88]} {out[89]} {out[90]} {out[91]} {out[92]} {out[93]} {out[94]} {out[95]} {out[96]} {out[97]} {out[98]} {out[99]} {out[100]} {out[101]} {out[102]} {out[103]} {out[104]} {out[105]} {out[106]} {out[107]} {out[108]} {out[109]} {out[110]} {out[111]} {out[112]} {out[113]} {out[114]} {out[115]} {out[116]} {out[117]} {out[118]} {out[119]} {out[120]} {out[121]} {out[122]} {out[123]} {out[124]} {out[125]} {out[126]} {out[127]} {out[128]} {out[129]} {out[130]} {out[131]} {out[132]} {out[133]} {out[134]} {out[135]} {out[136]} {out[137]} {out[138]} {out[139]} {out[140]} {out[141]} {out[142]} {out[143]} {out[144]} {out[145]} {out[146]} {out[147]} {out[148]} {out[149]} {out[150]} {out[151]} {out[152]} {out[153]} {out[154]} {out[155]} {out[156]} {out[157]} {out[158]} {out[159]}}
+[03/19 08:34:50     67] Updated attributes of 160 pin(s) of partition core
+[03/19 08:34:50     67] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1125.5M).
+[03/19 08:34:52     68] <CMD> setPinAssignMode -pinEditInBatch true
+[03/19 08:34:52     68] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -layer 5 -pin reset
+[03/19 08:34:52     68] Updated attributes of 1 pin(s) of partition core
+[03/19 08:34:52     68] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1125.5M).
+[03/19 08:34:55     69] <CMD> setPinAssignMode -pinEditInBatch true
+[03/19 08:34:55     69] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixedPin 1 -fixOverlap 1 -layer 5 -pin {{sum_in[0]} {sum_in[1]} {sum_in[2]} {sum_in[3]} {sum_in[4]} {sum_in[5]} {sum_in[6]} {sum_in[7]} {sum_in[8]} {sum_in[9]} {sum_in[10]} {sum_in[11]} {sum_in[12]} {sum_in[13]} {sum_in[14]} {sum_in[15]} {sum_in[16]} {sum_in[17]} {sum_in[18]} {sum_in[19]} {sum_in[20]} {sum_in[21]} {sum_in[22]} {sum_in[23]}}
+[03/19 08:34:55     69] Updated attributes of 24 pin(s) of partition core
+[03/19 08:34:55     69] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1125.5M).
+[03/19 08:34:57     69] <CMD> setPinAssignMode -pinEditInBatch true
+[03/19 08:34:57     69] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixOverlap 1 -layer 5 -pin {{sum_out[0]} {sum_out[1]} {sum_out[2]} {sum_out[3]} {sum_out[4]} {sum_out[5]} {sum_out[6]} {sum_out[7]} {sum_out[8]} {sum_out[9]} {sum_out[10]} {sum_out[11]} {sum_out[12]} {sum_out[13]} {sum_out[14]} {sum_out[15]} {sum_out[16]} {sum_out[17]} {sum_out[18]} {sum_out[19]} {sum_out[20]} {sum_out[21]} {sum_out[22]} {sum_out[23]}}
+[03/19 08:34:57     69] Updated attributes of 24 pin(s) of partition core
+[03/19 08:34:57     69] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1125.5M).
+[03/19 08:35:04     71] <CMD> checkPinAssignment
+[03/19 08:35:04     71] **WARN: (IMPPTN-3034):	Only editPin command should be used with 'setPinAssignMode -pinEditInBatch true' setting. Current command will reset the persistent database. Subsequent editPin command will run slow. To speed up editPin command again, wrap all editPin commands within 'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+[03/19 08:35:04     71] Checking pins of top cell core ... completed
+[03/19 08:35:04     71] 
+[03/19 08:35:04     71] ===========================================================================================================================
+[03/19 08:35:04     71]                                                 checkPinAssignment Summary
+[03/19 08:35:04     71] ===========================================================================================================================
+[03/19 08:35:04     71] Partition   | pads  | pins   | legal  | illegal | internal | internal illegal | FT     | FT illegal | constant | unplaced |
+[03/19 08:35:04     71] ===========================================================================================================================
+[03/19 08:35:04     71] core        |     0 |    358 |    358 |       0 |        0 |                0 |      0 |          0 |        0 |        0 |
+[03/19 08:35:04     71] ===========================================================================================================================
+[03/19 08:35:04     71] TOTAL       |     0 |    358 |    358 |       0 |        0 |                0 |      0 |          0 |        0 |        0 |
+[03/19 08:35:04     71] ===========================================================================================================================
+[03/19 08:35:04     71] checkPinAssignment : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1126.5M).
+[03/19 08:35:06     71] <CMD> legalizePin
+[03/19 08:35:06     71] 
+[03/19 08:35:06     71] Start pin legalization for the partition [core]:
+[03/19 08:35:06     71] Summary report for top level: [core] 
+[03/19 08:35:06     71] 	Total Pads                         : 0
+[03/19 08:35:06     71] 	Total Pins                         : 358
+[03/19 08:35:06     71] 	Legally Assigned Pins              : 358
+[03/19 08:35:06     71] 	Illegally Assigned Pins            : 0
+[03/19 08:35:06     71] 	Unplaced Pins                      : 0
+[03/19 08:35:06     71] 	Constant/Spl Net Pins              : 0
+[03/19 08:35:06     71] 	Internal Pins                      : 0
+[03/19 08:35:06     71] 	Legally Assigned Feedthrough Pins  : 0
+[03/19 08:35:06     71] 	Illegally Assigned Feedthrough Pins: 0
+[03/19 08:35:06     71] End of Summary report
+[03/19 08:35:06     71] End pin legalization for the partition [core].
+[03/19 08:35:06     71] 
+[03/19 08:35:06     71] legalizePin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1126.5M).
+[03/19 08:35:07     71] <CMD> checkPinAssignment
+[03/19 08:35:07     71] Checking pins of top cell core ... completed
+[03/19 08:35:07     71] 
+[03/19 08:35:07     71] ===========================================================================================================================
+[03/19 08:35:07     71]                                                 checkPinAssignment Summary
+[03/19 08:35:07     71] ===========================================================================================================================
+[03/19 08:35:07     71] Partition   | pads  | pins   | legal  | illegal | internal | internal illegal | FT     | FT illegal | constant | unplaced |
+[03/19 08:35:07     71] ===========================================================================================================================
+[03/19 08:35:07     71] core        |     0 |    358 |    358 |       0 |        0 |                0 |      0 |          0 |        0 |        0 |
+[03/19 08:35:07     71] ===========================================================================================================================
+[03/19 08:35:07     71] TOTAL       |     0 |    358 |    358 |       0 |        0 |                0 |      0 |          0 |        0 |        0 |
+[03/19 08:35:07     71] ===========================================================================================================================
+[03/19 08:35:07     72] checkPinAssignment : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1126.5M).
+[03/19 08:43:55    177] 
+[03/19 08:43:55    177] *** Memory Usage v#1 (Current mem = 1127.508M, initial mem = 149.258M) ***
+[03/19 08:43:55    177] 
+[03/19 08:43:55    177] *** Summary of all messages that are not suppressed in this session:
+[03/19 08:43:55    177] Severity  ID               Count  Summary                                  
+[03/19 08:43:55    177] WARNING   IMPLF-200          136  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[03/19 08:43:55    177] WARNING   IMPLF-201          128  Pin '%s' in macro '%s' has no ANTENNADIF...
+[03/19 08:43:55    177] WARNING   IMPFP-325            1  Floorplan of the design is resized. All ...
+[03/19 08:43:55    177] WARNING   IMPFP-3961           2  The techSite '%s' has no related cells i...
+[03/19 08:43:55    177] WARNING   IMPPTN-562          26  Pin [%s] is [%s] at location (%8.3f, %8....
+[03/19 08:43:55    177] WARNING   IMPPTN-3034          3  Only editPin command should be used with...
+[03/19 08:43:55    177] WARNING   IMPEXT-2710          2  Basic Cap table for layer M%d is ignored...
+[03/19 08:43:55    177] WARNING   IMPEXT-2760          2  Layer M%d specified in the cap table is ...
+[03/19 08:43:55    177] WARNING   IMPEXT-2771          2  Via %s specified in the cap table is ign...
+[03/19 08:43:55    177] WARNING   IMPEXT-2801          2  Resistance values are not provided in th...
+[03/19 08:43:55    177] WARNING   IMPVL-209            2  In Verilog file '%s', check line %d near...
+[03/19 08:43:55    177] WARNING   IMPVL-159         1624  Pin '%s' of cell '%s' is defined in LEF ...
+[03/19 08:43:55    177] WARNING   IMPVL-361            2  Number of nets (%d) more than bus (%s) p...
+[03/19 08:43:55    177] WARNING   IMPDC-1629           1  The default delay limit was set to %d. T...
+[03/19 08:43:55    177] WARNING   IMPPP-531         1404  ViaGen Warning: %s rule violation, no vi...
+[03/19 08:43:55    177] WARNING   IMPSR-1256           2  Cannot find any CORE class pad pin of ne...
+[03/19 08:43:55    177] WARNING   IMPOPT-7136          1  %s '%s' is not supported by Innovus. Set...
+[03/19 08:43:55    177] ERROR     IMPOAX-142           3  %s                                       
+[03/19 08:43:55    177] ERROR     IMPOAX-820           1  The OA features are disabled in the curr...
+[03/19 08:43:55    177] ERROR     IMPOAX-850           1  %s command cannot be run as OA features ...
+[03/19 08:43:55    177] *** Message Summary: 3340 warning(s), 5 error(s)
+[03/19 08:43:55    177] 
+[03/19 08:43:55    177] --- Ending "Innovus" (totcpu=0:02:58, real=0:12:17, mem=1127.5M) ---
