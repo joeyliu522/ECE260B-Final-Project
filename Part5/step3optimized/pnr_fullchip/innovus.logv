@@ -1,0 +1,778 @@
+[03/14 15:10:46      0] 
+[03/14 15:10:46      0] Cadence Innovus(TM) Implementation System.
+[03/14 15:10:46      0] Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+[03/14 15:10:46      0] 
+[03/14 15:10:46      0] Version:	v15.23-s045_1, built Fri Apr 22 12:32:52 PDT 2016
+[03/14 15:10:46      0] Options:	
+[03/14 15:10:46      0] Date:		Fri Mar 14 15:10:46 2025
+[03/14 15:10:46      0] Host:		ieng6-ece-03.ucsd.edu (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (4cores*8cpus*Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz 25344KB)
+[03/14 15:10:46      0] OS:		CentOS Linux release 7.9.2009 (Core)
+[03/14 15:10:46      0] 
+[03/14 15:10:46      0] License:
+[03/14 15:10:46      0] 		invs	Innovus Implementation System	15.2	checkout succeeded
+[03/14 15:10:46      0] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[03/14 15:10:47      0] **ERROR: (IMPOAX-142):	Could not open shared library libinnovusoax22.so : /acsnfs3/software/cadence-innovus152/tools/lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE
+[03/14 15:10:47      0] 
+[03/14 15:10:47      0] **ERROR: (IMPOAX-142):	Could not open shared library libcdsSkillPcell.so : (null)
+[03/14 15:10:47      0] 
+[03/14 15:10:47      0] **ERROR: (IMPOAX-142):	OA features will be disabled in this session.
+[03/14 15:10:47      0] 
+[03/14 15:10:55      7] @(#)CDS: Innovus v15.23-s045_1 (64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5)
+[03/14 15:10:55      7] @(#)CDS: NanoRoute 15.23-s045_1 NR160414-1105/15_23-UB (database version 2.30, 317.6.1) {superthreading v1.26}
+[03/14 15:10:55      7] @(#)CDS: AAE 15.23-s014 (64bit) 04/22/2016 (Linux 2.6.18-194.el5)
+[03/14 15:10:55      7] @(#)CDS: CTE 15.23-s022_1 () Apr 22 2016 09:38:45 ( )
+[03/14 15:10:55      7] @(#)CDS: SYNTECH 15.23-s008_1 () Apr 12 2016 21:52:59 ( )
+[03/14 15:10:55      7] @(#)CDS: CPE v15.23-s045
+[03/14 15:10:55      7] @(#)CDS: IQRC/TQRC 15.1.4-s213 (64bit) Tue Feb  9 17:31:28 PST 2016 (Linux 2.6.18-194.el5)
+[03/14 15:10:55      7] @(#)CDS: OA 22.50-p036 Tue Nov  3 09:29:52 2015
+[03/14 15:10:55      7] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[03/14 15:10:55      7] @(#)CDS: RCDB 11.7
+[03/14 15:10:55      7] --- Running on ieng6-ece-03.ucsd.edu (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (4cores*8cpus*Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz 25344KB) ---
+[03/14 15:10:55      7] Create and set the environment variable TMPDIR to /tmp/innovus_temp_11315_ieng6-ece-03.ucsd.edu_jmsin_u4U8MF.
+
+[03/14 15:10:56      8] 
+[03/14 15:10:56      8] **INFO:  MMMC transition support version v31-84 
+[03/14 15:10:56      8] 
+[03/14 15:10:56      8] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[03/14 15:10:56      8] <CMD> suppressMessage ENCEXT-2799
+[03/14 15:10:56      8] <CMD> getDrawView
+[03/14 15:10:56      8] <CMD> loadWorkspace -name Physical
+[03/14 15:10:56      8] <CMD> win
+[03/14 15:11:15     12] <CMD> set init_pwr_net VDD
+[03/14 15:11:15     12] <CMD> set init_gnd_net VSS
+[03/14 15:11:15     12] <CMD> set init_verilog ./netlist/fullchip.out.v
+[03/14 15:11:15     12] <CMD> set init_design_netlisttype Verilog
+[03/14 15:11:15     12] <CMD> set init_design_settop 1
+[03/14 15:11:15     12] <CMD> set init_top_cell fullchip
+[03/14 15:11:15     12] <CMD> set init_lef_file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef
+[03/14 15:11:15     12] <CMD> create_library_set -name WC_LIB -timing "$worst_timing_lib ./subckt/sram_w16_WC.lib"
+[03/14 15:11:15     12] <CMD> create_library_set -name BC_LIB -timing "$best_timing_lib ./subckt/sram_w16_BC.lib"
+[03/14 15:11:15     12] <CMD> create_rc_corner -name Cmax -cap_table $worst_captbl -T 125
+[03/14 15:11:15     12] <CMD> create_rc_corner -name Cmin -cap_table $best_captbl -T -40
+[03/14 15:11:15     12] <CMD> create_delay_corner -name WC -library_set WC_LIB -rc_corner Cmax
+[03/14 15:11:15     12] <CMD> create_delay_corner -name BC -library_set BC_LIB -rc_corner Cmin
+[03/14 15:11:15     12] <CMD> create_constraint_mode -name CON -sdc_file [list $sdc]
+[03/14 15:11:15     12] <CMD> create_analysis_view -name WC_VIEW -delay_corner WC -constraint_mode CON
+[03/14 15:11:15     12] <CMD> create_analysis_view -name BC_VIEW -delay_corner BC -constraint_mode CON
+[03/14 15:11:15     12] <CMD> init_design -setup WC_VIEW -hold BC_VIEW
+[03/14 15:11:15     12] **ERROR: (IMPOAX-820):	The OA features are disabled in the current session of Innovus because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Innovus either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+[03/14 15:11:15     12] 
+[03/14 15:11:15     12] **ERROR: (IMPOAX-850):	oaxCreateCdsLibArray command cannot be run as OA features are disabled in this session.
+[03/14 15:11:15     12] 
+[03/14 15:11:15     12] Loading LEF file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef ...
+[03/14 15:11:15     12] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+[03/14 15:11:15     12] The LEF parser will ignore this statement.
+[03/14 15:11:15     12] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 28.
+[03/14 15:11:15     12] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:15     12] The LEF parser will ignore this statement.
+[03/14 15:11:15     12] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 867.
+[03/14 15:11:15     12] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:15     12] The LEF parser will ignore this statement.
+[03/14 15:11:15     12] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 877.
+[03/14 15:11:15     12] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:15     12] The LEF parser will ignore this statement.
+[03/14 15:11:15     12] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1014.
+[03/14 15:11:15     12] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:15     12] The LEF parser will ignore this statement.
+[03/14 15:11:15     12] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1024.
+[03/14 15:11:15     12] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:15     12] The LEF parser will ignore this statement.
+[03/14 15:11:15     12] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1161.
+[03/14 15:11:15     12] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:15     12] The LEF parser will ignore this statement.
+[03/14 15:11:15     12] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1171.
+[03/14 15:11:15     12] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:15     12] The LEF parser will ignore this statement.
+[03/14 15:11:15     12] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1308.
+[03/14 15:11:15     12] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:15     12] The LEF parser will ignore this statement.
+[03/14 15:11:15     12] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1318.
+[03/14 15:11:15     12] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:15     12] The LEF parser will ignore this statement.
+[03/14 15:11:15     12] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1372.
+[03/14 15:11:15     12] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:15     12] The LEF parser will ignore this statement.
+[03/14 15:11:15     12] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1383.
+[03/14 15:11:15     12] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:15     12] The LEF parser will ignore this statement.
+[03/14 15:11:15     12] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1604.
+[03/14 15:11:15     12] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:15     12] The LEF parser will ignore this statement.
+[03/14 15:11:15     12] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1614.
+[03/14 15:11:15     12] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/14 15:11:15     12] The LEF parser will ignore this statement.
+[03/14 15:11:15     12] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1769.
+[03/14 15:11:15     12] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/14 15:11:15     12] The LEF parser will ignore this statement.
+[03/14 15:11:15     12] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1771.
+[03/14 15:11:15     12] WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+[03/14 15:11:15     12] The LEF parser will ignore this statement.
+[03/14 15:11:15     12] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1772.
+[03/14 15:11:15     12] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/14 15:11:15     12] The LEF parser will ignore this statement.
+[03/14 15:11:15     12] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1776.
+[03/14 15:11:15     12] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/14 15:11:15     12] The LEF parser will ignore this statement.
+[03/14 15:11:15     12] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1778.
+[03/14 15:11:15     12] WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+[03/14 15:11:15     12] The LEF parser will ignore this statement.
+[03/14 15:11:15     12] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1779.
+[03/14 15:11:15     12] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/14 15:11:15     12] The LEF parser will ignore this statement.
+[03/14 15:11:15     12] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1783.
+[03/14 15:11:15     12] Set DBUPerIGU to M2 pitch 400.
+[03/14 15:11:15     12] **WARN: (IMPLF-200):	Pin 'I' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/14 15:11:15     12] Type 'man IMPLF-200' for more detail.
+[03/14 15:11:15     12] 
+[03/14 15:11:15     12] viaInitial starts at Fri Mar 14 15:11:15 2025
+viaInitial ends at Fri Mar 14 15:11:15 2025
+Reading WC_LIB timing library '/home/linux/ieng6/ee260bwi25/public/PDKdata/lib/tcbn65gpluswc.lib' ...
+[03/14 15:11:15     12] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D0' is not defined in the library.
+[03/14 15:11:15     12] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D1' is not defined in the library.
+[03/14 15:11:15     12] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D2' is not defined in the library.
+[03/14 15:11:15     12] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D4' is not defined in the library.
+[03/14 15:11:15     12] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D8' is not defined in the library.
+[03/14 15:11:15     12] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2XD1' is not defined in the library.
+[03/14 15:11:15     12] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D0' is not defined in the library.
+[03/14 15:11:15     12] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D1' is not defined in the library.
+[03/14 15:11:15     12] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D2' is not defined in the library.
+[03/14 15:11:15     12] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D4' is not defined in the library.
+[03/14 15:11:15     12] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D8' is not defined in the library.
+[03/14 15:11:15     12] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3XD1' is not defined in the library.
+[03/14 15:11:15     12] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D0' is not defined in the library.
+[03/14 15:11:15     12] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D1' is not defined in the library.
+[03/14 15:11:15     12] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D2' is not defined in the library.
+[03/14 15:11:15     12] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D4' is not defined in the library.
+[03/14 15:11:15     12] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D8' is not defined in the library.
+[03/14 15:11:15     12] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4XD1' is not defined in the library.
+[03/14 15:11:15     12] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D0' is not defined in the library.
+[03/14 15:11:15     12] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D1' is not defined in the library.
+[03/14 15:11:15     12] Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+[03/14 15:11:16     13] Read 811 cells in library 'tcbn65gpluswc' 
+[03/14 15:11:16     13] Reading WC_LIB timing library '/home/linux/ieng6/ee260bwi25/jmsin/ece260_project/step3/pnr_fullchip/subckt/sram_w16_WC.lib' ...
+[03/14 15:11:16     13] Read 1 cells in library 'sram_w16' 
+[03/14 15:11:16     13] Reading BC_LIB timing library '/home/linux/ieng6/ee260bwi25/public/PDKdata/lib/tcbn65gplusbc.lib' ...
+[03/14 15:11:17     14] Read 811 cells in library 'tcbn65gplusbc' 
+[03/14 15:11:17     14] Reading BC_LIB timing library '/home/linux/ieng6/ee260bwi25/jmsin/ece260_project/step3/pnr_fullchip/subckt/sram_w16_BC.lib' ...
+[03/14 15:11:17     14] Read 1 cells in library 'sram_w16' 
+[03/14 15:11:17     14] *** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.24min, fe_real=0.52min, fe_mem=465.7M) ***
+[03/14 15:11:17     14] **ERROR: (IMPSYT-16038):	The specified file './netlist/fullchip.out.v' could not be found. Check your file system, correct the file name.
+[03/14 15:11:17     14] **ERROR: (IMPIMEX-7008):	No netlist files are found.
+[03/14 15:11:17     14] 
+[03/14 15:11:36     18] <CMD> set init_pwr_net VDD
+[03/14 15:11:36     18] <CMD> set init_gnd_net VSS
+[03/14 15:11:36     18] <CMD> set init_verilog ./netlist/fullchip.v
+[03/14 15:11:36     18] <CMD> set init_design_netlisttype Verilog
+[03/14 15:11:36     18] <CMD> set init_design_settop 1
+[03/14 15:11:36     18] <CMD> set init_top_cell fullchip
+[03/14 15:11:36     18] <CMD> set init_lef_file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef
+[03/14 15:11:36     18] <CMD> create_library_set -name WC_LIB -timing "$worst_timing_lib ./subckt/sram_w16_WC.lib"
+[03/14 15:11:36     18] <CMD> create_library_set -name BC_LIB -timing "$best_timing_lib ./subckt/sram_w16_BC.lib"
+[03/14 15:11:36     18] <CMD> create_rc_corner -name Cmax -cap_table $worst_captbl -T 125
+[03/14 15:11:36     18] <CMD> create_rc_corner -name Cmin -cap_table $best_captbl -T -40
+[03/14 15:11:36     18] <CMD> create_delay_corner -name WC -library_set WC_LIB -rc_corner Cmax
+[03/14 15:11:36     18] <CMD> create_delay_corner -name BC -library_set BC_LIB -rc_corner Cmin
+[03/14 15:11:36     18] <CMD> create_constraint_mode -name CON -sdc_file [list $sdc]
+[03/14 15:11:36     18] <CMD> create_analysis_view -name WC_VIEW -delay_corner WC -constraint_mode CON
+[03/14 15:11:36     18] The existing analysis_view 'WC_VIEW' has been replaced with new attributes.
+[03/14 15:11:36     18] <CMD> create_analysis_view -name BC_VIEW -delay_corner BC -constraint_mode CON
+[03/14 15:11:36     18] The existing analysis_view 'BC_VIEW' has been replaced with new attributes.
+[03/14 15:11:36     18] <CMD> init_design -setup WC_VIEW -hold BC_VIEW
+[03/14 15:11:36     18] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[03/14 15:11:36     18] **ERROR: (IMPOAX-820):	The OA features are disabled in the current session of Innovus because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Innovus either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+[03/14 15:11:36     18] 
+[03/14 15:11:36     18] **ERROR: (IMPOAX-850):	oaxCreateCdsLibArray command cannot be run as OA features are disabled in this session.
+[03/14 15:11:36     18] INFO: New setup and hold views overwrite old settings during design initialization
+[03/14 15:11:36     18] 
+[03/14 15:11:36     18] Loading LEF file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef ...
+[03/14 15:11:36     18] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+[03/14 15:11:36     18] The LEF parser will ignore this statement.
+[03/14 15:11:36     18] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 28.
+[03/14 15:11:36     18] **WARN: (IMPLF-119):	LAYER 'PO' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-119' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-119):	LAYER 'CO' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-119' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-119):	LAYER 'M1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-119' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-119):	LAYER 'VIA1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-119' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-119):	LAYER 'M2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-119' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-119):	LAYER 'VIA2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-119' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-119):	LAYER 'M3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-119' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-119):	LAYER 'VIA3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-119' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-119):	LAYER 'M4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-119' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-119):	LAYER 'VIA4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-119' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-119):	LAYER 'M5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-119' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-119):	LAYER 'VIA5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-119' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-119):	LAYER 'M6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-119' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-119):	LAYER 'VIA6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-119' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-119):	LAYER 'M7' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-119' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-119):	LAYER 'VIA7' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-119' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-119):	LAYER 'M8' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-119' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-119):	LAYER 'OVERLAP' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-119' for more detail.
+[03/14 15:11:36     18] **ERROR: (IMPLF-223):	The LEF via 'VIA12_1cut' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-223' for more detail.
+[03/14 15:11:36     18] **ERROR: (IMPLF-223):	The LEF via 'VIA12_1cut_H' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-223' for more detail.
+[03/14 15:11:36     18] **ERROR: (IMPLF-223):	The LEF via 'VIA12_1cut_V' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-223' for more detail.
+[03/14 15:11:36     18] **ERROR: (IMPLF-223):	The LEF via 'VIA12_1cut_FAT_C' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-223' for more detail.
+[03/14 15:11:36     18] **ERROR: (IMPLF-223):	The LEF via 'VIA12_1cut_FAT_H' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-223' for more detail.
+[03/14 15:11:36     18] **ERROR: (IMPLF-223):	The LEF via 'VIA12_1cut_FAT_V' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-223' for more detail.
+[03/14 15:11:36     18] **ERROR: (IMPLF-223):	The LEF via 'VIA12_1cut_FAT' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-223' for more detail.
+[03/14 15:11:36     18] **ERROR: (IMPLF-223):	The LEF via 'VIA12_2cut_E' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-223' for more detail.
+[03/14 15:11:36     18] **ERROR: (IMPLF-223):	The LEF via 'VIA12_2cut_W' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-223' for more detail.
+[03/14 15:11:36     18] **ERROR: (IMPLF-223):	The LEF via 'VIA12_2cut_N' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-223' for more detail.
+[03/14 15:11:36     18] **ERROR: (IMPLF-223):	The LEF via 'VIA12_2cut_S' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-223' for more detail.
+[03/14 15:11:36     18] **ERROR: (IMPLF-223):	The LEF via 'VIA12_2cut_HN' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-223' for more detail.
+[03/14 15:11:36     18] **ERROR: (IMPLF-223):	The LEF via 'VIA12_2cut_HS' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-223' for more detail.
+[03/14 15:11:36     18] **ERROR: (IMPLF-223):	The LEF via 'VIA12_4cut' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-223' for more detail.
+[03/14 15:11:36     18] **ERROR: (IMPLF-223):	The LEF via 'VIA23_1cut' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-223' for more detail.
+[03/14 15:11:36     18] **ERROR: (IMPLF-223):	The LEF via 'VIA23_1cut_V' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-223' for more detail.
+[03/14 15:11:36     18] **ERROR: (IMPLF-223):	The LEF via 'VIA23_1cut_H' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-223' for more detail.
+[03/14 15:11:36     18] **ERROR: (IMPLF-223):	The LEF via 'VIA23_1cut_FAT_C' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-223' for more detail.
+[03/14 15:11:36     18] **ERROR: (IMPLF-223):	The LEF via 'VIA23_1cut_FAT_V' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-223' for more detail.
+[03/14 15:11:36     18] **ERROR: (IMPLF-223):	The LEF via 'VIA23_1cut_FAT_H' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-223' for more detail.
+[03/14 15:11:36     18] **WARN: (EMS-27):	Message (IMPLF-223) has exceeded the current message display limit of 20.
+[03/14 15:11:36     18] To increase the message display limit, refer to the product command reference manual.
+[03/14 15:11:36     18] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:36     18] The LEF parser will ignore this statement.
+[03/14 15:11:36     18] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 867.
+[03/14 15:11:36     18] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:36     18] The LEF parser will ignore this statement.
+[03/14 15:11:36     18] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 877.
+[03/14 15:11:36     18] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:36     18] The LEF parser will ignore this statement.
+[03/14 15:11:36     18] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1014.
+[03/14 15:11:36     18] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:36     18] The LEF parser will ignore this statement.
+[03/14 15:11:36     18] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1024.
+[03/14 15:11:36     18] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:36     18] The LEF parser will ignore this statement.
+[03/14 15:11:36     18] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1161.
+[03/14 15:11:36     18] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:36     18] The LEF parser will ignore this statement.
+[03/14 15:11:36     18] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1171.
+[03/14 15:11:36     18] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:36     18] The LEF parser will ignore this statement.
+[03/14 15:11:36     18] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1308.
+[03/14 15:11:36     18] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:36     18] The LEF parser will ignore this statement.
+[03/14 15:11:36     18] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1318.
+[03/14 15:11:36     18] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:36     18] The LEF parser will ignore this statement.
+[03/14 15:11:36     18] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1372.
+[03/14 15:11:36     18] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:36     18] The LEF parser will ignore this statement.
+[03/14 15:11:36     18] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1383.
+[03/14 15:11:36     18] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:36     18] The LEF parser will ignore this statement.
+[03/14 15:11:36     18] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1604.
+[03/14 15:11:36     18] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:11:36     18] The LEF parser will ignore this statement.
+[03/14 15:11:36     18] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1614.
+[03/14 15:11:36     18] **WARN: (IMPLF-151):	The viaRule 'VIAGEN12' has been defined, the content will be skipped.
+[03/14 15:11:36     18] **WARN: (IMPLF-151):	The viaRule 'VIAGEN23' has been defined, the content will be skipped.
+[03/14 15:11:36     18] **WARN: (IMPLF-151):	The viaRule 'VIAGEN34' has been defined, the content will be skipped.
+[03/14 15:11:36     18] **WARN: (IMPLF-151):	The viaRule 'VIAGEN45' has been defined, the content will be skipped.
+[03/14 15:11:36     18] **WARN: (IMPLF-151):	The viaRule 'VIAGEN56' has been defined, the content will be skipped.
+[03/14 15:11:36     18] **WARN: (IMPLF-151):	The viaRule 'VIAGEN67' has been defined, the content will be skipped.
+[03/14 15:11:36     18] **WARN: (IMPLF-151):	The viaRule 'VIAGEN78' has been defined, the content will be skipped.
+[03/14 15:11:36     18] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/14 15:11:36     18] The LEF parser will ignore this statement.
+[03/14 15:11:36     18] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1769.
+[03/14 15:11:36     18] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/14 15:11:36     18] The LEF parser will ignore this statement.
+[03/14 15:11:36     18] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1771.
+[03/14 15:11:36     18] WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+[03/14 15:11:36     18] The LEF parser will ignore this statement.
+[03/14 15:11:36     18] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1772.
+[03/14 15:11:36     18] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/14 15:11:36     18] The LEF parser will ignore this statement.
+[03/14 15:11:36     18] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1776.
+[03/14 15:11:36     18] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/14 15:11:36     18] The LEF parser will ignore this statement.
+[03/14 15:11:36     18] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1778.
+[03/14 15:11:36     18] WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+[03/14 15:11:36     18] The LEF parser will ignore this statement.
+[03/14 15:11:36     18] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1779.
+[03/14 15:11:36     18] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/14 15:11:36     18] The LEF parser will ignore this statement.
+[03/14 15:11:36     18] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1783.
+[03/14 15:11:36     18] **WARN: (IMPLF-58):	MACRO 'AN2D0' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-58' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-58):	MACRO 'AN2D1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-58' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-58):	MACRO 'AN2D2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-58' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-58):	MACRO 'AN2D4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-58' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-58):	MACRO 'AN2D8' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-58' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-58):	MACRO 'AN2XD1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-58' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-58):	MACRO 'AN3D0' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-58' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-58):	MACRO 'AN3D1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-58' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-58):	MACRO 'AN3D2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-58' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-58):	MACRO 'AN3D4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-58' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-58):	MACRO 'AN3D8' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-58' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-58):	MACRO 'AN3XD1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-58' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-58):	MACRO 'AN4D0' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-58' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-58):	MACRO 'AN4D1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-58' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-58):	MACRO 'AN4D2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-58' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-58):	MACRO 'AN4D4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-58' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-58):	MACRO 'AN4D8' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-58' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-58):	MACRO 'AN4XD1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-58' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-58):	MACRO 'ANTENNA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-58' for more detail.
+[03/14 15:11:36     18] **WARN: (IMPLF-58):	MACRO 'AO211D0' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-58' for more detail.
+[03/14 15:11:36     18] **WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+[03/14 15:11:36     18] To increase the message display limit, refer to the product command reference manual.
+[03/14 15:11:36     18] **WARN: (IMPLF-61):	846 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data have been ignored.
+[03/14 15:11:36     18] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:11:36     18] Type 'man IMPLF-61' for more detail.
+[03/14 15:11:36     18] *** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.30min, fe_real=0.83min, fe_mem=465.7M) ***
+[03/14 15:11:36     18] *** Begin netlist parsing (mem=465.7M) ***
+[03/14 15:11:36     18] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D4' is defined in LEF but not in the timing library.
+[03/14 15:11:36     18] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D4' is defined in LEF but not in the timing library.
+[03/14 15:11:36     18] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D2' is defined in LEF but not in the timing library.
+[03/14 15:11:36     18] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D2' is defined in LEF but not in the timing library.
+[03/14 15:11:36     18] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D1' is defined in LEF but not in the timing library.
+[03/14 15:11:36     18] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D1' is defined in LEF but not in the timing library.
+[03/14 15:11:36     18] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D0' is defined in LEF but not in the timing library.
+[03/14 15:11:36     18] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D0' is defined in LEF but not in the timing library.
+[03/14 15:11:36     18] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D4' is defined in LEF but not in the timing library.
+[03/14 15:11:36     18] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D4' is defined in LEF but not in the timing library.
+[03/14 15:11:36     18] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+[03/14 15:11:36     18] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+[03/14 15:11:36     18] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+[03/14 15:11:36     18] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+[03/14 15:11:36     18] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D0' is defined in LEF but not in the timing library.
+[03/14 15:11:36     18] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D0' is defined in LEF but not in the timing library.
+[03/14 15:11:36     18] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D4' is defined in LEF but not in the timing library.
+[03/14 15:11:36     18] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D4' is defined in LEF but not in the timing library.
+[03/14 15:11:36     18] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+[03/14 15:11:36     18] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+[03/14 15:11:36     18] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[03/14 15:11:36     18] To increase the message display limit, refer to the product command reference manual.
+[03/14 15:11:36     18] Created 812 new cells from 4 timing libraries.
+[03/14 15:11:36     18] Reading netlist ...
+[03/14 15:11:36     18] Backslashed names will retain backslash and a trailing blank character.
+[03/14 15:11:36     18] **ERROR: (IMPVL-209):	In Verilog file './netlist/fullchip.v', check line 1 near the text # for the issue: 'syntax error'.  Update the text accordingly.
+[03/14 15:11:36     18] Type 'man IMPVL-209' for more detail.
+[03/14 15:11:36     18] Verilog file './netlist/fullchip.v' has errors!  See above.
+[03/14 15:11:36     18] 
+[03/14 15:11:36     18] *** Memory Usage v#1 (Current mem = 465.652M, initial mem = 149.258M) ***
+[03/14 15:11:36     18] **ERROR: (IMPVL-902):	Failed to read netlist ./netlist/fullchip.v. See previous error messages for details.  Resolve the issues and reload the design.
+
+[03/14 15:12:55     31] <CMD> set init_pwr_net VDD
+[03/14 15:12:55     31] <CMD> set init_gnd_net VSS
+[03/14 15:12:55     31] <CMD> set init_verilog ./netlist/fullchip.v
+[03/14 15:12:55     31] <CMD> set init_design_netlisttype Verilog
+[03/14 15:12:55     31] <CMD> set init_design_settop 1
+[03/14 15:12:55     31] <CMD> set init_top_cell fullchip
+[03/14 15:12:55     31] <CMD> set init_lef_file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef
+[03/14 15:12:55     31] <CMD> create_library_set -name WC_LIB -timing "$worst_timing_lib ./subckt/sram_w16_WC.lib"
+[03/14 15:12:55     31] <CMD> create_library_set -name BC_LIB -timing "$best_timing_lib ./subckt/sram_w16_BC.lib"
+[03/14 15:12:55     31] <CMD> create_rc_corner -name Cmax -cap_table $worst_captbl -T 125
+[03/14 15:12:55     31] <CMD> create_rc_corner -name Cmin -cap_table $best_captbl -T -40
+[03/14 15:12:55     31] <CMD> create_delay_corner -name WC -library_set WC_LIB -rc_corner Cmax
+[03/14 15:12:55     31] <CMD> create_delay_corner -name BC -library_set BC_LIB -rc_corner Cmin
+[03/14 15:12:55     31] <CMD> create_constraint_mode -name CON -sdc_file [list $sdc]
+[03/14 15:12:55     31] <CMD> create_analysis_view -name WC_VIEW -delay_corner WC -constraint_mode CON
+[03/14 15:12:55     31] The existing analysis_view 'WC_VIEW' has been replaced with new attributes.
+[03/14 15:12:55     31] <CMD> create_analysis_view -name BC_VIEW -delay_corner BC -constraint_mode CON
+[03/14 15:12:55     31] The existing analysis_view 'BC_VIEW' has been replaced with new attributes.
+[03/14 15:12:55     31] <CMD> init_design -setup WC_VIEW -hold BC_VIEW
+[03/14 15:12:55     31] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[03/14 15:12:55     31] **ERROR: (IMPOAX-820):	The OA features are disabled in the current session of Innovus because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Innovus either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+[03/14 15:12:55     31] 
+[03/14 15:12:55     31] **ERROR: (IMPOAX-850):	oaxCreateCdsLibArray command cannot be run as OA features are disabled in this session.
+[03/14 15:12:55     31] INFO: New setup and hold views overwrite old settings during design initialization
+[03/14 15:12:55     31] 
+[03/14 15:12:55     31] Loading LEF file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef ...
+[03/14 15:12:55     31] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+[03/14 15:12:55     31] The LEF parser will ignore this statement.
+[03/14 15:12:55     31] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 28.
+[03/14 15:12:55     31] **WARN: (IMPLF-119):	LAYER 'PO' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-119' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-119):	LAYER 'CO' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-119' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-119):	LAYER 'M1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-119' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-119):	LAYER 'VIA1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-119' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-119):	LAYER 'M2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-119' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-119):	LAYER 'VIA2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-119' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-119):	LAYER 'M3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-119' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-119):	LAYER 'VIA3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-119' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-119):	LAYER 'M4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-119' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-119):	LAYER 'VIA4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-119' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-119):	LAYER 'M5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-119' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-119):	LAYER 'VIA5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-119' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-119):	LAYER 'M6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-119' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-119):	LAYER 'VIA6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-119' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-119):	LAYER 'M7' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-119' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-119):	LAYER 'VIA7' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-119' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-119):	LAYER 'M8' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-119' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-119):	LAYER 'OVERLAP' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-119' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPLF-223):	The LEF via 'VIA12_1cut' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-223' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPLF-223):	The LEF via 'VIA12_1cut_H' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-223' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPLF-223):	The LEF via 'VIA12_1cut_V' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-223' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPLF-223):	The LEF via 'VIA12_1cut_FAT_C' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-223' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPLF-223):	The LEF via 'VIA12_1cut_FAT_H' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-223' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPLF-223):	The LEF via 'VIA12_1cut_FAT_V' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-223' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPLF-223):	The LEF via 'VIA12_1cut_FAT' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-223' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPLF-223):	The LEF via 'VIA12_2cut_E' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-223' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPLF-223):	The LEF via 'VIA12_2cut_W' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-223' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPLF-223):	The LEF via 'VIA12_2cut_N' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-223' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPLF-223):	The LEF via 'VIA12_2cut_S' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-223' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPLF-223):	The LEF via 'VIA12_2cut_HN' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-223' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPLF-223):	The LEF via 'VIA12_2cut_HS' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-223' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPLF-223):	The LEF via 'VIA12_4cut' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-223' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPLF-223):	The LEF via 'VIA23_1cut' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-223' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPLF-223):	The LEF via 'VIA23_1cut_V' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-223' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPLF-223):	The LEF via 'VIA23_1cut_H' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-223' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPLF-223):	The LEF via 'VIA23_1cut_FAT_C' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-223' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPLF-223):	The LEF via 'VIA23_1cut_FAT_V' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-223' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPLF-223):	The LEF via 'VIA23_1cut_FAT_H' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-223' for more detail.
+[03/14 15:12:55     31] **WARN: (EMS-27):	Message (IMPLF-223) has exceeded the current message display limit of 20.
+[03/14 15:12:55     31] To increase the message display limit, refer to the product command reference manual.
+[03/14 15:12:55     31] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:12:55     31] The LEF parser will ignore this statement.
+[03/14 15:12:55     31] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 867.
+[03/14 15:12:55     31] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:12:55     31] The LEF parser will ignore this statement.
+[03/14 15:12:55     31] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 877.
+[03/14 15:12:55     31] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:12:55     31] The LEF parser will ignore this statement.
+[03/14 15:12:55     31] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1014.
+[03/14 15:12:55     31] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:12:55     31] The LEF parser will ignore this statement.
+[03/14 15:12:55     31] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1024.
+[03/14 15:12:55     31] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:12:55     31] The LEF parser will ignore this statement.
+[03/14 15:12:55     31] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1161.
+[03/14 15:12:55     31] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:12:55     31] The LEF parser will ignore this statement.
+[03/14 15:12:55     31] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1171.
+[03/14 15:12:55     31] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:12:55     31] The LEF parser will ignore this statement.
+[03/14 15:12:55     31] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1308.
+[03/14 15:12:55     31] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:12:55     31] The LEF parser will ignore this statement.
+[03/14 15:12:55     31] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1318.
+[03/14 15:12:55     31] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:12:55     31] The LEF parser will ignore this statement.
+[03/14 15:12:55     31] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1372.
+[03/14 15:12:55     31] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:12:55     31] The LEF parser will ignore this statement.
+[03/14 15:12:55     31] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1383.
+[03/14 15:12:55     31] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:12:55     31] The LEF parser will ignore this statement.
+[03/14 15:12:55     31] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1604.
+[03/14 15:12:55     31] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/14 15:12:55     31] The LEF parser will ignore this statement.
+[03/14 15:12:55     31] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1614.
+[03/14 15:12:55     31] **WARN: (IMPLF-151):	The viaRule 'VIAGEN12' has been defined, the content will be skipped.
+[03/14 15:12:55     31] **WARN: (IMPLF-151):	The viaRule 'VIAGEN23' has been defined, the content will be skipped.
+[03/14 15:12:55     31] **WARN: (IMPLF-151):	The viaRule 'VIAGEN34' has been defined, the content will be skipped.
+[03/14 15:12:55     31] **WARN: (IMPLF-151):	The viaRule 'VIAGEN45' has been defined, the content will be skipped.
+[03/14 15:12:55     31] **WARN: (IMPLF-151):	The viaRule 'VIAGEN56' has been defined, the content will be skipped.
+[03/14 15:12:55     31] **WARN: (IMPLF-151):	The viaRule 'VIAGEN67' has been defined, the content will be skipped.
+[03/14 15:12:55     31] **WARN: (IMPLF-151):	The viaRule 'VIAGEN78' has been defined, the content will be skipped.
+[03/14 15:12:55     31] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/14 15:12:55     31] The LEF parser will ignore this statement.
+[03/14 15:12:55     31] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1769.
+[03/14 15:12:55     31] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/14 15:12:55     31] The LEF parser will ignore this statement.
+[03/14 15:12:55     31] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1771.
+[03/14 15:12:55     31] WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+[03/14 15:12:55     31] The LEF parser will ignore this statement.
+[03/14 15:12:55     31] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1772.
+[03/14 15:12:55     31] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/14 15:12:55     31] The LEF parser will ignore this statement.
+[03/14 15:12:55     31] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1776.
+[03/14 15:12:55     31] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/14 15:12:55     31] The LEF parser will ignore this statement.
+[03/14 15:12:55     31] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1778.
+[03/14 15:12:55     31] WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+[03/14 15:12:55     31] The LEF parser will ignore this statement.
+[03/14 15:12:55     31] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1779.
+[03/14 15:12:55     31] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/14 15:12:55     31] The LEF parser will ignore this statement.
+[03/14 15:12:55     31] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1783.
+[03/14 15:12:55     31] **WARN: (IMPLF-58):	MACRO 'AN2D0' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-58' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-58):	MACRO 'AN2D1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-58' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-58):	MACRO 'AN2D2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-58' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-58):	MACRO 'AN2D4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-58' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-58):	MACRO 'AN2D8' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-58' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-58):	MACRO 'AN2XD1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-58' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-58):	MACRO 'AN3D0' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-58' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-58):	MACRO 'AN3D1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-58' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-58):	MACRO 'AN3D2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-58' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-58):	MACRO 'AN3D4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-58' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-58):	MACRO 'AN3D8' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-58' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-58):	MACRO 'AN3XD1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-58' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-58):	MACRO 'AN4D0' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-58' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-58):	MACRO 'AN4D1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-58' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-58):	MACRO 'AN4D2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-58' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-58):	MACRO 'AN4D4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-58' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-58):	MACRO 'AN4D8' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-58' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-58):	MACRO 'AN4XD1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-58' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-58):	MACRO 'ANTENNA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-58' for more detail.
+[03/14 15:12:55     31] **WARN: (IMPLF-58):	MACRO 'AO211D0' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-58' for more detail.
+[03/14 15:12:55     31] **WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+[03/14 15:12:55     31] To increase the message display limit, refer to the product command reference manual.
+[03/14 15:12:55     31] **WARN: (IMPLF-61):	846 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data have been ignored.
+[03/14 15:12:55     31] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/14 15:12:55     31] Type 'man IMPLF-61' for more detail.
+[03/14 15:12:55     31] *** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.53min, fe_real=2.15min, fe_mem=465.7M) ***
+[03/14 15:12:55     31] *** Begin netlist parsing (mem=465.7M) ***
+[03/14 15:12:55     31] Created 0 new cells from 4 timing libraries.
+[03/14 15:12:55     31] Reading netlist ...
+[03/14 15:12:55     31] Backslashed names will retain backslash and a trailing blank character.
+[03/14 15:12:55     31] **ERROR: (IMPVL-209):	In Verilog file './netlist/fullchip.v', check line 1 near the text Routing for the issue: 'syntax error'.  Update the text accordingly.
+[03/14 15:12:55     31] Type 'man IMPVL-209' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPVL-209):	In Verilog file './netlist/fullchip.v', check line 2 near the text setNanoRouteMode for the issue: 'syntax error'.  Update the text accordingly.
+[03/14 15:12:55     31] Type 'man IMPVL-209' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPVL-209):	In Verilog file './netlist/fullchip.v', check line 2 near the text - for the issue: 'syntax error'.  Update the text accordingly.
+[03/14 15:12:55     31] Type 'man IMPVL-209' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPVL-209):	In Verilog file './netlist/fullchip.v', check line 2 near the text quiet for the issue: 'syntax error'.  Update the text accordingly.
+[03/14 15:12:55     31] Type 'man IMPVL-209' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPVL-209):	In Verilog file './netlist/fullchip.v', check line 2 near the text - for the issue: 'syntax error'.  Update the text accordingly.
+[03/14 15:12:55     31] Type 'man IMPVL-209' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPVL-209):	In Verilog file './netlist/fullchip.v', check line 2 near the text drouteAllowMergedWireAtPin for the issue: 'syntax error'.  Update the text accordingly.
+[03/14 15:12:55     31] Type 'man IMPVL-209' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPVL-209):	In Verilog file './netlist/fullchip.v', check line 2 near the text false for the issue: 'syntax error'.  Update the text accordingly.
+[03/14 15:12:55     31] Type 'man IMPVL-209' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPVL-209):	In Verilog file './netlist/fullchip.v', check line 3 near the text setNanoRouteMode for the issue: 'syntax error'.  Update the text accordingly.
+[03/14 15:12:55     31] Type 'man IMPVL-209' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPVL-209):	In Verilog file './netlist/fullchip.v', check line 3 near the text - for the issue: 'syntax error'.  Update the text accordingly.
+[03/14 15:12:55     31] Type 'man IMPVL-209' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPVL-209):	In Verilog file './netlist/fullchip.v', check line 3 near the text quiet for the issue: 'syntax error'.  Update the text accordingly.
+[03/14 15:12:55     31] Type 'man IMPVL-209' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPVL-209):	In Verilog file './netlist/fullchip.v', check line 3 near the text - for the issue: 'syntax error'.  Update the text accordingly.
+[03/14 15:12:55     31] Type 'man IMPVL-209' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPVL-209):	In Verilog file './netlist/fullchip.v', check line 3 near the text drouteFixAntenna for the issue: 'syntax error'.  Update the text accordingly.
+[03/14 15:12:55     31] Type 'man IMPVL-209' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPVL-209):	In Verilog file './netlist/fullchip.v', check line 3 near the text true for the issue: 'syntax error'.  Update the text accordingly.
+[03/14 15:12:55     31] Type 'man IMPVL-209' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPVL-209):	In Verilog file './netlist/fullchip.v', check line 4 near the text setNanoRouteMode for the issue: 'syntax error'.  Update the text accordingly.
+[03/14 15:12:55     31] Type 'man IMPVL-209' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPVL-209):	In Verilog file './netlist/fullchip.v', check line 4 near the text - for the issue: 'syntax error'.  Update the text accordingly.
+[03/14 15:12:55     31] Type 'man IMPVL-209' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPVL-209):	In Verilog file './netlist/fullchip.v', check line 4 near the text quiet for the issue: 'syntax error'.  Update the text accordingly.
+[03/14 15:12:55     31] Type 'man IMPVL-209' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPVL-209):	In Verilog file './netlist/fullchip.v', check line 4 near the text - for the issue: 'syntax error'.  Update the text accordingly.
+[03/14 15:12:55     31] Type 'man IMPVL-209' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPVL-209):	In Verilog file './netlist/fullchip.v', check line 4 near the text routeWithTimingDriven for the issue: 'syntax error'.  Update the text accordingly.
+[03/14 15:12:55     31] Type 'man IMPVL-209' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPVL-209):	In Verilog file './netlist/fullchip.v', check line 4 near the text true for the issue: 'syntax error'.  Update the text accordingly.
+[03/14 15:12:55     31] Type 'man IMPVL-209' for more detail.
+[03/14 15:12:55     31] **ERROR: (IMPVL-209):	In Verilog file './netlist/fullchip.v', check line 5 near the text setNanoRouteMode for the issue: 'syntax error'.  Update the text accordingly.
+[03/14 15:12:55     31] Type 'man IMPVL-209' for more detail.
+[03/14 15:12:55     31] **WARN: (EMS-27):	Message (IMPVL-209) has exceeded the current message display limit of 20.
+[03/14 15:12:55     31] To increase the message display limit, refer to the product command reference manual.
+[03/14 15:12:55     31] Verilog file './netlist/fullchip.v' has errors!  See above.
+[03/14 15:12:55     31] 
+[03/14 15:12:55     31] *** Memory Usage v#1 (Current mem = 479.223M, initial mem = 149.258M) ***
+[03/14 15:12:55     31] **ERROR: (IMPVL-902):	Failed to read netlist ./netlist/fullchip.v. See previous error messages for details.  Resolve the issues and reload the design.
+
+[03/14 15:13:06     33] 
+[03/14 15:13:06     33] *** Memory Usage v#1 (Current mem = 479.223M, initial mem = 149.258M) ***
+[03/14 15:13:06     33] 
+[03/14 15:13:06     33] *** Summary of all messages that are not suppressed in this session:
+[03/14 15:13:06     33] Severity  ID               Count  Summary                                  
+[03/14 15:13:06     33] WARNING   IMPLF-151           14  The viaRule '%s' has been defined, the c...
+[03/14 15:13:06     33] WARNING   IMPLF-58          1692  MACRO '%s' has been found in the databas...
+[03/14 15:13:06     33] WARNING   IMPLF-61             2  %d duplicated MACRO definitions have bee...
+[03/14 15:13:06     33] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[03/14 15:13:06     33] ERROR     IMPLF-223          196  The LEF via '%s' has been defined and fo...
+[03/14 15:13:06     33] WARNING   IMPLF-119           36  LAYER '%s' has been found in the databas...
+[03/14 15:13:06     33] ERROR     IMPSYT-6729          2  %s                                       
+[03/14 15:13:06     33] ERROR     IMPSYT-16038         1  The specified file '%s' could not be fou...
+[03/14 15:13:06     33] ERROR     IMPVL-902            2  Failed to read netlist %s. See previous ...
+[03/14 15:13:06     33] ERROR     IMPVL-209          105  In Verilog file '%s', check line %d near...
+[03/14 15:13:06     33] WARNING   IMPVL-159         1622  Pin '%s' of cell '%s' is defined in LEF ...
+[03/14 15:13:06     33] ERROR     IMPOAX-142           3  %s                                       
+[03/14 15:13:06     33] ERROR     IMPOAX-820           3  The OA features are disabled in the curr...
+[03/14 15:13:06     33] ERROR     IMPOAX-850           3  %s command cannot be run as OA features ...
+[03/14 15:13:06     33] ERROR     IMPIMEX-7008         1  No netlist files are found.              
+[03/14 15:13:06     33] *** Message Summary: 3367 warning(s), 316 error(s)
+[03/14 15:13:06     33] 
+[03/14 15:13:06     33] --- Ending "Innovus" (totcpu=0:00:33.8, real=0:02:20, mem=479.2M) ---

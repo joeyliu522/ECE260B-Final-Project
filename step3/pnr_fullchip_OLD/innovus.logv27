@@ -1,0 +1,581 @@
+[03/20 18:03:11      0] 
+[03/20 18:03:11      0] Cadence Innovus(TM) Implementation System.
+[03/20 18:03:11      0] Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+[03/20 18:03:11      0] 
+[03/20 18:03:11      0] Version:	v15.23-s045_1, built Fri Apr 22 12:32:52 PDT 2016
+[03/20 18:03:11      0] Options:	
+[03/20 18:03:11      0] Date:		Thu Mar 20 18:03:11 2025
+[03/20 18:03:11      0] Host:		ieng6-ece-03.ucsd.edu (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (4cores*8cpus*Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz 25344KB)
+[03/20 18:03:11      0] OS:		CentOS Linux release 7.9.2009 (Core)
+[03/20 18:03:11      0] 
+[03/20 18:03:11      0] License:
+[03/20 18:03:11      0] 		invs	Innovus Implementation System	15.2	checkout succeeded
+[03/20 18:03:11      0] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[03/20 18:03:12      0] **ERROR: (IMPOAX-142):	Could not open shared library libinnovusoax22.so : /acsnfs3/software/cadence-innovus152/tools/lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE
+[03/20 18:03:12      0] 
+[03/20 18:03:12      0] **ERROR: (IMPOAX-142):	Could not open shared library libcdsSkillPcell.so : (null)
+[03/20 18:03:12      0] 
+[03/20 18:03:12      0] **ERROR: (IMPOAX-142):	OA features will be disabled in this session.
+[03/20 18:03:12      0] 
+[03/20 18:03:19      7] @(#)CDS: Innovus v15.23-s045_1 (64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5)
+[03/20 18:03:19      7] @(#)CDS: NanoRoute 15.23-s045_1 NR160414-1105/15_23-UB (database version 2.30, 317.6.1) {superthreading v1.26}
+[03/20 18:03:19      7] @(#)CDS: AAE 15.23-s014 (64bit) 04/22/2016 (Linux 2.6.18-194.el5)
+[03/20 18:03:19      7] @(#)CDS: CTE 15.23-s022_1 () Apr 22 2016 09:38:45 ( )
+[03/20 18:03:19      7] @(#)CDS: SYNTECH 15.23-s008_1 () Apr 12 2016 21:52:59 ( )
+[03/20 18:03:19      7] @(#)CDS: CPE v15.23-s045
+[03/20 18:03:19      7] @(#)CDS: IQRC/TQRC 15.1.4-s213 (64bit) Tue Feb  9 17:31:28 PST 2016 (Linux 2.6.18-194.el5)
+[03/20 18:03:19      7] @(#)CDS: OA 22.50-p036 Tue Nov  3 09:29:52 2015
+[03/20 18:03:19      7] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[03/20 18:03:19      7] @(#)CDS: RCDB 11.7
+[03/20 18:03:19      7] --- Running on ieng6-ece-03.ucsd.edu (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (4cores*8cpus*Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz 25344KB) ---
+[03/20 18:03:19      7] Create and set the environment variable TMPDIR to /tmp/innovus_temp_31297_ieng6-ece-03.ucsd.edu_jmsin_yl6H6W.
+
+[03/20 18:03:19      7] 
+[03/20 18:03:19      7] **INFO:  MMMC transition support version v31-84 
+[03/20 18:03:19      7] 
+[03/20 18:03:19      7] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[03/20 18:03:19      7] <CMD> suppressMessage ENCEXT-2799
+[03/20 18:03:20      7] <CMD> getDrawView
+[03/20 18:03:20      7] <CMD> loadWorkspace -name Physical
+[03/20 18:03:20      7] <CMD> win
+[03/20 18:03:37     10] <CMD> set init_pwr_net VDD
+[03/20 18:03:37     10] <CMD> set init_gnd_net VSS
+[03/20 18:03:37     10] <CMD> set init_verilog ./netlist/core.v
+[03/20 18:03:37     10] <CMD> set init_design_netlisttype Verilog
+[03/20 18:03:37     10] <CMD> set init_design_settop 1
+[03/20 18:03:37     10] <CMD> set init_top_cell core
+[03/20 18:03:37     10] <CMD> set init_lef_file {/home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef ./subckt/sram_w16.lef}
+[03/20 18:03:37     10] <CMD> create_library_set -name WC_LIB -timing "$worst_timing_lib ./subckt/sram_w16_WC.lib"
+[03/20 18:03:37     10] <CMD> create_library_set -name BC_LIB -timing "$best_timing_lib ./subckt/sram_w16_BC.lib"
+[03/20 18:03:37     10] <CMD> create_rc_corner -name Cmax -cap_table $worst_captbl -T 125
+[03/20 18:03:37     10] <CMD> create_rc_corner -name Cmin -cap_table $best_captbl -T -40
+[03/20 18:03:37     10] <CMD> create_delay_corner -name WC -library_set WC_LIB -rc_corner Cmax
+[03/20 18:03:37     10] <CMD> create_delay_corner -name BC -library_set BC_LIB -rc_corner Cmin
+[03/20 18:03:37     10] <CMD> create_constraint_mode -name CON -sdc_file [list $sdc]
+[03/20 18:03:37     10] **ERROR: (TCLCMD-989):	cannot open SDC file './constraints/core.sdc' for mode 'CON'
+[03/20 18:03:37     10] 
+[03/20 18:04:07     15] <CMD> set init_pwr_net VDD
+[03/20 18:04:07     15] <CMD> set init_gnd_net VSS
+[03/20 18:04:07     15] <CMD> set init_verilog ./netlist/core.v
+[03/20 18:04:07     15] <CMD> set init_design_netlisttype Verilog
+[03/20 18:04:07     15] <CMD> set init_design_settop 1
+[03/20 18:04:07     15] <CMD> set init_top_cell core
+[03/20 18:04:07     15] <CMD> set init_lef_file {/home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef ./subckt/sram_w16.lef}
+[03/20 18:04:07     15] <CMD> create_library_set -name WC_LIB -timing "$worst_timing_lib ./subckt/sram_w16_WC.lib"
+[03/20 18:04:07     15] <CMD> create_library_set -name BC_LIB -timing "$best_timing_lib ./subckt/sram_w16_BC.lib"
+[03/20 18:04:07     15] <CMD> create_rc_corner -name Cmax -cap_table $worst_captbl -T 125
+[03/20 18:04:07     15] <CMD> create_rc_corner -name Cmin -cap_table $best_captbl -T -40
+[03/20 18:04:07     15] <CMD> create_delay_corner -name WC -library_set WC_LIB -rc_corner Cmax
+[03/20 18:04:07     15] <CMD> create_delay_corner -name BC -library_set BC_LIB -rc_corner Cmin
+[03/20 18:04:07     15] <CMD> create_constraint_mode -name CON -sdc_file [list $sdc]
+[03/20 18:04:07     15] <CMD> create_analysis_view -name WC_VIEW -delay_corner WC -constraint_mode CON
+[03/20 18:04:07     15] <CMD> create_analysis_view -name BC_VIEW -delay_corner BC -constraint_mode CON
+[03/20 18:04:07     15] <CMD> init_design -setup WC_VIEW -hold BC_VIEW
+[03/20 18:04:07     15] **ERROR: (IMPOAX-820):	The OA features are disabled in the current session of Innovus because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Innovus either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+[03/20 18:04:07     15] 
+[03/20 18:04:07     15] **ERROR: (IMPOAX-850):	oaxCreateCdsLibArray command cannot be run as OA features are disabled in this session.
+[03/20 18:04:07     15] 
+[03/20 18:04:07     15] Loading LEF file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef ...
+[03/20 18:04:07     15] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+[03/20 18:04:07     15] The LEF parser will ignore this statement.
+[03/20 18:04:07     15] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 28.
+[03/20 18:04:07     15] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/20 18:04:07     15] The LEF parser will ignore this statement.
+[03/20 18:04:07     15] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 867.
+[03/20 18:04:07     15] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/20 18:04:07     15] The LEF parser will ignore this statement.
+[03/20 18:04:07     15] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 877.
+[03/20 18:04:07     15] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/20 18:04:07     15] The LEF parser will ignore this statement.
+[03/20 18:04:07     15] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1014.
+[03/20 18:04:07     15] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/20 18:04:07     15] The LEF parser will ignore this statement.
+[03/20 18:04:07     15] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1024.
+[03/20 18:04:07     15] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/20 18:04:07     15] The LEF parser will ignore this statement.
+[03/20 18:04:07     15] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1161.
+[03/20 18:04:07     15] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/20 18:04:07     15] The LEF parser will ignore this statement.
+[03/20 18:04:07     15] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1171.
+[03/20 18:04:07     15] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/20 18:04:07     15] The LEF parser will ignore this statement.
+[03/20 18:04:07     15] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1308.
+[03/20 18:04:07     15] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/20 18:04:07     15] The LEF parser will ignore this statement.
+[03/20 18:04:07     15] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1318.
+[03/20 18:04:07     15] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/20 18:04:07     15] The LEF parser will ignore this statement.
+[03/20 18:04:07     15] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1372.
+[03/20 18:04:07     15] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/20 18:04:07     15] The LEF parser will ignore this statement.
+[03/20 18:04:07     15] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1383.
+[03/20 18:04:07     15] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/20 18:04:07     15] The LEF parser will ignore this statement.
+[03/20 18:04:07     15] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1604.
+[03/20 18:04:07     15] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/20 18:04:07     15] The LEF parser will ignore this statement.
+[03/20 18:04:07     15] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1614.
+[03/20 18:04:07     15] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/20 18:04:07     15] The LEF parser will ignore this statement.
+[03/20 18:04:07     15] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1769.
+[03/20 18:04:07     15] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/20 18:04:07     15] The LEF parser will ignore this statement.
+[03/20 18:04:07     15] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1771.
+[03/20 18:04:07     15] WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+[03/20 18:04:07     15] The LEF parser will ignore this statement.
+[03/20 18:04:07     15] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1772.
+[03/20 18:04:07     15] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/20 18:04:07     15] The LEF parser will ignore this statement.
+[03/20 18:04:07     15] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1776.
+[03/20 18:04:07     15] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/20 18:04:07     15] The LEF parser will ignore this statement.
+[03/20 18:04:07     15] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1778.
+[03/20 18:04:07     15] WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+[03/20 18:04:07     15] The LEF parser will ignore this statement.
+[03/20 18:04:07     15] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1779.
+[03/20 18:04:07     15] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/20 18:04:07     15] The LEF parser will ignore this statement.
+[03/20 18:04:07     15] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1783.
+[03/20 18:04:07     15] Set DBUPerIGU to M2 pitch 400.
+[03/20 18:04:07     15] 
+[03/20 18:04:07     15] Loading LEF file ./subckt/sram_w16.lef ...
+[03/20 18:04:07     15] **WARN: (IMPLF-200):	Pin 'CLK' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-200' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-200):	Pin 'D[127]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-200' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-200):	Pin 'D[126]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-200' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-200):	Pin 'D[125]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-200' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-200):	Pin 'D[124]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-200' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-200):	Pin 'D[123]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-200' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-200):	Pin 'D[122]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-200' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-200):	Pin 'D[121]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-200' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-200):	Pin 'D[120]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-200' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-200):	Pin 'D[119]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-200' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-200):	Pin 'D[118]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-200' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-200):	Pin 'D[117]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-200' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-200):	Pin 'D[116]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-200' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-200):	Pin 'D[115]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-200' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-200):	Pin 'D[114]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-200' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-200):	Pin 'D[113]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-200' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-200):	Pin 'D[112]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-200' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-200):	Pin 'D[111]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-200' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-200):	Pin 'D[110]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-200' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-200):	Pin 'D[109]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-200' for more detail.
+[03/20 18:04:07     15] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[03/20 18:04:07     15] To increase the message display limit, refer to the product command reference manual.
+[03/20 18:04:07     15] **WARN: (IMPLF-201):	Pin 'Q[127]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-201' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-201):	Pin 'Q[126]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-201' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-201):	Pin 'Q[125]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-201' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-201):	Pin 'Q[124]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-201' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-201):	Pin 'Q[123]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-201' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-201):	Pin 'Q[122]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-201' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-201):	Pin 'Q[121]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-201' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-201):	Pin 'Q[120]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-201' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-201):	Pin 'Q[119]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-201' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-201):	Pin 'Q[118]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-201' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-201):	Pin 'Q[117]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-201' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-201):	Pin 'Q[116]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-201' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-201):	Pin 'Q[115]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-201' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-201):	Pin 'Q[114]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-201' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-201):	Pin 'Q[113]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-201' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-201):	Pin 'Q[112]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-201' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-201):	Pin 'Q[111]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-201' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-201):	Pin 'Q[110]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-201' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-201):	Pin 'Q[109]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-201' for more detail.
+[03/20 18:04:07     15] **WARN: (IMPLF-201):	Pin 'Q[108]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/20 18:04:07     15] Type 'man IMPLF-201' for more detail.
+[03/20 18:04:07     15] **WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+[03/20 18:04:07     15] To increase the message display limit, refer to the product command reference manual.
+[03/20 18:04:07     15] 
+[03/20 18:04:07     15] viaInitial starts at Thu Mar 20 18:04:07 2025
+viaInitial ends at Thu Mar 20 18:04:07 2025
+Reading WC_LIB timing library '/home/linux/ieng6/ee260bwi25/public/PDKdata/lib/tcbn65gpluswc.lib' ...
+[03/20 18:04:07     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D0' is not defined in the library.
+[03/20 18:04:07     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D1' is not defined in the library.
+[03/20 18:04:07     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D2' is not defined in the library.
+[03/20 18:04:07     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D4' is not defined in the library.
+[03/20 18:04:07     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D8' is not defined in the library.
+[03/20 18:04:07     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2XD1' is not defined in the library.
+[03/20 18:04:07     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D0' is not defined in the library.
+[03/20 18:04:07     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D1' is not defined in the library.
+[03/20 18:04:07     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D2' is not defined in the library.
+[03/20 18:04:07     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D4' is not defined in the library.
+[03/20 18:04:07     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D8' is not defined in the library.
+[03/20 18:04:07     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3XD1' is not defined in the library.
+[03/20 18:04:07     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D0' is not defined in the library.
+[03/20 18:04:07     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D1' is not defined in the library.
+[03/20 18:04:07     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D2' is not defined in the library.
+[03/20 18:04:07     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D4' is not defined in the library.
+[03/20 18:04:07     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D8' is not defined in the library.
+[03/20 18:04:07     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4XD1' is not defined in the library.
+[03/20 18:04:07     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D0' is not defined in the library.
+[03/20 18:04:07     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D1' is not defined in the library.
+[03/20 18:04:07     15] Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+[03/20 18:04:08     16] Read 811 cells in library 'tcbn65gpluswc' 
+[03/20 18:04:08     16] Reading WC_LIB timing library '/home/linux/ieng6/ee260bwi25/jmsin/testpnr/pnr_fullchip/subckt/sram_w16_WC.lib' ...
+[03/20 18:04:08     16] Read 1 cells in library 'sram_w16' 
+[03/20 18:04:08     16] Reading BC_LIB timing library '/home/linux/ieng6/ee260bwi25/public/PDKdata/lib/tcbn65gplusbc.lib' ...
+[03/20 18:04:09     18] Read 811 cells in library 'tcbn65gplusbc' 
+[03/20 18:04:09     18] Reading BC_LIB timing library '/home/linux/ieng6/ee260bwi25/jmsin/testpnr/pnr_fullchip/subckt/sram_w16_BC.lib' ...
+[03/20 18:04:09     18] Read 1 cells in library 'sram_w16' 
+[03/20 18:04:09     18] *** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.30min, fe_real=0.97min, fe_mem=469.8M) ***
+[03/20 18:04:09     18] *** Begin netlist parsing (mem=469.8M) ***
+[03/20 18:04:09     18] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D4' is defined in LEF but not in the timing library.
+[03/20 18:04:09     18] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D4' is defined in LEF but not in the timing library.
+[03/20 18:04:09     18] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D2' is defined in LEF but not in the timing library.
+[03/20 18:04:09     18] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D2' is defined in LEF but not in the timing library.
+[03/20 18:04:09     18] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D1' is defined in LEF but not in the timing library.
+[03/20 18:04:09     18] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D1' is defined in LEF but not in the timing library.
+[03/20 18:04:09     18] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D0' is defined in LEF but not in the timing library.
+[03/20 18:04:09     18] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D0' is defined in LEF but not in the timing library.
+[03/20 18:04:09     18] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D4' is defined in LEF but not in the timing library.
+[03/20 18:04:09     18] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D4' is defined in LEF but not in the timing library.
+[03/20 18:04:09     18] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+[03/20 18:04:09     18] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+[03/20 18:04:09     18] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+[03/20 18:04:09     18] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+[03/20 18:04:09     18] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D0' is defined in LEF but not in the timing library.
+[03/20 18:04:09     18] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D0' is defined in LEF but not in the timing library.
+[03/20 18:04:09     18] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D4' is defined in LEF but not in the timing library.
+[03/20 18:04:09     18] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D4' is defined in LEF but not in the timing library.
+[03/20 18:04:09     18] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+[03/20 18:04:09     18] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+[03/20 18:04:09     18] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[03/20 18:04:09     18] To increase the message display limit, refer to the product command reference manual.
+[03/20 18:04:09     18] Created 812 new cells from 4 timing libraries.
+[03/20 18:04:09     18] Reading netlist ...
+[03/20 18:04:09     18] Backslashed names will retain backslash and a trailing blank character.
+[03/20 18:04:09     18] Reading verilog netlist './netlist/core.v'
+[03/20 18:04:09     18] **WARN: (IMPVL-209):	In Verilog file './netlist/core.v', check line 60831 near the text ) for the issue: 'width-mismatched port connection'.  Update the text accordingly.
+[03/20 18:04:09     18] Type 'man IMPVL-209' for more detail.
+[03/20 18:04:09     18] **WARN: (IMPVL-361):	Number of nets (160) more than bus (D) pin number (128).  The extra upper nets will be ignored.
+[03/20 18:04:09     18] **WARN: (IMPVL-209):	In Verilog file './netlist/core.v', check line 60831 near the text ) for the issue: 'width-mismatched port connection'.  Update the text accordingly.
+[03/20 18:04:09     18] Type 'man IMPVL-209' for more detail.
+[03/20 18:04:09     18] **WARN: (IMPVL-361):	Number of nets (160) more than bus (Q) pin number (128).  The extra upper nets will be ignored.
+[03/20 18:04:09     18] 
+[03/20 18:04:09     18] *** Memory Usage v#1 (Current mem = 499.371M, initial mem = 152.258M) ***
+[03/20 18:04:09     18] *** End netlist parsing (cpu=0:00:00.3, real=0:00:00.0, mem=499.4M) ***
+[03/20 18:04:09     18] Set top cell to core.
+[03/20 18:04:10     18] Hooked 1624 DB cells to tlib cells.
+[03/20 18:04:10     18] Starting recursive module instantiation check.
+[03/20 18:04:10     18] No recursion found.
+[03/20 18:04:10     18] Building hierarchical netlist for Cell core ...
+[03/20 18:04:10     18] *** Netlist is unique.
+[03/20 18:04:10     18] ** info: there are 1869 modules.
+[03/20 18:04:10     18] ** info: there are 37489 stdCell insts.
+[03/20 18:04:10     18] ** info: there are 3 macros.
+[03/20 18:04:10     18] 
+[03/20 18:04:10     18] *** Memory Usage v#1 (Current mem = 575.883M, initial mem = 152.258M) ***
+[03/20 18:04:10     18] **WARN: (IMPFP-3961):	The techSite 'dcore' has no related cells in LEF/OA library. Cannot make calculations for this site type unless cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[03/20 18:04:10     18] Type 'man IMPFP-3961' for more detail.
+[03/20 18:04:10     18] **WARN: (IMPFP-3961):	The techSite 'ccore' has no related cells in LEF/OA library. Cannot make calculations for this site type unless cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[03/20 18:04:10     18] Type 'man IMPFP-3961' for more detail.
+[03/20 18:04:10     18] Set Default Net Delay as 1000 ps.
+[03/20 18:04:10     18] Set Default Net Load as 0.5 pF. 
+[03/20 18:04:10     18] Set Default Input Pin Transition as 0.1 ps.
+[03/20 18:04:10     19] Initializing multi-corner RC extraction with 2 active RC Corners ...
+[03/20 18:04:10     19] Reading Capacitance Table File /home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cworst.captable ...
+[03/20 18:04:10     19] **WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/20 18:04:10     19] **WARN: (IMPEXT-2771):	Via VIA_8 specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/20 18:04:10     19] **WARN: (IMPEXT-2801):	Resistance values are not provided in the Cap Table. Sheet resistance defined in the LEF file will be used.
+[03/20 18:04:10     19] **WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+[03/20 18:04:10     19] Reading Capacitance Table File /home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cbest.captable ...
+[03/20 18:04:10     19] **WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/20 18:04:10     19] **WARN: (IMPEXT-2771):	Via VIA_8 specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/20 18:04:10     19] **WARN: (IMPEXT-2801):	Resistance values are not provided in the Cap Table. Sheet resistance defined in the LEF file will be used.
+[03/20 18:04:10     19] **WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+[03/20 18:04:10     19] Importing multi-corner RC tables ... 
+[03/20 18:04:10     19] Summary of Active RC-Corners : 
+[03/20 18:04:10     19]  
+[03/20 18:04:10     19]  Analysis View: WC_VIEW
+[03/20 18:04:10     19]     RC-Corner Name        : Cmax
+[03/20 18:04:10     19]     RC-Corner Index       : 0
+[03/20 18:04:10     19]     RC-Corner Temperature : 125 Celsius
+[03/20 18:04:10     19]     RC-Corner Cap Table   : '/home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cworst.captable'
+[03/20 18:04:10     19]     RC-Corner PreRoute Res Factor         : 1
+[03/20 18:04:10     19]     RC-Corner PreRoute Cap Factor         : 1
+[03/20 18:04:10     19]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[03/20 18:04:10     19]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[03/20 18:04:10     19]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[03/20 18:04:10     19]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[03/20 18:04:10     19]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[03/20 18:04:10     19]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[03/20 18:04:10     19]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[03/20 18:04:10     19]  
+[03/20 18:04:10     19]  Analysis View: BC_VIEW
+[03/20 18:04:10     19]     RC-Corner Name        : Cmin
+[03/20 18:04:10     19]     RC-Corner Index       : 1
+[03/20 18:04:10     19]     RC-Corner Temperature : -40 Celsius
+[03/20 18:04:10     19]     RC-Corner Cap Table   : '/home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cbest.captable'
+[03/20 18:04:10     19]     RC-Corner PreRoute Res Factor         : 1
+[03/20 18:04:10     19]     RC-Corner PreRoute Cap Factor         : 1
+[03/20 18:04:10     19]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[03/20 18:04:10     19]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[03/20 18:04:10     19]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[03/20 18:04:10     19]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[03/20 18:04:10     19]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[03/20 18:04:10     19]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[03/20 18:04:10     19]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[03/20 18:04:10     19] *Info: initialize multi-corner CTS.
+[03/20 18:04:10     19] Reading timing constraints file './constraints/core.sdc' ...
+[03/20 18:04:10     19] Current (total cpu=0:00:19.4, real=0:00:59.0, peak res=328.6M, current mem=699.4M)
+[03/20 18:04:11     19] **WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ./constraints/core.sdc, Line 9).
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[23]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[22]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[21]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[20]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[19]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[18]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[17]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[16]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[15]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[14]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[13]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[12]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[11]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[10]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[9]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[8]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[7]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[6]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[5]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[4]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/core.sdc, Line 9).
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] Message <TCLCMD-979> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this. (File ./constraints/core.sdc, Line 9).
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] INFO (CTE): Reading of timing constraints file ./constraints/core.sdc completed, with 1 Warnings and 20 Errors.
+[03/20 18:04:11     19] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:01.0, peak res=343.9M, current mem=716.6M)
+[03/20 18:04:11     19] Current (total cpu=0:00:19.5, real=0:01:00.0, peak res=343.9M, current mem=716.6M)
+[03/20 18:04:11     19] Summary for sequential cells idenfication: 
+[03/20 18:04:11     19] Identified SBFF number: 199
+[03/20 18:04:11     19] Identified MBFF number: 0
+[03/20 18:04:11     19] Not identified SBFF number: 0
+[03/20 18:04:11     19] Not identified MBFF number: 0
+[03/20 18:04:11     19] Number of sequential cells which are not FFs: 104
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] Total number of combinational cells: 492
+[03/20 18:04:11     19] Total number of sequential cells: 303
+[03/20 18:04:11     19] Total number of tristate cells: 11
+[03/20 18:04:11     19] Total number of level shifter cells: 0
+[03/20 18:04:11     19] Total number of power gating cells: 0
+[03/20 18:04:11     19] Total number of isolation cells: 0
+[03/20 18:04:11     19] Total number of power switch cells: 0
+[03/20 18:04:11     19] Total number of pulse generator cells: 0
+[03/20 18:04:11     19] Total number of always on buffers: 0
+[03/20 18:04:11     19] Total number of retention cells: 0
+[03/20 18:04:11     19] List of usable buffers: BUFFD1 BUFFD0 BUFFD2 BUFFD3 BUFFD4 BUFFD6 BUFFD8 BUFFD12 BUFFD16 CKBD1 CKBD0 CKBD2 CKBD3 CKBD4 CKBD6 CKBD8 CKBD12 CKBD16
+[03/20 18:04:11     19] Total number of usable buffers: 18
+[03/20 18:04:11     19] List of unusable buffers: BUFFD20 BUFFD24 CKBD20 CKBD24 GBUFFD1 GBUFFD3 GBUFFD2 GBUFFD4 GBUFFD8
+[03/20 18:04:11     19] Total number of unusable buffers: 9
+[03/20 18:04:11     19] List of usable inverters: CKND1 CKND0 CKND2 CKND3 CKND4 CKND6 CKND8 CKND12 CKND16 INVD1 INVD0 INVD2 INVD3 INVD4 INVD6 INVD8 INVD12 INVD16
+[03/20 18:04:11     19] Total number of usable inverters: 18
+[03/20 18:04:11     19] List of unusable inverters: CKND20 CKND24 GINVD2 GINVD1 GINVD4 GINVD3 GINVD8 INVD20 INVD24
+[03/20 18:04:11     19] Total number of unusable inverters: 9
+[03/20 18:04:11     19] List of identified usable delay cells:
+[03/20 18:04:11     19] Total number of identified usable delay cells: 0
+[03/20 18:04:11     19] List of identified unusable delay cells: DEL0 DEL005 DEL01 DEL015 DEL02 DEL1 DEL2 DEL3 DEL4
+[03/20 18:04:11     19] Total number of identified unusable delay cells: 9
+[03/20 18:04:11     19] All delay cells are dont_use. Buffers will be used to fix hold violations.
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] *** Summary of all messages that are not suppressed in this session:
+[03/20 18:04:11     19] Severity  ID               Count  Summary                                  
+[03/20 18:04:11     19] WARNING   IMPLF-200          136  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[03/20 18:04:11     19] WARNING   IMPLF-201          128  Pin '%s' in macro '%s' has no ANTENNADIF...
+[03/20 18:04:11     19] WARNING   IMPFP-3961           2  The techSite '%s' has no related cells i...
+[03/20 18:04:11     19] WARNING   IMPEXT-2710          2  Basic Cap table for layer M%d is ignored...
+[03/20 18:04:11     19] WARNING   IMPEXT-2760          2  Layer M%d specified in the cap table is ...
+[03/20 18:04:11     19] WARNING   IMPEXT-2771          2  Via %s specified in the cap table is ign...
+[03/20 18:04:11     19] WARNING   IMPEXT-2801          2  Resistance values are not provided in th...
+[03/20 18:04:11     19] WARNING   IMPVL-209            2  In Verilog file '%s', check line %d near...
+[03/20 18:04:11     19] WARNING   IMPVL-159         1624  Pin '%s' of cell '%s' is defined in LEF ...
+[03/20 18:04:11     19] WARNING   IMPVL-361            2  Number of nets (%d) more than bus (%s) p...
+[03/20 18:04:11     19] ERROR     IMPOAX-820           1  The OA features are disabled in the curr...
+[03/20 18:04:11     19] ERROR     IMPOAX-850           1  %s command cannot be run as OA features ...
+[03/20 18:04:11     19] *** Message Summary: 1902 warning(s), 2 error(s)
+[03/20 18:04:11     19] 
+[03/20 18:04:11     19] <CMD> set_interactive_constraint_modes {CON}
+[03/20 18:04:11     19] <CMD> setDesignMode -process 65
+[03/20 18:04:11     19] Applying the recommended capacitance filtering threshold values for 65nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+[03/20 18:04:11     19] 	These values will be used by all post-route extraction engines, including tQuantus, IQRC and Quantus QRC extraction.
+[03/20 18:04:11     19] 	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+[03/20 18:04:11     19] 	The accuracy mode for postRoute effortLevel low extraction will be set to 'high'.
+[03/20 18:04:11     19] 	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode will be 'medium' if Quantus QRC technology file is specified else 'low'.
+[03/20 18:04:11     19] Updating process node dependent CCOpt properties for the 65nm process node.
+[03/20 18:04:11     19] <CMD> floorPlan -site core -s 1200 1700 10 10 50 10
+[03/20 18:04:11     19] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[03/20 18:04:11     19] <CMD> timeDesign -preplace -prefix preplace
+[03/20 18:04:11     19] **WARN: (IMPOPT-7136):	timing_socv_statistical_min_max_mode 'statistical' is not supported by Innovus. Setting it to 'mean_and_three_sigma_bounded'.
+[03/20 18:04:11     19] Set Using Default Delay Limit as 101.
+[03/20 18:04:11     19] **WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+[03/20 18:04:11     19] Setting High Fanout Nets ( > 100 ) as ideal temporarily for -prePlace option
+[03/20 18:04:11     19] Set Default Net Delay as 0 ps.
+[03/20 18:04:11     19] Set Default Net Load as 0 pF. 
+[03/20 18:04:11     19] Effort level <high> specified for reg2reg path_group
+[03/20 18:04:12     21] #################################################################################
+[03/20 18:04:12     21] # Design Stage: PreRoute
+[03/20 18:04:12     21] # Design Name: core
+[03/20 18:04:12     21] # Design Mode: 65nm
+[03/20 18:04:12     21] # Analysis Mode: MMMC Non-OCV 
+[03/20 18:04:12     21] # Parasitics Mode: No SPEF/RCDB
+[03/20 18:04:12     21] # Signoff Settings: SI Off 
+[03/20 18:04:12     21] #################################################################################
+[03/20 18:04:13     21] AAE_INFO: 1 threads acquired from CTE.
+[03/20 18:04:13     21] Calculate delays in BcWc mode...
+[03/20 18:04:13     21] Topological Sorting (CPU = 0:00:00.1, MEM = 770.3M, InitMEM = 763.5M)
+[03/20 18:04:20     28] End Timing Check Calculation. (CPU Time=0:00:00.1, Real Time=0:00:00.0)
+[03/20 18:04:20     28] End delay calculation. (MEM=984.227 CPU=0:00:06.2 REAL=0:00:06.0)
+[03/20 18:04:20     28] *** CDM Built up (cpu=0:00:07.4  real=0:00:08.0  mem= 984.2M) ***
+[03/20 18:04:21     29] *** Done Building Timing Graph (cpu=0:00:08.4 real=0:00:09.0 totSessionCpu=0:00:29.7 mem=984.2M)
+[03/20 18:04:22     31] 
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ WC_VIEW 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| -36.967 | -36.967 | -0.756  |
+|           TNS (ns):|-10529.8 |-10443.3 |-492.714 |
+|    Violating Paths:|  4307   |  4283   |  2775   |
+|          All Paths:|  8335   |  8131   |  5097   |
++--------------------+---------+---------+---------+
+
+Density: 0.000%
+------------------------------------------------------------
+Set Using Default Delay Limit as 1000.
+[03/20 18:04:23     31] Resetting back High Fanout Nets as non-ideal
+[03/20 18:04:23     31] Set Default Net Delay as 1000 ps.
+[03/20 18:04:23     31] Set Default Net Load as 0.5 pF. 
+[03/20 18:04:23     31] Reported timing to dir ./timingReports
+[03/20 18:04:23     31] Total CPU time: 11.84 sec
+[03/20 18:04:23     31] Total Real time: 12.0 sec
+[03/20 18:04:23     31] Total Memory Usage: 875.097656 Mbytes
+[03/20 18:04:23     31] <CMD> globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+[03/20 18:04:23     31] 37492 new pwr-pin connections were made to global net 'VDD'.
+[03/20 18:04:23     31] <CMD> globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+[03/20 18:04:23     31] 37492 new gnd-pin connections were made to global net 'VSS'.
+[03/20 18:04:23     31] <CMD> addRing -spacing {top 2 bottom 2 left 2 right 2} -width {top 3 bottom 3 left 3 right 3} -layer {top M2 bottom M2 left M2 right M2} -center 1 -type core_rings -nets {VSS  VDD}
+[03/20 18:04:23     31] 
+[03/20 18:04:23     31] Ring generation is complete; vias are now being generated.
+[03/20 18:04:23     31] The power planner created 8 wires.
+[03/20 18:04:23     31] *** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 875.1M) ***
+[03/20 18:04:23     31] <CMD> setAddStripeMode -break_at block_ring
+[03/20 18:04:23     31] Stripe will break at block ring.
+[03/20 18:04:23     31] <CMD> addStripe -nets {VDD VSS} -layer M7 -direction horizontal -width 2 -spacing 6 -number_of_sets 35
+[03/20 18:04:23     31] 
+[03/20 18:04:23     31] Starting stripe generation ...
+[03/20 18:04:23     31] Non-Default setAddStripeOption Settings :
+[03/20 18:04:23     31]   NONE
+[03/20 18:04:23     31] Stripe generation is complete; vias are now being generated.
+[03/20 18:04:23     31] The power planner created 70 wires.
+[03/20 18:04:23     31] *** Ending Stripe Generation (totcpu: 0:00:00.1,real: 0:00:00.0, mem: 875.1M) ***
+[03/20 18:04:23     31] <CMD> setObjFPlanBox Instance core_instance/kmem_instance 200 100 404.0255 1071.085
+[03/20 18:04:23     31] <CMD> setObjFPlanBox Instance core_instance/qmem_instance 200 660.1875 1027.255 1080.1875
+[03/20 18:04:23     31] <CMD> setObjFPlanBox Instance core_instance/psum_mem_instance 200.0 1194.847 1020.0 1614.847
+[03/20 18:04:23     31] <CMD> addHaloToBlock {3 3 3 3} core_instance/qmem_instance
+[03/20 18:04:23     31] 
+[03/20 18:04:23     31] Usage: addHaloToBlock [-help] <left_bottom_right_top> [-fromInstBox]
+[03/20 18:04:23     31]                       [-ori <orientation>] [-snapToSite] [<inst_name> | -allMacro  | -allBlackBox  | -allCommitPtn  | -allBlock  | -allIOPad  | -cell <name>]
+[03/20 18:04:23     31] 
+[03/20 18:04:23     31] -help                       # Prints out the command usage
+[03/20 18:04:23     31] <left_bottom_right_top>     # halo of 4 side: left bottom right top
+[03/20 18:04:23     31]                             # (box, required)
+[03/20 18:04:23     31] <inst_name>                 # for instance (string, optional)
+[03/20 18:04:23     31] -allBlackBox                # for all blackBoxs (bool, optional)
+[03/20 18:04:23     31] -allBlock                   # for all blocks (bool, optional)
+[03/20 18:04:23     31] -allCommitPtn               # for all partitions (bool, optional)
+[03/20 18:04:23     31] -allIOPad                   # for all Io Pads (bool, optional)
+[03/20 18:04:23     31] -allMacro                   # for all Macros (bool, optional)
+[03/20 18:04:23     31] -cell <name>                # by cell name (string, optional)
+[03/20 18:04:23     31] -fromInstBox                # for all blocks (bool, optional)
+[03/20 18:04:23     31] -ori <orientation>          # base on orientation (string, optional)
+[03/20 18:04:23     31] -snapToSite                 # halo box will snap to site (bool, optional)
+[03/20 18:04:23     31] 
+[03/20 18:04:23     31] 
+[03/20 18:04:23     31] **ERROR: (IMPSYC-194):	Incorrect usage for command 'addHaloToBlock'.
+[03/20 18:04:23     31] 
+[03/20 22:08:56   2879] 
+[03/20 22:08:56   2879] *** Memory Usage v#1 (Current mem = 1038.125M, initial mem = 152.258M) ***
+[03/20 22:08:56   2879] 
+[03/20 22:08:56   2879] *** Summary of all messages that are not suppressed in this session:
+[03/20 22:08:56   2879] Severity  ID               Count  Summary                                  
+[03/20 22:08:56   2879] WARNING   IMPLF-200          136  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[03/20 22:08:56   2879] WARNING   IMPLF-201          128  Pin '%s' in macro '%s' has no ANTENNADIF...
+[03/20 22:08:56   2879] WARNING   IMPFP-325            1  Floorplan of the design is resized. All ...
+[03/20 22:08:56   2879] WARNING   IMPFP-3961           2  The techSite '%s' has no related cells i...
+[03/20 22:08:56   2879] WARNING   IMPEXT-2710          2  Basic Cap table for layer M%d is ignored...
+[03/20 22:08:56   2879] WARNING   IMPEXT-2760          2  Layer M%d specified in the cap table is ...
+[03/20 22:08:56   2879] WARNING   IMPEXT-2771          2  Via %s specified in the cap table is ign...
+[03/20 22:08:56   2879] WARNING   IMPEXT-2801          2  Resistance values are not provided in th...
+[03/20 22:08:56   2879] ERROR     IMPSYC-194           1  Incorrect usage for command '%s'.        
+[03/20 22:08:56   2879] WARNING   IMPVL-209            2  In Verilog file '%s', check line %d near...
+[03/20 22:08:56   2879] WARNING   IMPVL-159         1624  Pin '%s' of cell '%s' is defined in LEF ...
+[03/20 22:08:56   2879] WARNING   IMPVL-361            2  Number of nets (%d) more than bus (%s) p...
+[03/20 22:08:56   2879] WARNING   IMPDC-1629           1  The default delay limit was set to %d. T...
+[03/20 22:08:56   2879] WARNING   IMPOPT-7136          1  %s '%s' is not supported by Innovus. Set...
+[03/20 22:08:56   2879] ERROR     IMPOAX-142           3  %s                                       
+[03/20 22:08:56   2879] ERROR     IMPOAX-820           1  The OA features are disabled in the curr...
+[03/20 22:08:56   2879] ERROR     IMPOAX-850           1  %s command cannot be run as OA features ...
+[03/20 22:08:56   2879] *** Message Summary: 1905 warning(s), 6 error(s)
+[03/20 22:08:56   2879] 
+[03/20 22:08:56   2879] --- Ending "Innovus" (totcpu=0:48:00, real=4:05:45, mem=1038.1M) ---

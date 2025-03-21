@@ -1,0 +1,62 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed Mar 19 11:44:40 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v15.23-s045_1 (64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute 15.23-s045_1 NR160414-1105/15_23-UB (database version 2.30, 317.6.1) {superthreading v1.26}
+#@(#)CDS: AAE 15.23-s014 (64bit) 04/22/2016 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 15.23-s022_1 () Apr 22 2016 09:38:45 ( )
+#@(#)CDS: SYNTECH 15.23-s008_1 () Apr 12 2016 21:52:59 ( )
+#@(#)CDS: CPE v15.23-s045
+#@(#)CDS: IQRC/TQRC 15.1.4-s213 (64bit) Tue Feb  9 17:31:28 PST 2016 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getDrawView
+loadWorkspace -name Physical
+win
+set init_pwr_net VDD
+set init_gnd_net VSS
+set init_verilog ./netlist/fullchip.v
+set init_design_netlisttype Verilog
+set init_design_settop 1
+set init_top_cell fullchip
+set init_lef_file {/home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef ./subckt/sram_w16.lef}
+create_library_set -name WC_LIB -timing "$worst_timing_lib ./subckt/sram_w16_WC.lib"
+create_library_set -name BC_LIB -timing "$best_timing_lib ./subckt/sram_w16_BC.lib"
+create_rc_corner -name Cmax -cap_table $worst_captbl -T 125
+create_rc_corner -name Cmin -cap_table $best_captbl -T -40
+create_delay_corner -name WC -library_set WC_LIB -rc_corner Cmax
+create_delay_corner -name BC -library_set BC_LIB -rc_corner Cmin
+create_constraint_mode -name CON -sdc_file [list $sdc]
+create_analysis_view -name WC_VIEW -delay_corner WC -constraint_mode CON
+create_analysis_view -name BC_VIEW -delay_corner BC -constraint_mode CON
+init_design -setup WC_VIEW -hold BC_VIEW
+set_interactive_constraint_modes {CON}
+setDesignMode -process 65
+floorPlan -site core -s 1200 1200 10 10 50 10
+timeDesign -preplace -prefix preplace
+globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+addRing -spacing {top 2 bottom 2 left 2 right 2} -width {top 3 bottom 3 left 3 right 3} -layer {top M2 bottom M2 left M2 right M2} -center 1 -type core_rings -nets {VSS  VDD}
+setAddStripeMode -break_at block_ring
+addStripe -nets {VDD VSS} -layer M7 -direction horizontal -width 2 -spacing 6 -number_of_sets 35 -start_from left -start 20 -stop 1180
+setObjFPlanBox Instance core_instance/kmem_instance 182.2255 849.485 404.0255 1071.085
+setObjFPlanBox Instance core_instance/qmem_instance 744.5255 858.2385 966.3255 1079.8385
+setObjFPlanBox Instance core_instance/psum_mem_instance 606.478 112.148 828.278 333.748
+addHaloToBlock {3 3 3 3} core_instance/qmem_instance
+addHaloToBlock {3 3 3 3} core_instance/kmem_instance
+addHaloToBlock {3 3 3 3} core_instance/psum_mem_instance
+addRing -type block_rings -nets {VSS VDD} -around each_block -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -width {top 1 bottom 1 left 1 right 1} -layer {top M1 bottom M1 left M2 right M2}
+globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+globalNetConnect VDD -type pgpin -pin VDD -sinst core_instance/qmem_instance -verbose -override
+globalNetConnect VSS -type pgpin -pin VSS -sinst core_instance/qmem_instance -verbose -override
+globalNetConnect VDD -type pgpin -pin VDD -sinst core_instance/kmem_instance -verbose -override
+globalNetConnect VSS -type pgpin -pin VSS -sinst core_instance/kmem_instance -verbose -override
+globalNetConnect VDD -type pgpin -pin VDD -sinst core_instance/psum_mem_instance -verbose -override
+globalNetConnect VSS -type pgpin -pin VSS -sinst core_instance/psum_mem_instance -verbose -override
+sroute

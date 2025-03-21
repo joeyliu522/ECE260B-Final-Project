@@ -1,0 +1,922 @@
+[03/18 21:10:52      0] 
+[03/18 21:10:52      0] Cadence Innovus(TM) Implementation System.
+[03/18 21:10:52      0] Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+[03/18 21:10:52      0] 
+[03/18 21:10:52      0] Version:	v15.23-s045_1, built Fri Apr 22 12:32:52 PDT 2016
+[03/18 21:10:52      0] Options:	
+[03/18 21:10:52      0] Date:		Tue Mar 18 21:10:52 2025
+[03/18 21:10:52      0] Host:		ieng6-ece-03.ucsd.edu (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (4cores*8cpus*Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz 25344KB)
+[03/18 21:10:52      0] OS:		CentOS Linux release 7.9.2009 (Core)
+[03/18 21:10:52      0] 
+[03/18 21:10:52      0] License:
+[03/18 21:10:52      0] 		invs	Innovus Implementation System	15.2	checkout succeeded
+[03/18 21:10:52      0] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[03/18 21:10:53      0] **ERROR: (IMPOAX-142):	Could not open shared library libinnovusoax22.so : /acsnfs3/software/cadence-innovus152/tools/lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE
+[03/18 21:10:53      0] 
+[03/18 21:10:53      0] **ERROR: (IMPOAX-142):	Could not open shared library libcdsSkillPcell.so : (null)
+[03/18 21:10:53      0] 
+[03/18 21:10:53      0] **ERROR: (IMPOAX-142):	OA features will be disabled in this session.
+[03/18 21:10:53      0] 
+[03/18 21:11:02      7] @(#)CDS: Innovus v15.23-s045_1 (64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5)
+[03/18 21:11:02      7] @(#)CDS: NanoRoute 15.23-s045_1 NR160414-1105/15_23-UB (database version 2.30, 317.6.1) {superthreading v1.26}
+[03/18 21:11:02      7] @(#)CDS: AAE 15.23-s014 (64bit) 04/22/2016 (Linux 2.6.18-194.el5)
+[03/18 21:11:02      7] @(#)CDS: CTE 15.23-s022_1 () Apr 22 2016 09:38:45 ( )
+[03/18 21:11:02      7] @(#)CDS: SYNTECH 15.23-s008_1 () Apr 12 2016 21:52:59 ( )
+[03/18 21:11:02      7] @(#)CDS: CPE v15.23-s045
+[03/18 21:11:02      7] @(#)CDS: IQRC/TQRC 15.1.4-s213 (64bit) Tue Feb  9 17:31:28 PST 2016 (Linux 2.6.18-194.el5)
+[03/18 21:11:02      7] @(#)CDS: OA 22.50-p036 Tue Nov  3 09:29:52 2015
+[03/18 21:11:02      7] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[03/18 21:11:02      7] @(#)CDS: RCDB 11.7
+[03/18 21:11:02      7] --- Running on ieng6-ece-03.ucsd.edu (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (4cores*8cpus*Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz 25344KB) ---
+[03/18 21:11:02      7] Create and set the environment variable TMPDIR to /tmp/innovus_temp_658_ieng6-ece-03.ucsd.edu_jmsin_ZN92Z1.
+
+[03/18 21:11:02      8] 
+[03/18 21:11:02      8] **INFO:  MMMC transition support version v31-84 
+[03/18 21:11:02      8] 
+[03/18 21:11:02      8] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[03/18 21:11:02      8] <CMD> suppressMessage ENCEXT-2799
+[03/18 21:11:02      8] <CMD> getDrawView
+[03/18 21:11:02      8] <CMD> loadWorkspace -name Physical
+[03/18 21:11:02      8] <CMD> win
+[03/18 21:13:22     36] <CMD> set init_pwr_net VDD
+[03/18 21:13:22     36] <CMD> set init_gnd_net VSS
+[03/18 21:13:22     36] <CMD> set init_verilog ./netlist/sram_w16.v
+[03/18 21:13:22     36] <CMD> set init_design_netlisttype Verilog
+[03/18 21:13:22     36] <CMD> set init_design_settop 1
+[03/18 21:13:22     36] <CMD> set init_top_cell sram_w16
+[03/18 21:13:22     36] <CMD> set init_lef_file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef
+[03/18 21:13:22     36] <CMD> create_library_set -name WC_LIB -timing $worst_timing_lib
+[03/18 21:13:22     36] <CMD> create_library_set -name BC_LIB -timing $best_timing_lib
+[03/18 21:13:22     36] <CMD> create_rc_corner -name Cmax -cap_table $worst_captbl -T 125
+[03/18 21:13:22     36] <CMD> create_rc_corner -name Cmin -cap_table $best_captbl -T -40
+[03/18 21:13:22     36] <CMD> create_delay_corner -name WC -library_set WC_LIB -rc_corner Cmax
+[03/18 21:13:22     36] <CMD> create_delay_corner -name BC -library_set BC_LIB -rc_corner Cmin
+[03/18 21:13:22     36] <CMD> create_constraint_mode -name CON -sdc_file [list $sdc]
+[03/18 21:13:22     36] <CMD> create_analysis_view -name WC_VIEW -delay_corner WC -constraint_mode CON
+[03/18 21:13:22     36] <CMD> create_analysis_view -name BC_VIEW -delay_corner BC -constraint_mode CON
+[03/18 21:13:22     36] <CMD> init_design -setup WC_VIEW -hold BC_VIEW
+[03/18 21:13:22     36] **ERROR: (IMPOAX-820):	The OA features are disabled in the current session of Innovus because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Innovus either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+[03/18 21:13:22     36] 
+[03/18 21:13:22     36] **ERROR: (IMPOAX-850):	oaxCreateCdsLibArray command cannot be run as OA features are disabled in this session.
+[03/18 21:13:22     36] 
+[03/18 21:13:22     36] Loading LEF file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef ...
+[03/18 21:13:22     36] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+[03/18 21:13:22     36] The LEF parser will ignore this statement.
+[03/18 21:13:22     36] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 28.
+[03/18 21:13:22     36] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/18 21:13:22     36] The LEF parser will ignore this statement.
+[03/18 21:13:22     36] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 867.
+[03/18 21:13:22     36] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/18 21:13:22     36] The LEF parser will ignore this statement.
+[03/18 21:13:22     36] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 877.
+[03/18 21:13:22     36] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/18 21:13:22     36] The LEF parser will ignore this statement.
+[03/18 21:13:22     36] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1014.
+[03/18 21:13:22     36] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/18 21:13:22     36] The LEF parser will ignore this statement.
+[03/18 21:13:22     36] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1024.
+[03/18 21:13:22     36] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/18 21:13:22     36] The LEF parser will ignore this statement.
+[03/18 21:13:22     36] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1161.
+[03/18 21:13:22     36] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/18 21:13:22     36] The LEF parser will ignore this statement.
+[03/18 21:13:22     36] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1171.
+[03/18 21:13:22     36] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/18 21:13:22     36] The LEF parser will ignore this statement.
+[03/18 21:13:22     36] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1308.
+[03/18 21:13:22     36] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/18 21:13:22     36] The LEF parser will ignore this statement.
+[03/18 21:13:22     36] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1318.
+[03/18 21:13:22     36] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/18 21:13:22     36] The LEF parser will ignore this statement.
+[03/18 21:13:22     36] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1372.
+[03/18 21:13:22     36] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/18 21:13:22     36] The LEF parser will ignore this statement.
+[03/18 21:13:22     36] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1383.
+[03/18 21:13:22     36] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/18 21:13:22     36] The LEF parser will ignore this statement.
+[03/18 21:13:22     36] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1604.
+[03/18 21:13:22     36] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/18 21:13:22     36] The LEF parser will ignore this statement.
+[03/18 21:13:22     36] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1614.
+[03/18 21:13:22     36] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/18 21:13:22     36] The LEF parser will ignore this statement.
+[03/18 21:13:22     36] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1769.
+[03/18 21:13:22     36] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/18 21:13:22     36] The LEF parser will ignore this statement.
+[03/18 21:13:22     36] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1771.
+[03/18 21:13:22     36] WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+[03/18 21:13:22     36] The LEF parser will ignore this statement.
+[03/18 21:13:22     36] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1772.
+[03/18 21:13:22     36] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/18 21:13:22     36] The LEF parser will ignore this statement.
+[03/18 21:13:22     36] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1776.
+[03/18 21:13:22     36] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/18 21:13:22     36] The LEF parser will ignore this statement.
+[03/18 21:13:22     36] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1778.
+[03/18 21:13:22     36] WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+[03/18 21:13:22     36] The LEF parser will ignore this statement.
+[03/18 21:13:22     36] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1779.
+[03/18 21:13:22     36] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/18 21:13:22     36] The LEF parser will ignore this statement.
+[03/18 21:13:22     36] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1783.
+[03/18 21:13:22     36] Set DBUPerIGU to M2 pitch 400.
+[03/18 21:13:23     37] **WARN: (IMPLF-200):	Pin 'I' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/18 21:13:23     37] Type 'man IMPLF-200' for more detail.
+[03/18 21:13:23     37] 
+[03/18 21:13:23     37] viaInitial starts at Tue Mar 18 21:13:23 2025
+viaInitial ends at Tue Mar 18 21:13:23 2025
+Reading WC_LIB timing library '/home/linux/ieng6/ee260bwi25/public/PDKdata/lib/tcbn65gpluswc.lib' ...
+[03/18 21:13:23     37] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D0' is not defined in the library.
+[03/18 21:13:23     37] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D1' is not defined in the library.
+[03/18 21:13:23     37] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D2' is not defined in the library.
+[03/18 21:13:23     37] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D4' is not defined in the library.
+[03/18 21:13:23     37] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D8' is not defined in the library.
+[03/18 21:13:23     37] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2XD1' is not defined in the library.
+[03/18 21:13:23     37] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D0' is not defined in the library.
+[03/18 21:13:23     37] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D1' is not defined in the library.
+[03/18 21:13:23     37] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D2' is not defined in the library.
+[03/18 21:13:23     37] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D4' is not defined in the library.
+[03/18 21:13:23     37] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D8' is not defined in the library.
+[03/18 21:13:23     37] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3XD1' is not defined in the library.
+[03/18 21:13:23     37] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D0' is not defined in the library.
+[03/18 21:13:23     37] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D1' is not defined in the library.
+[03/18 21:13:23     37] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D2' is not defined in the library.
+[03/18 21:13:23     37] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D4' is not defined in the library.
+[03/18 21:13:23     37] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D8' is not defined in the library.
+[03/18 21:13:23     37] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4XD1' is not defined in the library.
+[03/18 21:13:23     37] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D0' is not defined in the library.
+[03/18 21:13:23     37] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D1' is not defined in the library.
+[03/18 21:13:23     37] Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+[03/18 21:13:24     38] Read 811 cells in library 'tcbn65gpluswc' 
+[03/18 21:13:24     38] Reading BC_LIB timing library '/home/linux/ieng6/ee260bwi25/public/PDKdata/lib/tcbn65gplusbc.lib' ...
+[03/18 21:13:25     39] Read 811 cells in library 'tcbn65gplusbc' 
+[03/18 21:13:25     39] *** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.66min, fe_real=2.55min, fe_mem=465.6M) ***
+[03/18 21:13:25     39] *** Begin netlist parsing (mem=465.6M) ***
+[03/18 21:13:25     39] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D4' is defined in LEF but not in the timing library.
+[03/18 21:13:25     39] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D4' is defined in LEF but not in the timing library.
+[03/18 21:13:25     39] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D2' is defined in LEF but not in the timing library.
+[03/18 21:13:25     39] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D2' is defined in LEF but not in the timing library.
+[03/18 21:13:25     39] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D1' is defined in LEF but not in the timing library.
+[03/18 21:13:25     39] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D1' is defined in LEF but not in the timing library.
+[03/18 21:13:25     39] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D0' is defined in LEF but not in the timing library.
+[03/18 21:13:25     39] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D0' is defined in LEF but not in the timing library.
+[03/18 21:13:25     39] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D4' is defined in LEF but not in the timing library.
+[03/18 21:13:25     39] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D4' is defined in LEF but not in the timing library.
+[03/18 21:13:25     39] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+[03/18 21:13:25     39] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+[03/18 21:13:25     39] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+[03/18 21:13:25     39] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+[03/18 21:13:25     39] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D0' is defined in LEF but not in the timing library.
+[03/18 21:13:25     39] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D0' is defined in LEF but not in the timing library.
+[03/18 21:13:25     39] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D4' is defined in LEF but not in the timing library.
+[03/18 21:13:25     39] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D4' is defined in LEF but not in the timing library.
+[03/18 21:13:25     39] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+[03/18 21:13:25     39] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+[03/18 21:13:25     39] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[03/18 21:13:25     39] To increase the message display limit, refer to the product command reference manual.
+[03/18 21:13:25     39] Created 811 new cells from 2 timing libraries.
+[03/18 21:13:25     39] Reading netlist ...
+[03/18 21:13:25     39] Backslashed names will retain backslash and a trailing blank character.
+[03/18 21:13:25     39] Reading verilog netlist './netlist/sram_w16.v'
+[03/18 21:13:25     39] 
+[03/18 21:13:25     39] *** Memory Usage v#1 (Current mem = 465.637M, initial mem = 149.258M) ***
+[03/18 21:13:25     39] *** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=465.6M) ***
+[03/18 21:13:25     39] Set top cell to sram_w16.
+[03/18 21:13:25     39] Hooked 1622 DB cells to tlib cells.
+[03/18 21:13:25     39] Starting recursive module instantiation check.
+[03/18 21:13:25     39] No recursion found.
+[03/18 21:13:25     39] Building hierarchical netlist for Cell sram_w16 ...
+[03/18 21:13:25     39] *** Netlist is unique.
+[03/18 21:13:25     39] ** info: there are 1658 modules.
+[03/18 21:13:25     39] ** info: there are 3751 stdCell insts.
+[03/18 21:13:25     39] 
+[03/18 21:13:25     39] *** Memory Usage v#1 (Current mem = 521.969M, initial mem = 149.258M) ***
+[03/18 21:13:25     39] **WARN: (IMPFP-3961):	The techSite 'dcore' has no related cells in LEF/OA library. Cannot make calculations for this site type unless cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[03/18 21:13:25     39] Type 'man IMPFP-3961' for more detail.
+[03/18 21:13:25     39] **WARN: (IMPFP-3961):	The techSite 'ccore' has no related cells in LEF/OA library. Cannot make calculations for this site type unless cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[03/18 21:13:25     39] Type 'man IMPFP-3961' for more detail.
+[03/18 21:13:25     39] Set Default Net Delay as 1000 ps.
+[03/18 21:13:25     39] Set Default Net Load as 0.5 pF. 
+[03/18 21:13:25     39] Set Default Input Pin Transition as 0.1 ps.
+[03/18 21:13:25     39] Initializing multi-corner RC extraction with 2 active RC Corners ...
+[03/18 21:13:25     39] Reading Capacitance Table File /home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cworst.captable ...
+[03/18 21:13:25     39] **WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/18 21:13:25     39] **WARN: (IMPEXT-2771):	Via VIA_8 specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/18 21:13:25     39] **WARN: (IMPEXT-2801):	Resistance values are not provided in the Cap Table. Sheet resistance defined in the LEF file will be used.
+[03/18 21:13:25     39] **WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+[03/18 21:13:25     39] Reading Capacitance Table File /home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cbest.captable ...
+[03/18 21:13:25     39] **WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/18 21:13:25     39] **WARN: (IMPEXT-2771):	Via VIA_8 specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/18 21:13:25     39] **WARN: (IMPEXT-2801):	Resistance values are not provided in the Cap Table. Sheet resistance defined in the LEF file will be used.
+[03/18 21:13:25     39] **WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+[03/18 21:13:25     39] Importing multi-corner RC tables ... 
+[03/18 21:13:25     39] Summary of Active RC-Corners : 
+[03/18 21:13:25     39]  
+[03/18 21:13:25     39]  Analysis View: WC_VIEW
+[03/18 21:13:25     39]     RC-Corner Name        : Cmax
+[03/18 21:13:25     39]     RC-Corner Index       : 0
+[03/18 21:13:25     39]     RC-Corner Temperature : 125 Celsius
+[03/18 21:13:25     39]     RC-Corner Cap Table   : '/home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cworst.captable'
+[03/18 21:13:25     39]     RC-Corner PreRoute Res Factor         : 1
+[03/18 21:13:25     39]     RC-Corner PreRoute Cap Factor         : 1
+[03/18 21:13:25     39]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[03/18 21:13:25     39]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[03/18 21:13:25     39]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[03/18 21:13:25     39]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[03/18 21:13:25     39]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[03/18 21:13:25     39]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[03/18 21:13:25     39]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[03/18 21:13:25     39]  
+[03/18 21:13:25     39]  Analysis View: BC_VIEW
+[03/18 21:13:25     39]     RC-Corner Name        : Cmin
+[03/18 21:13:25     39]     RC-Corner Index       : 1
+[03/18 21:13:25     39]     RC-Corner Temperature : -40 Celsius
+[03/18 21:13:25     39]     RC-Corner Cap Table   : '/home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cbest.captable'
+[03/18 21:13:25     39]     RC-Corner PreRoute Res Factor         : 1
+[03/18 21:13:25     39]     RC-Corner PreRoute Cap Factor         : 1
+[03/18 21:13:25     39]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[03/18 21:13:25     39]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[03/18 21:13:25     39]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[03/18 21:13:25     39]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[03/18 21:13:25     39]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[03/18 21:13:25     39]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[03/18 21:13:25     39]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[03/18 21:13:25     39] *Info: initialize multi-corner CTS.
+[03/18 21:13:26     40] Reading timing constraints file './constraints/sram_w16.sdc' ...
+[03/18 21:13:26     40] Current (total cpu=0:00:40.1, real=0:02:34, peak res=272.9M, current mem=640.7M)
+[03/18 21:13:26     40] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'clk' (File ./constraints/sram_w16.sdc, Line 7).
+[03/18 21:13:26     40] 
+[03/18 21:13:26     40] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'clk' (File ./constraints/sram_w16.sdc, Line 7).
+[03/18 21:13:26     40] 
+[03/18 21:13:26     40] **ERROR: (TCLCMD-1109):	Could not find source for create_clock command (File ./constraints/sram_w16.sdc, Line 7).
+[03/18 21:13:26     40] 
+[03/18 21:13:26     40] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'clk' (File ./constraints/sram_w16.sdc, Line 9).
+[03/18 21:13:26     40] 
+[03/18 21:13:26     40] **ERROR: (TCLCMD-917):	Cannot find 'clocks' that match 'clk' (File ./constraints/sram_w16.sdc, Line 9).
+[03/18 21:13:26     40] 
+[03/18 21:13:26     40] **ERROR: (TCLCMD-917):	Cannot find 'clocks' that match '' (File ./constraints/sram_w16.sdc, Line 9).
+[03/18 21:13:26     40] 
+[03/18 21:13:26     40] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'clk' (File ./constraints/sram_w16.sdc, Line 10).
+[03/18 21:13:26     40] 
+[03/18 21:13:26     40] **ERROR: (TCLCMD-917):	Cannot find 'clocks' that match 'clk' (File ./constraints/sram_w16.sdc, Line 10).
+[03/18 21:13:26     40] 
+[03/18 21:13:26     40] **ERROR: (TCLCMD-917):	Cannot find 'clocks' that match '' (File ./constraints/sram_w16.sdc, Line 10).
+[03/18 21:13:26     40] 
+[03/18 21:13:26     40] INFO (CTE): Reading of timing constraints file ./constraints/sram_w16.sdc completed, with 3 Warnings and 6 Errors.
+[03/18 21:13:26     40] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=274.6M, current mem=644.9M)
+[03/18 21:13:26     40] Current (total cpu=0:00:40.1, real=0:02:34, peak res=274.6M, current mem=644.9M)
+[03/18 21:13:26     40] Summary for sequential cells idenfication: 
+[03/18 21:13:26     40] Identified SBFF number: 199
+[03/18 21:13:26     40] Identified MBFF number: 0
+[03/18 21:13:26     40] Not identified SBFF number: 0
+[03/18 21:13:26     40] Not identified MBFF number: 0
+[03/18 21:13:26     40] Number of sequential cells which are not FFs: 104
+[03/18 21:13:26     40] 
+[03/18 21:13:26     40] Total number of combinational cells: 492
+[03/18 21:13:26     40] Total number of sequential cells: 303
+[03/18 21:13:26     40] Total number of tristate cells: 11
+[03/18 21:13:26     40] Total number of level shifter cells: 0
+[03/18 21:13:26     40] Total number of power gating cells: 0
+[03/18 21:13:26     40] Total number of isolation cells: 0
+[03/18 21:13:26     40] Total number of power switch cells: 0
+[03/18 21:13:26     40] Total number of pulse generator cells: 0
+[03/18 21:13:26     40] Total number of always on buffers: 0
+[03/18 21:13:26     40] Total number of retention cells: 0
+[03/18 21:13:26     40] List of usable buffers: BUFFD1 BUFFD0 BUFFD2 BUFFD3 BUFFD4 BUFFD6 BUFFD8 BUFFD12 BUFFD16 CKBD1 CKBD0 CKBD2 CKBD3 CKBD4 CKBD6 CKBD8 CKBD12 CKBD16
+[03/18 21:13:26     40] Total number of usable buffers: 18
+[03/18 21:13:26     40] List of unusable buffers: BUFFD20 BUFFD24 CKBD20 CKBD24 GBUFFD1 GBUFFD3 GBUFFD2 GBUFFD4 GBUFFD8
+[03/18 21:13:26     40] Total number of unusable buffers: 9
+[03/18 21:13:26     40] List of usable inverters: CKND1 CKND0 CKND2 CKND3 CKND4 CKND6 CKND8 CKND12 CKND16 INVD1 INVD0 INVD2 INVD3 INVD4 INVD6 INVD8 INVD12 INVD16
+[03/18 21:13:26     40] Total number of usable inverters: 18
+[03/18 21:13:26     40] List of unusable inverters: CKND20 CKND24 GINVD2 GINVD1 GINVD4 GINVD3 GINVD8 INVD20 INVD24
+[03/18 21:13:26     40] Total number of unusable inverters: 9
+[03/18 21:13:26     40] List of identified usable delay cells:
+[03/18 21:13:26     40] Total number of identified usable delay cells: 0
+[03/18 21:13:26     40] List of identified unusable delay cells: DEL0 DEL005 DEL01 DEL015 DEL02 DEL1 DEL2 DEL3 DEL4
+[03/18 21:13:26     40] Total number of identified unusable delay cells: 9
+[03/18 21:13:26     40] All delay cells are dont_use. Buffers will be used to fix hold violations.
+[03/18 21:13:26     40] 
+[03/18 21:13:26     40] *** Summary of all messages that are not suppressed in this session:
+[03/18 21:13:26     40] Severity  ID               Count  Summary                                  
+[03/18 21:13:26     40] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[03/18 21:13:26     40] WARNING   IMPFP-3961           2  The techSite '%s' has no related cells i...
+[03/18 21:13:26     40] WARNING   IMPEXT-2710          2  Basic Cap table for layer M%d is ignored...
+[03/18 21:13:26     40] WARNING   IMPEXT-2760          2  Layer M%d specified in the cap table is ...
+[03/18 21:13:26     40] WARNING   IMPEXT-2771          2  Via %s specified in the cap table is ign...
+[03/18 21:13:26     40] WARNING   IMPEXT-2801          2  Resistance values are not provided in th...
+[03/18 21:13:26     40] WARNING   IMPVL-159         1622  Pin '%s' of cell '%s' is defined in LEF ...
+[03/18 21:13:26     40] ERROR     IMPOAX-820           1  The OA features are disabled in the curr...
+[03/18 21:13:26     40] ERROR     IMPOAX-850           1  %s command cannot be run as OA features ...
+[03/18 21:13:26     40] *** Message Summary: 1633 warning(s), 2 error(s)
+[03/18 21:13:26     40] 
+[03/18 21:13:26     40] <CMD> set_interactive_constraint_modes {CON}
+[03/18 21:13:26     40] <CMD> setDesignMode -process 65
+[03/18 21:13:26     40] Applying the recommended capacitance filtering threshold values for 65nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+[03/18 21:13:26     40] 	These values will be used by all post-route extraction engines, including tQuantus, IQRC and Quantus QRC extraction.
+[03/18 21:13:26     40] 	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+[03/18 21:13:26     40] 	The accuracy mode for postRoute effortLevel low extraction will be set to 'high'.
+[03/18 21:13:26     40] 	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode will be 'medium' if Quantus QRC technology file is specified else 'low'.
+[03/18 21:13:26     40] Updating process node dependent CCOpt properties for the 65nm process node.
+[03/18 21:14:12     49] <CMD> floorPlan -site core -s 400 300 10 10 10 10
+[03/18 21:14:12     49] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[03/18 21:14:12     49] <CMD> globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+[03/18 21:14:12     49] 3751 new pwr-pin connections were made to global net 'VDD'.
+[03/18 21:14:12     49] <CMD> globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+[03/18 21:14:12     49] 3751 new gnd-pin connections were made to global net 'VSS'.
+[03/18 21:14:12     49] <CMD> setAddStripeMode -break_at block_ring
+[03/18 21:14:12     49] Stripe will break at block ring.
+[03/18 21:14:12     49] <CMD> addStripe -nets {VDD VSS} -layer M4 -direction vertical -width 2 -spacing 5 -number_of_sets 15
+[03/18 21:14:12     49] 
+[03/18 21:14:12     49] Starting stripe generation ...
+[03/18 21:14:12     49] Non-Default setAddStripeOption Settings :
+[03/18 21:14:12     49]   NONE
+[03/18 21:14:12     49] The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[03/18 21:14:12     49] The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[03/18 21:14:12     49] Stripe generation is complete; vias are now being generated.
+[03/18 21:14:12     49] The power planner created 30 wires.
+[03/18 21:14:12     49] *** Ending Stripe Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 821.0M) ***
+[03/18 21:14:12     49] <CMD> sroute
+[03/18 21:14:12     50] *** Begin SPECIAL ROUTE on Tue Mar 18 21:14:12 2025 ***
+[03/18 21:14:12     50] SPECIAL ROUTE ran on directory: /home/linux/ieng6/ee260bwi25/jmsin/ece260_project/step3/pnr_sram16
+[03/18 21:14:12     50] SPECIAL ROUTE ran on machine: ieng6-ece-03.ucsd.edu (Linux 3.10.0-1160.119.1.el7.x86_64 Xeon 2.19Ghz)
+[03/18 21:14:12     50] 
+[03/18 21:14:12     50] Begin option processing ...
+[03/18 21:14:12     50] srouteConnectPowerBump set to false
+[03/18 21:14:12     50] routeSpecial set to true
+[03/18 21:14:12     50] srouteConnectConverterPin set to false
+[03/18 21:14:12     50] srouteFollowCorePinEnd set to 3
+[03/18 21:14:12     50] srouteJogControl set to "preferWithChanges differentLayer"
+[03/18 21:14:12     50] sroutePadPinAllPorts set to true
+[03/18 21:14:12     50] sroutePreserveExistingRoutes set to true
+[03/18 21:14:12     50] srouteRoutePowerBarPortOnBothDir set to true
+[03/18 21:14:12     50] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1515.00 megs.
+[03/18 21:14:12     50] 
+[03/18 21:14:12     50] Reading DB technology information...
+[03/18 21:14:12     50] Finished reading DB technology information.
+[03/18 21:14:12     50] Reading floorplan and netlist information...
+[03/18 21:14:12     50] Finished reading floorplan and netlist information.
+[03/18 21:14:13     50] Read in 17 layers, 8 routing layers, 1 overlap layer
+[03/18 21:14:13     50] Read in 846 macros, 11 used
+[03/18 21:14:13     50] Read in 11 components
+[03/18 21:14:13     50]   11 core components: 11 unplaced, 0 placed, 0 fixed
+[03/18 21:14:13     50] Read in 263 logical pins
+[03/18 21:14:13     50] Read in 263 nets
+[03/18 21:14:13     50] Read in 2 special nets, 2 routed
+[03/18 21:14:13     50] Read in 22 terminals
+[03/18 21:14:13     50] Begin power routing ...
+[03/18 21:14:13     50] **WARN: (IMPSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+[03/18 21:14:13     50] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[03/18 21:14:13     50] Type 'man IMPSR-1256' for more detail.
+[03/18 21:14:13     50] Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[03/18 21:14:13     50] **WARN: (IMPSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+[03/18 21:14:13     50] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[03/18 21:14:13     50] Type 'man IMPSR-1256' for more detail.
+[03/18 21:14:13     50] Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[03/18 21:14:13     50] CPU time for FollowPin 0 seconds
+[03/18 21:14:13     50] CPU time for FollowPin 0 seconds
+[03/18 21:14:13     50]   Number of IO ports routed: 0
+[03/18 21:14:13     50]   Number of Block ports routed: 0
+[03/18 21:14:13     50]   Number of Stripe ports routed: 0  open: 60
+[03/18 21:14:13     50]   Number of Core ports routed: 83  open: 251
+[03/18 21:14:13     50]   Number of Pad ports routed: 0
+[03/18 21:14:13     50]   Number of Power Bump ports routed: 0
+[03/18 21:14:13     50]   Number of Followpin connections: 167
+[03/18 21:14:13     50] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1536.00 megs.
+[03/18 21:14:13     50] 
+[03/18 21:14:13     50] 
+[03/18 21:14:13     50] 
+[03/18 21:14:13     50]  Begin updating DB with routing results ...
+[03/18 21:14:13     50]  Updating DB with 101 via definition ...Extracting standard cell pins and blockage ...... 
+[03/18 21:14:13     50] Pin and blockage extraction finished
+[03/18 21:14:13     50] 
+[03/18 21:14:13     50] 
+sroute post-processing starts at Tue Mar 18 21:14:13 2025
+The viaGen is rebuilding shadow vias for net VSS.
+[03/18 21:14:13     50] sroute post-processing ends at Tue Mar 18 21:14:13 2025
+
+sroute post-processing starts at Tue Mar 18 21:14:13 2025
+The viaGen is rebuilding shadow vias for net VDD.
+[03/18 21:14:13     50] sroute post-processing ends at Tue Mar 18 21:14:13 2025
+sroute: Total CPU time used = 0:0:0
+[03/18 21:14:13     50] sroute: Total Real time used = 0:0:1
+[03/18 21:14:13     50] sroute: Total Memory used = 18.43 megs
+[03/18 21:14:13     50] sroute: Total Peak Memory used = 839.41 megs
+[03/18 21:14:19     51] <CMD> fit
+[03/18 21:20:20    127] <CMD> sroute
+[03/18 21:20:20    127] *** Begin SPECIAL ROUTE on Tue Mar 18 21:20:20 2025 ***
+[03/18 21:20:20    127] SPECIAL ROUTE ran on directory: /home/linux/ieng6/ee260bwi25/jmsin/ece260_project/step3/pnr_sram16
+[03/18 21:20:20    127] SPECIAL ROUTE ran on machine: ieng6-ece-03.ucsd.edu (Linux 3.10.0-1160.119.1.el7.x86_64 Xeon 2.19Ghz)
+[03/18 21:20:20    127] 
+[03/18 21:20:20    127] Begin option processing ...
+[03/18 21:20:20    127] srouteConnectPowerBump set to false
+[03/18 21:20:20    127] routeSpecial set to true
+[03/18 21:20:20    127] srouteConnectConverterPin set to false
+[03/18 21:20:20    127] srouteFollowCorePinEnd set to 3
+[03/18 21:20:20    127] srouteJogControl set to "preferWithChanges differentLayer"
+[03/18 21:20:20    127] sroutePadPinAllPorts set to true
+[03/18 21:20:20    127] sroutePreserveExistingRoutes set to true
+[03/18 21:20:20    127] srouteRoutePowerBarPortOnBothDir set to true
+[03/18 21:20:20    127] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1536.00 megs.
+[03/18 21:20:20    127] 
+[03/18 21:20:20    127] Reading DB technology information...
+[03/18 21:20:20    127] Finished reading DB technology information.
+[03/18 21:20:20    127] Reading floorplan and netlist information...
+[03/18 21:20:20    127] Finished reading floorplan and netlist information.
+[03/18 21:20:20    128] Read in 17 layers, 8 routing layers, 1 overlap layer
+[03/18 21:20:20    128] Read in 846 macros, 11 used
+[03/18 21:20:20    128] Read in 11 components
+[03/18 21:20:20    128]   11 core components: 11 unplaced, 0 placed, 0 fixed
+[03/18 21:20:20    128] Read in 263 logical pins
+[03/18 21:20:20    128] Read in 263 nets
+[03/18 21:20:20    128] Read in 2 special nets, 2 routed
+[03/18 21:20:20    128] Read in 22 terminals
+[03/18 21:20:20    128] Begin power routing ...
+[03/18 21:20:20    128] **WARN: (IMPSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+[03/18 21:20:20    128] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[03/18 21:20:20    128] Type 'man IMPSR-1256' for more detail.
+[03/18 21:20:20    128] Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[03/18 21:20:20    128] **WARN: (IMPSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+[03/18 21:20:20    128] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[03/18 21:20:20    128] Type 'man IMPSR-1256' for more detail.
+[03/18 21:20:20    128] Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[03/18 21:20:20    128] CPU time for FollowPin 0 seconds
+[03/18 21:20:20    128] CPU time for FollowPin 0 seconds
+[03/18 21:20:20    128]   Number of IO ports routed: 0
+[03/18 21:20:20    128]   Number of Block ports routed: 0
+[03/18 21:20:20    128]   Number of Stripe ports routed: 0  open: 60
+[03/18 21:20:20    128]   Number of Core ports routed: 0  open: 251
+[03/18 21:20:20    128]   Number of Pad ports routed: 0
+[03/18 21:20:20    128]   Number of Power Bump ports routed: 0
+[03/18 21:20:20    128] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1540.00 megs.
+[03/18 21:20:20    128] 
+[03/18 21:20:20    128] 
+[03/18 21:20:20    128] 
+[03/18 21:20:20    128]  Begin updating DB with routing results ...
+[03/18 21:20:20    128]  Updating DB with 104 via definition ...
+[03/18 21:20:20    128] sroute: Total CPU time used = 0:0:0
+[03/18 21:20:20    128] sroute: Total Real time used = 0:0:0
+[03/18 21:20:20    128] sroute: Total Memory used = 3.67 megs
+[03/18 21:20:20    128] sroute: Total Peak Memory used = 843.08 megs
+[03/18 21:20:43    132] <CMD> verifyGeometry
+[03/18 21:20:43    132]  *** Starting Verify Geometry (MEM: 843.1) ***
+[03/18 21:20:43    132] 
+[03/18 21:20:43    132]   VERIFY GEOMETRY ...... Starting Verification
+[03/18 21:20:43    132]   VERIFY GEOMETRY ...... Initializing
+[03/18 21:20:43    132]   VERIFY GEOMETRY ...... Deleting Existing Violations
+[03/18 21:20:43    132]   VERIFY GEOMETRY ...... Creating Sub-Areas
+[03/18 21:20:43    132]                   ...... bin size: 2880
+[03/18 21:20:43    132]   VERIFY GEOMETRY ...... SubArea : 1 of 1
+[03/18 21:20:44    133]   VERIFY GEOMETRY ...... Cells          :  0 Viols.
+[03/18 21:20:44    133]   VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+[03/18 21:20:44    133]   VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+[03/18 21:20:44    133]   VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+[03/18 21:20:44    133]   VERIFY GEOMETRY ...... Sub-Area : 1 complete 0 Viols. 0 Wrngs.
+[03/18 21:20:44    133] VG: elapsed time: 1.00
+[03/18 21:20:44    133] Begin Summary ...
+[03/18 21:20:44    133]   Cells       : 0
+[03/18 21:20:44    133]   SameNet     : 0
+[03/18 21:20:44    133]   Wiring      : 0
+[03/18 21:20:44    133]   Antenna     : 0
+[03/18 21:20:44    133]   Short       : 0
+[03/18 21:20:44    133]   Overlap     : 0
+[03/18 21:20:44    133] End Summary
+[03/18 21:20:44    133] 
+[03/18 21:20:44    133]   Verification Complete : 0 Viols.  0 Wrngs.
+[03/18 21:20:44    133] 
+[03/18 21:20:44    133] **********End: VERIFY GEOMETRY**********
+[03/18 21:20:44    133]  *** verify geometry (CPU: 0:00:00.7  MEM: 133.3M)
+[03/18 21:20:44    133] 
+[03/18 21:20:48    134] <CMD> verifyConnectivity
+[03/18 21:20:48    134] VERIFY_CONNECTIVITY use new engine.
+[03/18 21:20:48    134] 
+[03/18 21:20:48    134] ******** Start: VERIFY CONNECTIVITY ********
+[03/18 21:20:48    134] Start Time: Tue Mar 18 21:20:48 2025
+[03/18 21:20:48    134] 
+[03/18 21:20:48    134] Design Name: sram_w16
+[03/18 21:20:48    134] Database Units: 2000
+[03/18 21:20:48    134] Design Boundary: (0.0000, 0.0000) (420.0000, 320.0000)
+[03/18 21:20:48    134] Error Limit = 1000; Warning Limit = 50
+[03/18 21:20:48    134] Check all nets
+[03/18 21:20:49    134] Net VDD: dangling Wire.
+[03/18 21:20:49    134] Net VSS: dangling Wire.
+[03/18 21:20:49    134] 
+[03/18 21:20:49    134] Begin Summary 
+[03/18 21:20:49    134]     212 Problem(s) (IMPVFC-94): The net has dangling wire(s).
+[03/18 21:20:49    134]     212 total info(s) created.
+[03/18 21:20:49    134] End Summary
+[03/18 21:20:49    134] 
+[03/18 21:20:49    134] End Time: Tue Mar 18 21:20:49 2025
+[03/18 21:20:49    134] Time Elapsed: 0:00:01.0
+[03/18 21:20:49    134] 
+[03/18 21:20:49    134] ******** End: VERIFY CONNECTIVITY ********
+[03/18 21:20:49    134]   Verification Complete : 212 Viols.  0 Wrngs.
+[03/18 21:20:49    134]   (CPU Time: 0:00:00.1  MEM: 0.000M)
+[03/18 21:20:49    134] 
+[03/18 21:22:21    154] <CMD> selectWire 268.3250 10.0000 270.3250 310.0000 4 VSS
+[03/18 21:22:22    154] <CMD> deselectAll
+[03/18 21:22:23    154] <CMD> panPage 0 -1
+[03/18 21:22:23    154] <CMD> panPage 0 -1
+[03/18 21:22:23    154] <CMD> panPage 0 -1
+[03/18 21:22:23    155] <CMD> panPage 0 -1
+[03/18 21:22:24    155] <CMD> panPage 0 -1
+[03/18 21:22:24    155] <CMD> panPage 0 1
+[03/18 21:24:48    185] <CMD> floorPlan -site core -r 1 0.50 1.2 1.2 1.2 1.2
+[03/18 21:24:48    185] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[03/18 21:24:48    185] <CMD> globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+[03/18 21:24:48    185] 0 new pwr-pin connection was made to global net 'VDD'.
+[03/18 21:24:48    185] <CMD> globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+[03/18 21:24:48    185] 0 new gnd-pin connection was made to global net 'VSS'.
+[03/18 21:24:48    185] <CMD> setAddStripeMode -break_at block_ring
+[03/18 21:24:48    185] Stripe will break at block ring.
+[03/18 21:24:48    185] <CMD> addStripe -nets {VDD VSS} -layer M4 -direction vertical -width 2 -spacing 5 -number_of_sets 15
+[03/18 21:24:48    185] 
+[03/18 21:24:48    185] Starting stripe generation ...
+[03/18 21:24:48    185] Non-Default setAddStripeOption Settings :
+[03/18 21:24:48    185]   NONE
+[03/18 21:24:48    185] The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[03/18 21:24:48    185] The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[03/18 21:24:48    185] Stripe generation is complete; vias are now being generated.
+[03/18 21:24:48    185] The power planner created 30 wires.
+[03/18 21:24:48    185] *** Ending Stripe Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 976.4M) ***
+[03/18 21:24:48    185] <CMD> sroute
+[03/18 21:24:48    185] *** Begin SPECIAL ROUTE on Tue Mar 18 21:24:48 2025 ***
+[03/18 21:24:48    185] SPECIAL ROUTE ran on directory: /home/linux/ieng6/ee260bwi25/jmsin/ece260_project/step3/pnr_sram16
+[03/18 21:24:48    185] SPECIAL ROUTE ran on machine: ieng6-ece-03.ucsd.edu (Linux 3.10.0-1160.119.1.el7.x86_64 Xeon 2.19Ghz)
+[03/18 21:24:48    185] 
+[03/18 21:24:48    185] Begin option processing ...
+[03/18 21:24:48    185] srouteConnectPowerBump set to false
+[03/18 21:24:48    185] routeSpecial set to true
+[03/18 21:24:48    185] srouteConnectConverterPin set to false
+[03/18 21:24:48    185] srouteFollowCorePinEnd set to 3
+[03/18 21:24:48    185] srouteJogControl set to "preferWithChanges differentLayer"
+[03/18 21:24:48    185] sroutePadPinAllPorts set to true
+[03/18 21:24:48    185] sroutePreserveExistingRoutes set to true
+[03/18 21:24:48    185] srouteRoutePowerBarPortOnBothDir set to true
+[03/18 21:24:48    185] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1578.00 megs.
+[03/18 21:24:48    185] 
+[03/18 21:24:48    185] Reading DB technology information...
+[03/18 21:24:48    185] Finished reading DB technology information.
+[03/18 21:24:48    185] Reading floorplan and netlist information...
+[03/18 21:24:48    185] Finished reading floorplan and netlist information.
+[03/18 21:24:49    186] Read in 17 layers, 8 routing layers, 1 overlap layer
+[03/18 21:24:49    186] Read in 846 macros, 11 used
+[03/18 21:24:49    186] Read in 11 components
+[03/18 21:24:49    186]   11 core components: 11 unplaced, 0 placed, 0 fixed
+[03/18 21:24:49    186] Read in 263 logical pins
+[03/18 21:24:49    186] Read in 263 nets
+[03/18 21:24:49    186] Read in 2 special nets, 2 routed
+[03/18 21:24:49    186] Read in 22 terminals
+[03/18 21:24:49    186] Begin power routing ...
+[03/18 21:24:49    186] **WARN: (IMPSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+[03/18 21:24:49    186] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[03/18 21:24:49    186] Type 'man IMPSR-1256' for more detail.
+[03/18 21:24:49    186] Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[03/18 21:24:49    186] **WARN: (IMPSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+[03/18 21:24:49    186] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[03/18 21:24:49    186] Type 'man IMPSR-1256' for more detail.
+[03/18 21:24:49    186] Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[03/18 21:24:49    186] CPU time for FollowPin 0 seconds
+[03/18 21:24:49    186] CPU time for FollowPin 0 seconds
+[03/18 21:24:49    186]   Number of IO ports routed: 0
+[03/18 21:24:49    186]   Number of Block ports routed: 0
+[03/18 21:24:49    186]   Number of Stripe ports routed: 0  open: 60
+[03/18 21:24:49    186]   Number of Core ports routed: 61  open: 185
+[03/18 21:24:49    186]   Number of Pad ports routed: 0
+[03/18 21:24:49    186]   Number of Power Bump ports routed: 0
+[03/18 21:24:49    186]   Number of Followpin connections: 123
+[03/18 21:24:49    186] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1581.00 megs.
+[03/18 21:24:49    186] 
+[03/18 21:24:49    186] 
+[03/18 21:24:49    186] 
+[03/18 21:24:49    186]  Begin updating DB with routing results ...
+[03/18 21:24:49    186]  Updating DB with 107 via definition ...
+[03/18 21:24:49    186] 
+sroute post-processing starts at Tue Mar 18 21:24:49 2025
+The viaGen is rebuilding shadow vias for net VSS.
+[03/18 21:24:49    186] sroute post-processing ends at Tue Mar 18 21:24:49 2025
+
+sroute post-processing starts at Tue Mar 18 21:24:49 2025
+The viaGen is rebuilding shadow vias for net VDD.
+[03/18 21:24:49    186] sroute post-processing ends at Tue Mar 18 21:24:49 2025
+sroute: Total CPU time used = 0:0:0
+[03/18 21:24:49    186] sroute: Total Real time used = 0:0:1
+[03/18 21:24:49    186] sroute: Total Memory used = -2.01 megs
+[03/18 21:24:49    186] sroute: Total Peak Memory used = 882.25 megs
+[03/18 21:24:53    187] <CMD> fit
+[03/18 21:28:59    242] <CMD> floorPlan -site core -s 400 300 5 5 5 5
+[03/18 21:28:59    242] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[03/18 21:28:59    242] <CMD> globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+[03/18 21:28:59    242] 0 new pwr-pin connection was made to global net 'VDD'.
+[03/18 21:28:59    242] <CMD> globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+[03/18 21:28:59    242] 0 new gnd-pin connection was made to global net 'VSS'.
+[03/18 21:28:59    242] <CMD> setAddStripeMode -break_at block_ring
+[03/18 21:28:59    242] Stripe will break at block ring.
+[03/18 21:28:59    242] <CMD> addStripe -nets {VDD VSS} -layer M4 -direction vertical -width 2 -spacing 5 -number_of_sets 15
+[03/18 21:28:59    242] 
+[03/18 21:28:59    242] Starting stripe generation ...
+[03/18 21:28:59    242] Non-Default setAddStripeOption Settings :
+[03/18 21:28:59    242]   NONE
+[03/18 21:28:59    242] The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[03/18 21:28:59    242] The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[03/18 21:28:59    242] Stripe generation is complete; vias are now being generated.
+[03/18 21:28:59    242] The power planner created 30 wires.
+[03/18 21:28:59    242] *** Ending Stripe Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 882.2M) ***
+[03/18 21:28:59    242] <CMD> sroute
+[03/18 21:28:59    242] *** Begin SPECIAL ROUTE on Tue Mar 18 21:28:59 2025 ***
+[03/18 21:28:59    242] SPECIAL ROUTE ran on directory: /home/linux/ieng6/ee260bwi25/jmsin/ece260_project/step3/pnr_sram16
+[03/18 21:28:59    242] SPECIAL ROUTE ran on machine: ieng6-ece-03.ucsd.edu (Linux 3.10.0-1160.119.1.el7.x86_64 Xeon 2.19Ghz)
+[03/18 21:28:59    242] 
+[03/18 21:28:59    242] Begin option processing ...
+[03/18 21:28:59    242] srouteConnectPowerBump set to false
+[03/18 21:28:59    242] routeSpecial set to true
+[03/18 21:28:59    242] srouteConnectConverterPin set to false
+[03/18 21:28:59    242] srouteFollowCorePinEnd set to 3
+[03/18 21:28:59    242] srouteJogControl set to "preferWithChanges differentLayer"
+[03/18 21:28:59    242] sroutePadPinAllPorts set to true
+[03/18 21:28:59    242] sroutePreserveExistingRoutes set to true
+[03/18 21:28:59    242] srouteRoutePowerBarPortOnBothDir set to true
+[03/18 21:28:59    242] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1581.00 megs.
+[03/18 21:28:59    242] 
+[03/18 21:28:59    242] Reading DB technology information...
+[03/18 21:28:59    242] Finished reading DB technology information.
+[03/18 21:28:59    242] Reading floorplan and netlist information...
+[03/18 21:28:59    242] Finished reading floorplan and netlist information.
+[03/18 21:28:59    242] Read in 17 layers, 8 routing layers, 1 overlap layer
+[03/18 21:28:59    242] Read in 846 macros, 11 used
+[03/18 21:28:59    242] Read in 11 components
+[03/18 21:28:59    242]   11 core components: 11 unplaced, 0 placed, 0 fixed
+[03/18 21:28:59    242] Read in 263 logical pins
+[03/18 21:28:59    242] Read in 263 nets
+[03/18 21:28:59    242] Read in 2 special nets, 2 routed
+[03/18 21:28:59    242] Read in 22 terminals
+[03/18 21:28:59    242] Begin power routing ...
+[03/18 21:28:59    242] **WARN: (IMPSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+[03/18 21:28:59    242] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[03/18 21:28:59    242] Type 'man IMPSR-1256' for more detail.
+[03/18 21:28:59    242] Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[03/18 21:28:59    242] **WARN: (IMPSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+[03/18 21:28:59    242] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[03/18 21:28:59    242] Type 'man IMPSR-1256' for more detail.
+[03/18 21:28:59    242] Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[03/18 21:28:59    242] CPU time for FollowPin 0 seconds
+[03/18 21:28:59    242] CPU time for FollowPin 0 seconds
+[03/18 21:28:59    242]   Number of IO ports routed: 0
+[03/18 21:28:59    242]   Number of Block ports routed: 0
+[03/18 21:28:59    242]   Number of Stripe ports routed: 0  open: 60
+[03/18 21:28:59    242]   Number of Core ports routed: 83  open: 251
+[03/18 21:28:59    242]   Number of Pad ports routed: 0
+[03/18 21:28:59    242]   Number of Power Bump ports routed: 0
+[03/18 21:28:59    242]   Number of Followpin connections: 167
+[03/18 21:28:59    242] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1581.00 megs.
+[03/18 21:28:59    242] 
+[03/18 21:28:59    242] 
+[03/18 21:28:59    242] 
+[03/18 21:28:59    242]  Begin updating DB with routing results ...
+[03/18 21:28:59    242]  Updating DB with 107 via definition ...
+[03/18 21:28:59    242] 
+sroute post-processing starts at Tue Mar 18 21:28:59 2025
+The viaGen is rebuilding shadow vias for net VSS.
+[03/18 21:28:59    242] sroute post-processing ends at Tue Mar 18 21:28:59 2025
+
+sroute post-processing starts at Tue Mar 18 21:28:59 2025
+The viaGen is rebuilding shadow vias for net VDD.
+[03/18 21:28:59    242] sroute post-processing ends at Tue Mar 18 21:28:59 2025
+sroute: Total CPU time used = 0:0:0
+[03/18 21:28:59    242] sroute: Total Real time used = 0:0:0
+[03/18 21:28:59    242] sroute: Total Memory used = -2.29 megs
+[03/18 21:28:59    242] sroute: Total Peak Memory used = 879.96 megs
+[03/18 21:29:05    244] <CMD> fit
+[03/18 21:29:20    247] <CMD> floorPlan -site core -s 400 300 1 1 1 1
+[03/18 21:29:20    247] <CMD> globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+[03/18 21:29:20    247] 0 new pwr-pin connection was made to global net 'VDD'.
+[03/18 21:29:20    247] <CMD> globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+[03/18 21:29:20    247] 0 new gnd-pin connection was made to global net 'VSS'.
+[03/18 21:29:20    247] <CMD> setAddStripeMode -break_at block_ring
+[03/18 21:29:20    247] Stripe will break at block ring.
+[03/18 21:29:20    247] <CMD> addStripe -nets {VDD VSS} -layer M4 -direction vertical -width 2 -spacing 5 -number_of_sets 15
+[03/18 21:29:20    247] 
+[03/18 21:29:20    247] Starting stripe generation ...
+[03/18 21:29:20    247] Non-Default setAddStripeOption Settings :
+[03/18 21:29:20    247]   NONE
+[03/18 21:29:20    247] The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[03/18 21:29:20    247] The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[03/18 21:29:20    247] Stripe generation is complete; vias are now being generated.
+[03/18 21:29:20    247] The power planner created 30 wires.
+[03/18 21:29:20    247] *** Ending Stripe Generation (totcpu: 0:00:00.2,real: 0:00:00.0, mem: 880.0M) ***
+[03/18 21:29:20    247] <CMD> sroute
+[03/18 21:29:20    247] *** Begin SPECIAL ROUTE on Tue Mar 18 21:29:20 2025 ***
+[03/18 21:29:20    247] SPECIAL ROUTE ran on directory: /home/linux/ieng6/ee260bwi25/jmsin/ece260_project/step3/pnr_sram16
+[03/18 21:29:20    247] SPECIAL ROUTE ran on machine: ieng6-ece-03.ucsd.edu (Linux 3.10.0-1160.119.1.el7.x86_64 Xeon 2.19Ghz)
+[03/18 21:29:20    247] 
+[03/18 21:29:20    247] Begin option processing ...
+[03/18 21:29:20    247] srouteConnectPowerBump set to false
+[03/18 21:29:20    247] routeSpecial set to true
+[03/18 21:29:20    247] srouteConnectConverterPin set to false
+[03/18 21:29:20    247] srouteFollowCorePinEnd set to 3
+[03/18 21:29:20    247] srouteJogControl set to "preferWithChanges differentLayer"
+[03/18 21:29:20    247] sroutePadPinAllPorts set to true
+[03/18 21:29:20    247] sroutePreserveExistingRoutes set to true
+[03/18 21:29:20    247] srouteRoutePowerBarPortOnBothDir set to true
+[03/18 21:29:20    247] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1581.00 megs.
+[03/18 21:29:20    247] 
+[03/18 21:29:20    247] Reading DB technology information...
+[03/18 21:29:20    247] Finished reading DB technology information.
+[03/18 21:29:20    247] Reading floorplan and netlist information...
+[03/18 21:29:20    247] Finished reading floorplan and netlist information.
+[03/18 21:29:20    247] Read in 17 layers, 8 routing layers, 1 overlap layer
+[03/18 21:29:20    247] Read in 846 macros, 11 used
+[03/18 21:29:20    247] Read in 11 components
+[03/18 21:29:20    247]   11 core components: 11 unplaced, 0 placed, 0 fixed
+[03/18 21:29:20    247] Read in 263 logical pins
+[03/18 21:29:20    247] Read in 263 nets
+[03/18 21:29:20    247] Read in 2 special nets, 2 routed
+[03/18 21:29:20    247] Read in 22 terminals
+[03/18 21:29:20    247] Begin power routing ...
+[03/18 21:29:20    247] **WARN: (IMPSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+[03/18 21:29:20    247] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[03/18 21:29:20    247] Type 'man IMPSR-1256' for more detail.
+[03/18 21:29:20    247] Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[03/18 21:29:20    247] **WARN: (IMPSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+[03/18 21:29:20    247] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[03/18 21:29:20    247] Type 'man IMPSR-1256' for more detail.
+[03/18 21:29:20    247] Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[03/18 21:29:20    247] **WARN: (IMPSR-1249):	Special wire at (263.325 301.835) (265.325 302.165) is out of design boundary. Ignored.
+[03/18 21:29:20    247] **WARN: (IMPSR-1249):	Special wire at (263.325 301.835) (265.325 302.165) is out of design boundary. Ignored.
+[03/18 21:29:20    247] **WARN: (IMPSR-1249):	Special wire at (263.325 301.835) (265.325 302.165) is out of design boundary. Ignored.
+[03/18 21:29:20    247] **WARN: (IMPSR-1249):	Special wire at (256.325 303.635) (258.325 303.965) is out of design boundary. Ignored.
+[03/18 21:29:20    247] **WARN: (IMPSR-1249):	Special wire at (256.325 303.635) (258.325 303.965) is out of design boundary. Ignored.
+[03/18 21:29:20    247] **WARN: (IMPSR-1249):	Special wire at (256.325 303.635) (258.325 303.965) is out of design boundary. Ignored.
+[03/18 21:29:20    247] **WARN: (IMPSR-1249):	Special wire at (291.250 301.835) (293.250 302.165) is out of design boundary. Ignored.
+[03/18 21:29:20    247] **WARN: (IMPSR-1249):	Special wire at (291.250 301.835) (293.250 302.165) is out of design boundary. Ignored.
+[03/18 21:29:20    247] **WARN: (IMPSR-1249):	Special wire at (291.250 301.835) (293.250 302.165) is out of design boundary. Ignored.
+[03/18 21:29:20    247] **WARN: (IMPSR-1249):	Special wire at (284.250 303.635) (286.250 303.965) is out of design boundary. Ignored.
+[03/18 21:29:20    247] **WARN: (IMPSR-1249):	Special wire at (284.250 303.635) (286.250 303.965) is out of design boundary. Ignored.
+[03/18 21:29:20    247] **WARN: (IMPSR-1249):	Special wire at (284.250 303.635) (286.250 303.965) is out of design boundary. Ignored.
+[03/18 21:29:20    247] **WARN: (IMPSR-1249):	Special wire at (207.475 301.835) (209.475 302.165) is out of design boundary. Ignored.
+[03/18 21:29:20    247] **WARN: (IMPSR-1249):	Special wire at (207.475 301.835) (209.475 302.165) is out of design boundary. Ignored.
+[03/18 21:29:20    247] **WARN: (IMPSR-1249):	Special wire at (207.475 301.835) (209.475 302.165) is out of design boundary. Ignored.
+[03/18 21:29:20    247] **WARN: (IMPSR-1249):	Special wire at (235.400 301.835) (237.400 302.165) is out of design boundary. Ignored.
+[03/18 21:29:20    247] **WARN: (IMPSR-1249):	Special wire at (235.400 301.835) (237.400 302.165) is out of design boundary. Ignored.
+[03/18 21:29:20    247] **WARN: (IMPSR-1249):	Special wire at (235.400 301.835) (237.400 302.165) is out of design boundary. Ignored.
+[03/18 21:29:20    247] **WARN: (IMPSR-1249):	Special wire at (228.400 303.635) (230.400 303.965) is out of design boundary. Ignored.
+[03/18 21:29:20    247] **WARN: (IMPSR-1249):	Special wire at (228.400 303.635) (230.400 303.965) is out of design boundary. Ignored.
+[03/18 21:29:20    247] **WARN: (EMS-27):	Message (IMPSR-1249) has exceeded the current message display limit of 20.
+[03/18 21:29:20    247] To increase the message display limit, refer to the product command reference manual.
+[03/18 21:29:20    247] CPU time for FollowPin 0 seconds
+[03/18 21:29:20    247] CPU time for FollowPin 0 seconds
+[03/18 21:29:20    247]   Number of IO ports routed: 0
+[03/18 21:29:20    247]   Number of Block ports routed: 0
+[03/18 21:29:20    247]   Number of Stripe ports routed: 0  open: 90
+[03/18 21:29:20    247]   Number of Core ports routed: 1  open: 333
+[03/18 21:29:20    247]   Number of Pad ports routed: 0
+[03/18 21:29:20    247]   Number of Power Bump ports routed: 0
+[03/18 21:29:20    247]   Number of Followpin connections: 167
+[03/18 21:29:20    247] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1581.00 megs.
+[03/18 21:29:20    247] 
+[03/18 21:29:20    247] 
+[03/18 21:29:20    247] 
+[03/18 21:29:20    247]  Begin updating DB with routing results ...
+[03/18 21:29:20    247]  Updating DB with 110 via definition ...
+[03/18 21:29:20    247] 
+sroute post-processing starts at Tue Mar 18 21:29:20 2025
+The viaGen is rebuilding shadow vias for net VSS.
+[03/18 21:29:21    248] sroute post-processing ends at Tue Mar 18 21:29:21 2025
+
+sroute post-processing starts at Tue Mar 18 21:29:21 2025
+The viaGen is rebuilding shadow vias for net VDD.
+[03/18 21:29:21    248] sroute post-processing ends at Tue Mar 18 21:29:21 2025
+sroute: Total CPU time used = 0:0:1
+[03/18 21:29:21    248] sroute: Total Real time used = 0:0:1
+[03/18 21:29:21    248] sroute: Total Memory used = -2.57 megs
+[03/18 21:29:21    248] sroute: Total Peak Memory used = 877.39 megs
+[03/18 21:29:42    253] <CMD> floorPlan -site core -s 400 300 1 1 1 1
+[03/18 21:29:42    253] <CMD> globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+[03/18 21:29:42    253] 0 new pwr-pin connection was made to global net 'VDD'.
+[03/18 21:29:42    253] <CMD> globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+[03/18 21:29:42    253] 0 new gnd-pin connection was made to global net 'VSS'.
+[03/18 21:29:42    253] <CMD> setAddStripeMode -break_at block_ring
+[03/18 21:29:42    253] Stripe will break at block ring.
+[03/18 21:29:42    253] <CMD> addStripe -nets {VDD VSS} -layer M4 -direction vertical -width 2 -spacing 5 -number_of_sets 10
+[03/18 21:29:42    253] 
+[03/18 21:29:42    253] Starting stripe generation ...
+[03/18 21:29:42    253] Non-Default setAddStripeOption Settings :
+[03/18 21:29:42    253]   NONE
+[03/18 21:29:42    253] The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[03/18 21:29:42    253] The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[03/18 21:29:42    253] **WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 139.32 either because the stripe is merged with rings, or because stripe could not be connected to any legal targets, or because stripe is blocked by different net geometry.
+[03/18 21:29:42    253] **WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 175.76 either because the stripe is merged with rings, or because stripe could not be connected to any legal targets, or because stripe is blocked by different net geometry.
+[03/18 21:29:42    253] **WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 226.20 either because the stripe is merged with rings, or because stripe could not be connected to any legal targets, or because stripe is blocked by different net geometry.
+[03/18 21:29:42    253] **WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 262.64 either because the stripe is merged with rings, or because stripe could not be connected to any legal targets, or because stripe is blocked by different net geometry.
+[03/18 21:29:42    253] **WARN: (IMPPP-170):	The power planner failed to create a wire at (2.00, 1.00) (2.00, 301.00) because same wire already exists.
+[03/18 21:29:42    253] **WARN: (IMPPP-170):	The power planner failed to create a wire at (9.00, 1.00) (9.00, 301.00) because same wire already exists.
+[03/18 21:29:42    253] Stripe generation is complete; vias are now being generated.
+[03/18 21:29:42    253] **WARN: (IMPPP-613):	Any via in the intersection area will cause DRC violation, no via was created between layer: M3 & M4, size: 2.00 x 0.00 at (349.52, 4.84)
+[03/18 21:29:42    253] The power planner created 14 wires.
+[03/18 21:29:42    253] *** Ending Stripe Generation (totcpu: 0:00:00.3,real: 0:00:00.0, mem: 877.4M) ***
+[03/18 21:29:42    253] <CMD> sroute
+[03/18 21:29:42    253] *** Begin SPECIAL ROUTE on Tue Mar 18 21:29:42 2025 ***
+[03/18 21:29:42    253] SPECIAL ROUTE ran on directory: /home/linux/ieng6/ee260bwi25/jmsin/ece260_project/step3/pnr_sram16
+[03/18 21:29:42    253] SPECIAL ROUTE ran on machine: ieng6-ece-03.ucsd.edu (Linux 3.10.0-1160.119.1.el7.x86_64 Xeon 2.19Ghz)
+[03/18 21:29:42    253] 
+[03/18 21:29:42    253] Begin option processing ...
+[03/18 21:29:42    253] srouteConnectPowerBump set to false
+[03/18 21:29:42    253] routeSpecial set to true
+[03/18 21:29:42    253] srouteConnectConverterPin set to false
+[03/18 21:29:42    253] srouteFollowCorePinEnd set to 3
+[03/18 21:29:42    253] srouteJogControl set to "preferWithChanges differentLayer"
+[03/18 21:29:42    253] sroutePadPinAllPorts set to true
+[03/18 21:29:42    253] sroutePreserveExistingRoutes set to true
+[03/18 21:29:42    253] srouteRoutePowerBarPortOnBothDir set to true
+[03/18 21:29:42    253] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1581.00 megs.
+[03/18 21:29:42    253] 
+[03/18 21:29:42    253] Reading DB technology information...
+[03/18 21:29:42    253] Finished reading DB technology information.
+[03/18 21:29:42    253] Reading floorplan and netlist information...
+[03/18 21:29:42    253] Finished reading floorplan and netlist information.
+[03/18 21:29:42    253] Read in 17 layers, 8 routing layers, 1 overlap layer
+[03/18 21:29:42    253] Read in 846 macros, 11 used
+[03/18 21:29:42    253] Read in 11 components
+[03/18 21:29:42    253]   11 core components: 11 unplaced, 0 placed, 0 fixed
+[03/18 21:29:42    253] Read in 263 logical pins
+[03/18 21:29:42    253] Read in 263 nets
+[03/18 21:29:42    253] Read in 2 special nets, 2 routed
+[03/18 21:29:42    253] Read in 22 terminals
+[03/18 21:29:42    253] Begin power routing ...
+[03/18 21:29:42    253] **WARN: (IMPSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+[03/18 21:29:42    253] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[03/18 21:29:42    253] Type 'man IMPSR-1256' for more detail.
+[03/18 21:29:42    253] Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[03/18 21:29:42    253] **WARN: (IMPSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+[03/18 21:29:42    253] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[03/18 21:29:42    253] Type 'man IMPSR-1256' for more detail.
+[03/18 21:29:42    253] Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[03/18 21:29:42    253] **WARN: (IMPSR-1249):	Special wire at (263.325 301.835) (265.325 302.165) is out of design boundary. Ignored.
+[03/18 21:29:42    253] **WARN: (IMPSR-1249):	Special wire at (263.325 301.835) (265.325 302.165) is out of design boundary. Ignored.
+[03/18 21:29:42    253] **WARN: (IMPSR-1249):	Special wire at (263.325 301.835) (265.325 302.165) is out of design boundary. Ignored.
+[03/18 21:29:42    253] **WARN: (IMPSR-1249):	Special wire at (256.325 303.635) (258.325 303.965) is out of design boundary. Ignored.
+[03/18 21:29:42    253] **WARN: (IMPSR-1249):	Special wire at (256.325 303.635) (258.325 303.965) is out of design boundary. Ignored.
+[03/18 21:29:42    253] **WARN: (IMPSR-1249):	Special wire at (256.325 303.635) (258.325 303.965) is out of design boundary. Ignored.
+[03/18 21:29:42    253] **WARN: (IMPSR-1249):	Special wire at (291.250 301.835) (293.250 302.165) is out of design boundary. Ignored.
+[03/18 21:29:42    253] **WARN: (IMPSR-1249):	Special wire at (291.250 301.835) (293.250 302.165) is out of design boundary. Ignored.
+[03/18 21:29:42    253] **WARN: (IMPSR-1249):	Special wire at (291.250 301.835) (293.250 302.165) is out of design boundary. Ignored.
+[03/18 21:29:42    253] **WARN: (IMPSR-1249):	Special wire at (284.250 303.635) (286.250 303.965) is out of design boundary. Ignored.
+[03/18 21:29:42    253] **WARN: (IMPSR-1249):	Special wire at (284.250 303.635) (286.250 303.965) is out of design boundary. Ignored.
+[03/18 21:29:42    253] **WARN: (IMPSR-1249):	Special wire at (284.250 303.635) (286.250 303.965) is out of design boundary. Ignored.
+[03/18 21:29:42    253] **WARN: (IMPSR-1249):	Special wire at (207.475 301.835) (209.475 302.165) is out of design boundary. Ignored.
+[03/18 21:29:42    253] **WARN: (IMPSR-1249):	Special wire at (207.475 301.835) (209.475 302.165) is out of design boundary. Ignored.
+[03/18 21:29:42    253] **WARN: (IMPSR-1249):	Special wire at (207.475 301.835) (209.475 302.165) is out of design boundary. Ignored.
+[03/18 21:29:42    253] **WARN: (IMPSR-1249):	Special wire at (235.400 301.835) (237.400 302.165) is out of design boundary. Ignored.
+[03/18 21:29:42    253] **WARN: (IMPSR-1249):	Special wire at (235.400 301.835) (237.400 302.165) is out of design boundary. Ignored.
+[03/18 21:29:42    253] **WARN: (IMPSR-1249):	Special wire at (235.400 301.835) (237.400 302.165) is out of design boundary. Ignored.
+[03/18 21:29:42    253] **WARN: (IMPSR-1249):	Special wire at (228.400 303.635) (230.400 303.965) is out of design boundary. Ignored.
+[03/18 21:29:42    253] **WARN: (IMPSR-1249):	Special wire at (228.400 303.635) (230.400 303.965) is out of design boundary. Ignored.
+[03/18 21:29:42    253] **WARN: (EMS-27):	Message (IMPSR-1249) has exceeded the current message display limit of 20.
+[03/18 21:29:42    253] To increase the message display limit, refer to the product command reference manual.
+[03/18 21:29:42    253] CPU time for FollowPin 0 seconds
+[03/18 21:29:42    253] CPU time for FollowPin 0 seconds
+[03/18 21:29:42    253]   Number of IO ports routed: 0
+[03/18 21:29:42    253]   Number of Block ports routed: 0
+[03/18 21:29:42    253]   Number of Stripe ports routed: 2  open: 108
+[03/18 21:29:42    253]   Number of Core ports routed: 0  open: 251
+[03/18 21:29:42    253]   Number of Pad ports routed: 0
+[03/18 21:29:42    253]   Number of Power Bump ports routed: 0
+[03/18 21:29:42    253] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1581.00 megs.
+[03/18 21:29:42    253] 
+[03/18 21:29:42    253] 
+[03/18 21:29:42    253] 
+[03/18 21:29:42    253]  Begin updating DB with routing results ...
+[03/18 21:29:42    253]  Updating DB with 137 via definition ...
+[03/18 21:29:42    253] 
+sroute post-processing starts at Tue Mar 18 21:29:42 2025
+The viaGen is rebuilding shadow vias for net VSS.
+[03/18 21:29:42    253] sroute post-processing ends at Tue Mar 18 21:29:42 2025
+sroute: Total CPU time used = 0:0:0
+[03/18 21:29:42    253] sroute: Total Real time used = 0:0:0
+[03/18 21:29:42    253] sroute: Total Memory used = -2.29 megs
+[03/18 21:29:42    253] sroute: Total Peak Memory used = 875.10 megs
+[03/18 21:30:00    257] 
+[03/18 21:30:00    257] *** Memory Usage v#1 (Current mem = 875.102M, initial mem = 149.258M) ***
+[03/18 21:30:00    257] 
+[03/18 21:30:00    257] *** Summary of all messages that are not suppressed in this session:
+[03/18 21:30:00    257] Severity  ID               Count  Summary                                  
+[03/18 21:30:00    257] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[03/18 21:30:00    257] WARNING   IMPFP-325            3  Floorplan of the design is resized. All ...
+[03/18 21:30:00    257] WARNING   IMPFP-3961           2  The techSite '%s' has no related cells i...
+[03/18 21:30:00    257] WARNING   IMPEXT-2710          2  Basic Cap table for layer M%d is ignored...
+[03/18 21:30:00    257] WARNING   IMPEXT-2760          2  Layer M%d specified in the cap table is ...
+[03/18 21:30:00    257] WARNING   IMPEXT-2771          2  Via %s specified in the cap table is ign...
+[03/18 21:30:00    257] WARNING   IMPEXT-2801          2  Resistance values are not provided in th...
+[03/18 21:30:00    257] WARNING   IMPVL-159         1622  Pin '%s' of cell '%s' is defined in LEF ...
+[03/18 21:30:00    257] WARNING   IMPPP-170            2  The power planner failed to create a wir...
+[03/18 21:30:00    257] WARNING   IMPPP-354            4  The power planner did not generate %s st...
+[03/18 21:30:00    257] WARNING   IMPPP-613            1  Any via in the intersection area will ca...
+[03/18 21:30:00    257] WARNING   IMPSR-1249        1244  Special wire at (%.3f %.3f) (%.3f %.3f) ...
+[03/18 21:30:00    257] WARNING   IMPSR-1254          12  Cannot find any block pin of net %s. Che...
+[03/18 21:30:00    257] WARNING   IMPSR-1256          12  Cannot find any CORE class pad pin of ne...
+[03/18 21:30:00    257] ERROR     IMPOAX-142           3  %s                                       
+[03/18 21:30:00    257] ERROR     IMPOAX-820           1  The OA features are disabled in the curr...
+[03/18 21:30:00    257] ERROR     IMPOAX-850           1  %s command cannot be run as OA features ...
+[03/18 21:30:00    257] *** Message Summary: 2911 warning(s), 5 error(s)
+[03/18 21:30:00    257] 
+[03/18 21:30:00    257] --- Ending "Innovus" (totcpu=0:04:18, real=0:19:08, mem=875.1M) ---

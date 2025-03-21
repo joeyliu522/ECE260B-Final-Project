@@ -1,0 +1,45 @@
+# PPCMD 1 
+# sroute 
+# 3 
+# 16 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 1 
+
+# PPCMD 2 
+# addStripe -nets {VDD VSS} -layer M4 -direction vertical -width 2 -spacing 3 -number_of_sets 4 -start_from left -start 20 -stop 380
+# 2 
+# 2 
+# 1 
+# 0 
+# 0 
+# 1 
+# BOX_LIST 
+# 2000 2000 802000 602000 0 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VSS 4000 4 0 50000 762000 235330 0 0 
+# VDD 4000 4 0 40000 762000 235330 0 0 
+# END_NET_INFO_LIST 
+# END_PPCMD 2 
+
+# PPCMD 3 
+# setAddStripeMode -break_at block_ring
+# 1 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 3 
+

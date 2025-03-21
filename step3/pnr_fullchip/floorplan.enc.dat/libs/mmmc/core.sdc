@@ -1,0 +1,1 @@
+/home/linux/ieng6/ee260bwi25/jmsin/testpnr/pnr_fullchip/constraints/core.sdc

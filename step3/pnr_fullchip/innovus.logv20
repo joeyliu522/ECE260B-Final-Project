@@ -1,0 +1,292 @@
+[03/19 11:41:33      0] 
+[03/19 11:41:33      0] Cadence Innovus(TM) Implementation System.
+[03/19 11:41:33      0] Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+[03/19 11:41:33      0] 
+[03/19 11:41:33      0] Version:	v15.23-s045_1, built Fri Apr 22 12:32:52 PDT 2016
+[03/19 11:41:33      0] Options:	
+[03/19 11:41:33      0] Date:		Wed Mar 19 11:41:33 2025
+[03/19 11:41:33      0] Host:		ieng6-ece-03.ucsd.edu (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (4cores*8cpus*Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz 25344KB)
+[03/19 11:41:33      0] OS:		CentOS Linux release 7.9.2009 (Core)
+[03/19 11:41:33      0] 
+[03/19 11:41:33      0] License:
+[03/19 11:41:33      0] 		invs	Innovus Implementation System	15.2	checkout succeeded
+[03/19 11:41:33      0] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[03/19 11:41:34      0] **ERROR: (IMPOAX-142):	Could not open shared library libinnovusoax22.so : /acsnfs3/software/cadence-innovus152/tools/lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE
+[03/19 11:41:34      0] 
+[03/19 11:41:34      0] **ERROR: (IMPOAX-142):	Could not open shared library libcdsSkillPcell.so : (null)
+[03/19 11:41:34      0] 
+[03/19 11:41:34      0] **ERROR: (IMPOAX-142):	OA features will be disabled in this session.
+[03/19 11:41:34      0] 
+[03/19 11:41:43      7] @(#)CDS: Innovus v15.23-s045_1 (64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5)
+[03/19 11:41:43      7] @(#)CDS: NanoRoute 15.23-s045_1 NR160414-1105/15_23-UB (database version 2.30, 317.6.1) {superthreading v1.26}
+[03/19 11:41:43      7] @(#)CDS: AAE 15.23-s014 (64bit) 04/22/2016 (Linux 2.6.18-194.el5)
+[03/19 11:41:43      7] @(#)CDS: CTE 15.23-s022_1 () Apr 22 2016 09:38:45 ( )
+[03/19 11:41:43      7] @(#)CDS: SYNTECH 15.23-s008_1 () Apr 12 2016 21:52:59 ( )
+[03/19 11:41:43      7] @(#)CDS: CPE v15.23-s045
+[03/19 11:41:43      7] @(#)CDS: IQRC/TQRC 15.1.4-s213 (64bit) Tue Feb  9 17:31:28 PST 2016 (Linux 2.6.18-194.el5)
+[03/19 11:41:43      7] @(#)CDS: OA 22.50-p036 Tue Nov  3 09:29:52 2015
+[03/19 11:41:43      7] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[03/19 11:41:43      7] @(#)CDS: RCDB 11.7
+[03/19 11:41:43      7] --- Running on ieng6-ece-03.ucsd.edu (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (4cores*8cpus*Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz 25344KB) ---
+[03/19 11:41:43      7] Create and set the environment variable TMPDIR to /tmp/innovus_temp_30479_ieng6-ece-03.ucsd.edu_jmsin_472F6D.
+
+[03/19 11:41:43      8] 
+[03/19 11:41:43      8] **INFO:  MMMC transition support version v31-84 
+[03/19 11:41:43      8] 
+[03/19 11:41:43      8] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[03/19 11:41:43      8] <CMD> suppressMessage ENCEXT-2799
+[03/19 11:41:44      8] <CMD> getDrawView
+[03/19 11:41:44      8] <CMD> loadWorkspace -name Physical
+[03/19 11:41:44      8] <CMD> win
+[03/19 11:42:47     20] <CMD> set init_pwr_net VDD
+[03/19 11:42:47     20] <CMD> set init_gnd_net VSS
+[03/19 11:42:47     20] <CMD> set init_verilog ./netlist/fullchip.v
+[03/19 11:42:47     20] <CMD> set init_design_netlisttype Verilog
+[03/19 11:42:47     20] <CMD> set init_design_settop 1
+[03/19 11:42:47     20] <CMD> set init_top_cell fullchip
+[03/19 11:42:47     20] <CMD> set init_lef_file {/home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef ./subckt/sram_w16.lef}
+[03/19 11:42:47     20] <CMD> create_library_set -name WC_LIB -timing "$worst_timing_lib ./subckt/sram_w16_WC.lib"
+[03/19 11:42:47     20] <CMD> create_library_set -name BC_LIB -timing "$best_timing_lib ./subckt/sram_w16_BC.lib"
+[03/19 11:42:47     20] <CMD> create_rc_corner -name Cmax -cap_table $worst_captbl -T 125
+[03/19 11:42:47     20] <CMD> create_rc_corner -name Cmin -cap_table $best_captbl -T -40
+[03/19 11:42:47     20] <CMD> create_delay_corner -name WC -library_set WC_LIB -rc_corner Cmax
+[03/19 11:42:47     20] <CMD> create_delay_corner -name BC -library_set BC_LIB -rc_corner Cmin
+[03/19 11:42:47     20] <CMD> create_constraint_mode -name CON -sdc_file [list $sdc]
+[03/19 11:42:47     20] <CMD> create_analysis_view -name WC_VIEW -delay_corner WC -constraint_mode CON
+[03/19 11:42:47     20] <CMD> create_analysis_view -name BC_VIEW -delay_corner BC -constraint_mode CON
+[03/19 11:42:47     20] <CMD> init_design -setup WC_VIEW -hold BC_VIEW
+[03/19 11:42:47     20] **ERROR: (IMPOAX-820):	The OA features are disabled in the current session of Innovus because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Innovus either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+[03/19 11:42:47     20] 
+[03/19 11:42:47     20] **ERROR: (IMPOAX-850):	oaxCreateCdsLibArray command cannot be run as OA features are disabled in this session.
+[03/19 11:42:47     20] 
+[03/19 11:42:47     20] Loading LEF file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef ...
+[03/19 11:42:47     20] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+[03/19 11:42:47     20] The LEF parser will ignore this statement.
+[03/19 11:42:47     20] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 28.
+[03/19 11:42:47     20] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 11:42:47     20] The LEF parser will ignore this statement.
+[03/19 11:42:47     20] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 867.
+[03/19 11:42:47     20] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 11:42:47     20] The LEF parser will ignore this statement.
+[03/19 11:42:47     20] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 877.
+[03/19 11:42:47     20] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 11:42:47     20] The LEF parser will ignore this statement.
+[03/19 11:42:47     20] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1014.
+[03/19 11:42:47     20] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 11:42:47     20] The LEF parser will ignore this statement.
+[03/19 11:42:47     20] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1024.
+[03/19 11:42:47     20] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 11:42:47     20] The LEF parser will ignore this statement.
+[03/19 11:42:47     20] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1161.
+[03/19 11:42:47     20] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 11:42:47     20] The LEF parser will ignore this statement.
+[03/19 11:42:47     20] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1171.
+[03/19 11:42:47     20] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 11:42:47     20] The LEF parser will ignore this statement.
+[03/19 11:42:47     20] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1308.
+[03/19 11:42:47     20] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 11:42:47     20] The LEF parser will ignore this statement.
+[03/19 11:42:47     20] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1318.
+[03/19 11:42:47     20] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 11:42:47     20] The LEF parser will ignore this statement.
+[03/19 11:42:47     20] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1372.
+[03/19 11:42:47     20] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 11:42:47     20] The LEF parser will ignore this statement.
+[03/19 11:42:47     20] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1383.
+[03/19 11:42:47     20] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 11:42:47     20] The LEF parser will ignore this statement.
+[03/19 11:42:47     20] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1604.
+[03/19 11:42:47     20] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/19 11:42:47     20] The LEF parser will ignore this statement.
+[03/19 11:42:47     20] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1614.
+[03/19 11:42:47     20] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/19 11:42:47     20] The LEF parser will ignore this statement.
+[03/19 11:42:47     20] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1769.
+[03/19 11:42:47     20] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/19 11:42:47     20] The LEF parser will ignore this statement.
+[03/19 11:42:47     20] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1771.
+[03/19 11:42:47     20] WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+[03/19 11:42:47     20] The LEF parser will ignore this statement.
+[03/19 11:42:47     20] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1772.
+[03/19 11:42:47     20] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/19 11:42:47     20] The LEF parser will ignore this statement.
+[03/19 11:42:47     20] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1776.
+[03/19 11:42:47     20] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/19 11:42:47     20] The LEF parser will ignore this statement.
+[03/19 11:42:47     20] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1778.
+[03/19 11:42:47     20] WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+[03/19 11:42:47     20] The LEF parser will ignore this statement.
+[03/19 11:42:47     20] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1779.
+[03/19 11:42:47     20] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/19 11:42:47     20] The LEF parser will ignore this statement.
+[03/19 11:42:47     20] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1783.
+[03/19 11:42:47     20] Set DBUPerIGU to M2 pitch 400.
+[03/19 11:42:47     20] 
+[03/19 11:42:47     20] Loading LEF file ./subckt/sram_w16.lef ...
+[03/19 11:42:47     20] **WARN: (IMPLF-200):	Pin 'CLK' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-200' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-200):	Pin 'D[127]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-200' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-200):	Pin 'D[126]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-200' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-200):	Pin 'D[125]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-200' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-200):	Pin 'D[124]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-200' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-200):	Pin 'D[123]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-200' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-200):	Pin 'D[122]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-200' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-200):	Pin 'D[121]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-200' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-200):	Pin 'D[120]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-200' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-200):	Pin 'D[119]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-200' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-200):	Pin 'D[118]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-200' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-200):	Pin 'D[117]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-200' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-200):	Pin 'D[116]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-200' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-200):	Pin 'D[115]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-200' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-200):	Pin 'D[114]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-200' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-200):	Pin 'D[113]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-200' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-200):	Pin 'D[112]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-200' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-200):	Pin 'D[111]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-200' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-200):	Pin 'D[110]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-200' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-200):	Pin 'D[109]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-200' for more detail.
+[03/19 11:42:47     20] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[03/19 11:42:47     20] To increase the message display limit, refer to the product command reference manual.
+[03/19 11:42:47     20] **WARN: (IMPLF-201):	Pin 'Q[127]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-201' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-201):	Pin 'Q[126]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-201' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-201):	Pin 'Q[125]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-201' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-201):	Pin 'Q[124]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-201' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-201):	Pin 'Q[123]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-201' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-201):	Pin 'Q[122]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-201' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-201):	Pin 'Q[121]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-201' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-201):	Pin 'Q[120]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-201' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-201):	Pin 'Q[119]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-201' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-201):	Pin 'Q[118]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-201' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-201):	Pin 'Q[117]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-201' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-201):	Pin 'Q[116]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-201' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-201):	Pin 'Q[115]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-201' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-201):	Pin 'Q[114]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-201' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-201):	Pin 'Q[113]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-201' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-201):	Pin 'Q[112]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-201' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-201):	Pin 'Q[111]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-201' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-201):	Pin 'Q[110]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-201' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-201):	Pin 'Q[109]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-201' for more detail.
+[03/19 11:42:47     20] **WARN: (IMPLF-201):	Pin 'Q[108]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/19 11:42:47     20] Type 'man IMPLF-201' for more detail.
+[03/19 11:42:47     20] **WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+[03/19 11:42:47     20] To increase the message display limit, refer to the product command reference manual.
+[03/19 11:42:47     20] 
+[03/19 11:42:47     20] viaInitial starts at Wed Mar 19 11:42:47 2025
+viaInitial ends at Wed Mar 19 11:42:47 2025
+Reading WC_LIB timing library '/home/linux/ieng6/ee260bwi25/public/PDKdata/lib/tcbn65gpluswc.lib' ...
+[03/19 11:42:47     20] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D0' is not defined in the library.
+[03/19 11:42:47     20] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D1' is not defined in the library.
+[03/19 11:42:47     20] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D2' is not defined in the library.
+[03/19 11:42:47     20] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D4' is not defined in the library.
+[03/19 11:42:47     20] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D8' is not defined in the library.
+[03/19 11:42:47     20] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2XD1' is not defined in the library.
+[03/19 11:42:47     20] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D0' is not defined in the library.
+[03/19 11:42:47     20] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D1' is not defined in the library.
+[03/19 11:42:47     20] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D2' is not defined in the library.
+[03/19 11:42:47     20] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D4' is not defined in the library.
+[03/19 11:42:47     20] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D8' is not defined in the library.
+[03/19 11:42:47     20] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3XD1' is not defined in the library.
+[03/19 11:42:47     20] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D0' is not defined in the library.
+[03/19 11:42:47     20] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D1' is not defined in the library.
+[03/19 11:42:47     20] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D2' is not defined in the library.
+[03/19 11:42:47     20] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D4' is not defined in the library.
+[03/19 11:42:47     20] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D8' is not defined in the library.
+[03/19 11:42:47     20] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4XD1' is not defined in the library.
+[03/19 11:42:47     20] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D0' is not defined in the library.
+[03/19 11:42:47     20] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D1' is not defined in the library.
+[03/19 11:42:47     20] Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+[03/19 11:42:48     21] Read 811 cells in library 'tcbn65gpluswc' 
+[03/19 11:42:48     21] Reading WC_LIB timing library '/home/linux/ieng6/ee260bwi25/jmsin/testpnr/pnr_fullchip/subckt/sram_w16_WC.lib' ...
+[03/19 11:42:48     21] Read 1 cells in library 'sram_w16' 
+[03/19 11:42:48     21] Reading BC_LIB timing library '/home/linux/ieng6/ee260bwi25/public/PDKdata/lib/tcbn65gplusbc.lib' ...
+[03/19 11:42:49     22] Read 811 cells in library 'tcbn65gplusbc' 
+[03/19 11:42:49     22] Reading BC_LIB timing library '/home/linux/ieng6/ee260bwi25/jmsin/testpnr/pnr_fullchip/subckt/sram_w16_BC.lib' ...
+[03/19 11:42:49     22] Read 1 cells in library 'sram_w16' 
+[03/19 11:42:49     22] *** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.38min, fe_real=1.27min, fe_mem=470.7M) ***
+[03/19 11:42:49     22] *** Begin netlist parsing (mem=470.7M) ***
+[03/19 11:42:49     22] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D4' is defined in LEF but not in the timing library.
+[03/19 11:42:49     22] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D4' is defined in LEF but not in the timing library.
+[03/19 11:42:49     22] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D2' is defined in LEF but not in the timing library.
+[03/19 11:42:49     22] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D2' is defined in LEF but not in the timing library.
+[03/19 11:42:49     22] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D1' is defined in LEF but not in the timing library.
+[03/19 11:42:49     22] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D1' is defined in LEF but not in the timing library.
+[03/19 11:42:49     22] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D0' is defined in LEF but not in the timing library.
+[03/19 11:42:49     22] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D0' is defined in LEF but not in the timing library.
+[03/19 11:42:49     22] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D4' is defined in LEF but not in the timing library.
+[03/19 11:42:49     22] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D4' is defined in LEF but not in the timing library.
+[03/19 11:42:49     22] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+[03/19 11:42:49     22] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+[03/19 11:42:49     22] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+[03/19 11:42:49     22] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+[03/19 11:42:49     22] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D0' is defined in LEF but not in the timing library.
+[03/19 11:42:49     22] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D0' is defined in LEF but not in the timing library.
+[03/19 11:42:49     22] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D4' is defined in LEF but not in the timing library.
+[03/19 11:42:49     22] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D4' is defined in LEF but not in the timing library.
+[03/19 11:42:49     22] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+[03/19 11:42:49     22] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+[03/19 11:42:49     22] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[03/19 11:42:49     22] To increase the message display limit, refer to the product command reference manual.
+[03/19 11:42:49     22] Created 812 new cells from 4 timing libraries.
+[03/19 11:42:49     22] Reading netlist ...
+[03/19 11:42:49     22] Backslashed names will retain backslash and a trailing blank character.
+[03/19 11:42:49     22] Keeping previous port order for module sram_w16.
+[03/19 11:42:49     22] Reading verilog netlist './netlist/fullchip.v'
+[03/19 11:42:49     23] Non-leaf cell sram_w16 will be treated as a leaf cell.
+[03/19 11:42:49     23] 
+[03/19 11:42:49     23] *** Memory Usage v#1 (Current mem = 470.660M, initial mem = 152.258M) ***
+[03/19 11:42:49     23] *** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=470.7M) ***
+[03/19 11:42:49     23] **ERROR: (IMPSYC-300):	Cell fullchip not found.
+[03/19 11:42:49     23] **ERROR: (IMPVL-904):	Can't set top cell to "fullchip" because it does not exist.  Exiting!
+[03/19 11:42:56     24] 
+[03/19 11:42:56     24] *** Memory Usage v#1 (Current mem = 468.645M, initial mem = 152.258M) ***
+[03/19 11:42:56     24] 
+[03/19 11:42:56     24] *** Summary of all messages that are not suppressed in this session:
+[03/19 11:42:56     24] Severity  ID               Count  Summary                                  
+[03/19 11:42:56     24] WARNING   IMPLF-200          136  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[03/19 11:42:56     24] WARNING   IMPLF-201          128  Pin '%s' in macro '%s' has no ANTENNADIF...
+[03/19 11:42:56     24] ERROR     IMPSYC-300           1  Cell %s not found.                       
+[03/19 11:42:56     24] ERROR     IMPVL-904            2  Can't set top cell to "%s" because it do...
+[03/19 11:42:56     24] WARNING   IMPVL-159         1624  Pin '%s' of cell '%s' is defined in LEF ...
+[03/19 11:42:56     24] ERROR     IMPOAX-142           3  %s                                       
+[03/19 11:42:56     24] ERROR     IMPOAX-820           1  The OA features are disabled in the curr...
+[03/19 11:42:56     24] ERROR     IMPOAX-850           1  %s command cannot be run as OA features ...
+[03/19 11:42:56     24] *** Message Summary: 1888 warning(s), 8 error(s)
+[03/19 11:42:56     24] 
+[03/19 11:42:56     24] --- Ending "Innovus" (totcpu=0:00:24.6, real=0:01:23, mem=468.6M) ---

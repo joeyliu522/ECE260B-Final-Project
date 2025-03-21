@@ -1,1 +1,0 @@
-/home/linux/ieng6/ee260bwi25/jmsin/ece260_project/step3/pnr_fullchip/constraints/fullchip.sdc
