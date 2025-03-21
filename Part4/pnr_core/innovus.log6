@@ -1,0 +1,1053 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v15.23-s045_1, built Fri Apr 22 12:32:52 PDT 2016
+Options:	
+Date:		Fri Mar 21 14:37:49 2025
+Host:		ieng6-ece-10.ucsd.edu (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (4cores*8cpus*Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz 25344KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	15.2	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+**ERROR: (IMPOAX-142):	Could not open shared library libinnovusoax22.so : /acsnfs3/software/cadence-innovus152/tools/lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE
+
+**ERROR: (IMPOAX-142):	Could not open shared library libcdsSkillPcell.so : (null)
+
+**ERROR: (IMPOAX-142):	OA features will be disabled in this session.
+
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getDrawView
+<CMD> loadWorkspace -name Physical
+<CMD> win
+<CMD> restoreDesign route.enc.dat core
+exclude_path_collection 0
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+**ERROR: (IMPOAX-820):	The OA features are disabled in the current session of Innovus because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Innovus either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+
+**ERROR: (IMPOAX-850):	oaxCreateCdsLibArray command cannot be run as OA features are disabled in this session.
+Cmin Cmax
+
+Loading LEF file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef ...
+WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 28.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 867.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 877.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1014.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1024.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1161.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1171.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1308.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1318.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1372.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1383.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1604.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1614.
+WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1769.
+WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1771.
+WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1772.
+WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1776.
+WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1778.
+WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1779.
+WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1783.
+Set DBUPerIGU to M2 pitch 400.
+
+Loading LEF file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/sram_w16.lef ...
+**WARN: (IMPLF-200):	Pin 'CLK' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[127]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[126]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[125]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[124]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[123]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[122]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[121]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[120]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[119]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[118]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[117]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[116]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[115]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[114]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[113]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[112]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[111]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[110]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[109]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-201):	Pin 'Q[127]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[126]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[125]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[124]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[123]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[122]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[121]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[120]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[119]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[118]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[117]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[116]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[115]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[114]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[113]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[112]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[111]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[110]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[109]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[108]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+
+viaInitial starts at Fri Mar 21 14:38:29 2025
+viaInitial ends at Fri Mar 21 14:38:29 2025
+Loading view definition file from route.enc.dat/viewDefinition.tcl
+Reading WC_LIB timing library '/home/linux/ieng6/ee260bwi25/public/PDKdata/lib/tcbn65gpluswc.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D0' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D8' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2XD1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D0' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D8' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3XD1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D0' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D8' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4XD1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D0' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D1' is not defined in the library.
+Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+Read 811 cells in library 'tcbn65gpluswc' 
+Reading WC_LIB timing library '/home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/subckt/sram_w16_WC.lib' ...
+Read 1 cells in library 'sram_w16' 
+Reading BC_LIB timing library '/home/linux/ieng6/ee260bwi25/public/PDKdata/lib/tcbn65gplusbc.lib' ...
+Read 811 cells in library 'tcbn65gplusbc' 
+Reading BC_LIB timing library '/home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/subckt/sram_w16_BC.lib' ...
+Read 1 cells in library 'sram_w16' 
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.30min, fe_real=0.70min, fe_mem=468.6M) ***
+*** Begin netlist parsing (mem=468.6M) ***
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D0' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D0' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D0' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D0' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 812 new cells from 4 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '/home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/core.v.gz'
+
+*** Memory Usage v#1 (Current mem = 519.246M, initial mem = 149.258M) ***
+*** End netlist parsing (cpu=0:00:00.7, real=0:00:01.0, mem=519.2M) ***
+Set top cell to core.
+Hooked 1624 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell core ...
+*** Netlist is unique.
+** info: there are 1869 modules.
+** info: there are 66796 stdCell insts.
+** info: there are 3 macros.
+
+*** Memory Usage v#1 (Current mem = 610.008M, initial mem = 149.258M) ***
+*info: set bottom ioPad orient R0
+**WARN: (IMPFP-3961):	The techSite 'dcore' has no related cells in LEF/OA library. Cannot make calculations for this site type unless cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'ccore' has no related cells in LEF/OA library. Cannot make calculations for this site type unless cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Loading preference file route.enc.dat/gui.pref.tcl ...
+Applying the recommended capacitance filtering threshold values for 65nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+	These values will be used by all post-route extraction engines, including tQuantus, IQRC and Quantus QRC extraction.
+	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'high'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode will be 'medium' if Quantus QRC technology file is specified else 'low'.
+Updating process node dependent CCOpt properties for the 65nm process node.
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+Stripe will break at block ring.
+Initializing multi-corner RC extraction with 2 active RC Corners ...
+Reading Capacitance Table File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/cln65g+_1p08m+alrdl_top2_cworst.captable ...
+**WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2771):	Via VIA_8 specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2801):	Resistance values are not provided in the Cap Table. Sheet resistance defined in the LEF file will be used.
+**WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+Reading Capacitance Table File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/cln65g+_1p08m+alrdl_top2_cbest.captable ...
+**WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2771):	Via VIA_8 specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2801):	Resistance values are not provided in the Cap Table. Sheet resistance defined in the LEF file will be used.
+**WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: WC_VIEW
+    RC-Corner Name        : Cmax
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : '/home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/cln65g+_1p08m+alrdl_top2_cworst.captable'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+ 
+ Analysis View: BC_VIEW
+    RC-Corner Name        : Cmin
+    RC-Corner Index       : 1
+    RC-Corner Temperature : -40 Celsius
+    RC-Corner Cap Table   : '/home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/cln65g+_1p08m+alrdl_top2_cbest.captable'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc' ...
+Current (total cpu=0:00:19.9, real=0:00:45.0, peak res=384.3M, current mem=750.0M)
+**WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[23]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[22]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[21]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[20]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[19]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[18]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[17]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[16]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[15]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[14]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[13]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[12]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[11]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[10]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[9]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[8]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[7]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[6]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[5]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+**ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[4]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+Message <TCLCMD-979> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+INFO (CTE): Reading of timing constraints file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc completed, with 1 Warnings and 20 Errors.
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=400.0M, current mem=767.8M)
+Current (total cpu=0:00:20.1, real=0:00:45.0, peak res=400.0M, current mem=767.8M)
+Total number of combinational cells: 492
+Total number of sequential cells: 303
+Total number of tristate cells: 11
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFFD1 BUFFD0 BUFFD2 BUFFD3 BUFFD4 BUFFD6 BUFFD8 BUFFD12 BUFFD16 CKBD1 CKBD0 CKBD2 CKBD3 CKBD4 CKBD6 CKBD8 CKBD12 CKBD16
+Total number of usable buffers: 18
+List of unusable buffers: BUFFD20 BUFFD24 CKBD20 CKBD24 GBUFFD1 GBUFFD3 GBUFFD2 GBUFFD4 GBUFFD8
+Total number of unusable buffers: 9
+List of usable inverters: CKND1 CKND0 CKND2 CKND3 CKND4 CKND6 CKND8 CKND12 CKND16 INVD1 INVD0 INVD2 INVD3 INVD4 INVD6 INVD8 INVD12 INVD16
+Total number of usable inverters: 18
+List of unusable inverters: CKND20 CKND24 GINVD2 GINVD1 GINVD4 GINVD3 GINVD8 INVD20 INVD24
+Total number of unusable inverters: 9
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells: DEL0 DEL005 DEL01 DEL015 DEL02 DEL1 DEL2 DEL3 DEL4
+Total number of identified unusable delay cells: 9
+All delay cells are dont_use. Buffers will be used to fix hold violations.
+**WARN: (IMPOPT-3058):	Cell tcbn65gplusbc/AN2D1 already has a dont_use attribute false.
+Type 'man IMPOPT-3058' for more detail.
+**WARN: (IMPOPT-3058):	Cell tcbn65gpluswc/AN2D1 already has a dont_use attribute false.
+Type 'man IMPOPT-3058' for more detail.
+**WARN: (IMPOPT-3058):	Cell tcbn65gplusbc/AN2D2 already has a dont_use attribute false.
+Type 'man IMPOPT-3058' for more detail.
+**WARN: (IMPOPT-3058):	Cell tcbn65gpluswc/AN2D2 already has a dont_use attribute false.
+Type 'man IMPOPT-3058' for more detail.
+**WARN: (IMPOPT-3058):	Cell tcbn65gplusbc/AN2D4 already has a dont_use attribute false.
+Type 'man IMPOPT-3058' for more detail.
+**WARN: (IMPOPT-3058):	Cell tcbn65gpluswc/AN2D4 already has a dont_use attribute false.
+Type 'man IMPOPT-3058' for more detail.
+**WARN: (IMPOPT-3058):	Cell tcbn65gplusbc/AN2D8 already has a dont_use attribute false.
+Type 'man IMPOPT-3058' for more detail.
+**WARN: (IMPOPT-3058):	Cell tcbn65gpluswc/AN2D8 already has a dont_use attribute false.
+Type 'man IMPOPT-3058' for more detail.
+**WARN: (IMPOPT-3058):	Cell tcbn65gplusbc/AN2XD1 already has a dont_use attribute false.
+Type 'man IMPOPT-3058' for more detail.
+**WARN: (IMPOPT-3058):	Cell tcbn65gpluswc/AN2XD1 already has a dont_use attribute false.
+Type 'man IMPOPT-3058' for more detail.
+**WARN: (IMPOPT-3058):	Cell tcbn65gplusbc/AN3D2 already has a dont_use attribute false.
+Type 'man IMPOPT-3058' for more detail.
+**WARN: (IMPOPT-3058):	Cell tcbn65gpluswc/AN3D2 already has a dont_use attribute false.
+Type 'man IMPOPT-3058' for more detail.
+**WARN: (IMPOPT-3058):	Cell tcbn65gplusbc/AN3D4 already has a dont_use attribute false.
+Type 'man IMPOPT-3058' for more detail.
+**WARN: (IMPOPT-3058):	Cell tcbn65gpluswc/AN3D4 already has a dont_use attribute false.
+Type 'man IMPOPT-3058' for more detail.
+**WARN: (IMPOPT-3058):	Cell tcbn65gplusbc/AN3D8 already has a dont_use attribute false.
+Type 'man IMPOPT-3058' for more detail.
+**WARN: (IMPOPT-3058):	Cell tcbn65gpluswc/AN3D8 already has a dont_use attribute false.
+Type 'man IMPOPT-3058' for more detail.
+**WARN: (IMPOPT-3058):	Cell tcbn65gplusbc/AN3XD1 already has a dont_use attribute false.
+Type 'man IMPOPT-3058' for more detail.
+**WARN: (IMPOPT-3058):	Cell tcbn65gpluswc/AN3XD1 already has a dont_use attribute false.
+Type 'man IMPOPT-3058' for more detail.
+**WARN: (IMPOPT-3058):	Cell tcbn65gplusbc/AN4D2 already has a dont_use attribute false.
+Type 'man IMPOPT-3058' for more detail.
+**WARN: (IMPOPT-3058):	Cell tcbn65gpluswc/AN4D2 already has a dont_use attribute false.
+Type 'man IMPOPT-3058' for more detail.
+**WARN: (EMS-27):	Message (IMPOPT-3058) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Reading floorplan file - route.enc.dat/core.fp.gz (mem = 775.8M).
+*info: reset 76889 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (0 0 2840000 3240000)
+ ... processed partition successfully.
+There are 316 nets with bottomPreferredRoutingLayer being set
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+*** End loading floorplan (cpu = 0:00:00.2, mem = 777.9M) ***
+*** Checked 8 GNC rules.
+*** applyConnectGlobalNets disabled.
+Reading placement file - route.enc.dat/core.place.gz.
+** Reading stdCellPlacement "route.enc.dat/core.place.gz" ...
+*** Checked 8 GNC rules.
+*** applyConnectGlobalNets disabled.
+*** Completed restorePlace (cpu=0:00:00.8 real=0:00:01.0 mem=818.6M) ***
+Total net length = 1.890e+06 (9.555e+05 9.347e+05) (ext = 3.324e+05)
+*** Checked 8 GNC rules.
+*** Applying global-net connections...
+*** Applied 8 GNC rules (cpu = 0:00:00.0)
+Reading routing file - route.enc.dat/core.route.gz.
+Reading Innovus routing data (Created by Innovus v15.23-s045_1 on Fri Mar 21 13:13:28 2025 Format: 15.2) ...
+Suppress "**WARN ..." messages.
+Un-suppress "**WARN ..." messages.
+*** Total 72655 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:01.2 real=0:00:01.0 mem=936.5M) ***
+Loading Drc markers ...
+... 20 markers are loaded ...
+... 8 geometry drc markers are loaded ...
+... 4 antenna drc markers are loaded ...
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+'set_default_switching_activity' finished successfully.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200          136  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201          128  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related cells i...
+WARNING   IMPEXT-2710          2  Basic Cap table for layer M%d is ignored...
+WARNING   IMPEXT-2760          2  Layer M%d specified in the cap table is ...
+WARNING   IMPEXT-2771          2  Via %s specified in the cap table is ign...
+WARNING   IMPEXT-2801          2  Resistance values are not provided in th...
+WARNING   IMPVL-159         1624  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   IMPOPT-3058        598  Cell %s/%s already has a dont_use attrib...
+ERROR     IMPOAX-820           1  The OA features are disabled in the curr...
+ERROR     IMPOAX-850           1  %s command cannot be run as OA features ...
+WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+*** Message Summary: 2497 warning(s), 2 error(s)
+
+<CMD> setLayerPreference allM0 -isVisible 0
+<CMD> setLayerPreference allM1Cont -isVisible 0
+<CMD> setLayerPreference allM1 -isVisible 0
+<CMD> setLayerPreference allM2Cont -isVisible 0
+<CMD> setLayerPreference allM2 -isVisible 0
+<CMD> setLayerPreference allM3Cont -isVisible 0
+<CMD> setLayerPreference allM3 -isVisible 0
+<CMD> setLayerPreference allM4Cont -isVisible 0
+<CMD> setLayerPreference allM4 -isVisible 0
+<CMD> setLayerPreference allM5Cont -isVisible 0
+<CMD> setLayerPreference allM5 -isVisible 0
+<CMD> setLayerPreference allM6Cont -isVisible 0
+<CMD> setLayerPreference allM6 -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM8Cont -isVisible 0
+<CMD> setLayerPreference allM8 -isVisible 0
+<CMD> setLayerPreference allM8 -isVisible 1
+<CMD> setLayerPreference allM8 -isVisible 0
+<CMD> setLayerPreference allM8 -isVisible 1
+<CMD> setLayerPreference allM8 -isVisible 0
+<CMD> setLayerPreference allM8 -isVisible 1
+<CMD> streamOut core.gds2
+Parse map file...
+**WARN: (IMPOGDS-399):	 Only 2 layer(s) (CO M1) of a VIA object is(are) specified in map file 'streamOut.map'. A VIA object needs 3 layers (PO CO M1) being specified at the same time in the map file. Add VIA contruct(s) to the map file for the following layer(s): PO or remove VIA construct(s) from the map file for the following layer(s): CO M1.
+Type 'man IMPOGDS-399' for more detail.
+**WARN: (IMPOGDS-399):	 Only 2 layer(s) (CO M1) of a VIAFILL object is(are) specified in map file 'streamOut.map'. A VIAFILL object needs 3 layers (PO CO M1) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): PO or remove VIAFILL construct(s) from the map file for the following layer(s): CO M1.
+Type 'man IMPOGDS-399' for more detail.
+**WARN: (IMPOGDS-399):	 Only 2 layer(s) (CO M1) of a VIAFILLOPC object is(are) specified in map file 'streamOut.map'. A VIAFILLOPC object needs 3 layers (PO CO M1) being specified at the same time in the map file. Add VIAFILLOPC contruct(s) to the map file for the following layer(s): PO or remove VIAFILLOPC construct(s) from the map file for the following layer(s): CO M1.
+Type 'man IMPOGDS-399' for more detail.
+Writing GDSII file ...
+	****** db unit per micron = 2000 ******
+	****** output gds2 file unit per micron = 2000 ******
+	****** unit scaling factor = 1 ******
+Output for instance
+Output for bump
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+Output for via structure generation
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    170                             COMP
+    171                          DIEAREA
+    1                                 CO
+    2                                 CO
+    5                                 CO
+    3                                 CO
+    4                                 CO
+    6                                 CO
+    7                                 CO
+    8                                 M1
+    9                                 M1
+    10                                M1
+    11                                M1
+    14                                M1
+    12                                M1
+    13                                M1
+    15                                M1
+    16                                M1
+    17                                M1
+    22                              VIA1
+    23                              VIA1
+    26                              VIA1
+    24                              VIA1
+    25                              VIA1
+    27                              VIA1
+    28                              VIA1
+    29                                M2
+    30                                M2
+    31                                M2
+    32                                M2
+    35                                M2
+    33                                M2
+    34                                M2
+    36                                M2
+    37                                M2
+    38                                M2
+    43                              VIA2
+    44                              VIA2
+    47                              VIA2
+    45                              VIA2
+    46                              VIA2
+    48                              VIA2
+    49                              VIA2
+    50                                M3
+    51                                M3
+    52                                M3
+    53                                M3
+    56                                M3
+    54                                M3
+    55                                M3
+    57                                M3
+    58                                M3
+    59                                M3
+    64                              VIA3
+    65                              VIA3
+    68                              VIA3
+    66                              VIA3
+    67                              VIA3
+    69                              VIA3
+    70                              VIA3
+    71                                M4
+    72                                M4
+    73                                M4
+    74                                M4
+    77                                M4
+    75                                M4
+    76                                M4
+    78                                M4
+    79                                M4
+    80                                M4
+    85                              VIA4
+    86                              VIA4
+    89                              VIA4
+    87                              VIA4
+    88                              VIA4
+    90                              VIA4
+    91                              VIA4
+    92                                M5
+    93                                M5
+    94                                M5
+    95                                M5
+    98                                M5
+    96                                M5
+    97                                M5
+    99                                M5
+    100                               M5
+    101                               M5
+    106                             VIA5
+    107                             VIA5
+    110                             VIA5
+    108                             VIA5
+    109                             VIA5
+    111                             VIA5
+    112                             VIA5
+    113                               M6
+    114                               M6
+    115                               M6
+    116                               M6
+    119                               M6
+    117                               M6
+    118                               M6
+    120                               M6
+    121                               M6
+    122                               M6
+    127                             VIA6
+    128                             VIA6
+    131                             VIA6
+    129                             VIA6
+    130                             VIA6
+    132                             VIA6
+    133                             VIA6
+    134                               M7
+    135                               M7
+    136                               M7
+    137                               M7
+    140                               M7
+    138                               M7
+    139                               M7
+    141                               M7
+    142                               M7
+    143                               M7
+    148                             VIA7
+    149                             VIA7
+    152                             VIA7
+    150                             VIA7
+    151                             VIA7
+    153                             VIA7
+    154                             VIA7
+    155                               M8
+    156                               M8
+    157                               M8
+    158                               M8
+    161                               M8
+    159                               M8
+    160                               M8
+    162                               M8
+    163                               M8
+    164                               M8
+    18                                M1
+    19                                M1
+    20                                M1
+    21                                M1
+    39                                M2
+    40                                M2
+    41                                M2
+    42                                M2
+    60                                M3
+    61                                M3
+    62                                M3
+    63                                M3
+    81                                M4
+    82                                M4
+    83                                M4
+    84                                M4
+    102                               M5
+    103                               M5
+    104                               M5
+    105                               M5
+    123                               M6
+    124                               M6
+    125                               M6
+    126                               M6
+    144                               M7
+    145                               M7
+    146                               M7
+    147                               M7
+    165                               M8
+    166                               M8
+    167                               M8
+    168                               M8
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 2000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                         186653
+
+Ports/Pins                           356
+    metal layer M5                   356
+
+Nets                              801022
+    metal layer M1                  8002
+    metal layer M2                435918
+    metal layer M3                250315
+    metal layer M4                 70871
+    metal layer M5                 17996
+    metal layer M6                  7284
+    metal layer M7                  8235
+    metal layer M8                  2401
+
+    Via Instances                 473591
+
+Special Nets                        5658
+    metal layer M1                  3528
+    metal layer M5                  1429
+    metal layer M6                   701
+
+    Via Instances                  25258
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Text                               72966
+    metal layer M1                  2474
+    metal layer M2                 59177
+    metal layer M3                 10163
+    metal layer M4                   603
+    metal layer M5                   410
+    metal layer M6                    72
+    metal layer M7                    52
+    metal layer M8                    15
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+Trim Metal                             0
+
+######Streamout is finished!
+<CMD> write_lef_abstract -stripePin -PGPinLayers 8 -extractBlockPGPinLayers 8 core.lef -specifyTopLayer 8
+<CMD> defOut -netlist -routing core.def
+Writing DEF file 'core.def', current time is Fri Mar 21 14:40:16 2025 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'core.def' is written, current time is Fri Mar 21 14:40:17 2025 ...
+<CMD> saveNetlist core.pnr.v
+Writing Netlist "core.pnr.v" ...
+<CMD> setAnalysisMode -setup
+**WARN: (IMPTCM-70):	Option "-setup" for command setAnalysisMode is obsolete and has been replaced by "-checkType setup". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-checkType setup".
+<CMD> set_analysis_view -setup WC_VIEW -hold WC_VIEW
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Reading Capacitance Table File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/cln65g+_1p08m+alrdl_top2_cworst.captable ...
+**WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2771):	Via VIA_8 specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2801):	Resistance values are not provided in the Cap Table. Sheet resistance defined in the LEF file will be used.
+**WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: WC_VIEW
+    RC-Corner Name        : Cmax
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : '/home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/cln65g+_1p08m+alrdl_top2_cworst.captable'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc' ...
+Current (total cpu=0:00:51.8, real=0:02:30, peak res=674.8M, current mem=1080.3M)
+**WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+INFO (CTE): Reading of timing constraints file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc completed, with 1 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=675.6M, current mem=1090.5M)
+Current (total cpu=0:00:51.9, real=0:02:30, peak res=675.6M, current mem=1090.5M)
+Total number of combinational cells: 492
+Total number of sequential cells: 303
+Total number of tristate cells: 11
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFFD1 BUFFD0 BUFFD2 BUFFD3 BUFFD4 BUFFD6 BUFFD8 BUFFD12 BUFFD16 CKBD1 CKBD0 CKBD2 CKBD3 CKBD4 CKBD6 CKBD8 CKBD12 CKBD16
+Total number of usable buffers: 18
+List of unusable buffers: BUFFD20 BUFFD24 CKBD20 CKBD24 GBUFFD1 GBUFFD3 GBUFFD2 GBUFFD4 GBUFFD8
+Total number of unusable buffers: 9
+List of usable inverters: CKND1 CKND0 CKND2 CKND3 CKND4 CKND6 CKND8 CKND12 CKND16 INVD1 INVD0 INVD2 INVD3 INVD4 INVD6 INVD8 INVD12 INVD16
+Total number of usable inverters: 18
+List of unusable inverters: CKND20 CKND24 GINVD2 GINVD1 GINVD4 GINVD3 GINVD8 INVD20 INVD24
+Total number of unusable inverters: 9
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells: DEL0 DEL005 DEL01 DEL015 DEL02 DEL1 DEL2 DEL3 DEL4
+Total number of identified unusable delay cells: 9
+All delay cells are dont_use. Buffers will be used to fix hold violations.
+<CMD> do_extract_model -view WC_VIEW -format dotlib ${design}_WC.lib
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: core
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+**WARN: (IMPEXT-3518):	The lower process node is set (using command 'setDesignMode') but the technology file for TQRC extraction not specified. Therefore, going for postRoute (effortLevel low) extraction instead of recommended extractor 'TQRC' for lower nodes. Use command 'set_analysis_view/update_rc_corner' to specify the technology file for TQRC extraction to take place.
+Extraction called for design 'core' of instances=186653 and nets=76889 using extraction engine 'postRoute' at effort level 'low' .
+PostRoute (effortLevel low) RC Extraction called for design core.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (IMPEXT-3442):	The version of the capacitance table file being used is obsolete and is no longer recommended. For improved accuracy, generate the capacitance table file using the generateCapTbl command.
+Process corner(s) are loaded.
+ Corner: Cmax
+extractDetailRC Option : -outfile /tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/core_15924_IvN9gc.rcdb.d  -extended
+RC Mode: PostRoute -effortLevel low [Extended CapTable, LEF Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.2  MEM= 1119.2M)
+Extracted 10.0002% (CPU Time= 0:00:01.4  MEM= 1285.0M)
+Extracted 20.0003% (CPU Time= 0:00:01.8  MEM= 1302.0M)
+Extracted 30.0002% (CPU Time= 0:00:02.4  MEM= 1315.0M)
+Extracted 40.0003% (CPU Time= 0:00:03.1  MEM= 1328.1M)
+Extracted 50.0002% (CPU Time= 0:00:03.6  MEM= 1340.1M)
+Extracted 60.0003% (CPU Time= 0:00:04.5  MEM= 1347.1M)
+Extracted 70.0002% (CPU Time= 0:00:05.6  MEM= 1354.1M)
+Extracted 80.0003% (CPU Time= 0:00:07.1  MEM= 1359.1M)
+Extracted 90.0002% (CPU Time= 0:00:08.0  MEM= 1363.2M)
+Extracted 100% (CPU Time= 0:00:09.8  MEM= 1376.2M)
+Number of Extracted Resistors     : 1277740
+Number of Extracted Ground Cap.   : 1275706
+Number of Extracted Coupling Cap. : 2170604
+Filtering XCap in 'relativeAndCoupling' mode using values coupling_c_threshold=0.1fF, relative_c_threshold=1, and total_c_threshold=0fF.
+ Corner: Cmax
+Checking LVS Completed (CPU Time= 0:00:00.2  MEM= 1364.2M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:11.5  Real Time: 0:00:11.0  MEM: 1364.207M)
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+**WARN: (IMPTS-403):	Delay calculation was forced to extrapolate table data outside of the characterized range. In some cases, extrapolation can reduce the accuracy of the delay calculation. You can enable more detailed reporting of these cases by enabling the command 'setDelayCalMode -reportOutBound true'.
+Type 'man IMPTS-403' for more detail.
+AAE_INFO-618: Total number of nets in the design is 76889,  94.5 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1479.77 CPU=0:00:29.8 REAL=0:00:29.0)
+Save waveform /tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/.AAE_BLJpg7/.AAE_15924/waveform.data...
+*** CDM Built up (cpu=0:00:45.9  real=0:00:45.0  mem= 1479.8M) ***
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Starting SI iteration 2
+AAE_INFO-618: Total number of nets in the design is 76889,  14.5 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1447.77 CPU=0:00:32.6 REAL=0:00:32.0)
+*** CDM Built up (cpu=0:00:32.8  real=0:00:33.0  mem= 1447.8M) ***
+All-RC-Corners-Per-Net-In-Memory is turned ON...
+TAMODEL Cpu User Time =   49.3 sec
+TAMODEL Memory Usage  =   31.5 MB
+<CMD> write_sdf -view WC_VIEW ${design}_WC.sdf
+**WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_parallel_arcs'. This setting is recommended for generating SDF for functional  simulation applications.
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: core
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO-618: Total number of nets in the design is 76889,  94.5 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1530.4 CPU=0:00:29.5 REAL=0:00:29.0)
+Save waveform /tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/.AAE_BLJpg7/.AAE_15924/waveform.data...
+*** CDM Built up (cpu=0:00:32.9  real=0:00:32.0  mem= 1530.4M) ***
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Starting SI iteration 2
+AAE_INFO-618: Total number of nets in the design is 76889,  14.5 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1498.39 CPU=0:00:33.3 REAL=0:00:33.0)
+*** CDM Built up (cpu=0:00:33.5  real=0:00:33.0  mem= 1498.4M) ***
+<CMD> setAnalysisMode -hold
+**WARN: (IMPTCM-70):	Option "-hold" for command setAnalysisMode is obsolete and has been replaced by "-checkType hold". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-checkType hold".
+<CMD> set_analysis_view -setup BC_VIEW -hold BC_VIEW
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Reading Capacitance Table File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/cln65g+_1p08m+alrdl_top2_cbest.captable ...
+**WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2771):	Via VIA_8 specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2801):	Resistance values are not provided in the Cap Table. Sheet resistance defined in the LEF file will be used.
+**WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: BC_VIEW
+    RC-Corner Name        : Cmin
+    RC-Corner Index       : 0
+    RC-Corner Temperature : -40 Celsius
+    RC-Corner Cap Table   : '/home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/cln65g+_1p08m+alrdl_top2_cbest.captable'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+**WARN: (IMPEXT-3503):	The corner setup has changed in the MMMC flow. New RC corners 'Cmin' have been added, therefore, no parasitic data exists for them. As a result, the parasitic data in the tool from the previous setup is deleted. Extract or restore the parasitic data for all the current corners by calling 'extractRC/spefIn'.
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc' ...
+Current (total cpu=0:04:20, real=0:05:57, peak res=1010.1M, current mem=1256.0M)
+**WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+
+INFO (CTE): Reading of timing constraints file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc completed, with 1 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=778.0M, current mem=1266.2M)
+Current (total cpu=0:04:20, real=0:05:57, peak res=1010.1M, current mem=1266.2M)
+Total number of combinational cells: 492
+Total number of sequential cells: 303
+Total number of tristate cells: 11
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFFD1 BUFFD0 BUFFD2 BUFFD3 BUFFD4 BUFFD6 BUFFD8 BUFFD12 BUFFD16 CKBD1 CKBD0 CKBD2 CKBD3 CKBD4 CKBD6 CKBD8 CKBD12 CKBD16
+Total number of usable buffers: 18
+List of unusable buffers: BUFFD20 BUFFD24 CKBD20 CKBD24 GBUFFD1 GBUFFD3 GBUFFD2 GBUFFD4 GBUFFD8
+Total number of unusable buffers: 9
+List of usable inverters: CKND1 CKND0 CKND2 CKND3 CKND4 CKND6 CKND8 CKND12 CKND16 INVD1 INVD0 INVD2 INVD3 INVD4 INVD6 INVD8 INVD12 INVD16
+Total number of usable inverters: 18
+List of unusable inverters: CKND20 CKND24 GINVD2 GINVD1 GINVD4 GINVD3 GINVD8 INVD20 INVD24
+Total number of unusable inverters: 9
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells: DEL0 DEL005 DEL01 DEL015 DEL02 DEL1 DEL2 DEL3 DEL4
+Total number of identified unusable delay cells: 9
+All delay cells are dont_use. Buffers will be used to fix hold violations.
+<CMD> do_extract_model -view BC_VIEW -format dotlib ${design}_BC.lib
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: core
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+**WARN: (IMPEXT-3518):	The lower process node is set (using command 'setDesignMode') but the technology file for TQRC extraction not specified. Therefore, going for postRoute (effortLevel low) extraction instead of recommended extractor 'TQRC' for lower nodes. Use command 'set_analysis_view/update_rc_corner' to specify the technology file for TQRC extraction to take place.
+Extraction called for design 'core' of instances=186653 and nets=76889 using extraction engine 'postRoute' at effort level 'low' .
+PostRoute (effortLevel low) RC Extraction called for design core.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (IMPEXT-3442):	The version of the capacitance table file being used is obsolete and is no longer recommended. For improved accuracy, generate the capacitance table file using the generateCapTbl command.
+Process corner(s) are loaded.
+ Corner: Cmin
+extractDetailRC Option : -outfile /tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/core_15924_IvN9gc.rcdb.d -maxResLength 200  -extended
+RC Mode: PostRoute -effortLevel low [Extended CapTable, LEF Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.2  MEM= 1294.8M)
+Extracted 10.0002% (CPU Time= 0:00:01.4  MEM= 1413.5M)
+Extracted 20.0003% (CPU Time= 0:00:01.8  MEM= 1428.5M)
+Extracted 30.0002% (CPU Time= 0:00:02.4  MEM= 1441.5M)
+Extracted 40.0003% (CPU Time= 0:00:03.2  MEM= 1453.5M)
+Extracted 50.0002% (CPU Time= 0:00:03.9  MEM= 1465.5M)
+Extracted 60.0003% (CPU Time= 0:00:04.7  MEM= 1472.5M)
+Extracted 70.0002% (CPU Time= 0:00:05.9  MEM= 1479.5M)
+Extracted 80.0003% (CPU Time= 0:00:07.5  MEM= 1484.5M)
+Extracted 90.0002% (CPU Time= 0:00:08.3  MEM= 1488.5M)
+Extracted 100% (CPU Time= 0:00:10.2  MEM= 1501.5M)
+Number of Extracted Resistors     : 1277740
+Number of Extracted Ground Cap.   : 1275706
+Number of Extracted Coupling Cap. : 2170544
+Filtering XCap in 'relativeAndCoupling' mode using values coupling_c_threshold=0.1fF, relative_c_threshold=1, and total_c_threshold=0fF.
+ Corner: Cmin
+Checking LVS Completed (CPU Time= 0:00:00.2  MEM= 1490.5M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:11.9  Real Time: 0:00:11.0  MEM: 1490.488M)
+*** Calculating scaling factor for BC_LIB libraries using the default operating condition of each library.
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+AAE_INFO-618: Total number of nets in the design is 76889,  94.5 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1529.69 CPU=0:00:25.6 REAL=0:00:25.0)
+Save waveform /tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/.AAE_y2Pbux/.AAE_15924/waveform.data...
+*** CDM Built up (cpu=0:00:41.8  real=0:00:41.0  mem= 1529.7M) ***
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Starting SI iteration 2
+AAE_INFO-618: Total number of nets in the design is 76889,  6.2 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1497.68 CPU=0:00:13.7 REAL=0:00:14.0)
+*** CDM Built up (cpu=0:00:13.9  real=0:00:14.0  mem= 1497.7M) ***
+All-RC-Corners-Per-Net-In-Memory is turned ON...
+TAMODEL Cpu User Time =   46.1 sec
+TAMODEL Memory Usage  =    0.0 MB
+<CMD> write_sdf -view BC_VIEW ${design}_BC.sdf
+**WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_parallel_arcs'. This setting is recommended for generating SDF for functional  simulation applications.
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: core
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO-618: Total number of nets in the design is 76889,  94.5 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1548.77 CPU=0:00:25.2 REAL=0:00:25.0)
+Save waveform /tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/.AAE_y2Pbux/.AAE_15924/waveform.data...
+*** CDM Built up (cpu=0:00:28.5  real=0:00:28.0  mem= 1548.8M) ***
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Starting SI iteration 2
+AAE_INFO-618: Total number of nets in the design is 76889,  6.2 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1516.76 CPU=0:00:14.0 REAL=0:00:14.0)
+*** CDM Built up (cpu=0:00:14.3  real=0:00:14.0  mem= 1516.8M) ***
+
+*** Memory Usage v#1 (Current mem = 1508.691M, initial mem = 149.258M) ***
+*** Message Summary: 2516 warning(s), 5 error(s)
+
+--- Ending "Innovus" (totcpu=0:07:15, real=0:10:05, mem=1508.7M) ---

@@ -1,0 +1,1746 @@
+[03/21 14:37:49      0] 
+[03/21 14:37:49      0] Cadence Innovus(TM) Implementation System.
+[03/21 14:37:49      0] Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+[03/21 14:37:49      0] 
+[03/21 14:37:49      0] Version:	v15.23-s045_1, built Fri Apr 22 12:32:52 PDT 2016
+[03/21 14:37:49      0] Options:	
+[03/21 14:37:49      0] Date:		Fri Mar 21 14:37:49 2025
+[03/21 14:37:49      0] Host:		ieng6-ece-10.ucsd.edu (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (4cores*8cpus*Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz 25344KB)
+[03/21 14:37:49      0] OS:		CentOS Linux release 7.9.2009 (Core)
+[03/21 14:37:49      0] 
+[03/21 14:37:49      0] License:
+[03/21 14:37:49      0] 		invs	Innovus Implementation System	15.2	checkout succeeded
+[03/21 14:37:49      0] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[03/21 14:37:50      0] **ERROR: (IMPOAX-142):	Could not open shared library libinnovusoax22.so : /acsnfs3/software/cadence-innovus152/tools/lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE
+[03/21 14:37:50      0] 
+[03/21 14:37:50      0] **ERROR: (IMPOAX-142):	Could not open shared library libcdsSkillPcell.so : (null)
+[03/21 14:37:50      0] 
+[03/21 14:37:50      0] **ERROR: (IMPOAX-142):	OA features will be disabled in this session.
+[03/21 14:37:50      0] 
+[03/21 14:37:59      8] @(#)CDS: Innovus v15.23-s045_1 (64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5)
+[03/21 14:37:59      8] @(#)CDS: NanoRoute 15.23-s045_1 NR160414-1105/15_23-UB (database version 2.30, 317.6.1) {superthreading v1.26}
+[03/21 14:37:59      8] @(#)CDS: AAE 15.23-s014 (64bit) 04/22/2016 (Linux 2.6.18-194.el5)
+[03/21 14:37:59      8] @(#)CDS: CTE 15.23-s022_1 () Apr 22 2016 09:38:45 ( )
+[03/21 14:37:59      8] @(#)CDS: SYNTECH 15.23-s008_1 () Apr 12 2016 21:52:59 ( )
+[03/21 14:37:59      8] @(#)CDS: CPE v15.23-s045
+[03/21 14:37:59      8] @(#)CDS: IQRC/TQRC 15.1.4-s213 (64bit) Tue Feb  9 17:31:28 PST 2016 (Linux 2.6.18-194.el5)
+[03/21 14:37:59      8] @(#)CDS: OA 22.50-p036 Tue Nov  3 09:29:52 2015
+[03/21 14:37:59      8] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[03/21 14:37:59      8] @(#)CDS: RCDB 11.7
+[03/21 14:37:59      8] --- Running on ieng6-ece-10.ucsd.edu (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (4cores*8cpus*Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz 25344KB) ---
+[03/21 14:37:59      8] Create and set the environment variable TMPDIR to /tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln.
+
+[03/21 14:38:00      8] 
+[03/21 14:38:00      8] **INFO:  MMMC transition support version v31-84 
+[03/21 14:38:00      8] 
+[03/21 14:38:00      8] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[03/21 14:38:00      8] <CMD> suppressMessage ENCEXT-2799
+[03/21 14:38:00      8] <CMD> getDrawView
+[03/21 14:38:00      8] <CMD> loadWorkspace -name Physical
+[03/21 14:38:00      8] <CMD> win
+[03/21 14:38:28     14] <CMD> restoreDesign route.enc.dat core
+[03/21 14:38:28     14] exclude_path_collection 0
+[03/21 14:38:28     14] Set Default Input Pin Transition as 0.1 ps.
+[03/21 14:38:28     14] **WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+[03/21 14:38:28     14] **ERROR: (IMPOAX-820):	The OA features are disabled in the current session of Innovus because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Innovus either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+[03/21 14:38:28     14] 
+[03/21 14:38:28     14] **ERROR: (IMPOAX-850):	oaxCreateCdsLibArray command cannot be run as OA features are disabled in this session.
+[03/21 14:38:29     14] 
+[03/21 14:38:29     14] Loading LEF file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef ...
+[03/21 14:38:29     14] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+[03/21 14:38:29     14] The LEF parser will ignore this statement.
+[03/21 14:38:29     14] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 28.
+[03/21 14:38:29     14] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/21 14:38:29     14] The LEF parser will ignore this statement.
+[03/21 14:38:29     14] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 867.
+[03/21 14:38:29     14] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/21 14:38:29     14] The LEF parser will ignore this statement.
+[03/21 14:38:29     14] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 877.
+[03/21 14:38:29     14] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/21 14:38:29     14] The LEF parser will ignore this statement.
+[03/21 14:38:29     14] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1014.
+[03/21 14:38:29     14] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/21 14:38:29     14] The LEF parser will ignore this statement.
+[03/21 14:38:29     14] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1024.
+[03/21 14:38:29     14] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/21 14:38:29     14] The LEF parser will ignore this statement.
+[03/21 14:38:29     14] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1161.
+[03/21 14:38:29     14] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/21 14:38:29     14] The LEF parser will ignore this statement.
+[03/21 14:38:29     14] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1171.
+[03/21 14:38:29     14] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/21 14:38:29     14] The LEF parser will ignore this statement.
+[03/21 14:38:29     14] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1308.
+[03/21 14:38:29     14] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/21 14:38:29     14] The LEF parser will ignore this statement.
+[03/21 14:38:29     14] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1318.
+[03/21 14:38:29     14] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/21 14:38:29     14] The LEF parser will ignore this statement.
+[03/21 14:38:29     14] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1372.
+[03/21 14:38:29     14] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/21 14:38:29     14] The LEF parser will ignore this statement.
+[03/21 14:38:29     14] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1383.
+[03/21 14:38:29     14] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/21 14:38:29     14] The LEF parser will ignore this statement.
+[03/21 14:38:29     14] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1604.
+[03/21 14:38:29     14] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/21 14:38:29     14] The LEF parser will ignore this statement.
+[03/21 14:38:29     14] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1614.
+[03/21 14:38:29     14] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/21 14:38:29     14] The LEF parser will ignore this statement.
+[03/21 14:38:29     14] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1769.
+[03/21 14:38:29     14] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/21 14:38:29     14] The LEF parser will ignore this statement.
+[03/21 14:38:29     14] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1771.
+[03/21 14:38:29     14] WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+[03/21 14:38:29     14] The LEF parser will ignore this statement.
+[03/21 14:38:29     14] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1772.
+[03/21 14:38:29     14] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/21 14:38:29     14] The LEF parser will ignore this statement.
+[03/21 14:38:29     14] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1776.
+[03/21 14:38:29     14] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/21 14:38:29     14] The LEF parser will ignore this statement.
+[03/21 14:38:29     14] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1778.
+[03/21 14:38:29     14] WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+[03/21 14:38:29     14] The LEF parser will ignore this statement.
+[03/21 14:38:29     14] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1779.
+[03/21 14:38:29     14] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/21 14:38:29     14] The LEF parser will ignore this statement.
+[03/21 14:38:29     14] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/tcbn65gplus_8lmT2.lef at line 1783.
+[03/21 14:38:29     14] Set DBUPerIGU to M2 pitch 400.
+[03/21 14:38:29     15] 
+[03/21 14:38:29     15] Loading LEF file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/lef/sram_w16.lef ...
+[03/21 14:38:29     15] **WARN: (IMPLF-200):	Pin 'CLK' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-200' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-200):	Pin 'D[127]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-200' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-200):	Pin 'D[126]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-200' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-200):	Pin 'D[125]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-200' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-200):	Pin 'D[124]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-200' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-200):	Pin 'D[123]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-200' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-200):	Pin 'D[122]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-200' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-200):	Pin 'D[121]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-200' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-200):	Pin 'D[120]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-200' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-200):	Pin 'D[119]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-200' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-200):	Pin 'D[118]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-200' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-200):	Pin 'D[117]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-200' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-200):	Pin 'D[116]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-200' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-200):	Pin 'D[115]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-200' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-200):	Pin 'D[114]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-200' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-200):	Pin 'D[113]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-200' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-200):	Pin 'D[112]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-200' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-200):	Pin 'D[111]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-200' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-200):	Pin 'D[110]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-200' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-200):	Pin 'D[109]' in macro 'sram_w16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-200' for more detail.
+[03/21 14:38:29     15] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[03/21 14:38:29     15] To increase the message display limit, refer to the product command reference manual.
+[03/21 14:38:29     15] **WARN: (IMPLF-201):	Pin 'Q[127]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-201' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-201):	Pin 'Q[126]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-201' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-201):	Pin 'Q[125]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-201' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-201):	Pin 'Q[124]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-201' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-201):	Pin 'Q[123]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-201' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-201):	Pin 'Q[122]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-201' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-201):	Pin 'Q[121]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-201' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-201):	Pin 'Q[120]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-201' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-201):	Pin 'Q[119]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-201' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-201):	Pin 'Q[118]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-201' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-201):	Pin 'Q[117]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-201' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-201):	Pin 'Q[116]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-201' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-201):	Pin 'Q[115]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-201' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-201):	Pin 'Q[114]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-201' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-201):	Pin 'Q[113]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-201' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-201):	Pin 'Q[112]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-201' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-201):	Pin 'Q[111]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-201' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-201):	Pin 'Q[110]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-201' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-201):	Pin 'Q[109]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-201' for more detail.
+[03/21 14:38:29     15] **WARN: (IMPLF-201):	Pin 'Q[108]' in macro 'sram_w16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 14:38:29     15] Type 'man IMPLF-201' for more detail.
+[03/21 14:38:29     15] **WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+[03/21 14:38:29     15] To increase the message display limit, refer to the product command reference manual.
+[03/21 14:38:29     15] 
+[03/21 14:38:29     15] viaInitial starts at Fri Mar 21 14:38:29 2025
+viaInitial ends at Fri Mar 21 14:38:29 2025
+Loading view definition file from route.enc.dat/viewDefinition.tcl
+[03/21 14:38:29     15] Reading WC_LIB timing library '/home/linux/ieng6/ee260bwi25/public/PDKdata/lib/tcbn65gpluswc.lib' ...
+[03/21 14:38:29     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D0' is not defined in the library.
+[03/21 14:38:29     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D1' is not defined in the library.
+[03/21 14:38:29     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D2' is not defined in the library.
+[03/21 14:38:29     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D4' is not defined in the library.
+[03/21 14:38:29     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D8' is not defined in the library.
+[03/21 14:38:29     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2XD1' is not defined in the library.
+[03/21 14:38:29     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D0' is not defined in the library.
+[03/21 14:38:29     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D1' is not defined in the library.
+[03/21 14:38:29     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D2' is not defined in the library.
+[03/21 14:38:29     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D4' is not defined in the library.
+[03/21 14:38:29     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D8' is not defined in the library.
+[03/21 14:38:29     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3XD1' is not defined in the library.
+[03/21 14:38:29     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D0' is not defined in the library.
+[03/21 14:38:29     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D1' is not defined in the library.
+[03/21 14:38:29     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D2' is not defined in the library.
+[03/21 14:38:29     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D4' is not defined in the library.
+[03/21 14:38:29     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D8' is not defined in the library.
+[03/21 14:38:29     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4XD1' is not defined in the library.
+[03/21 14:38:29     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D0' is not defined in the library.
+[03/21 14:38:29     15] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D1' is not defined in the library.
+[03/21 14:38:29     15] Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+[03/21 14:38:30     16] Read 811 cells in library 'tcbn65gpluswc' 
+[03/21 14:38:30     16] Reading WC_LIB timing library '/home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/subckt/sram_w16_WC.lib' ...
+[03/21 14:38:30     16] Read 1 cells in library 'sram_w16' 
+[03/21 14:38:30     16] Reading BC_LIB timing library '/home/linux/ieng6/ee260bwi25/public/PDKdata/lib/tcbn65gplusbc.lib' ...
+[03/21 14:38:31     17] Read 811 cells in library 'tcbn65gplusbc' 
+[03/21 14:38:31     17] Reading BC_LIB timing library '/home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/subckt/sram_w16_BC.lib' ...
+[03/21 14:38:31     17] Read 1 cells in library 'sram_w16' 
+[03/21 14:38:31     17] *** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.30min, fe_real=0.70min, fe_mem=468.6M) ***
+[03/21 14:38:31     17] *** Begin netlist parsing (mem=468.6M) ***
+[03/21 14:38:31     17] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D4' is defined in LEF but not in the timing library.
+[03/21 14:38:31     17] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D4' is defined in LEF but not in the timing library.
+[03/21 14:38:31     17] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D2' is defined in LEF but not in the timing library.
+[03/21 14:38:31     17] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D2' is defined in LEF but not in the timing library.
+[03/21 14:38:31     17] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D1' is defined in LEF but not in the timing library.
+[03/21 14:38:31     17] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D1' is defined in LEF but not in the timing library.
+[03/21 14:38:31     17] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D0' is defined in LEF but not in the timing library.
+[03/21 14:38:31     17] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D0' is defined in LEF but not in the timing library.
+[03/21 14:38:31     17] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D4' is defined in LEF but not in the timing library.
+[03/21 14:38:31     17] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D4' is defined in LEF but not in the timing library.
+[03/21 14:38:31     17] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+[03/21 14:38:31     17] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+[03/21 14:38:31     17] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+[03/21 14:38:31     17] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+[03/21 14:38:31     17] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D0' is defined in LEF but not in the timing library.
+[03/21 14:38:31     17] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D0' is defined in LEF but not in the timing library.
+[03/21 14:38:31     17] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D4' is defined in LEF but not in the timing library.
+[03/21 14:38:31     17] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D4' is defined in LEF but not in the timing library.
+[03/21 14:38:31     17] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+[03/21 14:38:31     17] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+[03/21 14:38:31     17] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[03/21 14:38:31     17] To increase the message display limit, refer to the product command reference manual.
+[03/21 14:38:31     17] Created 812 new cells from 4 timing libraries.
+[03/21 14:38:31     17] Reading netlist ...
+[03/21 14:38:31     17] Backslashed names will retain backslash and a trailing blank character.
+[03/21 14:38:32     17] Reading verilog netlist '/home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/core.v.gz'
+[03/21 14:38:32     18] 
+[03/21 14:38:32     18] *** Memory Usage v#1 (Current mem = 519.246M, initial mem = 149.258M) ***
+[03/21 14:38:32     18] *** End netlist parsing (cpu=0:00:00.7, real=0:00:01.0, mem=519.2M) ***
+[03/21 14:38:32     18] Set top cell to core.
+[03/21 14:38:32     18] Hooked 1624 DB cells to tlib cells.
+[03/21 14:38:32     18] Starting recursive module instantiation check.
+[03/21 14:38:32     18] No recursion found.
+[03/21 14:38:32     18] Building hierarchical netlist for Cell core ...
+[03/21 14:38:33     19] *** Netlist is unique.
+[03/21 14:38:33     19] ** info: there are 1869 modules.
+[03/21 14:38:33     19] ** info: there are 66796 stdCell insts.
+[03/21 14:38:33     19] ** info: there are 3 macros.
+[03/21 14:38:33     19] 
+[03/21 14:38:33     19] *** Memory Usage v#1 (Current mem = 610.008M, initial mem = 149.258M) ***
+[03/21 14:38:33     19] *info: set bottom ioPad orient R0
+[03/21 14:38:33     19] **WARN: (IMPFP-3961):	The techSite 'dcore' has no related cells in LEF/OA library. Cannot make calculations for this site type unless cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[03/21 14:38:33     19] Type 'man IMPFP-3961' for more detail.
+[03/21 14:38:33     19] **WARN: (IMPFP-3961):	The techSite 'ccore' has no related cells in LEF/OA library. Cannot make calculations for this site type unless cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[03/21 14:38:33     19] Type 'man IMPFP-3961' for more detail.
+[03/21 14:38:33     19] Set Default Net Delay as 1000 ps.
+[03/21 14:38:33     19] Set Default Net Load as 0.5 pF. 
+[03/21 14:38:33     19] Set Default Input Pin Transition as 0.1 ps.
+[03/21 14:38:33     19] Loading preference file route.enc.dat/gui.pref.tcl ...
+[03/21 14:38:33     19] Applying the recommended capacitance filtering threshold values for 65nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+[03/21 14:38:33     19] 	These values will be used by all post-route extraction engines, including tQuantus, IQRC and Quantus QRC extraction.
+[03/21 14:38:33     19] 	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+[03/21 14:38:33     19] 	The accuracy mode for postRoute effortLevel low extraction will be set to 'high'.
+[03/21 14:38:33     19] 	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode will be 'medium' if Quantus QRC technology file is specified else 'low'.
+[03/21 14:38:33     19] Updating process node dependent CCOpt properties for the 65nm process node.
+[03/21 14:38:33     19] **WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+[03/21 14:38:33     19] Stripe will break at block ring.
+[03/21 14:38:33     19] Initializing multi-corner RC extraction with 2 active RC Corners ...
+[03/21 14:38:33     19] Reading Capacitance Table File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/cln65g+_1p08m+alrdl_top2_cworst.captable ...
+[03/21 14:38:33     19] **WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/21 14:38:33     19] **WARN: (IMPEXT-2771):	Via VIA_8 specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/21 14:38:33     19] **WARN: (IMPEXT-2801):	Resistance values are not provided in the Cap Table. Sheet resistance defined in the LEF file will be used.
+[03/21 14:38:33     19] **WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+[03/21 14:38:33     19] Reading Capacitance Table File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/cln65g+_1p08m+alrdl_top2_cbest.captable ...
+[03/21 14:38:33     19] **WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/21 14:38:33     19] **WARN: (IMPEXT-2771):	Via VIA_8 specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/21 14:38:33     19] **WARN: (IMPEXT-2801):	Resistance values are not provided in the Cap Table. Sheet resistance defined in the LEF file will be used.
+[03/21 14:38:33     19] **WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+[03/21 14:38:33     19] Importing multi-corner RC tables ... 
+[03/21 14:38:33     19] Summary of Active RC-Corners : 
+[03/21 14:38:33     19]  
+[03/21 14:38:33     19]  Analysis View: WC_VIEW
+[03/21 14:38:33     19]     RC-Corner Name        : Cmax
+[03/21 14:38:33     19]     RC-Corner Index       : 0
+[03/21 14:38:33     19]     RC-Corner Temperature : 125 Celsius
+[03/21 14:38:33     19]     RC-Corner Cap Table   : '/home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/cln65g+_1p08m+alrdl_top2_cworst.captable'
+[03/21 14:38:33     19]     RC-Corner PreRoute Res Factor         : 1
+[03/21 14:38:33     19]     RC-Corner PreRoute Cap Factor         : 1
+[03/21 14:38:33     19]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[03/21 14:38:33     19]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[03/21 14:38:33     19]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[03/21 14:38:33     19]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[03/21 14:38:33     19]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[03/21 14:38:33     19]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[03/21 14:38:33     19]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[03/21 14:38:33     19]  
+[03/21 14:38:33     19]  Analysis View: BC_VIEW
+[03/21 14:38:33     19]     RC-Corner Name        : Cmin
+[03/21 14:38:33     19]     RC-Corner Index       : 1
+[03/21 14:38:33     19]     RC-Corner Temperature : -40 Celsius
+[03/21 14:38:33     19]     RC-Corner Cap Table   : '/home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/cln65g+_1p08m+alrdl_top2_cbest.captable'
+[03/21 14:38:33     19]     RC-Corner PreRoute Res Factor         : 1
+[03/21 14:38:33     19]     RC-Corner PreRoute Cap Factor         : 1
+[03/21 14:38:33     19]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[03/21 14:38:33     19]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[03/21 14:38:33     19]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[03/21 14:38:33     19]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[03/21 14:38:33     19]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[03/21 14:38:33     19]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[03/21 14:38:33     19]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[03/21 14:38:33     19] *Info: initialize multi-corner CTS.
+[03/21 14:38:34     19] Reading timing constraints file '/home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc' ...
+[03/21 14:38:34     19] Current (total cpu=0:00:19.9, real=0:00:45.0, peak res=384.3M, current mem=750.0M)
+[03/21 14:38:34     20] **WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:38:34     20] 
+[03/21 14:38:34     20] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[23]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:38:34     20] 
+[03/21 14:38:34     20] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[22]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:38:34     20] 
+[03/21 14:38:34     20] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[21]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:38:34     20] 
+[03/21 14:38:34     20] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[20]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:38:34     20] 
+[03/21 14:38:34     20] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[19]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:38:34     20] 
+[03/21 14:38:34     20] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[18]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:38:34     20] 
+[03/21 14:38:34     20] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[17]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:38:34     20] 
+[03/21 14:38:34     20] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[16]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:38:34     20] 
+[03/21 14:38:34     20] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[15]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:38:34     20] 
+[03/21 14:38:34     20] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[14]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:38:34     20] 
+[03/21 14:38:34     20] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[13]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:38:34     20] 
+[03/21 14:38:34     20] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[12]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:38:34     20] 
+[03/21 14:38:34     20] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[11]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:38:34     20] 
+[03/21 14:38:34     20] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[10]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:38:34     20] 
+[03/21 14:38:34     20] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[9]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:38:34     20] 
+[03/21 14:38:34     20] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[8]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:38:34     20] 
+[03/21 14:38:34     20] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[7]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:38:34     20] 
+[03/21 14:38:34     20] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[6]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:38:34     20] 
+[03/21 14:38:34     20] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[5]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:38:34     20] 
+[03/21 14:38:34     20] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'sum_out[4]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:38:34     20] 
+[03/21 14:38:34     20] Message <TCLCMD-979> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:38:34     20] 
+[03/21 14:38:34     20] INFO (CTE): Reading of timing constraints file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc completed, with 1 Warnings and 20 Errors.
+[03/21 14:38:34     20] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=400.0M, current mem=767.8M)
+[03/21 14:38:34     20] Current (total cpu=0:00:20.1, real=0:00:45.0, peak res=400.0M, current mem=767.8M)
+[03/21 14:38:34     20] Summary for sequential cells idenfication: 
+[03/21 14:38:34     20] Identified SBFF number: 199
+[03/21 14:38:34     20] Identified MBFF number: 0
+[03/21 14:38:34     20] Not identified SBFF number: 0
+[03/21 14:38:34     20] Not identified MBFF number: 0
+[03/21 14:38:34     20] Number of sequential cells which are not FFs: 104
+[03/21 14:38:34     20] 
+[03/21 14:38:34     20] Total number of combinational cells: 492
+[03/21 14:38:34     20] Total number of sequential cells: 303
+[03/21 14:38:34     20] Total number of tristate cells: 11
+[03/21 14:38:34     20] Total number of level shifter cells: 0
+[03/21 14:38:34     20] Total number of power gating cells: 0
+[03/21 14:38:34     20] Total number of isolation cells: 0
+[03/21 14:38:34     20] Total number of power switch cells: 0
+[03/21 14:38:34     20] Total number of pulse generator cells: 0
+[03/21 14:38:34     20] Total number of always on buffers: 0
+[03/21 14:38:34     20] Total number of retention cells: 0
+[03/21 14:38:34     20] List of usable buffers: BUFFD1 BUFFD0 BUFFD2 BUFFD3 BUFFD4 BUFFD6 BUFFD8 BUFFD12 BUFFD16 CKBD1 CKBD0 CKBD2 CKBD3 CKBD4 CKBD6 CKBD8 CKBD12 CKBD16
+[03/21 14:38:34     20] Total number of usable buffers: 18
+[03/21 14:38:34     20] List of unusable buffers: BUFFD20 BUFFD24 CKBD20 CKBD24 GBUFFD1 GBUFFD3 GBUFFD2 GBUFFD4 GBUFFD8
+[03/21 14:38:34     20] Total number of unusable buffers: 9
+[03/21 14:38:34     20] List of usable inverters: CKND1 CKND0 CKND2 CKND3 CKND4 CKND6 CKND8 CKND12 CKND16 INVD1 INVD0 INVD2 INVD3 INVD4 INVD6 INVD8 INVD12 INVD16
+[03/21 14:38:34     20] Total number of usable inverters: 18
+[03/21 14:38:34     20] List of unusable inverters: CKND20 CKND24 GINVD2 GINVD1 GINVD4 GINVD3 GINVD8 INVD20 INVD24
+[03/21 14:38:34     20] Total number of unusable inverters: 9
+[03/21 14:38:34     20] List of identified usable delay cells:
+[03/21 14:38:34     20] Total number of identified usable delay cells: 0
+[03/21 14:38:34     20] List of identified unusable delay cells: DEL0 DEL005 DEL01 DEL015 DEL02 DEL1 DEL2 DEL3 DEL4
+[03/21 14:38:34     20] Total number of identified unusable delay cells: 9
+[03/21 14:38:34     20] All delay cells are dont_use. Buffers will be used to fix hold violations.
+[03/21 14:38:34     20] **WARN: (IMPOPT-3058):	Cell tcbn65gplusbc/AN2D1 already has a dont_use attribute false.
+[03/21 14:38:34     20] Type 'man IMPOPT-3058' for more detail.
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AN2D1
+[03/21 14:38:34     20] **WARN: (IMPOPT-3058):	Cell tcbn65gpluswc/AN2D1 already has a dont_use attribute false.
+[03/21 14:38:34     20] Type 'man IMPOPT-3058' for more detail.
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AN2D1
+[03/21 14:38:34     20] **WARN: (IMPOPT-3058):	Cell tcbn65gplusbc/AN2D2 already has a dont_use attribute false.
+[03/21 14:38:34     20] Type 'man IMPOPT-3058' for more detail.
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AN2D2
+[03/21 14:38:34     20] **WARN: (IMPOPT-3058):	Cell tcbn65gpluswc/AN2D2 already has a dont_use attribute false.
+[03/21 14:38:34     20] Type 'man IMPOPT-3058' for more detail.
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AN2D2
+[03/21 14:38:34     20] **WARN: (IMPOPT-3058):	Cell tcbn65gplusbc/AN2D4 already has a dont_use attribute false.
+[03/21 14:38:34     20] Type 'man IMPOPT-3058' for more detail.
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AN2D4
+[03/21 14:38:34     20] **WARN: (IMPOPT-3058):	Cell tcbn65gpluswc/AN2D4 already has a dont_use attribute false.
+[03/21 14:38:34     20] Type 'man IMPOPT-3058' for more detail.
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AN2D4
+[03/21 14:38:34     20] **WARN: (IMPOPT-3058):	Cell tcbn65gplusbc/AN2D8 already has a dont_use attribute false.
+[03/21 14:38:34     20] Type 'man IMPOPT-3058' for more detail.
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AN2D8
+[03/21 14:38:34     20] **WARN: (IMPOPT-3058):	Cell tcbn65gpluswc/AN2D8 already has a dont_use attribute false.
+[03/21 14:38:34     20] Type 'man IMPOPT-3058' for more detail.
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AN2D8
+[03/21 14:38:34     20] **WARN: (IMPOPT-3058):	Cell tcbn65gplusbc/AN2XD1 already has a dont_use attribute false.
+[03/21 14:38:34     20] Type 'man IMPOPT-3058' for more detail.
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AN2XD1
+[03/21 14:38:34     20] **WARN: (IMPOPT-3058):	Cell tcbn65gpluswc/AN2XD1 already has a dont_use attribute false.
+[03/21 14:38:34     20] Type 'man IMPOPT-3058' for more detail.
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AN2XD1
+[03/21 14:38:34     20] **WARN: (IMPOPT-3058):	Cell tcbn65gplusbc/AN3D2 already has a dont_use attribute false.
+[03/21 14:38:34     20] Type 'man IMPOPT-3058' for more detail.
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AN3D2
+[03/21 14:38:34     20] **WARN: (IMPOPT-3058):	Cell tcbn65gpluswc/AN3D2 already has a dont_use attribute false.
+[03/21 14:38:34     20] Type 'man IMPOPT-3058' for more detail.
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AN3D2
+[03/21 14:38:34     20] **WARN: (IMPOPT-3058):	Cell tcbn65gplusbc/AN3D4 already has a dont_use attribute false.
+[03/21 14:38:34     20] Type 'man IMPOPT-3058' for more detail.
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AN3D4
+[03/21 14:38:34     20] **WARN: (IMPOPT-3058):	Cell tcbn65gpluswc/AN3D4 already has a dont_use attribute false.
+[03/21 14:38:34     20] Type 'man IMPOPT-3058' for more detail.
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AN3D4
+[03/21 14:38:34     20] **WARN: (IMPOPT-3058):	Cell tcbn65gplusbc/AN3D8 already has a dont_use attribute false.
+[03/21 14:38:34     20] Type 'man IMPOPT-3058' for more detail.
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AN3D8
+[03/21 14:38:34     20] **WARN: (IMPOPT-3058):	Cell tcbn65gpluswc/AN3D8 already has a dont_use attribute false.
+[03/21 14:38:34     20] Type 'man IMPOPT-3058' for more detail.
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AN3D8
+[03/21 14:38:34     20] **WARN: (IMPOPT-3058):	Cell tcbn65gplusbc/AN3XD1 already has a dont_use attribute false.
+[03/21 14:38:34     20] Type 'man IMPOPT-3058' for more detail.
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AN3XD1
+[03/21 14:38:34     20] **WARN: (IMPOPT-3058):	Cell tcbn65gpluswc/AN3XD1 already has a dont_use attribute false.
+[03/21 14:38:34     20] Type 'man IMPOPT-3058' for more detail.
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AN3XD1
+[03/21 14:38:34     20] **WARN: (IMPOPT-3058):	Cell tcbn65gplusbc/AN4D2 already has a dont_use attribute false.
+[03/21 14:38:34     20] Type 'man IMPOPT-3058' for more detail.
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AN4D2
+[03/21 14:38:34     20] **WARN: (IMPOPT-3058):	Cell tcbn65gpluswc/AN4D2 already has a dont_use attribute false.
+[03/21 14:38:34     20] Type 'man IMPOPT-3058' for more detail.
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AN4D2
+[03/21 14:38:34     20] **WARN: (EMS-27):	Message (IMPOPT-3058) has exceeded the current message display limit of 20.
+[03/21 14:38:34     20] To increase the message display limit, refer to the product command reference manual.
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AN4D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AN4D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AN4D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AN4D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AN4XD1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AN4XD1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AO211D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AO211D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AO21D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AO21D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AO21D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AO21D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AO221D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AO221D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AO221D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AO221D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AO222D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AO222D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AO22D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AO22D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AO31D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AO31D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AO32D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AO32D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AO32D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AO32D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AO33D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AO33D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AO33D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AO33D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AOI211D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AOI211D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AOI211D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AOI211D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AOI21D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AOI21D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AOI21D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AOI21D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AOI21D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AOI21D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AOI221D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AOI221D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AOI222D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AOI222D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AOI22D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AOI22D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AOI22D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AOI22D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AOI31D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AOI31D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AOI31D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AOI31D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AOI32D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AOI32D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/AOI33D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/AOI33D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/BENCD1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/BENCD1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/BMLD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/BMLD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/BUFFD1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/BUFFD1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/BUFFD12
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/BUFFD12
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/BUFFD16
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/BUFFD16
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/BUFFD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/BUFFD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/BUFFD3
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/BUFFD3
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/BUFFD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/BUFFD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/BUFFD6
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/BUFFD6
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/BUFFD8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/BUFFD8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/BUFTD12
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/BUFTD12
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/BUFTD16
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/BUFTD16
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/BUFTD6
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/BUFTD6
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/BUFTD8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/BUFTD8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKAN2D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKAN2D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKAN2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKAN2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKAN2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKAN2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKAN2D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKAN2D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKBD1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKBD1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKBD12
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKBD12
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKBD16
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKBD16
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKBD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKBD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKBD3
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKBD3
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKBD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKBD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKBD6
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKBD6
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKBD8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKBD8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKLHQD12
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKLHQD12
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKLHQD16
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKLHQD16
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKLHQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKLHQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKLHQD6
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKLHQD6
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKLHQD8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKLHQD8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKLNQD12
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKLNQD12
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKLNQD16
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKLNQD16
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKLNQD8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKLNQD8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKMUX2D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKMUX2D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKMUX2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKMUX2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKMUX2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKMUX2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKND12
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKND12
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKND16
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKND16
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKND2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKND2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKND2D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKND2D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKND2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKND2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKND2D3
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKND2D3
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKND2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKND2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKND2D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKND2D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKND3
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKND3
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKND6
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKND6
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKND8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKND8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKXOR2D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKXOR2D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKXOR2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKXOR2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/CKXOR2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/CKXOR2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/DFCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/DFCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/DFCNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/DFCNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/DFCSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/DFCSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/DFCSNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/DFCSNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/DFD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/DFD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/DFKCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/DFKCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/DFKCNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/DFKCNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/DFKCSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/DFKCSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/DFKSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/DFKSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/DFNCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/DFNCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/DFNCSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/DFNCSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/DFND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/DFND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/DFNSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/DFNSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/DFQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/DFQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/DFSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/DFSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/DFSNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/DFSNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/DFXD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/DFXD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/DFXQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/DFXQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/EDFCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/EDFCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/EDFCNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/EDFCNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/EDFD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/EDFD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/EDFKCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/EDFKCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/EDFKCNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/EDFKCNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/EDFQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/EDFQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/FA1D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/FA1D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/FA1D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/FA1D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/HA1D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/HA1D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/HA1D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/HA1D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/IAO21D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/IAO21D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/IAO21D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/IAO21D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/IAO22D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/IAO22D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/IAO22D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/IAO22D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/IIND4D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/IIND4D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/IIND4D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/IIND4D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/IINR4D0
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/IINR4D0
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/IND2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/IND2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/IND2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/IND2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/IND3D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/IND3D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/IND3D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/IND3D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/IND4D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/IND4D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/INR2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/INR2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/INR2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/INR2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/INR3D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/INR3D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/INR3D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/INR3D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/INR4D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/INR4D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/INVD12
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/INVD12
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/INVD16
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/INVD16
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/INVD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/INVD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/INVD3
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/INVD3
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/INVD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/INVD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/INVD6
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/INVD6
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/INVD8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/INVD8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/IOA21D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/IOA21D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/IOA21D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/IOA21D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/IOA22D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/IOA22D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/IOA22D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/IOA22D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LHCND2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LHCND2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LHCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LHCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LHCNDD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LHCNDD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LHCNDD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LHCNDD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LHCNDQD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LHCNDQD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LHCNDQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LHCNDQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LHCNQD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LHCNQD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LHCNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LHCNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LHCSND2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LHCSND2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LHCSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LHCSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LHCSNDD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LHCSNDD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LHCSNDD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LHCSNDD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LHCSNDQD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LHCSNDQD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LHCSNDQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LHCSNDQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LHCSNQD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LHCSNQD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LHCSNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LHCSNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LHD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LHD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LHQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LHQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LHSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LHSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LHSNDD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LHSNDD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LHSNDQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LHSNDQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LHSNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LHSNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LNCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LNCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LNCNDD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LNCNDD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LNCNDQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LNCNDQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LNCNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LNCNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LNCSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LNCSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LNCSNDD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LNCSNDD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LNCSNDQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LNCSNDQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LNCSNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LNCSNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LNSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LNSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LNSNDD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LNSNDD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LNSNDQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LNSNDQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/LNSNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/LNSNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/MAOI222D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/MAOI222D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/MAOI222D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/MAOI222D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/MAOI22D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/MAOI22D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/MOAI22D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/MOAI22D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/MUX2D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/MUX2D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/MUX2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/MUX2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/MUX2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/MUX2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/MUX2ND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/MUX2ND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/MUX3D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/MUX3D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/MUX3ND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/MUX3ND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/MUX4D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/MUX4D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/MUX4D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/MUX4D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/MUX4ND2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/MUX4ND2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/MUX4ND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/MUX4ND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/ND2D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/ND2D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/ND2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/ND2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/ND2D3
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/ND2D3
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/ND2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/ND2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/ND2D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/ND2D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/ND3D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/ND3D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/ND3D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/ND3D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/ND3D3
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/ND3D3
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/ND3D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/ND3D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/ND3D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/ND3D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/ND4D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/ND4D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/NR2D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/NR2D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/NR2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/NR2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/NR2D3
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/NR2D3
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/NR2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/NR2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/NR2D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/NR2D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/NR3D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/NR3D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/NR3D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/NR3D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/NR3D3
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/NR3D3
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/NR3D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/NR3D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/NR3D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/NR3D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/NR4D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/NR4D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OA211D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OA211D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OA21D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OA21D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OA221D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OA221D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OA221D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OA221D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OA222D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OA222D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OA22D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OA22D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OA31D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OA31D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OA32D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OA32D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OA32D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OA32D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OA33D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OA33D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OAI211D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OAI211D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OAI211D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OAI211D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OAI21D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OAI21D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OAI21D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OAI21D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OAI21D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OAI21D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OAI221D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OAI221D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OAI222D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OAI222D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OAI22D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OAI22D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OAI22D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OAI22D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OAI31D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OAI31D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OAI31D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OAI31D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OAI32D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OAI32D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OAI33D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OAI33D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OR2D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OR2D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OR2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OR2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OR2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OR2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OR2D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OR2D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OR2XD1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OR2XD1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OR3D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OR3D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OR3D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OR3D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OR3D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OR3D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OR3XD1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OR3XD1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OR4D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OR4D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OR4D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OR4D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/OR4D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/OR4D8
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFCNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFCNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFCSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFCSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFCSNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFCSNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFKCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFKCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFKCNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFKCNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFKCSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFKCSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFKCSNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFKCSNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFKSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFKSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFKSNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFKSNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFNCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFNCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFNCSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFNCSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFND2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFND2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFNSND2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFNSND2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFNSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFNSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFQD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFQD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFQND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFQND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFSND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFSNQD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFSNQD2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFSNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFSNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFXD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFXD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SDFXQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SDFXQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SEDFCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SEDFCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SEDFCNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SEDFCNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SEDFD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SEDFD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SEDFKCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SEDFKCND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SEDFKCNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SEDFKCNQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SEDFQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SEDFQD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SEDFQND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SEDFQND4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SEDFQNXD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SEDFQNXD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SEDFQXD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SEDFQXD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/SEDFXD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/SEDFXD4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/XNR2D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/XNR2D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/XNR2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/XNR2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/XNR2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/XNR2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/XNR3D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/XNR3D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/XNR4D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/XNR4D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/XOR2D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/XOR2D1
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/XOR2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/XOR2D2
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/XOR2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/XOR2D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/XOR3D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/XOR3D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gplusbc/XOR4D4
+[03/21 14:38:34     20]  Setting dont_use false for cell tcbn65gpluswc/XOR4D4
+[03/21 14:38:34     20] Reading floorplan file - route.enc.dat/core.fp.gz (mem = 775.8M).
+[03/21 14:38:34     20] *info: reset 76889 existing net BottomPreferredLayer and AvoidDetour
+[03/21 14:38:34     20] Deleting old partition specification.
+[03/21 14:38:34     20] Set FPlanBox to (0 0 2840000 3240000)
+[03/21 14:38:34     20]  ... processed partition successfully.
+[03/21 14:38:34     20] There are 316 nets with bottomPreferredRoutingLayer being set
+[03/21 14:38:34     20] Extracting standard cell pins and blockage ...... 
+[03/21 14:38:34     20] Pin and blockage extraction finished
+[03/21 14:38:34     20] *** End loading floorplan (cpu = 0:00:00.2, mem = 777.9M) ***
+[03/21 14:38:34     20] *** Checked 8 GNC rules.
+[03/21 14:38:34     20] *** applyConnectGlobalNets disabled.
+[03/21 14:38:34     20] Reading placement file - route.enc.dat/core.place.gz.
+[03/21 14:38:34     20] ** Reading stdCellPlacement "route.enc.dat/core.place.gz" ...
+[03/21 14:38:35     21] *** Checked 8 GNC rules.
+[03/21 14:38:35     21] *** applyConnectGlobalNets disabled.
+[03/21 14:38:35     21] *** Completed restorePlace (cpu=0:00:00.8 real=0:00:01.0 mem=818.6M) ***
+[03/21 14:38:35     21] Total net length = 1.890e+06 (9.555e+05 9.347e+05) (ext = 3.324e+05)
+[03/21 14:38:35     21] *** Checked 8 GNC rules.
+[03/21 14:38:35     21] *** Applying global-net connections...
+[03/21 14:38:35     21] *** Applied 8 GNC rules (cpu = 0:00:00.0)
+[03/21 14:38:35     21] Reading routing file - route.enc.dat/core.route.gz.
+[03/21 14:38:35     21] Reading Innovus routing data (Created by Innovus v15.23-s045_1 on Fri Mar 21 13:13:28 2025 Format: 15.2) ...
+[03/21 14:38:35     21] Suppress "**WARN ..." messages.
+[03/21 14:38:35     21] routingBox: (0 0) (2840000 3240000)
+[03/21 14:38:35     21] coreBox:    (20000 20000) (2820000 3220000)
+[03/21 14:38:35     21] Un-suppress "**WARN ..." messages.
+[03/21 14:38:36     22] *** Total 72655 nets are successfully restored.
+[03/21 14:38:36     22] *** Completed restoreRoute (cpu=0:00:01.2 real=0:00:01.0 mem=936.5M) ***
+[03/21 14:38:36     22] Loading Drc markers ...
+[03/21 14:38:36     22] ... 20 markers are loaded ...
+[03/21 14:38:36     22] ... 8 geometry drc markers are loaded ...
+[03/21 14:38:36     22] ... 4 antenna drc markers are loaded ...
+[03/21 14:38:36     22] Set Default Input Pin Transition as 0.1 ps.
+[03/21 14:38:36     22] **WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+[03/21 14:38:37     22] Initializing multi-corner capacitance tables ... 
+[03/21 14:38:37     22] Initializing multi-corner resistance tables ...
+[03/21 14:38:37     23] 
+[03/21 14:38:37     23] *** Summary of all messages that are not suppressed in this session:
+[03/21 14:38:37     23] Severity  ID               Count  Summary                                  
+[03/21 14:38:37     23] WARNING   IMPLF-200          136  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[03/21 14:38:37     23] WARNING   IMPLF-201          128  Pin '%s' in macro '%s' has no ANTENNADIF...
+[03/21 14:38:37     23] WARNING   IMPFP-3961           2  The techSite '%s' has no related cells i...
+[03/21 14:38:37     23] WARNING   IMPEXT-2710          2  Basic Cap table for layer M%d is ignored...
+[03/21 14:38:37     23] WARNING   IMPEXT-2760          2  Layer M%d specified in the cap table is ...
+[03/21 14:38:37     23] WARNING   IMPEXT-2771          2  Via %s specified in the cap table is ign...
+[03/21 14:38:37     23] WARNING   IMPEXT-2801          2  Resistance values are not provided in th...
+[03/21 14:38:37     23] WARNING   IMPVL-159         1624  Pin '%s' of cell '%s' is defined in LEF ...
+[03/21 14:38:37     23] WARNING   IMPOPT-3058        598  Cell %s/%s already has a dont_use attrib...
+[03/21 14:38:37     23] ERROR     IMPOAX-820           1  The OA features are disabled in the curr...
+[03/21 14:38:37     23] ERROR     IMPOAX-850           1  %s command cannot be run as OA features ...
+[03/21 14:38:37     23] WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+[03/21 14:38:37     23] *** Message Summary: 2497 warning(s), 2 error(s)
+[03/21 14:38:37     23] 
+[03/21 14:38:39     24] <CMD> setLayerPreference allM0 -isVisible 0
+[03/21 14:38:40     24] <CMD> setLayerPreference allM1Cont -isVisible 0
+[03/21 14:38:41     25] <CMD> setLayerPreference allM1 -isVisible 0
+[03/21 14:38:41     25] <CMD> setLayerPreference allM2Cont -isVisible 0
+[03/21 14:38:42     25] <CMD> setLayerPreference allM2 -isVisible 0
+[03/21 14:38:43     26] <CMD> setLayerPreference allM3Cont -isVisible 0
+[03/21 14:38:43     26] <CMD> setLayerPreference allM3 -isVisible 0
+[03/21 14:38:44     26] <CMD> setLayerPreference allM4Cont -isVisible 0
+[03/21 14:38:44     26] <CMD> setLayerPreference allM4 -isVisible 0
+[03/21 14:38:45     27] <CMD> setLayerPreference allM5Cont -isVisible 0
+[03/21 14:38:46     27] <CMD> setLayerPreference allM5 -isVisible 0
+[03/21 14:38:46     27] <CMD> setLayerPreference allM6Cont -isVisible 0
+[03/21 14:38:47     28] <CMD> setLayerPreference allM6 -isVisible 0
+[03/21 14:38:47     28] <CMD> setLayerPreference allM7Cont -isVisible 0
+[03/21 14:38:48     28] <CMD> setLayerPreference allM7 -isVisible 0
+[03/21 14:38:48     28] <CMD> setLayerPreference allM8Cont -isVisible 0
+[03/21 14:38:49     29] <CMD> setLayerPreference allM8 -isVisible 0
+[03/21 14:38:50     29] <CMD> setLayerPreference allM8 -isVisible 1
+[03/21 14:38:51     29] <CMD> setLayerPreference allM8 -isVisible 0
+[03/21 14:38:51     29] <CMD> setLayerPreference allM8 -isVisible 1
+[03/21 14:38:52     30] <CMD> setLayerPreference allM8 -isVisible 0
+[03/21 14:39:31     38] <CMD> setLayerPreference allM8 -isVisible 1
+[03/21 14:40:14     48] <CMD> streamOut core.gds2
+[03/21 14:40:14     48] Parse map file...
+[03/21 14:40:14     48] **WARN: (IMPOGDS-399):	 Only 2 layer(s) (CO M1) of a VIA object is(are) specified in map file 'streamOut.map'. A VIA object needs 3 layers (PO CO M1) being specified at the same time in the map file. Add VIA contruct(s) to the map file for the following layer(s): PO or remove VIA construct(s) from the map file for the following layer(s): CO M1.
+[03/21 14:40:14     48] Type 'man IMPOGDS-399' for more detail.
+[03/21 14:40:14     48] **WARN: (IMPOGDS-399):	 Only 2 layer(s) (CO M1) of a VIAFILL object is(are) specified in map file 'streamOut.map'. A VIAFILL object needs 3 layers (PO CO M1) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): PO or remove VIAFILL construct(s) from the map file for the following layer(s): CO M1.
+[03/21 14:40:14     48] Type 'man IMPOGDS-399' for more detail.
+[03/21 14:40:14     48] **WARN: (IMPOGDS-399):	 Only 2 layer(s) (CO M1) of a VIAFILLOPC object is(are) specified in map file 'streamOut.map'. A VIAFILLOPC object needs 3 layers (PO CO M1) being specified at the same time in the map file. Add VIAFILLOPC contruct(s) to the map file for the following layer(s): PO or remove VIAFILLOPC construct(s) from the map file for the following layer(s): CO M1.
+[03/21 14:40:14     48] Type 'man IMPOGDS-399' for more detail.
+[03/21 14:40:14     48] Writing GDSII file ...
+[03/21 14:40:14     48] 	****** db unit per micron = 2000 ******
+[03/21 14:40:14     48] 	****** output gds2 file unit per micron = 2000 ******
+[03/21 14:40:14     48] 	****** unit scaling factor = 1 ******
+[03/21 14:40:14     48] Output for instance
+[03/21 14:40:15     48] Output for bump
+[03/21 14:40:15     48] Output for physical terminals
+[03/21 14:40:15     48] Output for logical terminals
+[03/21 14:40:15     48] Output for regular nets
+[03/21 14:40:15     48] Output for special nets and metal fills
+[03/21 14:40:15     49] Output for via structure generation
+[03/21 14:40:15     49] Statistics for GDS generated (version 3)
+[03/21 14:40:15     49] ----------------------------------------
+[03/21 14:40:15     49] Stream Out Layer Mapping Information:
+[03/21 14:40:15     49] GDS Layer Number          GDS Layer Name
+[03/21 14:40:15     49] ----------------------------------------
+[03/21 14:40:15     49]     170                             COMP
+[03/21 14:40:15     49]     171                          DIEAREA
+[03/21 14:40:15     49]     1                                 CO
+[03/21 14:40:15     49]     2                                 CO
+[03/21 14:40:15     49]     5                                 CO
+[03/21 14:40:15     49]     3                                 CO
+[03/21 14:40:15     49]     4                                 CO
+[03/21 14:40:15     49]     6                                 CO
+[03/21 14:40:15     49]     7                                 CO
+[03/21 14:40:15     49]     8                                 M1
+[03/21 14:40:15     49]     9                                 M1
+[03/21 14:40:15     49]     10                                M1
+[03/21 14:40:15     49]     11                                M1
+[03/21 14:40:15     49]     14                                M1
+[03/21 14:40:15     49]     12                                M1
+[03/21 14:40:15     49]     13                                M1
+[03/21 14:40:15     49]     15                                M1
+[03/21 14:40:15     49]     16                                M1
+[03/21 14:40:15     49]     17                                M1
+[03/21 14:40:15     49]     22                              VIA1
+[03/21 14:40:15     49]     23                              VIA1
+[03/21 14:40:15     49]     26                              VIA1
+[03/21 14:40:15     49]     24                              VIA1
+[03/21 14:40:15     49]     25                              VIA1
+[03/21 14:40:15     49]     27                              VIA1
+[03/21 14:40:15     49]     28                              VIA1
+[03/21 14:40:15     49]     29                                M2
+[03/21 14:40:15     49]     30                                M2
+[03/21 14:40:15     49]     31                                M2
+[03/21 14:40:15     49]     32                                M2
+[03/21 14:40:15     49]     35                                M2
+[03/21 14:40:15     49]     33                                M2
+[03/21 14:40:15     49]     34                                M2
+[03/21 14:40:15     49]     36                                M2
+[03/21 14:40:15     49]     37                                M2
+[03/21 14:40:15     49]     38                                M2
+[03/21 14:40:15     49]     43                              VIA2
+[03/21 14:40:15     49]     44                              VIA2
+[03/21 14:40:15     49]     47                              VIA2
+[03/21 14:40:15     49]     45                              VIA2
+[03/21 14:40:15     49]     46                              VIA2
+[03/21 14:40:15     49]     48                              VIA2
+[03/21 14:40:15     49]     49                              VIA2
+[03/21 14:40:15     49]     50                                M3
+[03/21 14:40:15     49]     51                                M3
+[03/21 14:40:15     49]     52                                M3
+[03/21 14:40:15     49]     53                                M3
+[03/21 14:40:15     49]     56                                M3
+[03/21 14:40:15     49]     54                                M3
+[03/21 14:40:15     49]     55                                M3
+[03/21 14:40:15     49]     57                                M3
+[03/21 14:40:15     49]     58                                M3
+[03/21 14:40:15     49]     59                                M3
+[03/21 14:40:15     49]     64                              VIA3
+[03/21 14:40:15     49]     65                              VIA3
+[03/21 14:40:15     49]     68                              VIA3
+[03/21 14:40:15     49]     66                              VIA3
+[03/21 14:40:15     49]     67                              VIA3
+[03/21 14:40:15     49]     69                              VIA3
+[03/21 14:40:15     49]     70                              VIA3
+[03/21 14:40:15     49]     71                                M4
+[03/21 14:40:15     49]     72                                M4
+[03/21 14:40:15     49]     73                                M4
+[03/21 14:40:15     49]     74                                M4
+[03/21 14:40:15     49]     77                                M4
+[03/21 14:40:15     49]     75                                M4
+[03/21 14:40:15     49]     76                                M4
+[03/21 14:40:15     49]     78                                M4
+[03/21 14:40:15     49]     79                                M4
+[03/21 14:40:15     49]     80                                M4
+[03/21 14:40:15     49]     85                              VIA4
+[03/21 14:40:15     49]     86                              VIA4
+[03/21 14:40:15     49]     89                              VIA4
+[03/21 14:40:15     49]     87                              VIA4
+[03/21 14:40:15     49]     88                              VIA4
+[03/21 14:40:15     49]     90                              VIA4
+[03/21 14:40:15     49]     91                              VIA4
+[03/21 14:40:15     49]     92                                M5
+[03/21 14:40:15     49]     93                                M5
+[03/21 14:40:15     49]     94                                M5
+[03/21 14:40:15     49]     95                                M5
+[03/21 14:40:15     49]     98                                M5
+[03/21 14:40:15     49]     96                                M5
+[03/21 14:40:15     49]     97                                M5
+[03/21 14:40:15     49]     99                                M5
+[03/21 14:40:15     49]     100                               M5
+[03/21 14:40:15     49]     101                               M5
+[03/21 14:40:15     49]     106                             VIA5
+[03/21 14:40:15     49]     107                             VIA5
+[03/21 14:40:15     49]     110                             VIA5
+[03/21 14:40:15     49]     108                             VIA5
+[03/21 14:40:15     49]     109                             VIA5
+[03/21 14:40:15     49]     111                             VIA5
+[03/21 14:40:15     49]     112                             VIA5
+[03/21 14:40:15     49]     113                               M6
+[03/21 14:40:15     49]     114                               M6
+[03/21 14:40:15     49]     115                               M6
+[03/21 14:40:15     49]     116                               M6
+[03/21 14:40:15     49]     119                               M6
+[03/21 14:40:15     49]     117                               M6
+[03/21 14:40:15     49]     118                               M6
+[03/21 14:40:15     49]     120                               M6
+[03/21 14:40:15     49]     121                               M6
+[03/21 14:40:15     49]     122                               M6
+[03/21 14:40:15     49]     127                             VIA6
+[03/21 14:40:15     49]     128                             VIA6
+[03/21 14:40:15     49]     131                             VIA6
+[03/21 14:40:15     49]     129                             VIA6
+[03/21 14:40:15     49]     130                             VIA6
+[03/21 14:40:15     49]     132                             VIA6
+[03/21 14:40:15     49]     133                             VIA6
+[03/21 14:40:15     49]     134                               M7
+[03/21 14:40:15     49]     135                               M7
+[03/21 14:40:15     49]     136                               M7
+[03/21 14:40:15     49]     137                               M7
+[03/21 14:40:15     49]     140                               M7
+[03/21 14:40:15     49]     138                               M7
+[03/21 14:40:15     49]     139                               M7
+[03/21 14:40:15     49]     141                               M7
+[03/21 14:40:15     49]     142                               M7
+[03/21 14:40:15     49]     143                               M7
+[03/21 14:40:15     49]     148                             VIA7
+[03/21 14:40:15     49]     149                             VIA7
+[03/21 14:40:15     49]     152                             VIA7
+[03/21 14:40:15     49]     150                             VIA7
+[03/21 14:40:15     49]     151                             VIA7
+[03/21 14:40:15     49]     153                             VIA7
+[03/21 14:40:15     49]     154                             VIA7
+[03/21 14:40:15     49]     155                               M8
+[03/21 14:40:15     49]     156                               M8
+[03/21 14:40:15     49]     157                               M8
+[03/21 14:40:15     49]     158                               M8
+[03/21 14:40:15     49]     161                               M8
+[03/21 14:40:15     49]     159                               M8
+[03/21 14:40:15     49]     160                               M8
+[03/21 14:40:15     49]     162                               M8
+[03/21 14:40:15     49]     163                               M8
+[03/21 14:40:15     49]     164                               M8
+[03/21 14:40:15     49]     18                                M1
+[03/21 14:40:15     49]     19                                M1
+[03/21 14:40:15     49]     20                                M1
+[03/21 14:40:15     49]     21                                M1
+[03/21 14:40:15     49]     39                                M2
+[03/21 14:40:15     49]     40                                M2
+[03/21 14:40:15     49]     41                                M2
+[03/21 14:40:15     49]     42                                M2
+[03/21 14:40:15     49]     60                                M3
+[03/21 14:40:15     49]     61                                M3
+[03/21 14:40:15     49]     62                                M3
+[03/21 14:40:15     49]     63                                M3
+[03/21 14:40:15     49]     81                                M4
+[03/21 14:40:15     49]     82                                M4
+[03/21 14:40:15     49]     83                                M4
+[03/21 14:40:15     49]     84                                M4
+[03/21 14:40:15     49]     102                               M5
+[03/21 14:40:15     49]     103                               M5
+[03/21 14:40:15     49]     104                               M5
+[03/21 14:40:15     49]     105                               M5
+[03/21 14:40:15     49]     123                               M6
+[03/21 14:40:15     49]     124                               M6
+[03/21 14:40:15     49]     125                               M6
+[03/21 14:40:15     49]     126                               M6
+[03/21 14:40:15     49]     144                               M7
+[03/21 14:40:15     49]     145                               M7
+[03/21 14:40:15     49]     146                               M7
+[03/21 14:40:15     49]     147                               M7
+[03/21 14:40:15     49]     165                               M8
+[03/21 14:40:15     49]     166                               M8
+[03/21 14:40:15     49]     167                               M8
+[03/21 14:40:15     49]     168                               M8
+[03/21 14:40:15     49] 
+[03/21 14:40:15     49] 
+[03/21 14:40:15     49] Stream Out Information Processed for GDS version 3:
+[03/21 14:40:15     49] Units: 2000 DBU
+[03/21 14:40:15     49] 
+[03/21 14:40:15     49] Object                             Count
+[03/21 14:40:15     49] ----------------------------------------
+[03/21 14:40:15     49] Instances                         186653
+[03/21 14:40:15     49] 
+[03/21 14:40:15     49] Ports/Pins                           356
+[03/21 14:40:15     49]     metal layer M5                   356
+[03/21 14:40:15     49] 
+[03/21 14:40:15     49] Nets                              801022
+[03/21 14:40:15     49]     metal layer M1                  8002
+[03/21 14:40:15     49]     metal layer M2                435918
+[03/21 14:40:15     49]     metal layer M3                250315
+[03/21 14:40:15     49]     metal layer M4                 70871
+[03/21 14:40:15     49]     metal layer M5                 17996
+[03/21 14:40:15     49]     metal layer M6                  7284
+[03/21 14:40:15     49]     metal layer M7                  8235
+[03/21 14:40:15     49]     metal layer M8                  2401
+[03/21 14:40:15     49] 
+[03/21 14:40:15     49]     Via Instances                 473591
+[03/21 14:40:15     49] 
+[03/21 14:40:15     49] Special Nets                        5658
+[03/21 14:40:15     49]     metal layer M1                  3528
+[03/21 14:40:15     49]     metal layer M5                  1429
+[03/21 14:40:15     49]     metal layer M6                   701
+[03/21 14:40:15     49] 
+[03/21 14:40:15     49]     Via Instances                  25258
+[03/21 14:40:15     49] 
+[03/21 14:40:15     49] Metal Fills                            0
+[03/21 14:40:15     49] 
+[03/21 14:40:15     49]     Via Instances                      0
+[03/21 14:40:15     49] 
+[03/21 14:40:15     49] Metal FillOPCs                         0
+[03/21 14:40:15     49] 
+[03/21 14:40:15     49]     Via Instances                      0
+[03/21 14:40:15     49] 
+[03/21 14:40:15     49] Text                               72966
+[03/21 14:40:15     49]     metal layer M1                  2474
+[03/21 14:40:15     49]     metal layer M2                 59177
+[03/21 14:40:15     49]     metal layer M3                 10163
+[03/21 14:40:15     49]     metal layer M4                   603
+[03/21 14:40:15     49]     metal layer M5                   410
+[03/21 14:40:15     49]     metal layer M6                    72
+[03/21 14:40:15     49]     metal layer M7                    52
+[03/21 14:40:15     49]     metal layer M8                    15
+[03/21 14:40:15     49] 
+[03/21 14:40:15     49] 
+[03/21 14:40:15     49] Blockages                              0
+[03/21 14:40:15     49] 
+[03/21 14:40:15     49] 
+[03/21 14:40:15     49] Custom Text                            0
+[03/21 14:40:15     49] 
+[03/21 14:40:15     49] 
+[03/21 14:40:15     49] Custom Box                             0
+[03/21 14:40:15     49] 
+[03/21 14:40:15     49] Trim Metal                             0
+[03/21 14:40:15     49] 
+[03/21 14:40:16     49] ######Streamout is finished!
+[03/21 14:40:16     49] <CMD> write_lef_abstract -stripePin -PGPinLayers 8 -extractBlockPGPinLayers 8 core.lef -specifyTopLayer 8
+[03/21 14:40:16     49] <CMD> defOut -netlist -routing core.def
+[03/21 14:40:16     49] Writing DEF file 'core.def', current time is Fri Mar 21 14:40:16 2025 ...
+[03/21 14:40:16     49] unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+[03/21 14:40:17     50] DEF file 'core.def' is written, current time is Fri Mar 21 14:40:17 2025 ...
+[03/21 14:40:17     50] <CMD> saveNetlist core.pnr.v
+[03/21 14:40:17     50] Writing Netlist "core.pnr.v" ...
+[03/21 14:40:18     50] <CMD> setAnalysisMode -setup
+[03/21 14:40:18     50] **WARN: (IMPTCM-70):	Option "-setup" for command setAnalysisMode is obsolete and has been replaced by "-checkType setup". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-checkType setup".
+[03/21 14:40:18     50] <CMD> set_analysis_view -setup WC_VIEW -hold WC_VIEW
+[03/21 14:40:18     51] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[03/21 14:40:18     51] Reading Capacitance Table File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/cln65g+_1p08m+alrdl_top2_cworst.captable ...
+[03/21 14:40:18     51] **WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/21 14:40:18     51] **WARN: (IMPEXT-2771):	Via VIA_8 specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/21 14:40:18     51] **WARN: (IMPEXT-2801):	Resistance values are not provided in the Cap Table. Sheet resistance defined in the LEF file will be used.
+[03/21 14:40:18     51] **WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+[03/21 14:40:18     51] Importing multi-corner RC tables ... 
+[03/21 14:40:18     51] Summary of Active RC-Corners : 
+[03/21 14:40:18     51]  
+[03/21 14:40:18     51]  Analysis View: WC_VIEW
+[03/21 14:40:18     51]     RC-Corner Name        : Cmax
+[03/21 14:40:18     51]     RC-Corner Index       : 0
+[03/21 14:40:18     51]     RC-Corner Temperature : 125 Celsius
+[03/21 14:40:18     51]     RC-Corner Cap Table   : '/home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/cln65g+_1p08m+alrdl_top2_cworst.captable'
+[03/21 14:40:18     51]     RC-Corner PreRoute Res Factor         : 1
+[03/21 14:40:18     51]     RC-Corner PreRoute Cap Factor         : 1
+[03/21 14:40:18     51]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[03/21 14:40:18     51]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[03/21 14:40:18     51]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[03/21 14:40:18     51]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[03/21 14:40:18     51]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[03/21 14:40:18     51]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[03/21 14:40:18     51]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[03/21 14:40:18     51] *Info: initialize multi-corner CTS.
+[03/21 14:40:19     51] Reading timing constraints file '/home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc' ...
+[03/21 14:40:19     51] Current (total cpu=0:00:51.8, real=0:02:30, peak res=674.8M, current mem=1080.3M)
+[03/21 14:40:19     51] **WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:40:19     51] 
+[03/21 14:40:19     51] INFO (CTE): Reading of timing constraints file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc completed, with 1 WARNING
+[03/21 14:40:19     51] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=675.6M, current mem=1090.5M)
+[03/21 14:40:19     51] Current (total cpu=0:00:51.9, real=0:02:30, peak res=675.6M, current mem=1090.5M)
+[03/21 14:40:19     51] Summary for sequential cells idenfication: 
+[03/21 14:40:19     51] Identified SBFF number: 199
+[03/21 14:40:19     51] Identified MBFF number: 0
+[03/21 14:40:19     51] Not identified SBFF number: 0
+[03/21 14:40:19     51] Not identified MBFF number: 0
+[03/21 14:40:19     51] Number of sequential cells which are not FFs: 104
+[03/21 14:40:19     51] 
+[03/21 14:40:19     51] Total number of combinational cells: 492
+[03/21 14:40:19     51] Total number of sequential cells: 303
+[03/21 14:40:19     51] Total number of tristate cells: 11
+[03/21 14:40:19     51] Total number of level shifter cells: 0
+[03/21 14:40:19     51] Total number of power gating cells: 0
+[03/21 14:40:19     51] Total number of isolation cells: 0
+[03/21 14:40:19     51] Total number of power switch cells: 0
+[03/21 14:40:19     51] Total number of pulse generator cells: 0
+[03/21 14:40:19     51] Total number of always on buffers: 0
+[03/21 14:40:19     51] Total number of retention cells: 0
+[03/21 14:40:19     51] List of usable buffers: BUFFD1 BUFFD0 BUFFD2 BUFFD3 BUFFD4 BUFFD6 BUFFD8 BUFFD12 BUFFD16 CKBD1 CKBD0 CKBD2 CKBD3 CKBD4 CKBD6 CKBD8 CKBD12 CKBD16
+[03/21 14:40:19     51] Total number of usable buffers: 18
+[03/21 14:40:19     51] List of unusable buffers: BUFFD20 BUFFD24 CKBD20 CKBD24 GBUFFD1 GBUFFD3 GBUFFD2 GBUFFD4 GBUFFD8
+[03/21 14:40:19     51] Total number of unusable buffers: 9
+[03/21 14:40:19     51] List of usable inverters: CKND1 CKND0 CKND2 CKND3 CKND4 CKND6 CKND8 CKND12 CKND16 INVD1 INVD0 INVD2 INVD3 INVD4 INVD6 INVD8 INVD12 INVD16
+[03/21 14:40:19     51] Total number of usable inverters: 18
+[03/21 14:40:19     51] List of unusable inverters: CKND20 CKND24 GINVD2 GINVD1 GINVD4 GINVD3 GINVD8 INVD20 INVD24
+[03/21 14:40:19     51] Total number of unusable inverters: 9
+[03/21 14:40:19     51] List of identified usable delay cells:
+[03/21 14:40:19     51] Total number of identified usable delay cells: 0
+[03/21 14:40:19     51] List of identified unusable delay cells: DEL0 DEL005 DEL01 DEL015 DEL02 DEL1 DEL2 DEL3 DEL4
+[03/21 14:40:19     51] Total number of identified unusable delay cells: 9
+[03/21 14:40:19     51] All delay cells are dont_use. Buffers will be used to fix hold violations.
+[03/21 14:40:19     52] <CMD> do_extract_model -view WC_VIEW -format dotlib ${design}_WC.lib
+[03/21 14:40:19     52] Starting SI iteration 1 using Infinite Timing Windows
+[03/21 14:40:19     52] #################################################################################
+[03/21 14:40:19     52] # Design Stage: PostRoute
+[03/21 14:40:19     52] # Design Name: core
+[03/21 14:40:19     52] # Design Mode: 65nm
+[03/21 14:40:19     52] # Analysis Mode: MMMC OCV 
+[03/21 14:40:19     52] # Parasitics Mode: No SPEF/RCDB
+[03/21 14:40:19     52] # Signoff Settings: SI On 
+[03/21 14:40:19     52] #################################################################################
+[03/21 14:40:19     52] **WARN: (IMPEXT-3518):	The lower process node is set (using command 'setDesignMode') but the technology file for TQRC extraction not specified. Therefore, going for postRoute (effortLevel low) extraction instead of recommended extractor 'TQRC' for lower nodes. Use command 'set_analysis_view/update_rc_corner' to specify the technology file for TQRC extraction to take place.
+[03/21 14:40:19     52] Extraction called for design 'core' of instances=186653 and nets=76889 using extraction engine 'postRoute' at effort level 'low' .
+[03/21 14:40:19     52] PostRoute (effortLevel low) RC Extraction called for design core.
+[03/21 14:40:19     52] RC Extraction called in multi-corner(1) mode.
+[03/21 14:40:19     52] **WARN: (IMPEXT-3442):	The version of the capacitance table file being used is obsolete and is no longer recommended. For improved accuracy, generate the capacitance table file using the generateCapTbl command.
+[03/21 14:40:19     52] Process corner(s) are loaded.
+[03/21 14:40:19     52]  Corner: Cmax
+[03/21 14:40:19     52] extractDetailRC Option : -outfile /tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/core_15924_IvN9gc.rcdb.d  -extended
+[03/21 14:40:19     52] RC Mode: PostRoute -effortLevel low [Extended CapTable, LEF Resistances]
+[03/21 14:40:19     52]       RC Corner Indexes            0   
+[03/21 14:40:19     52] Capacitance Scaling Factor   : 1.00000 
+[03/21 14:40:19     52] Coupling Cap. Scaling Factor : 1.00000 
+[03/21 14:40:19     52] Resistance Scaling Factor    : 1.00000 
+[03/21 14:40:19     52] Clock Cap. Scaling Factor    : 1.00000 
+[03/21 14:40:19     52] Clock Res. Scaling Factor    : 1.00000 
+[03/21 14:40:19     52] Shrink Factor                : 1.00000
+[03/21 14:40:20     52] Initializing multi-corner capacitance tables ... 
+[03/21 14:40:20     52] Initializing multi-corner resistance tables ...
+[03/21 14:40:20     53] Checking LVS Completed (CPU Time= 0:00:00.2  MEM= 1119.2M)
+[03/21 14:40:20     53] Creating parasitic data file '/tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/core_15924_IvN9gc.rcdb.d' for storing RC.
+[03/21 14:40:21     54] Extracted 10.0002% (CPU Time= 0:00:01.4  MEM= 1285.0M)
+[03/21 14:40:21     54] Extracted 20.0003% (CPU Time= 0:00:01.8  MEM= 1302.0M)
+[03/21 14:40:22     55] Extracted 30.0002% (CPU Time= 0:00:02.4  MEM= 1315.0M)
+[03/21 14:40:22     55] Extracted 40.0003% (CPU Time= 0:00:03.1  MEM= 1328.1M)
+[03/21 14:40:23     56] Extracted 50.0002% (CPU Time= 0:00:03.6  MEM= 1340.1M)
+[03/21 14:40:24     57] Extracted 60.0003% (CPU Time= 0:00:04.5  MEM= 1347.1M)
+[03/21 14:40:25     58] Extracted 70.0002% (CPU Time= 0:00:05.6  MEM= 1354.1M)
+[03/21 14:40:26     59] Extracted 80.0003% (CPU Time= 0:00:07.1  MEM= 1359.1M)
+[03/21 14:40:27     60] Extracted 90.0002% (CPU Time= 0:00:08.0  MEM= 1363.2M)
+[03/21 14:40:29     62] Extracted 100% (CPU Time= 0:00:09.8  MEM= 1376.2M)
+[03/21 14:40:29     62] Number of Extracted Resistors     : 1277740
+[03/21 14:40:29     62] Number of Extracted Ground Cap.   : 1275706
+[03/21 14:40:29     62] Number of Extracted Coupling Cap. : 2170604
+[03/21 14:40:29     62] Opening parasitic data file '/tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/core_15924_IvN9gc.rcdb.d' for reading.
+[03/21 14:40:29     62] Filtering XCap in 'relativeAndCoupling' mode using values coupling_c_threshold=0.1fF, relative_c_threshold=1, and total_c_threshold=0fF.
+[03/21 14:40:29     62]  Corner: Cmax
+[03/21 14:40:29     62] Checking LVS Completed (CPU Time= 0:00:00.2  MEM= 1364.2M)
+[03/21 14:40:29     62] Creating parasitic data file '/tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/core_15924_IvN9gc.rcdb_Filter.rcdb.d' for storing RC.
+[03/21 14:40:30     63] Closing parasitic data file '/tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/core_15924_IvN9gc.rcdb.d'. 72614 times net's RC data read were performed.
+[03/21 14:40:30     63] Lumped Parasitic Loading Started (total cpu=0:00:00.0, real=0:00:00.0, current mem=1364.207M)
+[03/21 14:40:30     63] Opening parasitic data file '/tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/core_15924_IvN9gc.rcdb.d' for reading.
+[03/21 14:40:30     63] Lumped Parasitic Loading Completed (total cpu=0:00:00.1, real=0:00:00.0, current mem=1364.207M)
+[03/21 14:40:30     63] PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:11.5  Real Time: 0:00:11.0  MEM: 1364.207M)
+[03/21 14:40:32     65] Setting infinite Tws ...
+[03/21 14:40:32     65] First Iteration Infinite Tw... 
+[03/21 14:40:32     66] Topological Sorting (CPU = 0:00:00.2, MEM = 1364.2M, InitMEM = 1364.2M)
+[03/21 14:40:33     66] Initializing multi-corner capacitance tables ... 
+[03/21 14:40:33     66] Initializing multi-corner resistance tables ...
+[03/21 14:40:34     67] Opening parasitic data file '/tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/core_15924_IvN9gc.rcdb.d' for reading.
+[03/21 14:40:34     67] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 1381.8M)
+[03/21 14:40:34     67] **WARN: (IMPTS-403):	Delay calculation was forced to extrapolate table data outside of the characterized range. In some cases, extrapolation can reduce the accuracy of the delay calculation. You can enable more detailed reporting of these cases by enabling the command 'setDelayCalMode -reportOutBound true'.
+[03/21 14:40:34     67] Type 'man IMPTS-403' for more detail.
+[03/21 14:41:04     97] AAE_INFO-618: Total number of nets in the design is 76889,  94.5 percent of the nets selected for SI analysis
+[03/21 14:41:04     98] End Timing Check Calculation. (CPU Time=0:00:00.3, Real Time=0:00:00.0)
+[03/21 14:41:04     98] End delay calculation. (MEM=1479.77 CPU=0:00:29.8 REAL=0:00:29.0)
+[03/21 14:41:04     98] Save waveform /tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/.AAE_BLJpg7/.AAE_15924/waveform.data...
+[03/21 14:41:04     98] *** CDM Built up (cpu=0:00:45.9  real=0:00:45.0  mem= 1479.8M) ***
+[03/21 14:41:06    100] Loading CTE timing window...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1479.8M)
+[03/21 14:41:06    100] Add other clocks and setupCteToAAEClockMapping during iter 1
+[03/21 14:41:06    100] Loading CTE timing window is completed (CPU = 0:00:00.2, REAL = 0:00:00.0, MEM = 1479.8M)
+[03/21 14:41:06    100] Starting SI iteration 2
+[03/21 14:41:39    133] AAE_INFO-618: Total number of nets in the design is 76889,  14.5 percent of the nets selected for SI analysis
+[03/21 14:41:39    133] End delay calculation. (MEM=1447.77 CPU=0:00:32.6 REAL=0:00:32.0)
+[03/21 14:41:39    133] *** CDM Built up (cpu=0:00:32.8  real=0:00:33.0  mem= 1447.8M) ***
+[03/21 14:41:41    134] All-RC-Corners-Per-Net-In-Memory is turned ON...
+[03/21 14:42:30    184] <CMD> write_sdf -view WC_VIEW ${design}_WC.sdf
+[03/21 14:42:30    184] **WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_parallel_arcs'. This setting is recommended for generating SDF for functional  simulation applications.
+[03/21 14:42:31    184] Starting SI iteration 1 using Infinite Timing Windows
+[03/21 14:42:31    184] #################################################################################
+[03/21 14:42:31    184] # Design Stage: PostRoute
+[03/21 14:42:31    184] # Design Name: core
+[03/21 14:42:31    184] # Design Mode: 65nm
+[03/21 14:42:31    184] # Analysis Mode: MMMC OCV 
+[03/21 14:42:31    184] # Parasitics Mode: SPEF/RCDB
+[03/21 14:42:31    184] # Signoff Settings: SI On 
+[03/21 14:42:31    184] #################################################################################
+[03/21 14:42:33    186] Setting infinite Tws ...
+[03/21 14:42:33    186] First Iteration Infinite Tw... 
+[03/21 14:42:33    186] Topological Sorting (CPU = 0:00:00.2, MEM = 1471.2M, InitMEM = 1471.2M)
+[03/21 14:43:03    217] AAE_INFO-618: Total number of nets in the design is 76889,  94.5 percent of the nets selected for SI analysis
+[03/21 14:43:03    217] End Timing Check Calculation. (CPU Time=0:00:00.3, Real Time=0:00:00.0)
+[03/21 14:43:03    217] End delay calculation. (MEM=1530.4 CPU=0:00:29.5 REAL=0:00:29.0)
+[03/21 14:43:03    217] Save waveform /tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/.AAE_BLJpg7/.AAE_15924/waveform.data...
+[03/21 14:43:03    217] *** CDM Built up (cpu=0:00:32.9  real=0:00:32.0  mem= 1530.4M) ***
+[03/21 14:43:05    219] Loading CTE timing window...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1530.4M)
+[03/21 14:43:05    219] Add other clocks and setupCteToAAEClockMapping during iter 1
+[03/21 14:43:05    219] Loading CTE timing window is completed (CPU = 0:00:00.2, REAL = 0:00:00.0, MEM = 1530.4M)
+[03/21 14:43:06    219] Starting SI iteration 2
+[03/21 14:43:39    253] AAE_INFO-618: Total number of nets in the design is 76889,  14.5 percent of the nets selected for SI analysis
+[03/21 14:43:39    253] End delay calculation. (MEM=1498.39 CPU=0:00:33.3 REAL=0:00:33.0)
+[03/21 14:43:39    253] *** CDM Built up (cpu=0:00:33.5  real=0:00:33.0  mem= 1498.4M) ***
+[03/21 14:43:45    258] <CMD> setAnalysisMode -hold
+[03/21 14:43:45    258] **WARN: (IMPTCM-70):	Option "-hold" for command setAnalysisMode is obsolete and has been replaced by "-checkType hold". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-checkType hold".
+[03/21 14:43:45    258] <CMD> set_analysis_view -setup BC_VIEW -hold BC_VIEW
+[03/21 14:43:45    259] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[03/21 14:43:45    259] Reading Capacitance Table File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/cln65g+_1p08m+alrdl_top2_cbest.captable ...
+[03/21 14:43:45    259] **WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/21 14:43:45    259] **WARN: (IMPEXT-2771):	Via VIA_8 specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/21 14:43:45    259] **WARN: (IMPEXT-2801):	Resistance values are not provided in the Cap Table. Sheet resistance defined in the LEF file will be used.
+[03/21 14:43:45    259] **WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+[03/21 14:43:46    259] Importing multi-corner RC tables ... 
+[03/21 14:43:46    259] Summary of Active RC-Corners : 
+[03/21 14:43:46    259]  
+[03/21 14:43:46    259]  Analysis View: BC_VIEW
+[03/21 14:43:46    259]     RC-Corner Name        : Cmin
+[03/21 14:43:46    259]     RC-Corner Index       : 0
+[03/21 14:43:46    259]     RC-Corner Temperature : -40 Celsius
+[03/21 14:43:46    259]     RC-Corner Cap Table   : '/home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/cln65g+_1p08m+alrdl_top2_cbest.captable'
+[03/21 14:43:46    259]     RC-Corner PreRoute Res Factor         : 1
+[03/21 14:43:46    259]     RC-Corner PreRoute Cap Factor         : 1
+[03/21 14:43:46    259]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[03/21 14:43:46    259]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[03/21 14:43:46    259]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[03/21 14:43:46    259]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[03/21 14:43:46    259]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[03/21 14:43:46    259]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[03/21 14:43:46    259]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[03/21 14:43:46    259] Closing parasitic data file '/tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/core_15924_IvN9gc.rcdb.d'. 81925 times net's RC data read were performed.
+[03/21 14:43:46    259] **WARN: (IMPEXT-3503):	The corner setup has changed in the MMMC flow. New RC corners 'Cmin' have been added, therefore, no parasitic data exists for them. As a result, the parasitic data in the tool from the previous setup is deleted. Extract or restore the parasitic data for all the current corners by calling 'extractRC/spefIn'.
+[03/21 14:43:46    259] *Info: initialize multi-corner CTS.
+[03/21 14:43:46    260] Reading timing constraints file '/home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc' ...
+[03/21 14:43:46    260] Current (total cpu=0:04:20, real=0:05:57, peak res=1010.1M, current mem=1256.0M)
+[03/21 14:43:46    260] **WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc, Line 9).
+[03/21 14:43:46    260] 
+[03/21 14:43:46    260] INFO (CTE): Reading of timing constraints file /home/linux/ieng6/oce/0m/maquilina/Desktop/ece260b/project/Part4/pnr_core/route.enc.dat/libs/mmmc/core.sdc completed, with 1 WARNING
+[03/21 14:43:46    260] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=778.0M, current mem=1266.2M)
+[03/21 14:43:46    260] Current (total cpu=0:04:20, real=0:05:57, peak res=1010.1M, current mem=1266.2M)
+[03/21 14:43:46    260] Summary for sequential cells idenfication: 
+[03/21 14:43:46    260] Identified SBFF number: 199
+[03/21 14:43:46    260] Identified MBFF number: 0
+[03/21 14:43:46    260] Not identified SBFF number: 0
+[03/21 14:43:46    260] Not identified MBFF number: 0
+[03/21 14:43:46    260] Number of sequential cells which are not FFs: 104
+[03/21 14:43:46    260] 
+[03/21 14:43:46    260] Total number of combinational cells: 492
+[03/21 14:43:46    260] Total number of sequential cells: 303
+[03/21 14:43:46    260] Total number of tristate cells: 11
+[03/21 14:43:46    260] Total number of level shifter cells: 0
+[03/21 14:43:46    260] Total number of power gating cells: 0
+[03/21 14:43:46    260] Total number of isolation cells: 0
+[03/21 14:43:46    260] Total number of power switch cells: 0
+[03/21 14:43:46    260] Total number of pulse generator cells: 0
+[03/21 14:43:46    260] Total number of always on buffers: 0
+[03/21 14:43:46    260] Total number of retention cells: 0
+[03/21 14:43:46    260] List of usable buffers: BUFFD1 BUFFD0 BUFFD2 BUFFD3 BUFFD4 BUFFD6 BUFFD8 BUFFD12 BUFFD16 CKBD1 CKBD0 CKBD2 CKBD3 CKBD4 CKBD6 CKBD8 CKBD12 CKBD16
+[03/21 14:43:46    260] Total number of usable buffers: 18
+[03/21 14:43:46    260] List of unusable buffers: BUFFD20 BUFFD24 CKBD20 CKBD24 GBUFFD1 GBUFFD3 GBUFFD2 GBUFFD4 GBUFFD8
+[03/21 14:43:46    260] Total number of unusable buffers: 9
+[03/21 14:43:46    260] List of usable inverters: CKND1 CKND0 CKND2 CKND3 CKND4 CKND6 CKND8 CKND12 CKND16 INVD1 INVD0 INVD2 INVD3 INVD4 INVD6 INVD8 INVD12 INVD16
+[03/21 14:43:46    260] Total number of usable inverters: 18
+[03/21 14:43:46    260] List of unusable inverters: CKND20 CKND24 GINVD2 GINVD1 GINVD4 GINVD3 GINVD8 INVD20 INVD24
+[03/21 14:43:46    260] Total number of unusable inverters: 9
+[03/21 14:43:46    260] List of identified usable delay cells:
+[03/21 14:43:46    260] Total number of identified usable delay cells: 0
+[03/21 14:43:46    260] List of identified unusable delay cells: DEL0 DEL005 DEL01 DEL015 DEL02 DEL1 DEL2 DEL3 DEL4
+[03/21 14:43:46    260] Total number of identified unusable delay cells: 9
+[03/21 14:43:46    260] All delay cells are dont_use. Buffers will be used to fix hold violations.
+[03/21 14:43:47    260] <CMD> do_extract_model -view BC_VIEW -format dotlib ${design}_BC.lib
+[03/21 14:43:47    260] Starting SI iteration 1 using Infinite Timing Windows
+[03/21 14:43:47    260] #################################################################################
+[03/21 14:43:47    260] # Design Stage: PostRoute
+[03/21 14:43:47    260] # Design Name: core
+[03/21 14:43:47    260] # Design Mode: 65nm
+[03/21 14:43:47    260] # Analysis Mode: MMMC OCV 
+[03/21 14:43:47    260] # Parasitics Mode: No SPEF/RCDB
+[03/21 14:43:47    260] # Signoff Settings: SI On 
+[03/21 14:43:47    260] #################################################################################
+[03/21 14:43:47    260] **WARN: (IMPEXT-3518):	The lower process node is set (using command 'setDesignMode') but the technology file for TQRC extraction not specified. Therefore, going for postRoute (effortLevel low) extraction instead of recommended extractor 'TQRC' for lower nodes. Use command 'set_analysis_view/update_rc_corner' to specify the technology file for TQRC extraction to take place.
+[03/21 14:43:47    260] Extraction called for design 'core' of instances=186653 and nets=76889 using extraction engine 'postRoute' at effort level 'low' .
+[03/21 14:43:47    260] PostRoute (effortLevel low) RC Extraction called for design core.
+[03/21 14:43:47    260] RC Extraction called in multi-corner(1) mode.
+[03/21 14:43:47    260] **WARN: (IMPEXT-3442):	The version of the capacitance table file being used is obsolete and is no longer recommended. For improved accuracy, generate the capacitance table file using the generateCapTbl command.
+[03/21 14:43:47    260] Process corner(s) are loaded.
+[03/21 14:43:47    260]  Corner: Cmin
+[03/21 14:43:47    260] extractDetailRC Option : -outfile /tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/core_15924_IvN9gc.rcdb.d -maxResLength 200  -extended
+[03/21 14:43:47    260] RC Mode: PostRoute -effortLevel low [Extended CapTable, LEF Resistances]
+[03/21 14:43:47    260]       RC Corner Indexes            0   
+[03/21 14:43:47    260] Capacitance Scaling Factor   : 1.00000 
+[03/21 14:43:47    260] Coupling Cap. Scaling Factor : 1.00000 
+[03/21 14:43:47    260] Resistance Scaling Factor    : 1.00000 
+[03/21 14:43:47    260] Clock Cap. Scaling Factor    : 1.00000 
+[03/21 14:43:47    260] Clock Res. Scaling Factor    : 1.00000 
+[03/21 14:43:47    260] Shrink Factor                : 1.00000
+[03/21 14:43:47    261] Initializing multi-corner capacitance tables ... 
+[03/21 14:43:47    261] Initializing multi-corner resistance tables ...
+[03/21 14:43:48    261] Checking LVS Completed (CPU Time= 0:00:00.2  MEM= 1294.8M)
+[03/21 14:43:48    261] Creating parasitic data file '/tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/core_15924_IvN9gc.rcdb.d' for storing RC.
+[03/21 14:43:48    262] Extracted 10.0002% (CPU Time= 0:00:01.4  MEM= 1413.5M)
+[03/21 14:43:49    262] Extracted 20.0003% (CPU Time= 0:00:01.8  MEM= 1428.5M)
+[03/21 14:43:49    263] Extracted 30.0002% (CPU Time= 0:00:02.4  MEM= 1441.5M)
+[03/21 14:43:50    264] Extracted 40.0003% (CPU Time= 0:00:03.2  MEM= 1453.5M)
+[03/21 14:43:51    264] Extracted 50.0002% (CPU Time= 0:00:03.9  MEM= 1465.5M)
+[03/21 14:43:52    265] Extracted 60.0003% (CPU Time= 0:00:04.7  MEM= 1472.5M)
+[03/21 14:43:53    266] Extracted 70.0002% (CPU Time= 0:00:05.9  MEM= 1479.5M)
+[03/21 14:43:54    268] Extracted 80.0003% (CPU Time= 0:00:07.5  MEM= 1484.5M)
+[03/21 14:43:55    269] Extracted 90.0002% (CPU Time= 0:00:08.3  MEM= 1488.5M)
+[03/21 14:43:57    271] Extracted 100% (CPU Time= 0:00:10.2  MEM= 1501.5M)
+[03/21 14:43:57    271] Number of Extracted Resistors     : 1277740
+[03/21 14:43:57    271] Number of Extracted Ground Cap.   : 1275706
+[03/21 14:43:57    271] Number of Extracted Coupling Cap. : 2170544
+[03/21 14:43:57    271] Opening parasitic data file '/tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/core_15924_IvN9gc.rcdb.d' for reading.
+[03/21 14:43:57    271] Filtering XCap in 'relativeAndCoupling' mode using values coupling_c_threshold=0.1fF, relative_c_threshold=1, and total_c_threshold=0fF.
+[03/21 14:43:57    271]  Corner: Cmin
+[03/21 14:43:57    271] Checking LVS Completed (CPU Time= 0:00:00.2  MEM= 1490.5M)
+[03/21 14:43:57    271] Creating parasitic data file '/tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/core_15924_IvN9gc.rcdb_Filter.rcdb.d' for storing RC.
+[03/21 14:43:58    272] Closing parasitic data file '/tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/core_15924_IvN9gc.rcdb.d'. 72614 times net's RC data read were performed.
+[03/21 14:43:58    272] Lumped Parasitic Loading Started (total cpu=0:00:00.0, real=0:00:00.0, current mem=1490.488M)
+[03/21 14:43:58    272] Opening parasitic data file '/tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/core_15924_IvN9gc.rcdb.d' for reading.
+[03/21 14:43:58    272] Lumped Parasitic Loading Completed (total cpu=0:00:00.1, real=0:00:00.0, current mem=1490.488M)
+[03/21 14:43:58    272] PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:11.9  Real Time: 0:00:11.0  MEM: 1490.488M)
+[03/21 14:44:00    274] Setting infinite Tws ...
+[03/21 14:44:00    274] First Iteration Infinite Tw... 
+[03/21 14:44:00    274] Topological Sorting (CPU = 0:00:00.2, MEM = 1490.5M, InitMEM = 1490.5M)
+[03/21 14:44:00    274] *** Calculating scaling factor for BC_LIB libraries using the default operating condition of each library.
+[03/21 14:44:01    274] Initializing multi-corner capacitance tables ... 
+[03/21 14:44:01    274] Initializing multi-corner resistance tables ...
+[03/21 14:44:02    275] Opening parasitic data file '/tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/core_15924_IvN9gc.rcdb.d' for reading.
+[03/21 14:44:02    275] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 1498.6M)
+[03/21 14:44:28    302] AAE_INFO-618: Total number of nets in the design is 76889,  94.5 percent of the nets selected for SI analysis
+[03/21 14:44:28    302] End Timing Check Calculation. (CPU Time=0:00:00.3, Real Time=0:00:00.0)
+[03/21 14:44:28    302] End delay calculation. (MEM=1529.69 CPU=0:00:25.6 REAL=0:00:25.0)
+[03/21 14:44:28    302] Save waveform /tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/.AAE_y2Pbux/.AAE_15924/waveform.data...
+[03/21 14:44:28    302] *** CDM Built up (cpu=0:00:41.8  real=0:00:41.0  mem= 1529.7M) ***
+[03/21 14:44:30    304] Loading CTE timing window...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1529.7M)
+[03/21 14:44:30    304] Add other clocks and setupCteToAAEClockMapping during iter 1
+[03/21 14:44:30    304] Loading CTE timing window is completed (CPU = 0:00:00.2, REAL = 0:00:00.0, MEM = 1529.7M)
+[03/21 14:44:30    304] Starting SI iteration 2
+[03/21 14:44:44    318] AAE_INFO-618: Total number of nets in the design is 76889,  6.2 percent of the nets selected for SI analysis
+[03/21 14:44:44    318] End delay calculation. (MEM=1497.68 CPU=0:00:13.7 REAL=0:00:14.0)
+[03/21 14:44:44    318] *** CDM Built up (cpu=0:00:13.9  real=0:00:14.0  mem= 1497.7M) ***
+[03/21 14:44:45    319] All-RC-Corners-Per-Net-In-Memory is turned ON...
+[03/21 14:45:32    366] <CMD> write_sdf -view BC_VIEW ${design}_BC.sdf
+[03/21 14:45:32    366] **WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_parallel_arcs'. This setting is recommended for generating SDF for functional  simulation applications.
+[03/21 14:45:32    366] Starting SI iteration 1 using Infinite Timing Windows
+[03/21 14:45:32    366] #################################################################################
+[03/21 14:45:32    366] # Design Stage: PostRoute
+[03/21 14:45:32    366] # Design Name: core
+[03/21 14:45:32    366] # Design Mode: 65nm
+[03/21 14:45:32    366] # Analysis Mode: MMMC OCV 
+[03/21 14:45:32    366] # Parasitics Mode: SPEF/RCDB
+[03/21 14:45:32    366] # Signoff Settings: SI On 
+[03/21 14:45:32    366] #################################################################################
+[03/21 14:45:34    368] Setting infinite Tws ...
+[03/21 14:45:34    368] First Iteration Infinite Tw... 
+[03/21 14:45:34    368] Topological Sorting (CPU = 0:00:00.2, MEM = 1489.6M, InitMEM = 1489.6M)
+[03/21 14:46:00    394] AAE_INFO-618: Total number of nets in the design is 76889,  94.5 percent of the nets selected for SI analysis
+[03/21 14:46:00    394] End Timing Check Calculation. (CPU Time=0:00:00.4, Real Time=0:00:00.0)
+[03/21 14:46:00    394] End delay calculation. (MEM=1548.77 CPU=0:00:25.2 REAL=0:00:25.0)
+[03/21 14:46:00    394] Save waveform /tmp/innovus_temp_15924_ieng6-ece-10.ucsd.edu_maquilina_ikwvln/.AAE_y2Pbux/.AAE_15924/waveform.data...
+[03/21 14:46:00    394] *** CDM Built up (cpu=0:00:28.5  real=0:00:28.0  mem= 1548.8M) ***
+[03/21 14:46:02    396] Loading CTE timing window...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1548.8M)
+[03/21 14:46:02    396] Add other clocks and setupCteToAAEClockMapping during iter 1
+[03/21 14:46:03    397] Loading CTE timing window is completed (CPU = 0:00:00.2, REAL = 0:00:01.0, MEM = 1548.8M)
+[03/21 14:46:03    397] Starting SI iteration 2
+[03/21 14:46:17    411] AAE_INFO-618: Total number of nets in the design is 76889,  6.2 percent of the nets selected for SI analysis
+[03/21 14:46:17    411] End delay calculation. (MEM=1516.76 CPU=0:00:14.0 REAL=0:00:14.0)
+[03/21 14:46:17    411] *** CDM Built up (cpu=0:00:14.3  real=0:00:14.0  mem= 1516.8M) ***
+[03/21 14:47:54    434] 
+[03/21 14:47:54    434] *** Memory Usage v#1 (Current mem = 1508.691M, initial mem = 149.258M) ***
+[03/21 14:47:54    434] 
+[03/21 14:47:54    434] *** Summary of all messages that are not suppressed in this session:
+[03/21 14:47:54    434] Severity  ID               Count  Summary                                  
+[03/21 14:47:54    434] WARNING   IMPLF-200          136  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[03/21 14:47:54    434] WARNING   IMPLF-201          128  Pin '%s' in macro '%s' has no ANTENNADIF...
+[03/21 14:47:54    434] WARNING   IMPFP-3961           2  The techSite '%s' has no related cells i...
+[03/21 14:47:54    434] WARNING   IMPTS-403            1  Delay calculation was forced to extrapol...
+[03/21 14:47:54    434] WARNING   IMPOGDS-399          3   Only %d layer(s) (%s) of a %s object is...
+[03/21 14:47:54    434] WARNING   IMPEXT-2710          4  Basic Cap table for layer M%d is ignored...
+[03/21 14:47:54    434] WARNING   IMPEXT-2760          4  Layer M%d specified in the cap table is ...
+[03/21 14:47:54    434] WARNING   IMPEXT-2771          4  Via %s specified in the cap table is ign...
+[03/21 14:47:54    434] WARNING   IMPEXT-2801          4  Resistance values are not provided in th...
+[03/21 14:47:54    434] WARNING   IMPEXT-3442          2  The version of the capacitance table fil...
+[03/21 14:47:54    434] WARNING   IMPEXT-3503          1  The corner setup has changed in the MMMC...
+[03/21 14:47:54    434] WARNING   IMPEXT-3518          2  The lower process node is set (using com...
+[03/21 14:47:54    434] WARNING   IMPVL-159         1624  Pin '%s' of cell '%s' is defined in LEF ...
+[03/21 14:47:54    434] WARNING   IMPOPT-3058        598  Cell %s/%s already has a dont_use attrib...
+[03/21 14:47:54    434] ERROR     IMPOAX-142           3  %s                                       
+[03/21 14:47:54    434] ERROR     IMPOAX-820           1  The OA features are disabled in the curr...
+[03/21 14:47:54    434] ERROR     IMPOAX-850           1  %s command cannot be run as OA features ...
+[03/21 14:47:54    434] WARNING   IMPTCM-70            2  Option "%s" for command %s is obsolete a...
+[03/21 14:47:54    434] WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+[03/21 14:47:54    434] *** Message Summary: 2516 warning(s), 5 error(s)
+[03/21 14:47:54    434] 
+[03/21 14:47:54    434] --- Ending "Innovus" (totcpu=0:07:15, real=0:10:05, mem=1508.7M) ---
