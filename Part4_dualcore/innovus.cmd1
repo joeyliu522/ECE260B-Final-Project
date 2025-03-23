@@ -1,0 +1,317 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sat Mar 22 16:32:36 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v15.23-s045_1 (64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute 15.23-s045_1 NR160414-1105/15_23-UB (database version 2.30, 317.6.1) {superthreading v1.26}
+#@(#)CDS: AAE 15.23-s014 (64bit) 04/22/2016 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 15.23-s022_1 () Apr 22 2016 09:38:45 ( )
+#@(#)CDS: SYNTECH 15.23-s008_1 () Apr 12 2016 21:52:59 ( )
+#@(#)CDS: CPE v15.23-s045
+#@(#)CDS: IQRC/TQRC 15.1.4-s213 (64bit) Tue Feb  9 17:31:28 PST 2016 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getDrawView
+loadWorkspace -name Physical
+win
+set init_pwr_net VDD
+set init_gnd_net VSS
+set init_verilog ./netlist/fullchip.out.v
+set init_design_netlisttype Verilog
+set init_design_settop 1
+set init_top_cell fullchip
+set init_lef_file {/home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef ./subckt/core.lef}
+create_library_set -name WC_LIB -timing "$worst_timing_lib ./subckt/core_WC.lib"
+create_library_set -name BC_LIB -timing "$best_timing_lib ./subckt/core_BC.lib"
+create_rc_corner -name Cmax -cap_table $worst_captbl -T 125
+create_rc_corner -name Cmin -cap_table $best_captbl -T -40
+create_delay_corner -name WC -library_set WC_LIB -rc_corner Cmax
+create_delay_corner -name BC -library_set BC_LIB -rc_corner Cmin
+create_constraint_mode -name CON -sdc_file [list $sdc]
+create_analysis_view -name WC_VIEW -delay_corner WC -constraint_mode CON
+create_analysis_view -name BC_VIEW -delay_corner BC -constraint_mode CON
+init_design -setup WC_VIEW -hold BC_VIEW
+set_interactive_constraint_modes {CON}
+setDesignMode -process 65
+floorPlan -site core -s 1820 4240 10.0 10.0 10.0 10.0
+timeDesign -preplace -prefix preplace
+globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+addRing -spacing {top 1 bottom 1 left 1 right 1} -width {top 2 bottom 2 left 2 right 2} -layer {top M1 bottom M1 left M2 right M2} -center 1 -type core_rings -nets {VSS  VDD}
+setAddStripeMode -break_at block_ring
+addStripe -direction vertical -number_of_sets 104 -spacing 6 -layer M8 -width 2 -nets { VSS VDD }
+setObjFPlanBox Instance core_instance1 300 200 1520 1920
+setObjFPlanBox Instance core_instance2 300 2320 1520 4040
+addHaloToBlock {6 6 6 6} core_instance1
+addHaloToBlock {6 6 6 6} core_instance2
+addRing -type block_rings -nets {VSS VDD} -around each_block -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -width {top 1 bottom 1 left 1 right 1} -layer {top M1 bottom M1 left M2 right M2}
+globalNetConnect VDD -type pgpin -pin VDD -sinst core_instance1 -verbose -override
+globalNetConnect VSS -type pgpin -pin VSS -sinst core_instance1 -verbose -override
+globalNetConnect VDD -type pgpin -pin VDD -sinst core_instance2 -verbose -override
+globalNetConnect VSS -type pgpin -pin VSS -sinst core_instance2 -verbose -override
+sroute
+fit
+setDrawView fplan
+setDrawView ameba
+setDrawView place
+gui_select -rect {79.142 4313.380 233.062 4125.256}
+fit
+zoomSelected
+deselectAll
+fit
+getPinAssignMode -pinEditInBatch -quiet
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 7 -spreadType center -spacing 4 -pin {{inst1[0]} {inst1[1]} {inst1[2]} {inst1[3]} {inst1[4]} {inst1[5]} {inst1[6]} {inst1[7]} {inst1[8]} {inst1[9]} {inst1[10]} {inst1[11]} {inst1[12]} {inst1[13]} {inst1[14]} {inst1[15]} {inst1[16]} {inst1[17]} {inst1[18]} {inst2[0]} {inst2[1]} {inst2[2]} {inst2[3]} {inst2[4]} {inst2[5]} {inst2[6]} {inst2[7]} {inst2[8]} {inst2[9]} {inst2[10]} {inst2[11]} {inst2[12]} {inst2[13]} {inst2[14]} {inst2[15]} {inst2[16]} {inst2[17]} {inst2[18]} clk reset {mem_in1[0]} {mem_in1[1]} {mem_in1[2]} {mem_in1[3]} {mem_in1[4]} {mem_in1[5]} {mem_in1[6]} {mem_in1[7]} {mem_in1[8]} {mem_in1[9]} {mem_in1[10]} {mem_in1[11]} {mem_in1[12]} {mem_in1[13]} {mem_in1[14]} {mem_in1[15]} {mem_in1[16]} {mem_in1[17]} {mem_in1[18]} {mem_in1[19]} {mem_in1[20]} {mem_in1[21]} {mem_in1[22]} {mem_in1[23]} {mem_in1[24]} {mem_in1[25]} {mem_in1[26]} {mem_in1[27]} {mem_in1[28]} {mem_in1[29]} {mem_in1[30]} {mem_in1[31]} {mem_in1[32]} {mem_in1[33]} {mem_in1[34]} {mem_in1[35]} {mem_in1[36]} {mem_in1[37]} {mem_in1[38]} {mem_in1[39]} {mem_in1[40]} {mem_in1[41]} {mem_in1[42]} {mem_in1[43]} {mem_in1[44]} {mem_in1[45]} {mem_in1[46]} {mem_in1[47]} {mem_in1[48]} {mem_in1[49]} {mem_in1[50]} {mem_in1[51]} {mem_in1[52]} {mem_in1[53]} {mem_in1[54]} {mem_in1[55]} {mem_in1[56]} {mem_in1[57]} {mem_in1[58]} {mem_in1[59]} {mem_in1[60]} {mem_in1[61]} {mem_in1[62]} {mem_in1[63]} {mem_in1[64]} {mem_in1[65]} {mem_in1[66]} {mem_in1[67]} {mem_in1[68]} {mem_in1[69]} {mem_in1[70]} {mem_in1[71]} {mem_in1[72]} {mem_in1[73]} {mem_in1[74]} {mem_in1[75]} {mem_in1[76]} {mem_in1[77]} {mem_in1[78]} {mem_in1[79]} {mem_in1[80]} {mem_in1[81]} {mem_in1[82]} {mem_in1[83]} {mem_in1[84]} {mem_in1[85]} {mem_in1[86]} {mem_in1[87]} {mem_in1[88]} {mem_in1[89]} {mem_in1[90]} {mem_in1[91]} {mem_in1[92]} {mem_in1[93]} {mem_in1[94]} {mem_in1[95]} {mem_in1[96]} {mem_in1[97]} {mem_in1[98]} {mem_in1[99]} {mem_in1[100]} {mem_in1[101]} {mem_in1[102]} {mem_in1[103]} {mem_in1[104]} {mem_in1[105]} {mem_in1[106]} {mem_in1[107]} {mem_in1[108]} {mem_in1[109]} {mem_in1[110]} {mem_in1[111]} {mem_in1[112]} {mem_in1[113]} {mem_in1[114]} {mem_in1[115]} {mem_in1[116]} {mem_in1[117]} {mem_in1[118]} {mem_in1[119]} {mem_in1[120]} {mem_in1[121]} {mem_in1[122]} {mem_in1[123]} {mem_in1[124]} {mem_in1[125]} {mem_in1[126]} {mem_in1[127]} {mem_in2[0]} {mem_in2[1]} {mem_in2[2]} {mem_in2[3]} {mem_in2[4]} {mem_in2[5]} {mem_in2[6]} {mem_in2[7]} {mem_in2[8]} {mem_in2[9]} {mem_in2[10]} {mem_in2[11]} {mem_in2[12]} {mem_in2[13]} {mem_in2[14]} {mem_in2[15]} {mem_in2[16]} {mem_in2[17]} {mem_in2[18]} {mem_in2[19]} {mem_in2[20]} {mem_in2[21]} {mem_in2[22]} {mem_in2[23]} {mem_in2[24]} {mem_in2[25]} {mem_in2[26]} {mem_in2[27]} {mem_in2[28]} {mem_in2[29]} {mem_in2[30]} {mem_in2[31]} {mem_in2[32]} {mem_in2[33]} {mem_in2[34]} {mem_in2[35]} {mem_in2[36]} {mem_in2[37]} {mem_in2[38]} {mem_in2[39]} {mem_in2[40]} {mem_in2[41]} {mem_in2[42]} {mem_in2[43]} {mem_in2[44]} {mem_in2[45]} {mem_in2[46]} {mem_in2[47]} {mem_in2[48]} {mem_in2[49]} {mem_in2[50]} {mem_in2[51]} {mem_in2[52]} {mem_in2[53]} {mem_in2[54]} {mem_in2[55]} {mem_in2[56]} {mem_in2[57]} {mem_in2[58]} {mem_in2[59]} {mem_in2[60]} {mem_in2[61]} {mem_in2[62]} {mem_in2[63]} {mem_in2[64]} {mem_in2[65]} {mem_in2[66]} {mem_in2[67]} {mem_in2[68]} {mem_in2[69]} {mem_in2[70]} {mem_in2[71]} {mem_in2[72]} {mem_in2[73]} {mem_in2[74]} {mem_in2[75]} {mem_in2[76]} {mem_in2[77]} {mem_in2[78]} {mem_in2[79]} {mem_in2[80]} {mem_in2[81]} {mem_in2[82]} {mem_in2[83]} {mem_in2[84]} {mem_in2[85]} {mem_in2[86]} {mem_in2[87]} {mem_in2[88]} {mem_in2[89]} {mem_in2[90]} {mem_in2[91]} {mem_in2[92]} {mem_in2[93]} {mem_in2[94]} {mem_in2[95]} {mem_in2[96]} {mem_in2[97]} {mem_in2[98]} {mem_in2[99]} {mem_in2[100]} {mem_in2[101]} {mem_in2[102]} {mem_in2[103]} {mem_in2[104]} {mem_in2[105]} {mem_in2[106]} {mem_in2[107]} {mem_in2[108]} {mem_in2[109]} {mem_in2[110]} {mem_in2[111]} {mem_in2[112]} {mem_in2[113]} {mem_in2[114]} {mem_in2[115]} {mem_in2[116]} {mem_in2[117]} {mem_in2[118]} {mem_in2[119]} {mem_in2[120]} {mem_in2[121]} {mem_in2[122]} {mem_in2[123]} {mem_in2[124]} {mem_in2[125]} {mem_in2[126]} {mem_in2[127]}}
+gui_select -rect {-165.989 2785.584 107.645 2631.664}
+deselectAll
+gui_select -rect {-114.683 2620.263 79.142 2483.446}
+deselectAll
+gui_select -rect {-137.486 1599.832 62.040 1508.620}
+deselectAll
+gui_select -rect {-154.588 1822.160 39.237 1662.540}
+deselectAll
+gui_select -rect {-131.785 2033.088 62.040 1919.073}
+deselectAll
+gui_select -rect {-114.683 2232.613 44.938 2135.700}
+gui_select -rect {-131.785 2420.737 44.938 2323.825}
+gui_select -rect {-131.785 2597.460 62.040 2477.745}
+gui_select -rect {-120.383 2739.978 44.938 2614.562}
+deselectAll
+gui_select -rect {-120.383 2774.182 22.135 2700.073}
+deselectAll
+gui_select -rect {-103.282 2460.642 44.938 2335.227}
+deselectAll
+gui_select -rect {-137.486 2323.825 10.733 2249.716}
+deselectAll
+gui_select -rect {-97.581 2221.211 39.237 2164.204}
+deselectAll
+gui_select -rect {-120.383 2135.700 22.135 2067.292}
+zoomSelected
+deselectAll
+gui_select -rect {-7.322 2138.613 4.240 2132.591}
+zoomSelected
+zoomOut
+fit
+deselectAll
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -side Bottom -layer 6 -spreadType center -spacing 4.0 -pin {{mem_in1[0]} {mem_in1[1]} {mem_in1[2]} {mem_in1[3]} {mem_in1[4]} {mem_in1[5]} {mem_in1[6]} {mem_in1[7]} {mem_in1[8]} {mem_in1[9]} {mem_in1[10]} {mem_in1[11]} {mem_in1[12]} {mem_in1[13]} {mem_in1[14]} {mem_in1[15]} {mem_in1[16]} {mem_in1[17]} {mem_in1[18]} {mem_in1[19]} {mem_in1[20]} {mem_in1[21]} {mem_in1[22]} {mem_in1[23]} {mem_in1[24]} {mem_in1[25]} {mem_in1[26]} {mem_in1[27]} {mem_in1[28]} {mem_in1[29]} {mem_in1[30]} {mem_in1[31]} {mem_in1[32]} {mem_in1[33]} {mem_in1[34]} {mem_in1[35]} {mem_in1[36]} {mem_in1[37]} {mem_in1[38]} {mem_in1[39]} {mem_in1[40]} {mem_in1[41]} {mem_in1[42]} {mem_in1[43]} {mem_in1[44]} {mem_in1[45]} {mem_in1[46]} {mem_in1[47]} {mem_in1[48]} {mem_in1[49]} {mem_in1[50]} {mem_in1[51]} {mem_in1[52]} {mem_in1[53]} {mem_in1[54]} {mem_in1[55]} {mem_in1[56]} {mem_in1[57]} {mem_in1[58]} {mem_in1[59]} {mem_in1[60]} {mem_in1[61]} {mem_in1[62]} {mem_in1[63]} {mem_in1[64]} {mem_in1[65]} {mem_in1[66]} {mem_in1[67]} {mem_in1[68]} {mem_in1[69]} {mem_in1[70]} {mem_in1[71]} {mem_in1[72]} {mem_in1[73]} {mem_in1[74]} {mem_in1[75]} {mem_in1[76]} {mem_in1[77]} {mem_in1[78]} {mem_in1[79]} {mem_in1[80]} {mem_in1[81]} {mem_in1[82]} {mem_in1[83]} {mem_in1[84]} {mem_in1[85]} {mem_in1[86]} {mem_in1[87]} {mem_in1[88]} {mem_in1[89]} {mem_in1[90]} {mem_in1[91]} {mem_in1[92]} {mem_in1[93]} {mem_in1[94]} {mem_in1[95]} {mem_in1[96]} {mem_in1[97]} {mem_in1[98]} {mem_in1[99]} {mem_in1[100]} {mem_in1[101]} {mem_in1[102]} {mem_in1[103]} {mem_in1[104]} {mem_in1[105]} {mem_in1[106]} {mem_in1[107]} {mem_in1[108]} {mem_in1[109]} {mem_in1[110]} {mem_in1[111]} {mem_in1[112]} {mem_in1[113]} {mem_in1[114]} {mem_in1[115]} {mem_in1[116]} {mem_in1[117]} {mem_in1[118]} {mem_in1[119]} {mem_in1[120]} {mem_in1[121]} {mem_in1[122]} {mem_in1[123]} {mem_in1[124]} {mem_in1[125]} {mem_in1[126]} {mem_in1[127]}}
+gui_select -rect {1116.675 89.139 1287.697 -98.986}
+deselectAll
+gui_select -rect {615.010 37.832 734.726 -98.986}
+deselectAll
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 6 -spreadType center -spacing 4.4 -pin {{mem_in1[0]} {mem_in1[1]} {mem_in1[2]} {mem_in1[3]} {mem_in1[4]} {mem_in1[5]} {mem_in1[6]} {mem_in1[7]} {mem_in1[8]} {mem_in1[9]} {mem_in1[10]} {mem_in1[11]} {mem_in1[12]} {mem_in1[13]} {mem_in1[14]} {mem_in1[15]} {mem_in1[16]} {mem_in1[17]} {mem_in1[18]} {mem_in1[19]} {mem_in1[20]} {mem_in1[21]} {mem_in1[22]} {mem_in1[23]} {mem_in1[24]} {mem_in1[25]} {mem_in1[26]} {mem_in1[27]} {mem_in1[28]} {mem_in1[29]} {mem_in1[30]} {mem_in1[31]} {mem_in1[32]} {mem_in1[33]} {mem_in1[34]} {mem_in1[35]} {mem_in1[36]} {mem_in1[37]} {mem_in1[38]} {mem_in1[39]} {mem_in1[40]} {mem_in1[41]} {mem_in1[42]} {mem_in1[43]} {mem_in1[44]} {mem_in1[45]} {mem_in1[46]} {mem_in1[47]} {mem_in1[48]} {mem_in1[49]} {mem_in1[50]} {mem_in1[51]} {mem_in1[52]} {mem_in1[53]} {mem_in1[54]} {mem_in1[55]} {mem_in1[56]} {mem_in1[57]} {mem_in1[58]} {mem_in1[59]} {mem_in1[60]} {mem_in1[61]} {mem_in1[62]} {mem_in1[63]} {mem_in1[64]} {mem_in1[65]} {mem_in1[66]} {mem_in1[67]} {mem_in1[68]} {mem_in1[69]} {mem_in1[70]} {mem_in1[71]} {mem_in1[72]} {mem_in1[73]} {mem_in1[74]} {mem_in1[75]} {mem_in1[76]} {mem_in1[77]} {mem_in1[78]} {mem_in1[79]} {mem_in1[80]} {mem_in1[81]} {mem_in1[82]} {mem_in1[83]} {mem_in1[84]} {mem_in1[85]} {mem_in1[86]} {mem_in1[87]} {mem_in1[88]} {mem_in1[89]} {mem_in1[90]} {mem_in1[91]} {mem_in1[92]} {mem_in1[93]} {mem_in1[94]} {mem_in1[95]} {mem_in1[96]} {mem_in1[97]} {mem_in1[98]} {mem_in1[99]} {mem_in1[100]} {mem_in1[101]} {mem_in1[102]} {mem_in1[103]} {mem_in1[104]} {mem_in1[105]} {mem_in1[106]} {mem_in1[107]} {mem_in1[108]} {mem_in1[109]} {mem_in1[110]} {mem_in1[111]} {mem_in1[112]} {mem_in1[113]} {mem_in1[114]} {mem_in1[115]} {mem_in1[116]} {mem_in1[117]} {mem_in1[118]} {mem_in1[119]} {mem_in1[120]} {mem_in1[121]} {mem_in1[122]} {mem_in1[123]} {mem_in1[124]} {mem_in1[125]} {mem_in1[126]} {mem_in1[127]}}
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 6 -spreadType center -spacing 4 -pin {{mem_in1[0]} {mem_in1[1]} {mem_in1[2]} {mem_in1[3]} {mem_in1[4]} {mem_in1[5]} {mem_in1[6]} {mem_in1[7]} {mem_in1[8]} {mem_in1[9]} {mem_in1[10]} {mem_in1[11]} {mem_in1[12]} {mem_in1[13]} {mem_in1[14]} {mem_in1[15]} {mem_in1[16]} {mem_in1[17]} {mem_in1[18]} {mem_in1[19]} {mem_in1[20]} {mem_in1[21]} {mem_in1[22]} {mem_in1[23]} {mem_in1[24]} {mem_in1[25]} {mem_in1[26]} {mem_in1[27]} {mem_in1[28]} {mem_in1[29]} {mem_in1[30]} {mem_in1[31]} {mem_in1[32]} {mem_in1[33]} {mem_in1[34]} {mem_in1[35]} {mem_in1[36]} {mem_in1[37]} {mem_in1[38]} {mem_in1[39]} {mem_in1[40]} {mem_in1[41]} {mem_in1[42]} {mem_in1[43]} {mem_in1[44]} {mem_in1[45]} {mem_in1[46]} {mem_in1[47]} {mem_in1[48]} {mem_in1[49]} {mem_in1[50]} {mem_in1[51]} {mem_in1[52]} {mem_in1[53]} {mem_in1[54]} {mem_in1[55]} {mem_in1[56]} {mem_in1[57]} {mem_in1[58]} {mem_in1[59]} {mem_in1[60]} {mem_in1[61]} {mem_in1[62]} {mem_in1[63]} {mem_in1[64]} {mem_in1[65]} {mem_in1[66]} {mem_in1[67]} {mem_in1[68]} {mem_in1[69]} {mem_in1[70]} {mem_in1[71]} {mem_in1[72]} {mem_in1[73]} {mem_in1[74]} {mem_in1[75]} {mem_in1[76]} {mem_in1[77]} {mem_in1[78]} {mem_in1[79]} {mem_in1[80]} {mem_in1[81]} {mem_in1[82]} {mem_in1[83]} {mem_in1[84]} {mem_in1[85]} {mem_in1[86]} {mem_in1[87]} {mem_in1[88]} {mem_in1[89]} {mem_in1[90]} {mem_in1[91]} {mem_in1[92]} {mem_in1[93]} {mem_in1[94]} {mem_in1[95]} {mem_in1[96]} {mem_in1[97]} {mem_in1[98]} {mem_in1[99]} {mem_in1[100]} {mem_in1[101]} {mem_in1[102]} {mem_in1[103]} {mem_in1[104]} {mem_in1[105]} {mem_in1[106]} {mem_in1[107]} {mem_in1[108]} {mem_in1[109]} {mem_in1[110]} {mem_in1[111]} {mem_in1[112]} {mem_in1[113]} {mem_in1[114]} {mem_in1[115]} {mem_in1[116]} {mem_in1[117]} {mem_in1[118]} {mem_in1[119]} {mem_in1[120]} {mem_in1[121]} {mem_in1[122]} {mem_in1[123]} {mem_in1[124]} {mem_in1[125]} {mem_in1[126]} {mem_in1[127]}}
+gui_select -rect {575.106 60.635 711.923 -98.986}
+deselectAll
+gui_select -rect {1110.974 26.431 1299.099 -98.986}
+deselectAll
+gui_select -rect {-154.588 1782.255 107.645 1417.409}
+deselectAll
+gui_select -rect {-114.683 1577.029 39.237 1491.518}
+deselectAll
+gui_select -rect {-97.581 1582.730 39.237 1514.321}
+zoomSelected
+deselectAll
+gui_select -rect {-7.846 1556.414 3.891 1540.764}
+zoomSelected
+zoomIn
+fit
+deselectAll
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 6 -spreadType center -spacing 4.0 -pin {{inst1[0]} {inst1[1]} {inst1[2]} {inst1[3]} {inst1[4]} {inst1[5]} {inst1[6]} {inst1[7]} {inst1[8]} {inst1[9]} {inst1[10]} {inst1[11]} {inst1[12]} {inst1[13]} {inst1[14]} {inst1[15]} {inst1[16]} {inst1[17]} {inst1[18]}}
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 6 -spreadType center -spacing 4 -pin {{inst1[0]} {inst1[1]} {inst1[2]} {inst1[3]} {inst1[4]} {inst1[5]} {inst1[6]} {inst1[7]} {inst1[8]} {inst1[9]} {inst1[10]} {inst1[11]} {inst1[12]} {inst1[13]} {inst1[14]} {inst1[15]} {inst1[16]} {inst1[17]} {inst1[18]} {mem_in1[0]} {mem_in1[1]} {mem_in1[2]} {mem_in1[3]} {mem_in1[4]} {mem_in1[5]} {mem_in1[6]} {mem_in1[7]} {mem_in1[8]} {mem_in1[9]} {mem_in1[10]} {mem_in1[11]} {mem_in1[12]} {mem_in1[13]} {mem_in1[14]} {mem_in1[15]} {mem_in1[16]} {mem_in1[17]} {mem_in1[18]} {mem_in1[19]} {mem_in1[20]} {mem_in1[21]} {mem_in1[22]} {mem_in1[23]} {mem_in1[24]} {mem_in1[25]} {mem_in1[26]} {mem_in1[27]} {mem_in1[28]} {mem_in1[29]} {mem_in1[30]} {mem_in1[31]} {mem_in1[32]} {mem_in1[33]} {mem_in1[34]} {mem_in1[35]} {mem_in1[36]} {mem_in1[37]} {mem_in1[38]} {mem_in1[39]} {mem_in1[40]} {mem_in1[41]} {mem_in1[42]} {mem_in1[43]} {mem_in1[44]} {mem_in1[45]} {mem_in1[46]} {mem_in1[47]} {mem_in1[48]} {mem_in1[49]} {mem_in1[50]} {mem_in1[51]} {mem_in1[52]} {mem_in1[53]} {mem_in1[54]} {mem_in1[55]} {mem_in1[56]} {mem_in1[57]} {mem_in1[58]} {mem_in1[59]} {mem_in1[60]} {mem_in1[61]} {mem_in1[62]} {mem_in1[63]} {mem_in1[64]} {mem_in1[65]} {mem_in1[66]} {mem_in1[67]} {mem_in1[68]} {mem_in1[69]} {mem_in1[70]} {mem_in1[71]} {mem_in1[72]} {mem_in1[73]} {mem_in1[74]} {mem_in1[75]} {mem_in1[76]} {mem_in1[77]} {mem_in1[78]} {mem_in1[79]} {mem_in1[80]} {mem_in1[81]} {mem_in1[82]} {mem_in1[83]} {mem_in1[84]} {mem_in1[85]} {mem_in1[86]} {mem_in1[87]} {mem_in1[88]} {mem_in1[89]} {mem_in1[90]} {mem_in1[91]} {mem_in1[92]} {mem_in1[93]} {mem_in1[94]} {mem_in1[95]} {mem_in1[96]} {mem_in1[97]} {mem_in1[98]} {mem_in1[99]} {mem_in1[100]} {mem_in1[101]} {mem_in1[102]} {mem_in1[103]} {mem_in1[104]} {mem_in1[105]} {mem_in1[106]} {mem_in1[107]} {mem_in1[108]} {mem_in1[109]} {mem_in1[110]} {mem_in1[111]} {mem_in1[112]} {mem_in1[113]} {mem_in1[114]} {mem_in1[115]} {mem_in1[116]} {mem_in1[117]} {mem_in1[118]} {mem_in1[119]} {mem_in1[120]} {mem_in1[121]} {mem_in1[122]} {mem_in1[123]} {mem_in1[124]} {mem_in1[125]} {mem_in1[126]} {mem_in1[127]}}
+gui_select -rect {1150.880 43.533 1287.697 -98.986}
+deselectAll
+gui_select -rect {974.157 37.832 1110.974 -104.686}
+gui_select -rect {780.332 60.635 934.251 -98.986}
+deselectAll
+gui_select -rect {540.901 72.037 683.419 -121.788}
+deselectAll
+gui_select -rect {1150.880 60.635 1287.697 -121.788}
+zoomSelected
+zoomIn
+zoomSelected
+deselectAll
+gui_select -rect {1182.630 2.938 1202.306 -8.678}
+fit
+zoomSelected
+deselectAll
+gui_select -rect {1170.199 2.051 1186.788 -1.703}
+fit
+deselectAll
+gui_select -rect {1076.770 60.635 1202.186 -104.686}
+deselectAll
+gui_select -rect {1048.266 60.635 1110.974 -98.986}
+deselectAll
+gui_select -rect {1093.872 37.832 1133.777 -116.088}
+deselectAll
+gui_select -rect {1116.675 37.832 1185.083 -104.686}
+deselectAll
+gui_select -rect {1128.077 37.832 1179.383 -104.686}
+zoomSelected
+deselectAll
+gui_select -rect {1130.573 2.257 1151.184 -4.978}
+fit
+zoomSelected
+deselectAll
+gui_select -rect {1152.501 1.794 1167.100 -1.510}
+deselectAll
+gui_select -rect {1152.694 1.602 1166.683 -1.607}
+fit
+zoomSelected
+deselectAll
+selectPhyPin 1161.9000 0.0000 1162.3000 1.4150 6 {inst1[18]}
+fit
+zoomSelected
+zoomOut
+deselectAll
+selectPhyPin 1157.5000 0.0000 1157.9000 1.4150 6 {mem_in1[0]}
+fit
+zoomSelected
+zoomOut
+deselectAll
+selectPhyPin 1153.1000 0.0000 1153.5000 1.4150 6 {mem_in1[1]}
+fit
+zoomSelected
+zoomOut
+deselectAll
+selectPhyPin 1161.9000 0.0000 1162.3000 1.4150 6 {inst1[18]}
+fit
+zoomSelected
+zoomOut
+deselectAll
+selectObject IO_Pin {inst1[18]}
+fit
+zoomSelected
+deselectAll
+zoomOut
+zoomOut
+selectPhyPin 1166.3000 0.0000 1166.7000 1.4150 6 {inst1[17]}
+deselectAll
+selectObject IO_Pin {inst1[17]}
+deselectAll
+selectObject IO_Pin {mem_in1[0]}
+deselectAll
+selectObject IO_Pin {inst1[17]}
+fit
+zoomSelected
+zoomOut
+zoomOut
+zoomOut
+deselectAll
+selectObject IO_Pin {mem_in1[0]}
+fit
+deselectAll
+gui_select -rect {1093.872 43.533 1185.083 -81.883}
+deselectAll
+gui_select -rect {1093.872 60.635 1270.594 -98.986}
+deselectAll
+gui_select -rect {563.704 37.832 660.616 -76.183}
+gui_select -rect {746.128 43.533 837.339 -98.986}
+gui_select -rect {905.748 43.533 985.558 -47.679}
+gui_select -rect {1042.565 20.730 1167.982 -133.190}
+deselectAll
+gui_select -rect {-154.588 2785.584 27.835 2603.160}
+deselectAll
+gui_select -rect {-131.785 2403.635 22.135 2164.204}
+deselectAll
+gui_select -rect {-103.282 1765.154 22.135 1559.927}
+deselectAll
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 7 -spreadType center -spacing 4.0 -pin {{inst2[0]} {inst2[1]} {inst2[2]} {inst2[3]} {inst2[4]} {inst2[5]} {inst2[6]} {inst2[7]} {inst2[8]} {inst2[9]} {inst2[10]} {inst2[11]} {inst2[12]} {inst2[13]} {inst2[14]} {inst2[15]} {inst2[16]} {inst2[17]} {inst2[18]} clk reset {mem_in2[0]} {mem_in2[1]} {mem_in2[2]} {mem_in2[3]} {mem_in2[4]} {mem_in2[5]} {mem_in2[6]} {mem_in2[7]} {mem_in2[8]} {mem_in2[9]} {mem_in2[10]} {mem_in2[11]} {mem_in2[12]} {mem_in2[13]} {mem_in2[14]} {mem_in2[15]} {mem_in2[16]} {mem_in2[17]} {mem_in2[18]} {mem_in2[19]} {mem_in2[20]} {mem_in2[21]} {mem_in2[22]} {mem_in2[23]} {mem_in2[24]} {mem_in2[25]} {mem_in2[26]} {mem_in2[27]} {mem_in2[28]} {mem_in2[29]} {mem_in2[30]} {mem_in2[31]} {mem_in2[32]} {mem_in2[33]} {mem_in2[34]} {mem_in2[35]} {mem_in2[36]} {mem_in2[37]} {mem_in2[38]} {mem_in2[39]} {mem_in2[40]} {mem_in2[41]} {mem_in2[42]} {mem_in2[43]} {mem_in2[44]} {mem_in2[45]} {mem_in2[46]} {mem_in2[47]} {mem_in2[48]} {mem_in2[49]} {mem_in2[50]} {mem_in2[51]} {mem_in2[52]} {mem_in2[53]} {mem_in2[54]} {mem_in2[55]} {mem_in2[56]} {mem_in2[57]} {mem_in2[58]} {mem_in2[59]} {mem_in2[60]} {mem_in2[61]} {mem_in2[62]} {mem_in2[63]} {mem_in2[64]} {mem_in2[65]} {mem_in2[66]} {mem_in2[67]} {mem_in2[68]} {mem_in2[69]} {mem_in2[70]} {mem_in2[71]} {mem_in2[72]} {mem_in2[73]} {mem_in2[74]} {mem_in2[75]} {mem_in2[76]} {mem_in2[77]} {mem_in2[78]} {mem_in2[79]} {mem_in2[80]} {mem_in2[81]} {mem_in2[82]} {mem_in2[83]} {mem_in2[84]} {mem_in2[85]} {mem_in2[86]} {mem_in2[87]} {mem_in2[88]} {mem_in2[89]} {mem_in2[90]} {mem_in2[91]} {mem_in2[92]} {mem_in2[93]} {mem_in2[94]} {mem_in2[95]} {mem_in2[96]} {mem_in2[97]} {mem_in2[98]} {mem_in2[99]} {mem_in2[100]} {mem_in2[101]} {mem_in2[102]} {mem_in2[103]} {mem_in2[104]} {mem_in2[105]} {mem_in2[106]} {mem_in2[107]} {mem_in2[108]} {mem_in2[109]} {mem_in2[110]} {mem_in2[111]} {mem_in2[112]} {mem_in2[113]} {mem_in2[114]} {mem_in2[115]} {mem_in2[116]} {mem_in2[117]} {mem_in2[118]} {mem_in2[119]} {mem_in2[120]} {mem_in2[121]} {mem_in2[122]} {mem_in2[123]} {mem_in2[124]} {mem_in2[125]} {mem_in2[126]} {mem_in2[127]}}
+gui_select -rect {-188.792 2500.548 39.237 2283.919}
+deselectAll
+gui_select -rect {-154.588 2232.613 44.938 2130.000}
+deselectAll
+gui_select -rect {-154.588 2061.591 62.040 1770.854}
+deselectAll
+gui_select -rect {-154.588 1919.073 10.733 1799.358}
+deselectAll
+gui_select -rect {-154.588 2477.745 56.339 2289.620}
+deselectAll
+gui_select -rect {-171.690 2289.620 79.142 2152.803}
+deselectAll
+gui_select -rect {-103.282 1919.073 10.733 1799.358}
+deselectAll
+gui_select -rect {-131.785 2529.051 10.733 2335.227}
+deselectAll
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 7 -spreadType center -spacing 4.0 -pin {{inst2[0]} {inst2[1]} {inst2[2]} {inst2[3]} {inst2[4]} {inst2[5]} {inst2[6]} {inst2[7]} {inst2[8]} {inst2[9]} {inst2[10]} {inst2[11]} {inst2[12]} {inst2[13]} {inst2[14]} {inst2[15]} {inst2[16]} {inst2[17]} {inst2[18]} clk reset {mem_in2[0]} {mem_in2[1]} {mem_in2[2]} {mem_in2[3]} {mem_in2[4]} {mem_in2[5]} {mem_in2[6]} {mem_in2[7]} {mem_in2[8]} {mem_in2[9]} {mem_in2[10]} {mem_in2[11]} {mem_in2[12]} {mem_in2[13]} {mem_in2[14]} {mem_in2[15]} {mem_in2[16]} {mem_in2[17]} {mem_in2[18]} {mem_in2[19]} {mem_in2[20]} {mem_in2[21]} {mem_in2[22]} {mem_in2[23]} {mem_in2[24]} {mem_in2[25]} {mem_in2[26]} {mem_in2[27]} {mem_in2[28]} {mem_in2[29]} {mem_in2[30]} {mem_in2[31]} {mem_in2[32]} {mem_in2[33]} {mem_in2[34]} {mem_in2[35]} {mem_in2[36]} {mem_in2[37]} {mem_in2[38]} {mem_in2[39]} {mem_in2[40]} {mem_in2[41]} {mem_in2[42]} {mem_in2[43]} {mem_in2[44]} {mem_in2[45]} {mem_in2[46]} {mem_in2[47]} {mem_in2[48]} {mem_in2[49]} {mem_in2[50]} {mem_in2[51]} {mem_in2[52]} {mem_in2[53]} {mem_in2[54]} {mem_in2[55]} {mem_in2[56]} {mem_in2[57]} {mem_in2[58]} {mem_in2[59]} {mem_in2[60]} {mem_in2[61]} {mem_in2[62]} {mem_in2[63]} {mem_in2[64]} {mem_in2[65]} {mem_in2[66]} {mem_in2[67]} {mem_in2[68]} {mem_in2[69]} {mem_in2[70]} {mem_in2[71]} {mem_in2[72]} {mem_in2[73]} {mem_in2[74]} {mem_in2[75]} {mem_in2[76]} {mem_in2[77]} {mem_in2[78]} {mem_in2[79]} {mem_in2[80]} {mem_in2[81]} {mem_in2[82]} {mem_in2[83]} {mem_in2[84]} {mem_in2[85]} {mem_in2[86]} {mem_in2[87]} {mem_in2[88]} {mem_in2[89]} {mem_in2[90]} {mem_in2[91]} {mem_in2[92]} {mem_in2[93]} {mem_in2[94]} {mem_in2[95]} {mem_in2[96]} {mem_in2[97]} {mem_in2[98]} {mem_in2[99]} {mem_in2[100]} {mem_in2[101]} {mem_in2[102]} {mem_in2[103]} {mem_in2[104]} {mem_in2[105]} {mem_in2[106]} {mem_in2[107]} {mem_in2[108]} {mem_in2[109]} {mem_in2[110]} {mem_in2[111]} {mem_in2[112]} {mem_in2[113]} {mem_in2[114]} {mem_in2[115]} {mem_in2[116]} {mem_in2[117]} {mem_in2[118]} {mem_in2[119]} {mem_in2[120]} {mem_in2[121]} {mem_in2[122]} {mem_in2[123]} {mem_in2[124]} {mem_in2[125]} {mem_in2[126]} {mem_in2[127]}}
+gui_select -rect {1800.763 2477.745 1977.485 2340.927}
+deselectAll
+gui_select -rect {1789.361 2289.620 1988.887 2169.905}
+gui_select -rect {1783.660 2078.693 1994.588 1958.978}
+deselectAll
+gui_select -rect {1789.361 1907.672 2011.689 1787.956}
+deselectAll
+gui_select -rect {1755.157 2483.446 1994.588 2340.927}
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 7 -spreadType center -spacing -4.0 -pin {{inst2[0]} {inst2[1]} {inst2[2]} {inst2[3]} {inst2[4]} {inst2[5]} {inst2[6]} {inst2[7]} {inst2[8]} {inst2[9]} {inst2[10]} {inst2[11]} {inst2[12]} {inst2[13]} {inst2[14]} {inst2[15]} {inst2[16]} {inst2[17]} {inst2[18]} clk reset {mem_in2[0]} {mem_in2[1]} {mem_in2[2]} {mem_in2[3]} {mem_in2[4]} {mem_in2[5]} {mem_in2[6]} {mem_in2[7]} {mem_in2[8]} {mem_in2[9]} {mem_in2[10]} {mem_in2[11]} {mem_in2[12]} {mem_in2[13]} {mem_in2[14]} {mem_in2[15]} {mem_in2[16]} {mem_in2[17]} {mem_in2[18]} {mem_in2[19]} {mem_in2[20]} {mem_in2[21]} {mem_in2[22]} {mem_in2[23]} {mem_in2[24]} {mem_in2[25]} {mem_in2[26]} {mem_in2[27]} {mem_in2[28]} {mem_in2[29]} {mem_in2[30]} {mem_in2[31]} {mem_in2[32]} {mem_in2[33]} {mem_in2[34]} {mem_in2[35]} {mem_in2[36]} {mem_in2[37]} {mem_in2[38]} {mem_in2[39]} {mem_in2[40]} {mem_in2[41]} {mem_in2[42]} {mem_in2[43]} {mem_in2[44]} {mem_in2[45]} {mem_in2[46]} {mem_in2[47]} {mem_in2[48]} {mem_in2[49]} {mem_in2[50]} {mem_in2[51]} {mem_in2[52]} {mem_in2[53]} {mem_in2[54]} {mem_in2[55]} {mem_in2[56]} {mem_in2[57]} {mem_in2[58]} {mem_in2[59]} {mem_in2[60]} {mem_in2[61]} {mem_in2[62]} {mem_in2[63]} {mem_in2[64]} {mem_in2[65]} {mem_in2[66]} {mem_in2[67]} {mem_in2[68]} {mem_in2[69]} {mem_in2[70]} {mem_in2[71]} {mem_in2[72]} {mem_in2[73]} {mem_in2[74]} {mem_in2[75]} {mem_in2[76]} {mem_in2[77]} {mem_in2[78]} {mem_in2[79]} {mem_in2[80]} {mem_in2[81]} {mem_in2[82]} {mem_in2[83]} {mem_in2[84]} {mem_in2[85]} {mem_in2[86]} {mem_in2[87]} {mem_in2[88]} {mem_in2[89]} {mem_in2[90]} {mem_in2[91]} {mem_in2[92]} {mem_in2[93]} {mem_in2[94]} {mem_in2[95]} {mem_in2[96]} {mem_in2[97]} {mem_in2[98]} {mem_in2[99]} {mem_in2[100]} {mem_in2[101]} {mem_in2[102]} {mem_in2[103]} {mem_in2[104]} {mem_in2[105]} {mem_in2[106]} {mem_in2[107]} {mem_in2[108]} {mem_in2[109]} {mem_in2[110]} {mem_in2[111]} {mem_in2[112]} {mem_in2[113]} {mem_in2[114]} {mem_in2[115]} {mem_in2[116]} {mem_in2[117]} {mem_in2[118]} {mem_in2[119]} {mem_in2[120]} {mem_in2[121]} {mem_in2[122]} {mem_in2[123]} {mem_in2[124]} {mem_in2[125]} {mem_in2[126]} {mem_in2[127]}}
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 7 -spreadType center -spacing 4.0 -pin {{inst2[0]} {inst2[1]} {inst2[2]} {inst2[3]} {inst2[4]} {inst2[5]} {inst2[6]} {inst2[7]} {inst2[8]} {inst2[9]} {inst2[10]} {inst2[11]} {inst2[12]} {inst2[13]} {inst2[14]} {inst2[15]} {inst2[16]} {inst2[17]} {inst2[18]} clk reset {mem_in2[0]} {mem_in2[1]} {mem_in2[2]} {mem_in2[3]} {mem_in2[4]} {mem_in2[5]} {mem_in2[6]} {mem_in2[7]} {mem_in2[8]} {mem_in2[9]} {mem_in2[10]} {mem_in2[11]} {mem_in2[12]} {mem_in2[13]} {mem_in2[14]} {mem_in2[15]} {mem_in2[16]} {mem_in2[17]} {mem_in2[18]} {mem_in2[19]} {mem_in2[20]} {mem_in2[21]} {mem_in2[22]} {mem_in2[23]} {mem_in2[24]} {mem_in2[25]} {mem_in2[26]} {mem_in2[27]} {mem_in2[28]} {mem_in2[29]} {mem_in2[30]} {mem_in2[31]} {mem_in2[32]} {mem_in2[33]} {mem_in2[34]} {mem_in2[35]} {mem_in2[36]} {mem_in2[37]} {mem_in2[38]} {mem_in2[39]} {mem_in2[40]} {mem_in2[41]} {mem_in2[42]} {mem_in2[43]} {mem_in2[44]} {mem_in2[45]} {mem_in2[46]} {mem_in2[47]} {mem_in2[48]} {mem_in2[49]} {mem_in2[50]} {mem_in2[51]} {mem_in2[52]} {mem_in2[53]} {mem_in2[54]} {mem_in2[55]} {mem_in2[56]} {mem_in2[57]} {mem_in2[58]} {mem_in2[59]} {mem_in2[60]} {mem_in2[61]} {mem_in2[62]} {mem_in2[63]} {mem_in2[64]} {mem_in2[65]} {mem_in2[66]} {mem_in2[67]} {mem_in2[68]} {mem_in2[69]} {mem_in2[70]} {mem_in2[71]} {mem_in2[72]} {mem_in2[73]} {mem_in2[74]} {mem_in2[75]} {mem_in2[76]} {mem_in2[77]} {mem_in2[78]} {mem_in2[79]} {mem_in2[80]} {mem_in2[81]} {mem_in2[82]} {mem_in2[83]} {mem_in2[84]} {mem_in2[85]} {mem_in2[86]} {mem_in2[87]} {mem_in2[88]} {mem_in2[89]} {mem_in2[90]} {mem_in2[91]} {mem_in2[92]} {mem_in2[93]} {mem_in2[94]} {mem_in2[95]} {mem_in2[96]} {mem_in2[97]} {mem_in2[98]} {mem_in2[99]} {mem_in2[100]} {mem_in2[101]} {mem_in2[102]} {mem_in2[103]} {mem_in2[104]} {mem_in2[105]} {mem_in2[106]} {mem_in2[107]} {mem_in2[108]} {mem_in2[109]} {mem_in2[110]} {mem_in2[111]} {mem_in2[112]} {mem_in2[113]} {mem_in2[114]} {mem_in2[115]} {mem_in2[116]} {mem_in2[117]} {mem_in2[118]} {mem_in2[119]} {mem_in2[120]} {mem_in2[121]} {mem_in2[122]} {mem_in2[123]} {mem_in2[124]} {mem_in2[125]} {mem_in2[126]} {mem_in2[127]}}
+deselectAll
+gui_select -rect {-154.588 1936.175 56.339 1890.570}
+deselectAll
+gui_select -rect {-137.486 1936.175 27.835 1907.672}
+fit
+zoomSelected
+deselectAll
+zoomIn
+selectPhyPin 0.0000 1925.0000 1.4150 1925.4000 7 {mem_in2[2]}
+deselectAll
+selectPhyPin 0.0000 1921.0000 1.4150 1921.4000 7 {mem_in2[1]}
+deselectAll
+selectPhyPin 0.0000 1917.0000 1.4150 1917.4000 7 {mem_in2[0]}
+deselectAll
+selectPhyPin 0.0000 1913.0000 1.4150 1913.4000 7 reset
+deselectAll
+fit
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 7 -spreadType center -spacing 4.0 -pin {{inst2[0]} {inst2[1]} {inst2[2]} {inst2[3]} {inst2[4]} {inst2[5]} {inst2[6]} {inst2[7]} {inst2[8]} {inst2[9]} {inst2[10]} {inst2[11]} {inst2[12]} {inst2[13]} {inst2[14]} {inst2[15]} {inst2[16]} {inst2[17]} {inst2[18]} {mem_in2[0]} {mem_in2[1]} {mem_in2[2]} {mem_in2[3]} {mem_in2[4]} {mem_in2[5]} {mem_in2[6]} {mem_in2[7]} {mem_in2[8]} {mem_in2[9]} {mem_in2[10]} {mem_in2[11]} {mem_in2[12]} {mem_in2[13]} {mem_in2[14]} {mem_in2[15]} {mem_in2[16]} {mem_in2[17]} {mem_in2[18]} {mem_in2[19]} {mem_in2[20]} {mem_in2[21]} {mem_in2[22]} {mem_in2[23]} {mem_in2[24]} {mem_in2[25]} {mem_in2[26]} {mem_in2[27]} {mem_in2[28]} {mem_in2[29]} {mem_in2[30]} {mem_in2[31]} {mem_in2[32]} {mem_in2[33]} {mem_in2[34]} {mem_in2[35]} {mem_in2[36]} {mem_in2[37]} {mem_in2[38]} {mem_in2[39]} {mem_in2[40]} {mem_in2[41]} {mem_in2[42]} {mem_in2[43]} {mem_in2[44]} {mem_in2[45]} {mem_in2[46]} {mem_in2[47]} {mem_in2[48]} {mem_in2[49]} {mem_in2[50]} {mem_in2[51]} {mem_in2[52]} {mem_in2[53]} {mem_in2[54]} {mem_in2[55]} {mem_in2[56]} {mem_in2[57]} {mem_in2[58]} {mem_in2[59]} {mem_in2[60]} {mem_in2[61]} {mem_in2[62]} {mem_in2[63]} {mem_in2[64]} {mem_in2[65]} {mem_in2[66]} {mem_in2[67]} {mem_in2[68]} {mem_in2[69]} {mem_in2[70]} {mem_in2[71]} {mem_in2[72]} {mem_in2[73]} {mem_in2[74]} {mem_in2[75]} {mem_in2[76]} {mem_in2[77]} {mem_in2[78]} {mem_in2[79]} {mem_in2[80]} {mem_in2[81]} {mem_in2[82]} {mem_in2[83]} {mem_in2[84]} {mem_in2[85]} {mem_in2[86]} {mem_in2[87]} {mem_in2[88]} {mem_in2[89]} {mem_in2[90]} {mem_in2[91]} {mem_in2[92]} {mem_in2[93]} {mem_in2[94]} {mem_in2[95]} {mem_in2[96]} {mem_in2[97]} {mem_in2[98]} {mem_in2[99]} {mem_in2[100]} {mem_in2[101]} {mem_in2[102]} {mem_in2[103]} {mem_in2[104]} {mem_in2[105]} {mem_in2[106]} {mem_in2[107]} {mem_in2[108]} {mem_in2[109]} {mem_in2[110]} {mem_in2[111]} {mem_in2[112]} {mem_in2[113]} {mem_in2[114]} {mem_in2[115]} {mem_in2[116]} {mem_in2[117]} {mem_in2[118]} {mem_in2[119]} {mem_in2[120]} {mem_in2[121]} {mem_in2[122]} {mem_in2[123]} {mem_in2[124]} {mem_in2[125]} {mem_in2[126]} {mem_in2[127]}}
+gui_select -rect {1783.660 2443.540 2011.689 2283.919}
+deselectAll
+gui_select -rect {1800.763 2232.613 2011.689 1970.380}
+deselectAll
+gui_select -rect {1766.558 1981.781 2011.689 1833.562}
+deselectAll
+gui_select -rect {1800.763 2460.642 1926.178 2323.825}
+deselectAll
+gui_select -rect {1806.463 2454.941 2011.689 2335.227}
+deselectAll
+gui_select -rect {1789.361 2198.409 2051.595 1993.183}
+deselectAll
+gui_select -rect {1783.660 1981.781 2028.792 1787.956}
+deselectAll
+gui_select -rect {1772.259 2460.642 2034.493 2289.620}
+deselectAll
+gui_select -rect {1755.157 2272.518 1960.383 2181.307}
+deselectAll
+gui_select -rect {-103.282 1993.183 39.237 1822.160}
+deselectAll
+gui_select -rect {1789.361 2472.044 1977.485 2323.825}
+setPinAssignMode -pinEditInBatch true
+editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 7 -spreadType center -spacing 4.0 -pin {{inst2[0]} {inst2[1]} {inst2[2]} {inst2[3]} {inst2[4]} {inst2[5]} {inst2[6]} {inst2[7]} {inst2[8]} {inst2[9]} {inst2[10]} {inst2[11]} {inst2[12]} {inst2[13]} {inst2[14]} {inst2[15]} {inst2[16]} {inst2[17]} {inst2[18]}}
+deselectAll
+gui_select -rect {-148.887 2215.511 107.645 2067.292}
+deselectAll
+gui_select -rect {1772.259 2409.336 2005.989 1696.745}
+deselectAll
+gui_select -rect {-131.785 1953.278 10.733 1833.562}
+deselectAll
+gui_select -rect {-154.588 2232.613 39.237 2033.088}
+deselectAll
+gui_select -rect {1755.157 2420.737 2005.989 1782.255}
+deselectAll
+gui_select -rect {529.500 89.139 1339.004 -133.190}
+deselectAll
+gui_select -rect {1755.157 2409.336 2188.412 1782.255}
+deselectAll
+gui_select -rect {-188.792 2238.314 141.850 1787.956}
+deselectAll

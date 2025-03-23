@@ -1,0 +1,828 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v15.23-s045_1, built Fri Apr 22 12:32:52 PDT 2016
+Options:	
+Date:		Sat Mar 22 16:32:26 2025
+Host:		ieng6-ece-20.ucsd.edu (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (4cores*8cpus*Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz 25344KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	15.2	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+**ERROR: (IMPOAX-142):	Could not open shared library libinnovusoax22.so : /acsnfs3/software/cadence-innovus152/tools/lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE
+
+**ERROR: (IMPOAX-142):	Could not open shared library libcdsSkillPcell.so : (null)
+
+**ERROR: (IMPOAX-142):	OA features will be disabled in this session.
+
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getDrawView
+<CMD> loadWorkspace -name Physical
+<CMD> win
+<CMD> set init_pwr_net VDD
+<CMD> set init_gnd_net VSS
+<CMD> set init_verilog ./netlist/fullchip.out.v
+<CMD> set init_design_netlisttype Verilog
+<CMD> set init_design_settop 1
+<CMD> set init_top_cell fullchip
+<CMD> set init_lef_file {/home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef ./subckt/core.lef}
+<CMD> create_library_set -name WC_LIB -timing "$worst_timing_lib ./subckt/core_WC.lib"
+<CMD> create_library_set -name BC_LIB -timing "$best_timing_lib ./subckt/core_BC.lib"
+<CMD> create_rc_corner -name Cmax -cap_table $worst_captbl -T 125
+<CMD> create_rc_corner -name Cmin -cap_table $best_captbl -T -40
+<CMD> create_delay_corner -name WC -library_set WC_LIB -rc_corner Cmax
+<CMD> create_delay_corner -name BC -library_set BC_LIB -rc_corner Cmin
+<CMD> create_constraint_mode -name CON -sdc_file [list $sdc]
+<CMD> create_analysis_view -name WC_VIEW -delay_corner WC -constraint_mode CON
+<CMD> create_analysis_view -name BC_VIEW -delay_corner BC -constraint_mode CON
+<CMD> init_design -setup WC_VIEW -hold BC_VIEW
+**ERROR: (IMPOAX-820):	The OA features are disabled in the current session of Innovus because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Innovus either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+
+**ERROR: (IMPOAX-850):	oaxCreateCdsLibArray command cannot be run as OA features are disabled in this session.
+
+Loading LEF file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef ...
+WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 28.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 867.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 877.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1014.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1024.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1161.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1171.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1308.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1318.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1372.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1383.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1604.
+WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1614.
+WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1769.
+WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1771.
+WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1772.
+WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1776.
+WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1778.
+WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1779.
+WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1783.
+Set DBUPerIGU to M2 pitch 400.
+
+Loading LEF file ./subckt/core.lef ...
+**WARN: (IMPLF-200):	Pin 'clk' in macro 'core' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'sum_in[23]' in macro 'core' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'sum_in[22]' in macro 'core' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'sum_in[21]' in macro 'core' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'sum_in[20]' in macro 'core' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'sum_in[19]' in macro 'core' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'sum_in[18]' in macro 'core' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'sum_in[17]' in macro 'core' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'sum_in[16]' in macro 'core' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'sum_in[15]' in macro 'core' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'sum_in[14]' in macro 'core' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'sum_in[13]' in macro 'core' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'sum_in[12]' in macro 'core' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'sum_in[11]' in macro 'core' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'sum_in[10]' in macro 'core' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'sum_in[9]' in macro 'core' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'sum_in[8]' in macro 'core' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'sum_in[7]' in macro 'core' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'sum_in[6]' in macro 'core' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'sum_in[5]' in macro 'core' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-201):	Pin 'sum_out[23]' in macro 'core' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'sum_out[22]' in macro 'core' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'sum_out[21]' in macro 'core' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'sum_out[20]' in macro 'core' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'sum_out[19]' in macro 'core' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'sum_out[18]' in macro 'core' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'sum_out[17]' in macro 'core' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'sum_out[16]' in macro 'core' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'sum_out[15]' in macro 'core' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'sum_out[14]' in macro 'core' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'sum_out[13]' in macro 'core' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'sum_out[12]' in macro 'core' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'sum_out[11]' in macro 'core' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'sum_out[10]' in macro 'core' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'sum_out[9]' in macro 'core' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'sum_out[8]' in macro 'core' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'sum_out[7]' in macro 'core' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'sum_out[6]' in macro 'core' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'sum_out[5]' in macro 'core' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'sum_out[4]' in macro 'core' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+
+viaInitial starts at Sat Mar 22 16:32:53 2025
+viaInitial ends at Sat Mar 22 16:32:53 2025
+Reading WC_LIB timing library '/home/linux/ieng6/ee260bwi25/public/PDKdata/lib/tcbn65gpluswc.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D0' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D8' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2XD1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D0' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D8' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3XD1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D0' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D8' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4XD1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D0' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D1' is not defined in the library.
+Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+Read 811 cells in library 'tcbn65gpluswc' 
+Reading WC_LIB timing library '/home/linux/ieng6/ee260bwi25/arsaraf/project/pnr_dualcore2/subckt/core_WC.lib' ...
+Read 1 cells in library 'core' 
+Reading BC_LIB timing library '/home/linux/ieng6/ee260bwi25/public/PDKdata/lib/tcbn65gplusbc.lib' ...
+Read 811 cells in library 'tcbn65gplusbc' 
+Reading BC_LIB timing library '/home/linux/ieng6/ee260bwi25/arsaraf/project/pnr_dualcore2/subckt/core_BC.lib' ...
+Read 1 cells in library 'core' 
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.18min, fe_real=0.48min, fe_mem=474.7M) ***
+*** Begin netlist parsing (mem=474.7M) ***
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D0' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D0' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D0' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D0' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 812 new cells from 4 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist './netlist/fullchip.out.v'
+
+*** Memory Usage v#1 (Current mem = 474.660M, initial mem = 149.258M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=474.7M) ***
+Set top cell to fullchip.
+Hooked 1624 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell fullchip ...
+*** Netlist is unique.
+** info: there are 1660 modules.
+** info: there are 0 stdCell insts.
+** info: there are 2 macros.
+
+*** Memory Usage v#1 (Current mem = 525.992M, initial mem = 149.258M) ***
+**WARN: (IMPFP-3961):	The techSite 'dcore' has no related cells in LEF/OA library. Cannot make calculations for this site type unless cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'ccore' has no related cells in LEF/OA library. Cannot make calculations for this site type unless cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+WC_VIEW BC_VIEW
+Initializing multi-corner RC extraction with 2 active RC Corners ...
+Reading Capacitance Table File /home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cworst.captable ...
+**WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2771):	Via VIA_8 specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2801):	Resistance values are not provided in the Cap Table. Sheet resistance defined in the LEF file will be used.
+**WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+Reading Capacitance Table File /home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cbest.captable ...
+**WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2771):	Via VIA_8 specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2801):	Resistance values are not provided in the Cap Table. Sheet resistance defined in the LEF file will be used.
+**WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: WC_VIEW
+    RC-Corner Name        : Cmax
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : '/home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cworst.captable'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+ 
+ Analysis View: BC_VIEW
+    RC-Corner Name        : Cmin
+    RC-Corner Index       : 1
+    RC-Corner Temperature : -40 Celsius
+    RC-Corner Cap Table   : '/home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cbest.captable'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+*Info: initialize multi-corner CTS.
+Reading timing constraints file './constraints/fullchip.sdc' ...
+Current (total cpu=0:00:11.7, real=0:00:30.0, peak res=278.9M, current mem=650.5M)
+**WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ./constraints/fullchip.sdc, Line 8).
+
+INFO (CTE): Reading of timing constraints file ./constraints/fullchip.sdc completed, with 1 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=294.2M, current mem=667.7M)
+Current (total cpu=0:00:11.8, real=0:00:30.0, peak res=294.2M, current mem=667.7M)
+Total number of combinational cells: 492
+Total number of sequential cells: 303
+Total number of tristate cells: 11
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFFD1 BUFFD0 BUFFD2 BUFFD3 BUFFD4 BUFFD6 BUFFD8 BUFFD12 BUFFD16 CKBD1 CKBD0 CKBD2 CKBD3 CKBD4 CKBD6 CKBD8 CKBD12 CKBD16
+Total number of usable buffers: 18
+List of unusable buffers: BUFFD20 BUFFD24 CKBD20 CKBD24 GBUFFD1 GBUFFD3 GBUFFD2 GBUFFD4 GBUFFD8
+Total number of unusable buffers: 9
+List of usable inverters: CKND1 CKND0 CKND2 CKND3 CKND4 CKND6 CKND8 CKND12 CKND16 INVD1 INVD0 INVD2 INVD3 INVD4 INVD6 INVD8 INVD12 INVD16
+Total number of usable inverters: 18
+List of unusable inverters: CKND20 CKND24 GINVD2 GINVD1 GINVD4 GINVD3 GINVD8 INVD20 INVD24
+Total number of unusable inverters: 9
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells: DEL0 DEL005 DEL01 DEL015 DEL02 DEL1 DEL2 DEL3 DEL4
+Total number of identified unusable delay cells: 9
+All delay cells are dont_use. Buffers will be used to fix hold violations.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200          175  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201          184  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related cells i...
+WARNING   IMPEXT-2710          2  Basic Cap table for layer M%d is ignored...
+WARNING   IMPEXT-2760          2  Layer M%d specified in the cap table is ...
+WARNING   IMPEXT-2771          2  Via %s specified in the cap table is ign...
+WARNING   IMPEXT-2801          2  Resistance values are not provided in th...
+WARNING   IMPVL-159         1624  Pin '%s' of cell '%s' is defined in LEF ...
+ERROR     IMPOAX-820           1  The OA features are disabled in the curr...
+ERROR     IMPOAX-850           1  %s command cannot be run as OA features ...
+*** Message Summary: 1993 warning(s), 2 error(s)
+
+<CMD> set_interactive_constraint_modes {CON}
+<CMD> setDesignMode -process 65
+Applying the recommended capacitance filtering threshold values for 65nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+	These values will be used by all post-route extraction engines, including tQuantus, IQRC and Quantus QRC extraction.
+	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'high'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode will be 'medium' if Quantus QRC technology file is specified else 'low'.
+Updating process node dependent CCOpt properties for the 65nm process node.
+<CMD> floorPlan -site core -s 1820 4240 10.0 10.0 10.0 10.0
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> timeDesign -preplace -prefix preplace
+**WARN: (IMPOPT-7136):	timing_socv_statistical_min_max_mode 'statistical' is not supported by Innovus. Setting it to 'mean_and_three_sigma_bounded'.
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Setting High Fanout Nets ( > 100 ) as ideal temporarily for -prePlace option
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: fullchip
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Calculate delays in BcWc mode...
+End delay calculation. (MEM=1056.36 CPU=0:00:00.0 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.7  real=0:00:01.0  mem= 1056.4M) ***
+*** Done Building Timing Graph (cpu=0:00:00.8 real=0:00:01.0 totSessionCpu=0:00:13.3 mem=1056.4M)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ WC_VIEW 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| -0.051  |   N/A   | -0.051  |
+|           TNS (ns):| -0.101  |   N/A   | -0.101  |
+|    Violating Paths:|    2    |   N/A   |    2    |
+|          All Paths:|   14    |   N/A   |   14    |
++--------------------+---------+---------+---------+
+
+Density: 0.000%
+------------------------------------------------------------
+Set Using Default Delay Limit as 1000.
+Resetting back High Fanout Nets as non-ideal
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Reported timing to dir ./timingReports
+Total CPU time: 0.86 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 975.410156 Mbytes
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+2 new pwr-pin connections were made to global net 'VDD'.
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+2 new gnd-pin connections were made to global net 'VSS'.
+<CMD> addRing -spacing {top 1 bottom 1 left 1 right 1} -width {top 2 bottom 2 left 2 right 2} -layer {top M1 bottom M1 left M2 right M2} -center 1 -type core_rings -nets {VSS  VDD}
+
+Ring generation is complete; vias are now being generated.
+The power planner created 8 wires.
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 975.4M) ***
+<CMD> setAddStripeMode -break_at block_ring
+Stripe will break at block ring.
+<CMD> addStripe -direction vertical -number_of_sets 104 -spacing 6 -layer M8 -width 2 -nets { VSS VDD }
+
+Starting stripe generation ...
+Non-Default setAddStripeOption Settings :
+  NONE
+Stripe generation is complete; vias are now being generated.
+The power planner created 208 wires.
+*** Ending Stripe Generation (totcpu: 0:00:00.2,real: 0:00:01.0, mem: 975.4M) ***
+<CMD> setObjFPlanBox Instance core_instance1 300 200 1520 1920
+<CMD> setObjFPlanBox Instance core_instance2 300 2320 1520 4040
+<CMD> addHaloToBlock {6 6 6 6} core_instance1
+<CMD> addHaloToBlock {6 6 6 6} core_instance2
+<CMD> addRing -type block_rings -nets {VSS VDD} -around each_block -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -width {top 1 bottom 1 left 1 right 1} -layer {top M1 bottom M1 left M2 right M2}
+
+Ring generation is complete; vias are now being generated.
+**WARN: (IMPPP-532):	ViaGen Warning: top layer and bottom layer have same direction but only orthogonal via is allowed between layer: M2 & M8 at (1521.02, 198.00) (1522.00, 1922.00)
+**WARN: (IMPPP-532):	ViaGen Warning: top layer and bottom layer have same direction but only orthogonal via is allowed between layer: M2 & M8 at (1521.02, 2318.00) (1522.00, 4042.00)
+The power planner created 16 wires.
+*** Ending Ring Generation (totcpu: 0:00:00.1,real: 0:00:00.0, mem: 975.4M) ***
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -sinst core_instance1 -verbose -override
+0 new pwr-pin connection was made to global net 'VDD'.
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -sinst core_instance1 -verbose -override
+0 new gnd-pin connection was made to global net 'VSS'.
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -sinst core_instance2 -verbose -override
+0 new pwr-pin connection was made to global net 'VDD'.
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -sinst core_instance2 -verbose -override
+0 new gnd-pin connection was made to global net 'VSS'.
+<CMD> sroute
+*** Begin SPECIAL ROUTE on Sat Mar 22 16:33:09 2025 ***
+SPECIAL ROUTE ran on directory: /home/linux/ieng6/ee260bwi25/arsaraf/project/pnr_dualcore2
+SPECIAL ROUTE ran on machine: ieng6-ece-20.ucsd.edu (Linux 3.10.0-1160.119.1.el7.x86_64 Xeon 2.19Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSpecial set to true
+srouteConnectConverterPin set to false
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1860.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 17 layers, 8 routing layers, 1 overlap layer
+Read in 847 macros, 1 used
+Read in 2 components
+  2 block/ring components: 0 unplaced, 2 placed, 0 fixed
+Read in 616 logical pins
+Read in 3 blockages
+Read in 616 nets
+Read in 2 special nets, 2 routed
+Read in 4 terminals
+Begin power routing ...
+**WARN: (IMPSR-1253):	Cannot find any standard cell pin connected to net VDD.
+Run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND'.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1253):	Cannot find any standard cell pin connected to net VSS.
+Run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND'.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for FollowPin 0 seconds
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 4  open: 4
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 8560
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 4280
+End power routing: cpu: 0:00:50, real: 0:00:54, peak: 2058.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 131 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+
+sroute post-processing starts at Sat Mar 22 16:34:04 2025
+The viaGen is rebuilding shadow vias for net VSS.
+sroute post-processing ends at Sat Mar 22 16:34:14 2025
+
+sroute post-processing starts at Sat Mar 22 16:34:14 2025
+The viaGen is rebuilding shadow vias for net VDD.
+sroute post-processing ends at Sat Mar 22 16:34:24 2025
+sroute: Total CPU time used = 0:1:10
+sroute: Total Real time used = 0:1:15
+sroute: Total Memory used = 132.38 megs
+sroute: Total Peak Memory used = 1107.79 megs
+<CMD> fit
+<CMD> setDrawView fplan
+<CMD> setDrawView ameba
+<CMD> setDrawView place
+<CMD> gui_select -rect {79.142 4313.380 233.062 4125.256}
+<CMD> fit
+<CMD> zoomSelected
+<CMD> deselectAll
+<CMD> fit
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 7 -spreadType center -spacing 4 -pin {{inst1[0]} {inst1[1]} {inst1[2]} {inst1[3]} {inst1[4]} {inst1[5]} {inst1[6]} {inst1[7]} {inst1[8]} {inst1[9]} {inst1[10]} {inst1[11]} {inst1[12]} {inst1[13]} {inst1[14]} {inst1[15]} {inst1[16]} {inst1[17]} {inst1[18]} {inst2[0]} {inst2[1]} {inst2[2]} {inst2[3]} {inst2[4]} {inst2[5]} {inst2[6]} {inst2[7]} {inst2[8]} {inst2[9]} {inst2[10]} {inst2[11]} {inst2[12]} {inst2[13]} {inst2[14]} {inst2[15]} {inst2[16]} {inst2[17]} {inst2[18]} clk reset {mem_in1[0]} {mem_in1[1]} {mem_in1[2]} {mem_in1[3]} {mem_in1[4]} {mem_in1[5]} {mem_in1[6]} {mem_in1[7]} {mem_in1[8]} {mem_in1[9]} {mem_in1[10]} {mem_in1[11]} {mem_in1[12]} {mem_in1[13]} {mem_in1[14]} {mem_in1[15]} {mem_in1[16]} {mem_in1[17]} {mem_in1[18]} {mem_in1[19]} {mem_in1[20]} {mem_in1[21]} {mem_in1[22]} {mem_in1[23]} {mem_in1[24]} {mem_in1[25]} {mem_in1[26]} {mem_in1[27]} {mem_in1[28]} {mem_in1[29]} {mem_in1[30]} {mem_in1[31]} {mem_in1[32]} {mem_in1[33]} {mem_in1[34]} {mem_in1[35]} {mem_in1[36]} {mem_in1[37]} {mem_in1[38]} {mem_in1[39]} {mem_in1[40]} {mem_in1[41]} {mem_in1[42]} {mem_in1[43]} {mem_in1[44]} {mem_in1[45]} {mem_in1[46]} {mem_in1[47]} {mem_in1[48]} {mem_in1[49]} {mem_in1[50]} {mem_in1[51]} {mem_in1[52]} {mem_in1[53]} {mem_in1[54]} {mem_in1[55]} {mem_in1[56]} {mem_in1[57]} {mem_in1[58]} {mem_in1[59]} {mem_in1[60]} {mem_in1[61]} {mem_in1[62]} {mem_in1[63]} {mem_in1[64]} {mem_in1[65]} {mem_in1[66]} {mem_in1[67]} {mem_in1[68]} {mem_in1[69]} {mem_in1[70]} {mem_in1[71]} {mem_in1[72]} {mem_in1[73]} {mem_in1[74]} {mem_in1[75]} {mem_in1[76]} {mem_in1[77]} {mem_in1[78]} {mem_in1[79]} {mem_in1[80]} {mem_in1[81]} {mem_in1[82]} {mem_in1[83]} {mem_in1[84]} {mem_in1[85]} {mem_in1[86]} {mem_in1[87]} {mem_in1[88]} {mem_in1[89]} {mem_in1[90]} {mem_in1[91]} {mem_in1[92]} {mem_in1[93]} {mem_in1[94]} {mem_in1[95]} {mem_in1[96]} {mem_in1[97]} {mem_in1[98]} {mem_in1[99]} {mem_in1[100]} {mem_in1[101]} {mem_in1[102]} {mem_in1[103]} {mem_in1[104]} {mem_in1[105]} {mem_in1[106]} {mem_in1[107]} {mem_in1[108]} {mem_in1[109]} {mem_in1[110]} {mem_in1[111]} {mem_in1[112]} {mem_in1[113]} {mem_in1[114]} {mem_in1[115]} {mem_in1[116]} {mem_in1[117]} {mem_in1[118]} {mem_in1[119]} {mem_in1[120]} {mem_in1[121]} {mem_in1[122]} {mem_in1[123]} {mem_in1[124]} {mem_in1[125]} {mem_in1[126]} {mem_in1[127]} {mem_in2[0]} {mem_in2[1]} {mem_in2[2]} {mem_in2[3]} {mem_in2[4]} {mem_in2[5]} {mem_in2[6]} {mem_in2[7]} {mem_in2[8]} {mem_in2[9]} {mem_in2[10]} {mem_in2[11]} {mem_in2[12]} {mem_in2[13]} {mem_in2[14]} {mem_in2[15]} {mem_in2[16]} {mem_in2[17]} {mem_in2[18]} {mem_in2[19]} {mem_in2[20]} {mem_in2[21]} {mem_in2[22]} {mem_in2[23]} {mem_in2[24]} {mem_in2[25]} {mem_in2[26]} {mem_in2[27]} {mem_in2[28]} {mem_in2[29]} {mem_in2[30]} {mem_in2[31]} {mem_in2[32]} {mem_in2[33]} {mem_in2[34]} {mem_in2[35]} {mem_in2[36]} {mem_in2[37]} {mem_in2[38]} {mem_in2[39]} {mem_in2[40]} {mem_in2[41]} {mem_in2[42]} {mem_in2[43]} {mem_in2[44]} {mem_in2[45]} {mem_in2[46]} {mem_in2[47]} {mem_in2[48]} {mem_in2[49]} {mem_in2[50]} {mem_in2[51]} {mem_in2[52]} {mem_in2[53]} {mem_in2[54]} {mem_in2[55]} {mem_in2[56]} {mem_in2[57]} {mem_in2[58]} {mem_in2[59]} {mem_in2[60]} {mem_in2[61]} {mem_in2[62]} {mem_in2[63]} {mem_in2[64]} {mem_in2[65]} {mem_in2[66]} {mem_in2[67]} {mem_in2[68]} {mem_in2[69]} {mem_in2[70]} {mem_in2[71]} {mem_in2[72]} {mem_in2[73]} {mem_in2[74]} {mem_in2[75]} {mem_in2[76]} {mem_in2[77]} {mem_in2[78]} {mem_in2[79]} {mem_in2[80]} {mem_in2[81]} {mem_in2[82]} {mem_in2[83]} {mem_in2[84]} {mem_in2[85]} {mem_in2[86]} {mem_in2[87]} {mem_in2[88]} {mem_in2[89]} {mem_in2[90]} {mem_in2[91]} {mem_in2[92]} {mem_in2[93]} {mem_in2[94]} {mem_in2[95]} {mem_in2[96]} {mem_in2[97]} {mem_in2[98]} {mem_in2[99]} {mem_in2[100]} {mem_in2[101]} {mem_in2[102]} {mem_in2[103]} {mem_in2[104]} {mem_in2[105]} {mem_in2[106]} {mem_in2[107]} {mem_in2[108]} {mem_in2[109]} {mem_in2[110]} {mem_in2[111]} {mem_in2[112]} {mem_in2[113]} {mem_in2[114]} {mem_in2[115]} {mem_in2[116]} {mem_in2[117]} {mem_in2[118]} {mem_in2[119]} {mem_in2[120]} {mem_in2[121]} {mem_in2[122]} {mem_in2[123]} {mem_in2[124]} {mem_in2[125]} {mem_in2[126]} {mem_in2[127]}}
+Successfully spread [296] pins.
+editPin : finished (cpu = 0:00:00.3 real = 0:00:00.0, mem = 1302.6M).
+<CMD> gui_select -rect {-165.989 2785.584 107.645 2631.664}
+<CMD> deselectAll
+<CMD> gui_select -rect {-114.683 2620.263 79.142 2483.446}
+<CMD> deselectAll
+<CMD> gui_select -rect {-137.486 1599.832 62.040 1508.620}
+<CMD> deselectAll
+<CMD> gui_select -rect {-154.588 1822.160 39.237 1662.540}
+<CMD> deselectAll
+<CMD> gui_select -rect {-131.785 2033.088 62.040 1919.073}
+<CMD> deselectAll
+<CMD> gui_select -rect {-114.683 2232.613 44.938 2135.700}
+<CMD> gui_select -rect {-131.785 2420.737 44.938 2323.825}
+<CMD> gui_select -rect {-131.785 2597.460 62.040 2477.745}
+<CMD> gui_select -rect {-120.383 2739.978 44.938 2614.562}
+<CMD> deselectAll
+<CMD> gui_select -rect {-120.383 2774.182 22.135 2700.073}
+<CMD> deselectAll
+<CMD> gui_select -rect {-103.282 2460.642 44.938 2335.227}
+<CMD> deselectAll
+<CMD> gui_select -rect {-137.486 2323.825 10.733 2249.716}
+<CMD> deselectAll
+<CMD> gui_select -rect {-97.581 2221.211 39.237 2164.204}
+<CMD> deselectAll
+<CMD> gui_select -rect {-120.383 2135.700 22.135 2067.292}
+<CMD> zoomSelected
+<CMD> deselectAll
+<CMD> gui_select -rect {-7.322 2138.613 4.240 2132.591}
+<CMD> zoomSelected
+<CMD> zoomOut
+<CMD> fit
+<CMD> deselectAll
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -side Bottom -layer 6 -spreadType center -spacing 4.0 -pin {{mem_in1[0]} {mem_in1[1]} {mem_in1[2]} {mem_in1[3]} {mem_in1[4]} {mem_in1[5]} {mem_in1[6]} {mem_in1[7]} {mem_in1[8]} {mem_in1[9]} {mem_in1[10]} {mem_in1[11]} {mem_in1[12]} {mem_in1[13]} {mem_in1[14]} {mem_in1[15]} {mem_in1[16]} {mem_in1[17]} {mem_in1[18]} {mem_in1[19]} {mem_in1[20]} {mem_in1[21]} {mem_in1[22]} {mem_in1[23]} {mem_in1[24]} {mem_in1[25]} {mem_in1[26]} {mem_in1[27]} {mem_in1[28]} {mem_in1[29]} {mem_in1[30]} {mem_in1[31]} {mem_in1[32]} {mem_in1[33]} {mem_in1[34]} {mem_in1[35]} {mem_in1[36]} {mem_in1[37]} {mem_in1[38]} {mem_in1[39]} {mem_in1[40]} {mem_in1[41]} {mem_in1[42]} {mem_in1[43]} {mem_in1[44]} {mem_in1[45]} {mem_in1[46]} {mem_in1[47]} {mem_in1[48]} {mem_in1[49]} {mem_in1[50]} {mem_in1[51]} {mem_in1[52]} {mem_in1[53]} {mem_in1[54]} {mem_in1[55]} {mem_in1[56]} {mem_in1[57]} {mem_in1[58]} {mem_in1[59]} {mem_in1[60]} {mem_in1[61]} {mem_in1[62]} {mem_in1[63]} {mem_in1[64]} {mem_in1[65]} {mem_in1[66]} {mem_in1[67]} {mem_in1[68]} {mem_in1[69]} {mem_in1[70]} {mem_in1[71]} {mem_in1[72]} {mem_in1[73]} {mem_in1[74]} {mem_in1[75]} {mem_in1[76]} {mem_in1[77]} {mem_in1[78]} {mem_in1[79]} {mem_in1[80]} {mem_in1[81]} {mem_in1[82]} {mem_in1[83]} {mem_in1[84]} {mem_in1[85]} {mem_in1[86]} {mem_in1[87]} {mem_in1[88]} {mem_in1[89]} {mem_in1[90]} {mem_in1[91]} {mem_in1[92]} {mem_in1[93]} {mem_in1[94]} {mem_in1[95]} {mem_in1[96]} {mem_in1[97]} {mem_in1[98]} {mem_in1[99]} {mem_in1[100]} {mem_in1[101]} {mem_in1[102]} {mem_in1[103]} {mem_in1[104]} {mem_in1[105]} {mem_in1[106]} {mem_in1[107]} {mem_in1[108]} {mem_in1[109]} {mem_in1[110]} {mem_in1[111]} {mem_in1[112]} {mem_in1[113]} {mem_in1[114]} {mem_in1[115]} {mem_in1[116]} {mem_in1[117]} {mem_in1[118]} {mem_in1[119]} {mem_in1[120]} {mem_in1[121]} {mem_in1[122]} {mem_in1[123]} {mem_in1[124]} {mem_in1[125]} {mem_in1[126]} {mem_in1[127]}}
+Successfully spread [128] pins.
+editPin : finished (cpu = 0:00:00.1 real = 0:00:00.0, mem = 1306.8M).
+<CMD> gui_select -rect {1116.675 89.139 1287.697 -98.986}
+<CMD> deselectAll
+<CMD> gui_select -rect {615.010 37.832 734.726 -98.986}
+<CMD> deselectAll
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 6 -spreadType center -spacing 4.4 -pin {{mem_in1[0]} {mem_in1[1]} {mem_in1[2]} {mem_in1[3]} {mem_in1[4]} {mem_in1[5]} {mem_in1[6]} {mem_in1[7]} {mem_in1[8]} {mem_in1[9]} {mem_in1[10]} {mem_in1[11]} {mem_in1[12]} {mem_in1[13]} {mem_in1[14]} {mem_in1[15]} {mem_in1[16]} {mem_in1[17]} {mem_in1[18]} {mem_in1[19]} {mem_in1[20]} {mem_in1[21]} {mem_in1[22]} {mem_in1[23]} {mem_in1[24]} {mem_in1[25]} {mem_in1[26]} {mem_in1[27]} {mem_in1[28]} {mem_in1[29]} {mem_in1[30]} {mem_in1[31]} {mem_in1[32]} {mem_in1[33]} {mem_in1[34]} {mem_in1[35]} {mem_in1[36]} {mem_in1[37]} {mem_in1[38]} {mem_in1[39]} {mem_in1[40]} {mem_in1[41]} {mem_in1[42]} {mem_in1[43]} {mem_in1[44]} {mem_in1[45]} {mem_in1[46]} {mem_in1[47]} {mem_in1[48]} {mem_in1[49]} {mem_in1[50]} {mem_in1[51]} {mem_in1[52]} {mem_in1[53]} {mem_in1[54]} {mem_in1[55]} {mem_in1[56]} {mem_in1[57]} {mem_in1[58]} {mem_in1[59]} {mem_in1[60]} {mem_in1[61]} {mem_in1[62]} {mem_in1[63]} {mem_in1[64]} {mem_in1[65]} {mem_in1[66]} {mem_in1[67]} {mem_in1[68]} {mem_in1[69]} {mem_in1[70]} {mem_in1[71]} {mem_in1[72]} {mem_in1[73]} {mem_in1[74]} {mem_in1[75]} {mem_in1[76]} {mem_in1[77]} {mem_in1[78]} {mem_in1[79]} {mem_in1[80]} {mem_in1[81]} {mem_in1[82]} {mem_in1[83]} {mem_in1[84]} {mem_in1[85]} {mem_in1[86]} {mem_in1[87]} {mem_in1[88]} {mem_in1[89]} {mem_in1[90]} {mem_in1[91]} {mem_in1[92]} {mem_in1[93]} {mem_in1[94]} {mem_in1[95]} {mem_in1[96]} {mem_in1[97]} {mem_in1[98]} {mem_in1[99]} {mem_in1[100]} {mem_in1[101]} {mem_in1[102]} {mem_in1[103]} {mem_in1[104]} {mem_in1[105]} {mem_in1[106]} {mem_in1[107]} {mem_in1[108]} {mem_in1[109]} {mem_in1[110]} {mem_in1[111]} {mem_in1[112]} {mem_in1[113]} {mem_in1[114]} {mem_in1[115]} {mem_in1[116]} {mem_in1[117]} {mem_in1[118]} {mem_in1[119]} {mem_in1[120]} {mem_in1[121]} {mem_in1[122]} {mem_in1[123]} {mem_in1[124]} {mem_in1[125]} {mem_in1[126]} {mem_in1[127]}}
+Successfully spread [128] pins.
+editPin : finished (cpu = 0:00:00.1 real = 0:00:00.0, mem = 1306.8M).
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 6 -spreadType center -spacing 4 -pin {{mem_in1[0]} {mem_in1[1]} {mem_in1[2]} {mem_in1[3]} {mem_in1[4]} {mem_in1[5]} {mem_in1[6]} {mem_in1[7]} {mem_in1[8]} {mem_in1[9]} {mem_in1[10]} {mem_in1[11]} {mem_in1[12]} {mem_in1[13]} {mem_in1[14]} {mem_in1[15]} {mem_in1[16]} {mem_in1[17]} {mem_in1[18]} {mem_in1[19]} {mem_in1[20]} {mem_in1[21]} {mem_in1[22]} {mem_in1[23]} {mem_in1[24]} {mem_in1[25]} {mem_in1[26]} {mem_in1[27]} {mem_in1[28]} {mem_in1[29]} {mem_in1[30]} {mem_in1[31]} {mem_in1[32]} {mem_in1[33]} {mem_in1[34]} {mem_in1[35]} {mem_in1[36]} {mem_in1[37]} {mem_in1[38]} {mem_in1[39]} {mem_in1[40]} {mem_in1[41]} {mem_in1[42]} {mem_in1[43]} {mem_in1[44]} {mem_in1[45]} {mem_in1[46]} {mem_in1[47]} {mem_in1[48]} {mem_in1[49]} {mem_in1[50]} {mem_in1[51]} {mem_in1[52]} {mem_in1[53]} {mem_in1[54]} {mem_in1[55]} {mem_in1[56]} {mem_in1[57]} {mem_in1[58]} {mem_in1[59]} {mem_in1[60]} {mem_in1[61]} {mem_in1[62]} {mem_in1[63]} {mem_in1[64]} {mem_in1[65]} {mem_in1[66]} {mem_in1[67]} {mem_in1[68]} {mem_in1[69]} {mem_in1[70]} {mem_in1[71]} {mem_in1[72]} {mem_in1[73]} {mem_in1[74]} {mem_in1[75]} {mem_in1[76]} {mem_in1[77]} {mem_in1[78]} {mem_in1[79]} {mem_in1[80]} {mem_in1[81]} {mem_in1[82]} {mem_in1[83]} {mem_in1[84]} {mem_in1[85]} {mem_in1[86]} {mem_in1[87]} {mem_in1[88]} {mem_in1[89]} {mem_in1[90]} {mem_in1[91]} {mem_in1[92]} {mem_in1[93]} {mem_in1[94]} {mem_in1[95]} {mem_in1[96]} {mem_in1[97]} {mem_in1[98]} {mem_in1[99]} {mem_in1[100]} {mem_in1[101]} {mem_in1[102]} {mem_in1[103]} {mem_in1[104]} {mem_in1[105]} {mem_in1[106]} {mem_in1[107]} {mem_in1[108]} {mem_in1[109]} {mem_in1[110]} {mem_in1[111]} {mem_in1[112]} {mem_in1[113]} {mem_in1[114]} {mem_in1[115]} {mem_in1[116]} {mem_in1[117]} {mem_in1[118]} {mem_in1[119]} {mem_in1[120]} {mem_in1[121]} {mem_in1[122]} {mem_in1[123]} {mem_in1[124]} {mem_in1[125]} {mem_in1[126]} {mem_in1[127]}}
+Successfully spread [128] pins.
+editPin : finished (cpu = 0:00:00.1 real = 0:00:00.0, mem = 1306.8M).
+<CMD> gui_select -rect {575.106 60.635 711.923 -98.986}
+<CMD> deselectAll
+<CMD> gui_select -rect {1110.974 26.431 1299.099 -98.986}
+<CMD> deselectAll
+<CMD> gui_select -rect {-154.588 1782.255 107.645 1417.409}
+<CMD> deselectAll
+<CMD> gui_select -rect {-114.683 1577.029 39.237 1491.518}
+<CMD> deselectAll
+<CMD> gui_select -rect {-97.581 1582.730 39.237 1514.321}
+<CMD> zoomSelected
+<CMD> deselectAll
+<CMD> gui_select -rect {-7.846 1556.414 3.891 1540.764}
+<CMD> zoomSelected
+<CMD> zoomIn
+<CMD> fit
+<CMD> deselectAll
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 6 -spreadType center -spacing 4.0 -pin {{inst1[0]} {inst1[1]} {inst1[2]} {inst1[3]} {inst1[4]} {inst1[5]} {inst1[6]} {inst1[7]} {inst1[8]} {inst1[9]} {inst1[10]} {inst1[11]} {inst1[12]} {inst1[13]} {inst1[14]} {inst1[15]} {inst1[16]} {inst1[17]} {inst1[18]}}
+Successfully spread [19] pins.
+editPin : finished (cpu = 0:00:00.1 real = 0:00:00.0, mem = 1306.8M).
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 6 -spreadType center -spacing 4 -pin {{inst1[0]} {inst1[1]} {inst1[2]} {inst1[3]} {inst1[4]} {inst1[5]} {inst1[6]} {inst1[7]} {inst1[8]} {inst1[9]} {inst1[10]} {inst1[11]} {inst1[12]} {inst1[13]} {inst1[14]} {inst1[15]} {inst1[16]} {inst1[17]} {inst1[18]} {mem_in1[0]} {mem_in1[1]} {mem_in1[2]} {mem_in1[3]} {mem_in1[4]} {mem_in1[5]} {mem_in1[6]} {mem_in1[7]} {mem_in1[8]} {mem_in1[9]} {mem_in1[10]} {mem_in1[11]} {mem_in1[12]} {mem_in1[13]} {mem_in1[14]} {mem_in1[15]} {mem_in1[16]} {mem_in1[17]} {mem_in1[18]} {mem_in1[19]} {mem_in1[20]} {mem_in1[21]} {mem_in1[22]} {mem_in1[23]} {mem_in1[24]} {mem_in1[25]} {mem_in1[26]} {mem_in1[27]} {mem_in1[28]} {mem_in1[29]} {mem_in1[30]} {mem_in1[31]} {mem_in1[32]} {mem_in1[33]} {mem_in1[34]} {mem_in1[35]} {mem_in1[36]} {mem_in1[37]} {mem_in1[38]} {mem_in1[39]} {mem_in1[40]} {mem_in1[41]} {mem_in1[42]} {mem_in1[43]} {mem_in1[44]} {mem_in1[45]} {mem_in1[46]} {mem_in1[47]} {mem_in1[48]} {mem_in1[49]} {mem_in1[50]} {mem_in1[51]} {mem_in1[52]} {mem_in1[53]} {mem_in1[54]} {mem_in1[55]} {mem_in1[56]} {mem_in1[57]} {mem_in1[58]} {mem_in1[59]} {mem_in1[60]} {mem_in1[61]} {mem_in1[62]} {mem_in1[63]} {mem_in1[64]} {mem_in1[65]} {mem_in1[66]} {mem_in1[67]} {mem_in1[68]} {mem_in1[69]} {mem_in1[70]} {mem_in1[71]} {mem_in1[72]} {mem_in1[73]} {mem_in1[74]} {mem_in1[75]} {mem_in1[76]} {mem_in1[77]} {mem_in1[78]} {mem_in1[79]} {mem_in1[80]} {mem_in1[81]} {mem_in1[82]} {mem_in1[83]} {mem_in1[84]} {mem_in1[85]} {mem_in1[86]} {mem_in1[87]} {mem_in1[88]} {mem_in1[89]} {mem_in1[90]} {mem_in1[91]} {mem_in1[92]} {mem_in1[93]} {mem_in1[94]} {mem_in1[95]} {mem_in1[96]} {mem_in1[97]} {mem_in1[98]} {mem_in1[99]} {mem_in1[100]} {mem_in1[101]} {mem_in1[102]} {mem_in1[103]} {mem_in1[104]} {mem_in1[105]} {mem_in1[106]} {mem_in1[107]} {mem_in1[108]} {mem_in1[109]} {mem_in1[110]} {mem_in1[111]} {mem_in1[112]} {mem_in1[113]} {mem_in1[114]} {mem_in1[115]} {mem_in1[116]} {mem_in1[117]} {mem_in1[118]} {mem_in1[119]} {mem_in1[120]} {mem_in1[121]} {mem_in1[122]} {mem_in1[123]} {mem_in1[124]} {mem_in1[125]} {mem_in1[126]} {mem_in1[127]}}
+Successfully spread [147] pins.
+editPin : finished (cpu = 0:00:00.1 real = 0:00:01.0, mem = 1306.8M).
+<CMD> gui_select -rect {1150.880 43.533 1287.697 -98.986}
+<CMD> deselectAll
+<CMD> gui_select -rect {974.157 37.832 1110.974 -104.686}
+<CMD> gui_select -rect {780.332 60.635 934.251 -98.986}
+<CMD> deselectAll
+<CMD> gui_select -rect {540.901 72.037 683.419 -121.788}
+<CMD> deselectAll
+<CMD> gui_select -rect {1150.880 60.635 1287.697 -121.788}
+<CMD> zoomSelected
+<CMD> zoomIn
+<CMD> zoomSelected
+<CMD> deselectAll
+<CMD> gui_select -rect {1182.630 2.938 1202.306 -8.678}
+<CMD> fit
+<CMD> zoomSelected
+<CMD> deselectAll
+<CMD> gui_select -rect {1170.199 2.051 1186.788 -1.703}
+<CMD> fit
+<CMD> deselectAll
+<CMD> gui_select -rect {1076.770 60.635 1202.186 -104.686}
+<CMD> deselectAll
+<CMD> gui_select -rect {1048.266 60.635 1110.974 -98.986}
+<CMD> deselectAll
+<CMD> gui_select -rect {1093.872 37.832 1133.777 -116.088}
+<CMD> deselectAll
+<CMD> gui_select -rect {1116.675 37.832 1185.083 -104.686}
+<CMD> deselectAll
+<CMD> gui_select -rect {1128.077 37.832 1179.383 -104.686}
+<CMD> zoomSelected
+<CMD> deselectAll
+<CMD> gui_select -rect {1130.573 2.257 1151.184 -4.978}
+<CMD> fit
+<CMD> zoomSelected
+<CMD> deselectAll
+<CMD> gui_select -rect {1152.501 1.794 1167.100 -1.510}
+<CMD> deselectAll
+<CMD> gui_select -rect {1152.694 1.602 1166.683 -1.607}
+<CMD> fit
+<CMD> zoomSelected
+<CMD> deselectAll
+<CMD> selectPhyPin 1161.9000 0.0000 1162.3000 1.4150 6 {inst1[18]}
+<CMD> fit
+<CMD> zoomSelected
+<CMD> zoomOut
+<CMD> deselectAll
+<CMD> selectPhyPin 1157.5000 0.0000 1157.9000 1.4150 6 {mem_in1[0]}
+<CMD> fit
+<CMD> zoomSelected
+<CMD> zoomOut
+<CMD> deselectAll
+<CMD> selectPhyPin 1153.1000 0.0000 1153.5000 1.4150 6 {mem_in1[1]}
+<CMD> fit
+<CMD> zoomSelected
+<CMD> zoomOut
+<CMD> deselectAll
+<CMD> selectPhyPin 1161.9000 0.0000 1162.3000 1.4150 6 {inst1[18]}
+<CMD> fit
+<CMD> zoomSelected
+<CMD> zoomOut
+<CMD> deselectAll
+<CMD> selectObject IO_Pin {inst1[18]}
+<CMD> fit
+<CMD> zoomSelected
+<CMD> deselectAll
+<CMD> zoomOut
+<CMD> zoomOut
+<CMD> selectPhyPin 1166.3000 0.0000 1166.7000 1.4150 6 {inst1[17]}
+<CMD> deselectAll
+<CMD> selectObject IO_Pin {inst1[17]}
+<CMD> deselectAll
+<CMD> selectObject IO_Pin {mem_in1[0]}
+<CMD> deselectAll
+<CMD> selectObject IO_Pin {inst1[17]}
+<CMD> fit
+<CMD> zoomSelected
+<CMD> zoomOut
+<CMD> zoomOut
+<CMD> zoomOut
+<CMD> deselectAll
+<CMD> selectObject IO_Pin {mem_in1[0]}
+<CMD> fit
+<CMD> deselectAll
+<CMD> gui_select -rect {1093.872 43.533 1185.083 -81.883}
+<CMD> deselectAll
+<CMD> gui_select -rect {1093.872 60.635 1270.594 -98.986}
+<CMD> deselectAll
+<CMD> gui_select -rect {563.704 37.832 660.616 -76.183}
+<CMD> gui_select -rect {746.128 43.533 837.339 -98.986}
+<CMD> gui_select -rect {905.748 43.533 985.558 -47.679}
+<CMD> gui_select -rect {1042.565 20.730 1167.982 -133.190}
+<CMD> deselectAll
+<CMD> gui_select -rect {-154.588 2785.584 27.835 2603.160}
+<CMD> deselectAll
+<CMD> gui_select -rect {-131.785 2403.635 22.135 2164.204}
+<CMD> deselectAll
+<CMD> gui_select -rect {-103.282 1765.154 22.135 1559.927}
+<CMD> deselectAll
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 7 -spreadType center -spacing 4.0 -pin {{inst2[0]} {inst2[1]} {inst2[2]} {inst2[3]} {inst2[4]} {inst2[5]} {inst2[6]} {inst2[7]} {inst2[8]} {inst2[9]} {inst2[10]} {inst2[11]} {inst2[12]} {inst2[13]} {inst2[14]} {inst2[15]} {inst2[16]} {inst2[17]} {inst2[18]} clk reset {mem_in2[0]} {mem_in2[1]} {mem_in2[2]} {mem_in2[3]} {mem_in2[4]} {mem_in2[5]} {mem_in2[6]} {mem_in2[7]} {mem_in2[8]} {mem_in2[9]} {mem_in2[10]} {mem_in2[11]} {mem_in2[12]} {mem_in2[13]} {mem_in2[14]} {mem_in2[15]} {mem_in2[16]} {mem_in2[17]} {mem_in2[18]} {mem_in2[19]} {mem_in2[20]} {mem_in2[21]} {mem_in2[22]} {mem_in2[23]} {mem_in2[24]} {mem_in2[25]} {mem_in2[26]} {mem_in2[27]} {mem_in2[28]} {mem_in2[29]} {mem_in2[30]} {mem_in2[31]} {mem_in2[32]} {mem_in2[33]} {mem_in2[34]} {mem_in2[35]} {mem_in2[36]} {mem_in2[37]} {mem_in2[38]} {mem_in2[39]} {mem_in2[40]} {mem_in2[41]} {mem_in2[42]} {mem_in2[43]} {mem_in2[44]} {mem_in2[45]} {mem_in2[46]} {mem_in2[47]} {mem_in2[48]} {mem_in2[49]} {mem_in2[50]} {mem_in2[51]} {mem_in2[52]} {mem_in2[53]} {mem_in2[54]} {mem_in2[55]} {mem_in2[56]} {mem_in2[57]} {mem_in2[58]} {mem_in2[59]} {mem_in2[60]} {mem_in2[61]} {mem_in2[62]} {mem_in2[63]} {mem_in2[64]} {mem_in2[65]} {mem_in2[66]} {mem_in2[67]} {mem_in2[68]} {mem_in2[69]} {mem_in2[70]} {mem_in2[71]} {mem_in2[72]} {mem_in2[73]} {mem_in2[74]} {mem_in2[75]} {mem_in2[76]} {mem_in2[77]} {mem_in2[78]} {mem_in2[79]} {mem_in2[80]} {mem_in2[81]} {mem_in2[82]} {mem_in2[83]} {mem_in2[84]} {mem_in2[85]} {mem_in2[86]} {mem_in2[87]} {mem_in2[88]} {mem_in2[89]} {mem_in2[90]} {mem_in2[91]} {mem_in2[92]} {mem_in2[93]} {mem_in2[94]} {mem_in2[95]} {mem_in2[96]} {mem_in2[97]} {mem_in2[98]} {mem_in2[99]} {mem_in2[100]} {mem_in2[101]} {mem_in2[102]} {mem_in2[103]} {mem_in2[104]} {mem_in2[105]} {mem_in2[106]} {mem_in2[107]} {mem_in2[108]} {mem_in2[109]} {mem_in2[110]} {mem_in2[111]} {mem_in2[112]} {mem_in2[113]} {mem_in2[114]} {mem_in2[115]} {mem_in2[116]} {mem_in2[117]} {mem_in2[118]} {mem_in2[119]} {mem_in2[120]} {mem_in2[121]} {mem_in2[122]} {mem_in2[123]} {mem_in2[124]} {mem_in2[125]} {mem_in2[126]} {mem_in2[127]}}
+Successfully spread [149] pins.
+editPin : finished (cpu = 0:00:00.1 real = 0:00:01.0, mem = 1306.8M).
+<CMD> gui_select -rect {-188.792 2500.548 39.237 2283.919}
+<CMD> deselectAll
+<CMD> gui_select -rect {-154.588 2232.613 44.938 2130.000}
+<CMD> deselectAll
+<CMD> gui_select -rect {-154.588 2061.591 62.040 1770.854}
+<CMD> deselectAll
+<CMD> gui_select -rect {-154.588 1919.073 10.733 1799.358}
+<CMD> deselectAll
+<CMD> gui_select -rect {-154.588 2477.745 56.339 2289.620}
+<CMD> deselectAll
+<CMD> gui_select -rect {-171.690 2289.620 79.142 2152.803}
+<CMD> deselectAll
+<CMD> gui_select -rect {-103.282 1919.073 10.733 1799.358}
+<CMD> deselectAll
+<CMD> gui_select -rect {-131.785 2529.051 10.733 2335.227}
+<CMD> deselectAll
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 7 -spreadType center -spacing 4.0 -pin {{inst2[0]} {inst2[1]} {inst2[2]} {inst2[3]} {inst2[4]} {inst2[5]} {inst2[6]} {inst2[7]} {inst2[8]} {inst2[9]} {inst2[10]} {inst2[11]} {inst2[12]} {inst2[13]} {inst2[14]} {inst2[15]} {inst2[16]} {inst2[17]} {inst2[18]} clk reset {mem_in2[0]} {mem_in2[1]} {mem_in2[2]} {mem_in2[3]} {mem_in2[4]} {mem_in2[5]} {mem_in2[6]} {mem_in2[7]} {mem_in2[8]} {mem_in2[9]} {mem_in2[10]} {mem_in2[11]} {mem_in2[12]} {mem_in2[13]} {mem_in2[14]} {mem_in2[15]} {mem_in2[16]} {mem_in2[17]} {mem_in2[18]} {mem_in2[19]} {mem_in2[20]} {mem_in2[21]} {mem_in2[22]} {mem_in2[23]} {mem_in2[24]} {mem_in2[25]} {mem_in2[26]} {mem_in2[27]} {mem_in2[28]} {mem_in2[29]} {mem_in2[30]} {mem_in2[31]} {mem_in2[32]} {mem_in2[33]} {mem_in2[34]} {mem_in2[35]} {mem_in2[36]} {mem_in2[37]} {mem_in2[38]} {mem_in2[39]} {mem_in2[40]} {mem_in2[41]} {mem_in2[42]} {mem_in2[43]} {mem_in2[44]} {mem_in2[45]} {mem_in2[46]} {mem_in2[47]} {mem_in2[48]} {mem_in2[49]} {mem_in2[50]} {mem_in2[51]} {mem_in2[52]} {mem_in2[53]} {mem_in2[54]} {mem_in2[55]} {mem_in2[56]} {mem_in2[57]} {mem_in2[58]} {mem_in2[59]} {mem_in2[60]} {mem_in2[61]} {mem_in2[62]} {mem_in2[63]} {mem_in2[64]} {mem_in2[65]} {mem_in2[66]} {mem_in2[67]} {mem_in2[68]} {mem_in2[69]} {mem_in2[70]} {mem_in2[71]} {mem_in2[72]} {mem_in2[73]} {mem_in2[74]} {mem_in2[75]} {mem_in2[76]} {mem_in2[77]} {mem_in2[78]} {mem_in2[79]} {mem_in2[80]} {mem_in2[81]} {mem_in2[82]} {mem_in2[83]} {mem_in2[84]} {mem_in2[85]} {mem_in2[86]} {mem_in2[87]} {mem_in2[88]} {mem_in2[89]} {mem_in2[90]} {mem_in2[91]} {mem_in2[92]} {mem_in2[93]} {mem_in2[94]} {mem_in2[95]} {mem_in2[96]} {mem_in2[97]} {mem_in2[98]} {mem_in2[99]} {mem_in2[100]} {mem_in2[101]} {mem_in2[102]} {mem_in2[103]} {mem_in2[104]} {mem_in2[105]} {mem_in2[106]} {mem_in2[107]} {mem_in2[108]} {mem_in2[109]} {mem_in2[110]} {mem_in2[111]} {mem_in2[112]} {mem_in2[113]} {mem_in2[114]} {mem_in2[115]} {mem_in2[116]} {mem_in2[117]} {mem_in2[118]} {mem_in2[119]} {mem_in2[120]} {mem_in2[121]} {mem_in2[122]} {mem_in2[123]} {mem_in2[124]} {mem_in2[125]} {mem_in2[126]} {mem_in2[127]}}
+Successfully spread [149] pins.
+editPin : finished (cpu = 0:00:00.1 real = 0:00:00.0, mem = 1306.8M).
+<CMD> gui_select -rect {1800.763 2477.745 1977.485 2340.927}
+<CMD> deselectAll
+<CMD> gui_select -rect {1789.361 2289.620 1988.887 2169.905}
+<CMD> gui_select -rect {1783.660 2078.693 1994.588 1958.978}
+<CMD> deselectAll
+<CMD> gui_select -rect {1789.361 1907.672 2011.689 1787.956}
+<CMD> deselectAll
+<CMD> gui_select -rect {1755.157 2483.446 1994.588 2340.927}
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 7 -spreadType center -spacing -4.0 -pin {{inst2[0]} {inst2[1]} {inst2[2]} {inst2[3]} {inst2[4]} {inst2[5]} {inst2[6]} {inst2[7]} {inst2[8]} {inst2[9]} {inst2[10]} {inst2[11]} {inst2[12]} {inst2[13]} {inst2[14]} {inst2[15]} {inst2[16]} {inst2[17]} {inst2[18]} clk reset {mem_in2[0]} {mem_in2[1]} {mem_in2[2]} {mem_in2[3]} {mem_in2[4]} {mem_in2[5]} {mem_in2[6]} {mem_in2[7]} {mem_in2[8]} {mem_in2[9]} {mem_in2[10]} {mem_in2[11]} {mem_in2[12]} {mem_in2[13]} {mem_in2[14]} {mem_in2[15]} {mem_in2[16]} {mem_in2[17]} {mem_in2[18]} {mem_in2[19]} {mem_in2[20]} {mem_in2[21]} {mem_in2[22]} {mem_in2[23]} {mem_in2[24]} {mem_in2[25]} {mem_in2[26]} {mem_in2[27]} {mem_in2[28]} {mem_in2[29]} {mem_in2[30]} {mem_in2[31]} {mem_in2[32]} {mem_in2[33]} {mem_in2[34]} {mem_in2[35]} {mem_in2[36]} {mem_in2[37]} {mem_in2[38]} {mem_in2[39]} {mem_in2[40]} {mem_in2[41]} {mem_in2[42]} {mem_in2[43]} {mem_in2[44]} {mem_in2[45]} {mem_in2[46]} {mem_in2[47]} {mem_in2[48]} {mem_in2[49]} {mem_in2[50]} {mem_in2[51]} {mem_in2[52]} {mem_in2[53]} {mem_in2[54]} {mem_in2[55]} {mem_in2[56]} {mem_in2[57]} {mem_in2[58]} {mem_in2[59]} {mem_in2[60]} {mem_in2[61]} {mem_in2[62]} {mem_in2[63]} {mem_in2[64]} {mem_in2[65]} {mem_in2[66]} {mem_in2[67]} {mem_in2[68]} {mem_in2[69]} {mem_in2[70]} {mem_in2[71]} {mem_in2[72]} {mem_in2[73]} {mem_in2[74]} {mem_in2[75]} {mem_in2[76]} {mem_in2[77]} {mem_in2[78]} {mem_in2[79]} {mem_in2[80]} {mem_in2[81]} {mem_in2[82]} {mem_in2[83]} {mem_in2[84]} {mem_in2[85]} {mem_in2[86]} {mem_in2[87]} {mem_in2[88]} {mem_in2[89]} {mem_in2[90]} {mem_in2[91]} {mem_in2[92]} {mem_in2[93]} {mem_in2[94]} {mem_in2[95]} {mem_in2[96]} {mem_in2[97]} {mem_in2[98]} {mem_in2[99]} {mem_in2[100]} {mem_in2[101]} {mem_in2[102]} {mem_in2[103]} {mem_in2[104]} {mem_in2[105]} {mem_in2[106]} {mem_in2[107]} {mem_in2[108]} {mem_in2[109]} {mem_in2[110]} {mem_in2[111]} {mem_in2[112]} {mem_in2[113]} {mem_in2[114]} {mem_in2[115]} {mem_in2[116]} {mem_in2[117]} {mem_in2[118]} {mem_in2[119]} {mem_in2[120]} {mem_in2[121]} {mem_in2[122]} {mem_in2[123]} {mem_in2[124]} {mem_in2[125]} {mem_in2[126]} {mem_in2[127]}}
+**ERROR: (IMPPTN-1668):	Specifying negative spacing value to spread the pins along the partition fence in anti-clockwise direction is obsolete. Use [-spreadDirection counterclockwise] option to specify the spreading direction.
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 7 -spreadType center -spacing 4.0 -pin {{inst2[0]} {inst2[1]} {inst2[2]} {inst2[3]} {inst2[4]} {inst2[5]} {inst2[6]} {inst2[7]} {inst2[8]} {inst2[9]} {inst2[10]} {inst2[11]} {inst2[12]} {inst2[13]} {inst2[14]} {inst2[15]} {inst2[16]} {inst2[17]} {inst2[18]} clk reset {mem_in2[0]} {mem_in2[1]} {mem_in2[2]} {mem_in2[3]} {mem_in2[4]} {mem_in2[5]} {mem_in2[6]} {mem_in2[7]} {mem_in2[8]} {mem_in2[9]} {mem_in2[10]} {mem_in2[11]} {mem_in2[12]} {mem_in2[13]} {mem_in2[14]} {mem_in2[15]} {mem_in2[16]} {mem_in2[17]} {mem_in2[18]} {mem_in2[19]} {mem_in2[20]} {mem_in2[21]} {mem_in2[22]} {mem_in2[23]} {mem_in2[24]} {mem_in2[25]} {mem_in2[26]} {mem_in2[27]} {mem_in2[28]} {mem_in2[29]} {mem_in2[30]} {mem_in2[31]} {mem_in2[32]} {mem_in2[33]} {mem_in2[34]} {mem_in2[35]} {mem_in2[36]} {mem_in2[37]} {mem_in2[38]} {mem_in2[39]} {mem_in2[40]} {mem_in2[41]} {mem_in2[42]} {mem_in2[43]} {mem_in2[44]} {mem_in2[45]} {mem_in2[46]} {mem_in2[47]} {mem_in2[48]} {mem_in2[49]} {mem_in2[50]} {mem_in2[51]} {mem_in2[52]} {mem_in2[53]} {mem_in2[54]} {mem_in2[55]} {mem_in2[56]} {mem_in2[57]} {mem_in2[58]} {mem_in2[59]} {mem_in2[60]} {mem_in2[61]} {mem_in2[62]} {mem_in2[63]} {mem_in2[64]} {mem_in2[65]} {mem_in2[66]} {mem_in2[67]} {mem_in2[68]} {mem_in2[69]} {mem_in2[70]} {mem_in2[71]} {mem_in2[72]} {mem_in2[73]} {mem_in2[74]} {mem_in2[75]} {mem_in2[76]} {mem_in2[77]} {mem_in2[78]} {mem_in2[79]} {mem_in2[80]} {mem_in2[81]} {mem_in2[82]} {mem_in2[83]} {mem_in2[84]} {mem_in2[85]} {mem_in2[86]} {mem_in2[87]} {mem_in2[88]} {mem_in2[89]} {mem_in2[90]} {mem_in2[91]} {mem_in2[92]} {mem_in2[93]} {mem_in2[94]} {mem_in2[95]} {mem_in2[96]} {mem_in2[97]} {mem_in2[98]} {mem_in2[99]} {mem_in2[100]} {mem_in2[101]} {mem_in2[102]} {mem_in2[103]} {mem_in2[104]} {mem_in2[105]} {mem_in2[106]} {mem_in2[107]} {mem_in2[108]} {mem_in2[109]} {mem_in2[110]} {mem_in2[111]} {mem_in2[112]} {mem_in2[113]} {mem_in2[114]} {mem_in2[115]} {mem_in2[116]} {mem_in2[117]} {mem_in2[118]} {mem_in2[119]} {mem_in2[120]} {mem_in2[121]} {mem_in2[122]} {mem_in2[123]} {mem_in2[124]} {mem_in2[125]} {mem_in2[126]} {mem_in2[127]}}
+Successfully spread [149] pins.
+editPin : finished (cpu = 0:00:00.1 real = 0:00:00.0, mem = 1306.8M).
+<CMD> deselectAll
+<CMD> gui_select -rect {-154.588 1936.175 56.339 1890.570}
+<CMD> deselectAll
+<CMD> gui_select -rect {-137.486 1936.175 27.835 1907.672}
+<CMD> fit
+<CMD> zoomSelected
+<CMD> deselectAll
+<CMD> zoomIn
+<CMD> selectPhyPin 0.0000 1925.0000 1.4150 1925.4000 7 {mem_in2[2]}
+<CMD> deselectAll
+<CMD> selectPhyPin 0.0000 1921.0000 1.4150 1921.4000 7 {mem_in2[1]}
+<CMD> deselectAll
+<CMD> selectPhyPin 0.0000 1917.0000 1.4150 1917.4000 7 {mem_in2[0]}
+<CMD> deselectAll
+<CMD> selectPhyPin 0.0000 1913.0000 1.4150 1913.4000 7 reset
+<CMD> deselectAll
+<CMD> fit
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 7 -spreadType center -spacing 4.0 -pin {{inst2[0]} {inst2[1]} {inst2[2]} {inst2[3]} {inst2[4]} {inst2[5]} {inst2[6]} {inst2[7]} {inst2[8]} {inst2[9]} {inst2[10]} {inst2[11]} {inst2[12]} {inst2[13]} {inst2[14]} {inst2[15]} {inst2[16]} {inst2[17]} {inst2[18]} {mem_in2[0]} {mem_in2[1]} {mem_in2[2]} {mem_in2[3]} {mem_in2[4]} {mem_in2[5]} {mem_in2[6]} {mem_in2[7]} {mem_in2[8]} {mem_in2[9]} {mem_in2[10]} {mem_in2[11]} {mem_in2[12]} {mem_in2[13]} {mem_in2[14]} {mem_in2[15]} {mem_in2[16]} {mem_in2[17]} {mem_in2[18]} {mem_in2[19]} {mem_in2[20]} {mem_in2[21]} {mem_in2[22]} {mem_in2[23]} {mem_in2[24]} {mem_in2[25]} {mem_in2[26]} {mem_in2[27]} {mem_in2[28]} {mem_in2[29]} {mem_in2[30]} {mem_in2[31]} {mem_in2[32]} {mem_in2[33]} {mem_in2[34]} {mem_in2[35]} {mem_in2[36]} {mem_in2[37]} {mem_in2[38]} {mem_in2[39]} {mem_in2[40]} {mem_in2[41]} {mem_in2[42]} {mem_in2[43]} {mem_in2[44]} {mem_in2[45]} {mem_in2[46]} {mem_in2[47]} {mem_in2[48]} {mem_in2[49]} {mem_in2[50]} {mem_in2[51]} {mem_in2[52]} {mem_in2[53]} {mem_in2[54]} {mem_in2[55]} {mem_in2[56]} {mem_in2[57]} {mem_in2[58]} {mem_in2[59]} {mem_in2[60]} {mem_in2[61]} {mem_in2[62]} {mem_in2[63]} {mem_in2[64]} {mem_in2[65]} {mem_in2[66]} {mem_in2[67]} {mem_in2[68]} {mem_in2[69]} {mem_in2[70]} {mem_in2[71]} {mem_in2[72]} {mem_in2[73]} {mem_in2[74]} {mem_in2[75]} {mem_in2[76]} {mem_in2[77]} {mem_in2[78]} {mem_in2[79]} {mem_in2[80]} {mem_in2[81]} {mem_in2[82]} {mem_in2[83]} {mem_in2[84]} {mem_in2[85]} {mem_in2[86]} {mem_in2[87]} {mem_in2[88]} {mem_in2[89]} {mem_in2[90]} {mem_in2[91]} {mem_in2[92]} {mem_in2[93]} {mem_in2[94]} {mem_in2[95]} {mem_in2[96]} {mem_in2[97]} {mem_in2[98]} {mem_in2[99]} {mem_in2[100]} {mem_in2[101]} {mem_in2[102]} {mem_in2[103]} {mem_in2[104]} {mem_in2[105]} {mem_in2[106]} {mem_in2[107]} {mem_in2[108]} {mem_in2[109]} {mem_in2[110]} {mem_in2[111]} {mem_in2[112]} {mem_in2[113]} {mem_in2[114]} {mem_in2[115]} {mem_in2[116]} {mem_in2[117]} {mem_in2[118]} {mem_in2[119]} {mem_in2[120]} {mem_in2[121]} {mem_in2[122]} {mem_in2[123]} {mem_in2[124]} {mem_in2[125]} {mem_in2[126]} {mem_in2[127]}}
+Successfully spread [147] pins.
+editPin : finished (cpu = 0:00:00.1 real = 0:00:00.0, mem = 1306.8M).
+<CMD> gui_select -rect {1783.660 2443.540 2011.689 2283.919}
+<CMD> deselectAll
+<CMD> gui_select -rect {1800.763 2232.613 2011.689 1970.380}
+<CMD> deselectAll
+<CMD> gui_select -rect {1766.558 1981.781 2011.689 1833.562}
+<CMD> deselectAll
+<CMD> gui_select -rect {1800.763 2460.642 1926.178 2323.825}
+<CMD> deselectAll
+<CMD> gui_select -rect {1806.463 2454.941 2011.689 2335.227}
+<CMD> deselectAll
+<CMD> gui_select -rect {1789.361 2198.409 2051.595 1993.183}
+<CMD> deselectAll
+<CMD> gui_select -rect {1783.660 1981.781 2028.792 1787.956}
+<CMD> deselectAll
+<CMD> gui_select -rect {1772.259 2460.642 2034.493 2289.620}
+<CMD> deselectAll
+<CMD> gui_select -rect {1755.157 2272.518 1960.383 2181.307}
+<CMD> deselectAll
+<CMD> gui_select -rect {-103.282 1993.183 39.237 1822.160}
+<CMD> deselectAll
+<CMD> gui_select -rect {1789.361 2472.044 1977.485 2323.825}
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.4 -pinDepth 1.415 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 7 -spreadType center -spacing 4.0 -pin {{inst2[0]} {inst2[1]} {inst2[2]} {inst2[3]} {inst2[4]} {inst2[5]} {inst2[6]} {inst2[7]} {inst2[8]} {inst2[9]} {inst2[10]} {inst2[11]} {inst2[12]} {inst2[13]} {inst2[14]} {inst2[15]} {inst2[16]} {inst2[17]} {inst2[18]}}
+Successfully spread [19] pins.
+editPin : finished (cpu = 0:00:00.1 real = 0:00:00.0, mem = 1306.8M).
+<CMD> deselectAll
+<CMD> gui_select -rect {-148.887 2215.511 107.645 2067.292}
+<CMD> deselectAll
+<CMD> gui_select -rect {1772.259 2409.336 2005.989 1696.745}
+<CMD> deselectAll
+<CMD> gui_select -rect {-131.785 1953.278 10.733 1833.562}
+<CMD> deselectAll
+<CMD> gui_select -rect {-154.588 2232.613 39.237 2033.088}
+<CMD> deselectAll
+<CMD> gui_select -rect {1755.157 2420.737 2005.989 1782.255}
+<CMD> deselectAll
+<CMD> gui_select -rect {529.500 89.139 1339.004 -133.190}
+<CMD> deselectAll
+<CMD> gui_select -rect {1755.157 2409.336 2188.412 1782.255}
+<CMD> deselectAll
+<CMD> gui_select -rect {-188.792 2238.314 141.850 1787.956}
+<CMD> deselectAll
+
+*** Memory Usage v#1 (Current mem = 1306.816M, initial mem = 149.258M) ***
+*** Message Summary: 2006 warning(s), 6 error(s)
+
+--- Ending "Innovus" (totcpu=0:04:00, real=0:30:34, mem=1306.8M) ---

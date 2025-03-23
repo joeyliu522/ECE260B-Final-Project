@@ -1,0 +1,3729 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "fullchip")
+  (DATE "Sat Mar 22 19:29:27 2025")
+  (VENDOR "Cadence Design Systems, Inc.")
+  (PROGRAM "Innovus")
+  (VERSION "v15.23-s045_1 ((64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5))")
+  (DIVIDER /)
+  (VOLTAGE 0.900000::0.900000)
+  (PROCESS "1.000000::1.000000")
+  (TEMPERATURE 125.000000::125.000000)
+  (TIMESCALE 1.0 ns)
+
+  (CELL
+    (CELLTYPE  "fullchip")
+    (INSTANCE)
+      (DELAY
+	(ABSOLUTE
+	(INTERCONNECT CTS_ccl_BUF_clk_G0_L1_2/Z core_instance1/clk  (0.024::0.024) (0.023::0.023))
+	(INTERCONNECT CTS_ccl_BUF_clk_G0_L1_1/Z core_instance2/clk  (0.022::0.022) (0.021::0.021))
+	(INTERCONNECT core_instance1/out[44] FE_OFC430_out1_44_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/out[125] FE_OFC428_out2_125_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance1/out[109] FE_OFC426_out1_109_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance1/out[124] FE_OFC424_out1_124_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT FE_OFC420_sum_out1_0_/ZN core_instance2/sum_in[0]  (0.043::0.045) (0.042::0.045))
+	(INTERCONNECT FE_OFC419_sum_out1_0_/ZN FE_OFC420_sum_out1_0_/I  (0.012::0.012) (0.012::0.012))
+	(INTERCONNECT FE_OFC418_sum_out1_1_/ZN core_instance2/sum_in[1]  (0.025::0.027) (0.025::0.026))
+	(INTERCONNECT FE_OFC417_sum_out1_1_/ZN FE_OFC418_sum_out1_1_/I  (0.014::0.014) (0.014::0.014))
+	(INTERCONNECT FE_OFC416_sum_out1_2_/ZN core_instance2/sum_in[2]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT FE_OFC415_sum_out1_2_/ZN FE_OFC416_sum_out1_2_/I  (0.012::0.012) (0.012::0.012))
+	(INTERCONNECT FE_OFC414_sum_out1_3_/ZN core_instance2/sum_in[3]  (0.018::0.019) (0.018::0.019))
+	(INTERCONNECT FE_OFC413_sum_out1_3_/ZN FE_OFC414_sum_out1_3_/I  (0.013::0.013) (0.013::0.013))
+	(INTERCONNECT FE_OFC412_sum_out1_4_/ZN core_instance2/sum_in[4]  (0.037::0.041) (0.036::0.041))
+	(INTERCONNECT FE_OFC411_sum_out1_4_/ZN FE_OFC412_sum_out1_4_/I  (0.010::0.010) (0.010::0.010))
+	(INTERCONNECT FE_OFC410_sum_out1_5_/ZN core_instance2/sum_in[5]  (0.040::0.042) (0.039::0.041))
+	(INTERCONNECT FE_OFC409_sum_out1_5_/ZN FE_OFC410_sum_out1_5_/I  (0.012::0.012) (0.012::0.012))
+	(INTERCONNECT FE_OFC408_sum_out1_6_/ZN core_instance2/sum_in[6]  (0.025::0.026) (0.025::0.026))
+	(INTERCONNECT FE_OFC407_sum_out1_6_/ZN FE_OFC408_sum_out1_6_/I  (0.014::0.014) (0.014::0.014))
+	(INTERCONNECT FE_OFC406_sum_out1_7_/ZN core_instance2/sum_in[7]  (0.035::0.038) (0.034::0.038))
+	(INTERCONNECT FE_OFC405_sum_out1_7_/ZN FE_OFC406_sum_out1_7_/I  (0.012::0.012) (0.012::0.012))
+	(INTERCONNECT FE_OFC404_sum_out1_8_/ZN core_instance2/sum_in[8]  (0.012::0.013) (0.012::0.013))
+	(INTERCONNECT FE_OFC403_sum_out1_8_/ZN FE_OFC404_sum_out1_8_/I  (0.014::0.014) (0.014::0.014))
+	(INTERCONNECT FE_OFC402_sum_out1_9_/ZN core_instance2/sum_in[9]  (0.038::0.042) (0.037::0.042))
+	(INTERCONNECT FE_OFC401_sum_out1_9_/ZN FE_OFC402_sum_out1_9_/I  (0.013::0.013) (0.013::0.013))
+	(INTERCONNECT FE_OFC400_sum_out1_10_/ZN core_instance2/sum_in[10]  (0.035::0.036) (0.034::0.036))
+	(INTERCONNECT FE_OFC399_sum_out1_10_/ZN FE_OFC400_sum_out1_10_/I  (0.013::0.013) (0.012::0.013))
+	(INTERCONNECT FE_OFC398_sum_out1_11_/ZN core_instance2/sum_in[11]  (0.027::0.027) (0.027::0.027))
+	(INTERCONNECT FE_OFC397_sum_out1_11_/ZN FE_OFC398_sum_out1_11_/I  (0.011::0.011) (0.011::0.011))
+	(INTERCONNECT FE_OFC396_sum_out1_12_/ZN core_instance2/sum_in[12]  (0.028::0.031) (0.028::0.030))
+	(INTERCONNECT FE_OFC395_sum_out1_12_/ZN FE_OFC396_sum_out1_12_/I  (0.019::0.019) (0.018::0.019))
+	(INTERCONNECT FE_OFC394_sum_out1_13_/ZN core_instance2/sum_in[13]  (0.041::0.045) (0.040::0.046))
+	(INTERCONNECT FE_OFC393_sum_out1_13_/ZN FE_OFC394_sum_out1_13_/I  (0.012::0.012) (0.012::0.012))
+	(INTERCONNECT FE_OFC392_sum_out1_14_/ZN core_instance2/sum_in[14]  (0.036::0.038) (0.036::0.038))
+	(INTERCONNECT FE_OFC391_sum_out1_14_/ZN FE_OFC392_sum_out1_14_/I  (0.013::0.013) (0.013::0.013))
+	(INTERCONNECT FE_OFC390_sum_out1_15_/ZN core_instance2/sum_in[15]  (0.027::0.029) (0.027::0.028))
+	(INTERCONNECT FE_OFC389_sum_out1_15_/ZN FE_OFC390_sum_out1_15_/I  (0.012::0.012) (0.012::0.012))
+	(INTERCONNECT FE_OFC388_sum_out1_16_/ZN core_instance2/sum_in[16]  (0.032::0.035) (0.032::0.035))
+	(INTERCONNECT FE_OFC387_sum_out1_16_/ZN FE_OFC388_sum_out1_16_/I  (0.011::0.011) (0.010::0.011))
+	(INTERCONNECT FE_OFC386_sum_out1_17_/ZN core_instance2/sum_in[17]  (0.033::0.034) (0.032::0.034))
+	(INTERCONNECT FE_OFC385_sum_out1_17_/ZN FE_OFC386_sum_out1_17_/I  (0.011::0.012) (0.011::0.011))
+	(INTERCONNECT FE_OFC384_sum_out1_18_/ZN core_instance2/sum_in[18]  (0.027::0.027) (0.027::0.027))
+	(INTERCONNECT FE_OFC383_sum_out1_18_/ZN FE_OFC384_sum_out1_18_/I  (0.011::0.012) (0.011::0.012))
+	(INTERCONNECT FE_OFC382_sum_out1_19_/ZN core_instance2/sum_in[19]  (0.034::0.036) (0.034::0.036))
+	(INTERCONNECT FE_OFC381_sum_out1_19_/ZN FE_OFC382_sum_out1_19_/I  (0.012::0.012) (0.012::0.012))
+	(INTERCONNECT FE_OFC380_sum_out1_20_/ZN core_instance2/sum_in[20]  (0.028::0.029) (0.028::0.029))
+	(INTERCONNECT FE_OFC379_sum_out1_20_/ZN FE_OFC380_sum_out1_20_/I  (0.012::0.013) (0.012::0.013))
+	(INTERCONNECT FE_OFC378_sum_out1_21_/ZN core_instance2/sum_in[21]  (0.038::0.040) (0.038::0.040))
+	(INTERCONNECT FE_OFC377_sum_out1_21_/ZN FE_OFC378_sum_out1_21_/I  (0.010::0.010) (0.010::0.010))
+	(INTERCONNECT FE_OFC376_sum_out1_22_/ZN core_instance2/sum_in[22]  (0.114::0.114) (0.113::0.113))
+	(INTERCONNECT FE_OFC375_sum_out1_22_/ZN FE_OFC376_sum_out1_22_/I  (0.038::0.038) (0.038::0.038))
+	(INTERCONNECT FE_OFC374_sum_out1_22_/Z FE_OFC375_sum_out1_22_/I  (0.083::0.085) (0.083::0.085))
+	(INTERCONNECT FE_OFC373_sum_out1_23_/ZN core_instance2/sum_in[23]  (0.022::0.022) (0.022::0.022))
+	(INTERCONNECT FE_OFC372_sum_out1_23_/ZN FE_OFC373_sum_out1_23_/I  (0.010::0.010) (0.010::0.010))
+	(INTERCONNECT FE_OFC371_sum_out2_0_/ZN core_instance1/sum_in[0]  (0.025::0.026) (0.025::0.026))
+	(INTERCONNECT FE_OFC370_sum_out2_0_/ZN FE_OFC371_sum_out2_0_/I  (0.018::0.018) (0.018::0.018))
+	(INTERCONNECT FE_OFC369_sum_out2_1_/ZN core_instance1/sum_in[1]  (0.027::0.028) (0.027::0.028))
+	(INTERCONNECT FE_OFC368_sum_out2_1_/ZN FE_OFC369_sum_out2_1_/I  (0.022::0.022) (0.021::0.022))
+	(INTERCONNECT FE_OFC367_sum_out2_2_/ZN core_instance1/sum_in[2]  (0.010::0.010) (0.010::0.010))
+	(INTERCONNECT FE_OFC366_sum_out2_2_/ZN FE_OFC367_sum_out2_2_/I  (0.035::0.036) (0.034::0.036))
+	(INTERCONNECT FE_OFC365_sum_out2_3_/ZN core_instance1/sum_in[3]  (0.012::0.013) (0.012::0.013))
+	(INTERCONNECT FE_OFC364_sum_out2_3_/ZN FE_OFC365_sum_out2_3_/I  (0.016::0.016) (0.016::0.017))
+	(INTERCONNECT FE_OFC363_sum_out2_4_/ZN core_instance1/sum_in[4]  (0.010::0.011) (0.010::0.011))
+	(INTERCONNECT FE_OFC362_sum_out2_4_/ZN FE_OFC363_sum_out2_4_/I  (0.041::0.042) (0.040::0.042))
+	(INTERCONNECT FE_OFC361_sum_out2_5_/ZN core_instance1/sum_in[5]  (0.024::0.024) (0.024::0.024))
+	(INTERCONNECT FE_OFC360_sum_out2_5_/ZN FE_OFC361_sum_out2_5_/I  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT FE_OFC359_sum_out2_6_/ZN core_instance1/sum_in[6]  (0.024::0.025) (0.023::0.024))
+	(INTERCONNECT FE_OFC358_sum_out2_6_/ZN FE_OFC359_sum_out2_6_/I  (0.038::0.042) (0.038::0.042))
+	(INTERCONNECT FE_OFC357_sum_out2_7_/ZN core_instance1/sum_in[7]  (0.026::0.027) (0.026::0.027))
+	(INTERCONNECT FE_OFC356_sum_out2_7_/ZN FE_OFC357_sum_out2_7_/I  (0.017::0.017) (0.017::0.017))
+	(INTERCONNECT FE_OFC355_sum_out2_8_/ZN core_instance1/sum_in[8]  (0.023::0.023) (0.022::0.022))
+	(INTERCONNECT FE_OFC354_sum_out2_8_/ZN FE_OFC355_sum_out2_8_/I  (0.013::0.013) (0.013::0.014))
+	(INTERCONNECT FE_OFC353_sum_out2_9_/ZN core_instance1/sum_in[9]  (0.010::0.010) (0.010::0.010))
+	(INTERCONNECT FE_OFC352_sum_out2_9_/ZN FE_OFC353_sum_out2_9_/I  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT FE_OFC351_sum_out2_10_/ZN core_instance1/sum_in[10]  (0.020::0.022) (0.020::0.022))
+	(INTERCONNECT FE_OFC350_sum_out2_10_/ZN FE_OFC351_sum_out2_10_/I  (0.013::0.013) (0.013::0.013))
+	(INTERCONNECT FE_OFC349_sum_out2_11_/ZN core_instance1/sum_in[11]  (0.020::0.022) (0.020::0.022))
+	(INTERCONNECT FE_OFC348_sum_out2_11_/ZN FE_OFC349_sum_out2_11_/I  (0.011::0.011) (0.011::0.011))
+	(INTERCONNECT FE_OFC347_sum_out2_12_/ZN core_instance1/sum_in[12]  (0.024::0.025) (0.024::0.025))
+	(INTERCONNECT FE_OFC346_sum_out2_12_/ZN FE_OFC347_sum_out2_12_/I  (0.041::0.041) (0.041::0.041))
+	(INTERCONNECT FE_OFC345_sum_out2_13_/ZN core_instance1/sum_in[13]  (0.011::0.011) (0.011::0.011))
+	(INTERCONNECT FE_OFC344_sum_out2_13_/ZN FE_OFC345_sum_out2_13_/I  (0.038::0.041) (0.037::0.041))
+	(INTERCONNECT FE_OFC343_sum_out2_14_/ZN core_instance1/sum_in[14]  (0.009::0.009) (0.009::0.009))
+	(INTERCONNECT FE_OFC342_sum_out2_14_/ZN FE_OFC343_sum_out2_14_/I  (0.042::0.042) (0.042::0.042))
+	(INTERCONNECT FE_OFC341_sum_out2_15_/ZN core_instance1/sum_in[15]  (0.010::0.010) (0.010::0.010))
+	(INTERCONNECT FE_OFC340_sum_out2_15_/ZN FE_OFC341_sum_out2_15_/I  (0.050::0.050) (0.050::0.050))
+	(INTERCONNECT FE_OFC339_sum_out2_16_/ZN core_instance1/sum_in[16]  (0.010::0.010) (0.010::0.010))
+	(INTERCONNECT FE_OFC338_sum_out2_16_/ZN FE_OFC339_sum_out2_16_/I  (0.022::0.022) (0.022::0.022))
+	(INTERCONNECT FE_OFC337_sum_out2_17_/ZN core_instance1/sum_in[17]  (0.024::0.024) (0.024::0.024))
+	(INTERCONNECT FE_OFC336_sum_out2_17_/ZN FE_OFC337_sum_out2_17_/I  (0.016::0.016) (0.016::0.016))
+	(INTERCONNECT FE_OFC335_sum_out2_18_/ZN core_instance1/sum_in[18]  (0.022::0.022) (0.022::0.022))
+	(INTERCONNECT FE_OFC334_sum_out2_18_/ZN FE_OFC335_sum_out2_18_/I  (0.018::0.019) (0.018::0.019))
+	(INTERCONNECT FE_OFC333_sum_out2_19_/ZN core_instance1/sum_in[19]  (0.023::0.023) (0.023::0.023))
+	(INTERCONNECT FE_OFC332_sum_out2_19_/ZN FE_OFC333_sum_out2_19_/I  (0.027::0.027) (0.027::0.027))
+	(INTERCONNECT FE_OFC331_sum_out2_20_/ZN core_instance1/sum_in[20]  (0.028::0.031) (0.027::0.031))
+	(INTERCONNECT FE_OFC330_sum_out2_20_/ZN FE_OFC331_sum_out2_20_/I  (0.013::0.013) (0.012::0.013))
+	(INTERCONNECT FE_OFC329_sum_out2_21_/ZN core_instance1/sum_in[21]  (0.009::0.009) (0.009::0.009))
+	(INTERCONNECT FE_OFC328_sum_out2_21_/ZN FE_OFC329_sum_out2_21_/I  (0.042::0.043) (0.041::0.043))
+	(INTERCONNECT FE_OFC327_sum_out2_22_/ZN core_instance1/sum_in[22]  (0.011::0.011) (0.011::0.011))
+	(INTERCONNECT FE_OFC326_sum_out2_22_/ZN FE_OFC327_sum_out2_22_/I  (0.043::0.047) (0.042::0.047))
+	(INTERCONNECT FE_OFC325_sum_out2_23_/ZN core_instance1/sum_in[23]  (0.019::0.020) (0.019::0.020))
+	(INTERCONNECT FE_OFC324_sum_out2_23_/ZN FE_OFC325_sum_out2_23_/I  (0.011::0.012) (0.011::0.012))
+	(INTERCONNECT core_instance2/out[0] FE_OFC323_out2_0_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/out[1] FE_OFC321_out2_1_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/out[2] FE_OFC319_out2_2_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[3] FE_OFC317_out2_3_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[4] FE_OFC315_out2_4_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/out[5] FE_OFC313_out2_5_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/out[6] FE_OFC311_out2_6_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[7] FE_OFC309_out2_7_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/out[8] FE_OFC307_out2_8_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[9] FE_OFC305_out2_9_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[10] FE_OFC303_out2_10_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/out[11] FE_OFC301_out2_11_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/out[12] FE_OFC299_out2_12_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[13] FE_OFC297_out2_13_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[14] FE_OFC295_out2_14_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[15] FE_OFC293_out2_15_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[16] FE_OFC291_out2_16_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/out[17] FE_OFC289_out2_17_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/out[18] FE_OFC287_out2_18_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[19] FE_OFC285_out2_19_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[20] FE_OFC283_out2_20_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[21] FE_OFC281_out2_21_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[22] FE_OFC279_out2_22_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[23] FE_OFC277_out2_23_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/out[24] FE_OFC275_out2_24_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[25] FE_OFC273_out2_25_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[26] FE_OFC271_out2_26_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[27] FE_OFC269_out2_27_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[28] FE_OFC267_out2_28_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[29] FE_OFC265_out2_29_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[30] FE_OFC263_out2_30_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[31] FE_OFC261_out2_31_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[32] FE_OFC259_out2_32_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[33] FE_OFC257_out2_33_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[34] FE_OFC255_out2_34_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[35] FE_OFC253_out2_35_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[36] FE_OFC251_out2_36_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[37] FE_OFC249_out2_37_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[38] FE_OFC247_out2_38_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[39] FE_OFC245_out2_39_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/out[40] FE_OFC243_out2_40_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[41] FE_OFC241_out2_41_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[42] FE_OFC239_out2_42_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[43] FE_OFC237_out2_43_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/out[44] FE_OFC235_out2_44_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[45] FE_OFC233_out2_45_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/out[46] FE_OFC231_out2_46_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[47] FE_OFC229_out2_47_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[48] FE_OFC227_out2_48_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[49] FE_OFC225_out2_49_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[50] FE_OFC223_out2_50_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[51] FE_OFC221_out2_51_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[52] FE_OFC219_out2_52_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[53] FE_OFC217_out2_53_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[54] FE_OFC215_out2_54_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[55] FE_OFC213_out2_55_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[56] FE_OFC211_out2_56_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[57] FE_OFC209_out2_57_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[58] FE_OFC207_out2_58_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[59] FE_OFC205_out2_59_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[60] FE_OFC203_out2_60_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[61] FE_OFC201_out2_61_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[62] FE_OFC199_out2_62_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[63] FE_OFC197_out2_63_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[64] FE_OFC195_out2_64_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[65] FE_OFC193_out2_65_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[66] FE_OFC191_out2_66_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[67] FE_OFC189_out2_67_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/out[68] FE_OFC187_out2_68_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[69] FE_OFC185_out2_69_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[70] FE_OFC183_out2_70_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[71] FE_OFC181_out2_71_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[72] FE_OFC179_out2_72_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[73] FE_OFC177_out2_73_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[74] FE_OFC175_out2_74_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[75] FE_OFC173_out2_75_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[76] FE_OFC171_out2_76_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[77] FE_OFC169_out2_77_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[78] FE_OFC167_out2_78_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[79] FE_OFC165_out2_79_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[80] FE_OFC163_out2_80_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[81] FE_OFC161_out2_81_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[83] FE_OFC159_out2_83_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[84] FE_OFC157_out2_84_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[85] FE_OFC155_out2_85_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[87] FE_OFC153_out2_87_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[89] FE_OFC151_out2_89_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[126] FE_OFC149_out2_126_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/out[0] FE_OFC147_out1_0_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[1] FE_OFC145_out1_1_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[2] FE_OFC143_out1_2_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[3] FE_OFC141_out1_3_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/out[4] FE_OFC139_out1_4_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[5] FE_OFC137_out1_5_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[6] FE_OFC135_out1_6_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/out[7] FE_OFC133_out1_7_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[8] FE_OFC131_out1_8_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[9] FE_OFC129_out1_9_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[10] FE_OFC127_out1_10_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/out[11] FE_OFC125_out1_11_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[12] FE_OFC123_out1_12_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[13] FE_OFC121_out1_13_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[14] FE_OFC119_out1_14_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[15] FE_OFC117_out1_15_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[16] FE_OFC115_out1_16_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[17] FE_OFC113_out1_17_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[18] FE_OFC111_out1_18_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[19] FE_OFC109_out1_19_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[20] FE_OFC107_out1_20_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[21] FE_OFC105_out1_21_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[22] FE_OFC103_out1_22_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[23] FE_OFC101_out1_23_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[24] FE_OFC99_out1_24_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[25] FE_OFC97_out1_25_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[26] FE_OFC95_out1_26_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[27] FE_OFC93_out1_27_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[28] FE_OFC91_out1_28_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[31] FE_OFC89_out1_31_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[32] FE_OFC87_out1_32_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[39] FE_OFC85_out1_39_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[40] FE_OFC83_out1_40_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[43] FE_OFC81_out1_43_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[45] FE_OFC79_out1_45_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[46] FE_OFC77_out1_46_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[48] FE_OFC75_out1_48_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[51] FE_OFC73_out1_51_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[56] FE_OFC71_out1_56_/I  (0.000::0.001) (0.000::0.001))
+	(INTERCONNECT core_instance1/out[64] FE_OFC69_out1_64_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[65] FE_OFC67_out1_65_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[66] FE_OFC65_out1_66_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[67] FE_OFC63_out1_67_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[68] FE_OFC61_out1_68_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[70] FE_OFC59_out1_70_/I  (0.000::0.001) (0.000::0.001))
+	(INTERCONNECT core_instance1/out[76] FE_OFC57_out1_76_/I  (0.000::0.001) (0.000::0.001))
+	(INTERCONNECT core_instance1/out[77] FE_OFC55_out1_77_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[78] FE_OFC53_out1_78_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[79] FE_OFC51_out1_79_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[80] FE_OFC49_out1_80_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[81] FE_OFC47_out1_81_/I  (0.000::0.001) (0.000::0.001))
+	(INTERCONNECT core_instance1/out[83] FE_OFC45_out1_83_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[84] FE_OFC43_out1_84_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[87] FE_OFC41_out1_87_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[89] FE_OFC39_out1_89_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[90] FE_OFC37_out1_90_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[91] FE_OFC35_out1_91_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[92] FE_OFC33_out1_92_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[93] FE_OFC31_out1_93_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[94] FE_OFC29_out1_94_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[95] FE_OFC27_out1_95_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[96] FE_OFC25_out1_96_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[97] FE_OFC23_out1_97_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[98] FE_OFC21_out1_98_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[99] FE_OFC19_out1_99_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[100] FE_OFC17_out1_100_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[101] FE_OFC15_out1_101_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[106] FE_OFC13_out1_106_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[112] FE_OFC11_out1_112_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[125] FE_OFC9_out1_125_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[126] FE_OFC7_out1_126_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/out[127] FE_OFC5_out1_127_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC3_inst2_18_/ZN core_instance1/fifo_ext_rd  (0.042::0.042) (0.041::0.041))
+	(INTERCONNECT FE_OFC2_inst2_18_/ZN FE_OFC3_inst2_18_/I  (0.046::0.046) (0.046::0.046))
+	(INTERCONNECT FE_OFC1_inst1_18_/ZN core_instance2/fifo_ext_rd  (0.041::0.041) (0.041::0.041))
+	(INTERCONNECT FE_OFC0_inst1_18_/ZN FE_OFC1_inst1_18_/I  (0.048::0.048) (0.048::0.048))
+	(INTERCONNECT mem_in1[127] core_instance1/mem_in[127]  (0.038::0.038) (0.038::0.038))
+	(INTERCONNECT mem_in1[126] core_instance1/mem_in[126]  (0.043::0.043) (0.043::0.043))
+	(INTERCONNECT mem_in1[125] core_instance1/mem_in[125]  (0.041::0.041) (0.041::0.041))
+	(INTERCONNECT mem_in1[124] core_instance1/mem_in[124]  (0.039::0.039) (0.039::0.039))
+	(INTERCONNECT mem_in1[123] core_instance1/mem_in[123]  (0.041::0.041) (0.041::0.041))
+	(INTERCONNECT mem_in1[122] core_instance1/mem_in[122]  (0.041::0.041) (0.041::0.041))
+	(INTERCONNECT mem_in1[121] core_instance1/mem_in[121]  (0.039::0.039) (0.039::0.039))
+	(INTERCONNECT mem_in1[120] core_instance1/mem_in[120]  (0.042::0.042) (0.042::0.042))
+	(INTERCONNECT mem_in1[119] core_instance1/mem_in[119]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in1[118] core_instance1/mem_in[118]  (0.039::0.039) (0.039::0.039))
+	(INTERCONNECT mem_in1[117] core_instance1/mem_in[117]  (0.038::0.038) (0.038::0.038))
+	(INTERCONNECT mem_in1[116] core_instance1/mem_in[116]  (0.038::0.038) (0.038::0.038))
+	(INTERCONNECT mem_in1[115] core_instance1/mem_in[115]  (0.039::0.039) (0.039::0.039))
+	(INTERCONNECT mem_in1[114] core_instance1/mem_in[114]  (0.040::0.040) (0.040::0.040))
+	(INTERCONNECT mem_in1[113] core_instance1/mem_in[113]  (0.038::0.038) (0.038::0.038))
+	(INTERCONNECT mem_in1[112] core_instance1/mem_in[112]  (0.038::0.038) (0.038::0.038))
+	(INTERCONNECT mem_in1[111] core_instance1/mem_in[111]  (0.039::0.039) (0.039::0.039))
+	(INTERCONNECT mem_in1[110] core_instance1/mem_in[110]  (0.039::0.039) (0.039::0.039))
+	(INTERCONNECT mem_in1[109] core_instance1/mem_in[109]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in1[108] core_instance1/mem_in[108]  (0.038::0.038) (0.038::0.038))
+	(INTERCONNECT mem_in1[107] core_instance1/mem_in[107]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in1[106] core_instance1/mem_in[106]  (0.035::0.035) (0.035::0.035))
+	(INTERCONNECT mem_in1[105] core_instance1/mem_in[105]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in1[104] core_instance1/mem_in[104]  (0.037::0.037) (0.037::0.037))
+	(INTERCONNECT mem_in1[103] core_instance1/mem_in[103]  (0.039::0.039) (0.039::0.039))
+	(INTERCONNECT mem_in1[102] core_instance1/mem_in[102]  (0.037::0.037) (0.037::0.037))
+	(INTERCONNECT mem_in1[101] core_instance1/mem_in[101]  (0.035::0.035) (0.035::0.035))
+	(INTERCONNECT mem_in1[100] core_instance1/mem_in[100]  (0.037::0.037) (0.037::0.037))
+	(INTERCONNECT mem_in1[99] core_instance1/mem_in[99]  (0.040::0.040) (0.040::0.040))
+	(INTERCONNECT mem_in1[98] core_instance1/mem_in[98]  (0.035::0.035) (0.035::0.035))
+	(INTERCONNECT mem_in1[97] core_instance1/mem_in[97]  (0.035::0.035) (0.035::0.035))
+	(INTERCONNECT mem_in1[96] core_instance1/mem_in[96]  (0.035::0.035) (0.035::0.035))
+	(INTERCONNECT mem_in1[95] core_instance1/mem_in[95]  (0.037::0.037) (0.037::0.037))
+	(INTERCONNECT mem_in1[94] core_instance1/mem_in[94]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in1[93] core_instance1/mem_in[93]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in1[92] core_instance1/mem_in[92]  (0.035::0.035) (0.035::0.035))
+	(INTERCONNECT mem_in1[91] core_instance1/mem_in[91]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in1[90] core_instance1/mem_in[90]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in1[89] core_instance1/mem_in[89]  (0.039::0.039) (0.039::0.039))
+	(INTERCONNECT mem_in1[88] core_instance1/mem_in[88]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in1[87] core_instance1/mem_in[87]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in1[86] core_instance1/mem_in[86]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in1[85] core_instance1/mem_in[85]  (0.033::0.033) (0.033::0.033))
+	(INTERCONNECT mem_in1[84] core_instance1/mem_in[84]  (0.035::0.035) (0.035::0.035))
+	(INTERCONNECT mem_in1[83] core_instance1/mem_in[83]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in1[82] core_instance1/mem_in[82]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in1[81] core_instance1/mem_in[81]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in1[80] core_instance1/mem_in[80]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in1[79] core_instance1/mem_in[79]  (0.038::0.038) (0.038::0.038))
+	(INTERCONNECT mem_in1[78] core_instance1/mem_in[78]  (0.041::0.041) (0.041::0.041))
+	(INTERCONNECT mem_in1[77] core_instance1/mem_in[77]  (0.035::0.035) (0.035::0.035))
+	(INTERCONNECT mem_in1[76] core_instance1/mem_in[76]  (0.037::0.037) (0.037::0.037))
+	(INTERCONNECT mem_in1[75] core_instance1/mem_in[75]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in1[74] core_instance1/mem_in[74]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in1[73] core_instance1/mem_in[73]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in1[72] core_instance1/mem_in[72]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in1[71] core_instance1/mem_in[71]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in1[70] core_instance1/mem_in[70]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in1[69] core_instance1/mem_in[69]  (0.033::0.033) (0.033::0.033))
+	(INTERCONNECT mem_in1[68] core_instance1/mem_in[68]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in1[67] core_instance1/mem_in[67]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in1[66] core_instance1/mem_in[66]  (0.035::0.035) (0.035::0.035))
+	(INTERCONNECT mem_in1[65] core_instance1/mem_in[65]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in1[64] core_instance1/mem_in[64]  (0.033::0.033) (0.033::0.033))
+	(INTERCONNECT mem_in1[63] core_instance1/mem_in[63]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in1[62] core_instance1/mem_in[62]  (0.031::0.031) (0.031::0.031))
+	(INTERCONNECT mem_in1[61] core_instance1/mem_in[61]  (0.031::0.031) (0.031::0.031))
+	(INTERCONNECT mem_in1[60] core_instance1/mem_in[60]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in1[59] core_instance1/mem_in[59]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in1[58] core_instance1/mem_in[58]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in1[57] core_instance1/mem_in[57]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in1[56] core_instance1/mem_in[56]  (0.038::0.038) (0.038::0.038))
+	(INTERCONNECT mem_in1[55] core_instance1/mem_in[55]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in1[54] core_instance1/mem_in[54]  (0.037::0.037) (0.037::0.037))
+	(INTERCONNECT mem_in1[53] core_instance1/mem_in[53]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in1[52] core_instance1/mem_in[52]  (0.034::0.039) (0.034::0.039))
+	(INTERCONNECT mem_in1[51] core_instance1/mem_in[51]  (0.039::0.039) (0.039::0.039))
+	(INTERCONNECT mem_in1[50] core_instance1/mem_in[50]  (0.034::0.038) (0.034::0.038))
+	(INTERCONNECT mem_in1[49] core_instance1/mem_in[49]  (0.039::0.039) (0.039::0.039))
+	(INTERCONNECT mem_in1[48] core_instance1/mem_in[48]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in1[47] core_instance1/mem_in[47]  (0.040::0.040) (0.040::0.040))
+	(INTERCONNECT mem_in1[46] core_instance1/mem_in[46]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in1[45] core_instance1/mem_in[45]  (0.035::0.035) (0.035::0.035))
+	(INTERCONNECT mem_in1[44] core_instance1/mem_in[44]  (0.039::0.039) (0.039::0.039))
+	(INTERCONNECT mem_in1[43] core_instance1/mem_in[43]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in1[42] core_instance1/mem_in[42]  (0.043::0.043) (0.043::0.043))
+	(INTERCONNECT mem_in1[41] core_instance1/mem_in[41]  (0.042::0.042) (0.042::0.042))
+	(INTERCONNECT mem_in1[40] core_instance1/mem_in[40]  (0.043::0.043) (0.043::0.043))
+	(INTERCONNECT mem_in1[39] core_instance1/mem_in[39]  (0.038::0.038) (0.038::0.038))
+	(INTERCONNECT mem_in1[38] core_instance1/mem_in[38]  (0.041::0.041) (0.041::0.041))
+	(INTERCONNECT mem_in1[37] core_instance1/mem_in[37]  (0.042::0.042) (0.042::0.042))
+	(INTERCONNECT mem_in1[36] core_instance1/mem_in[36]  (0.043::0.043) (0.043::0.043))
+	(INTERCONNECT mem_in1[35] core_instance1/mem_in[35]  (0.043::0.043) (0.043::0.043))
+	(INTERCONNECT mem_in1[34] core_instance1/mem_in[34]  (0.040::0.040) (0.040::0.040))
+	(INTERCONNECT mem_in1[33] core_instance1/mem_in[33]  (0.037::0.037) (0.037::0.037))
+	(INTERCONNECT mem_in1[32] core_instance1/mem_in[32]  (0.044::0.044) (0.044::0.044))
+	(INTERCONNECT mem_in1[31] core_instance1/mem_in[31]  (0.041::0.041) (0.041::0.041))
+	(INTERCONNECT mem_in1[30] core_instance1/mem_in[30]  (0.045::0.045) (0.045::0.045))
+	(INTERCONNECT mem_in1[29] core_instance1/mem_in[29]  (0.045::0.045) (0.045::0.045))
+	(INTERCONNECT mem_in1[28] core_instance1/mem_in[28]  (0.040::0.040) (0.040::0.040))
+	(INTERCONNECT mem_in1[27] core_instance1/mem_in[27]  (0.043::0.043) (0.043::0.043))
+	(INTERCONNECT mem_in1[26] core_instance1/mem_in[26]  (0.045::0.045) (0.045::0.045))
+	(INTERCONNECT mem_in1[25] core_instance1/mem_in[25]  (0.041::0.041) (0.041::0.041))
+	(INTERCONNECT mem_in1[24] core_instance1/mem_in[24]  (0.042::0.042) (0.042::0.042))
+	(INTERCONNECT mem_in1[23] core_instance1/mem_in[23]  (0.044::0.044) (0.044::0.044))
+	(INTERCONNECT mem_in1[22] core_instance1/mem_in[22]  (0.047::0.047) (0.047::0.047))
+	(INTERCONNECT mem_in1[21] core_instance1/mem_in[21]  (0.045::0.045) (0.045::0.045))
+	(INTERCONNECT mem_in1[20] core_instance1/mem_in[20]  (0.046::0.046) (0.046::0.046))
+	(INTERCONNECT mem_in1[19] core_instance1/mem_in[19]  (0.047::0.047) (0.047::0.047))
+	(INTERCONNECT mem_in1[18] core_instance1/mem_in[18]  (0.046::0.046) (0.046::0.046))
+	(INTERCONNECT mem_in1[17] core_instance1/mem_in[17]  (0.047::0.047) (0.047::0.047))
+	(INTERCONNECT mem_in1[16] core_instance1/mem_in[16]  (0.050::0.050) (0.050::0.050))
+	(INTERCONNECT mem_in1[15] core_instance1/mem_in[15]  (0.049::0.049) (0.049::0.049))
+	(INTERCONNECT mem_in1[14] core_instance1/mem_in[14]  (0.049::0.049) (0.049::0.049))
+	(INTERCONNECT mem_in1[13] core_instance1/mem_in[13]  (0.050::0.050) (0.050::0.050))
+	(INTERCONNECT mem_in1[12] core_instance1/mem_in[12]  (0.050::0.050) (0.050::0.050))
+	(INTERCONNECT mem_in1[11] core_instance1/mem_in[11]  (0.048::0.048) (0.048::0.048))
+	(INTERCONNECT mem_in1[10] core_instance1/mem_in[10]  (0.050::0.050) (0.050::0.050))
+	(INTERCONNECT mem_in1[9] core_instance1/mem_in[9]  (0.048::0.048) (0.048::0.048))
+	(INTERCONNECT mem_in1[8] core_instance1/mem_in[8]  (0.047::0.047) (0.047::0.047))
+	(INTERCONNECT mem_in1[7] core_instance1/mem_in[7]  (0.050::0.050) (0.050::0.050))
+	(INTERCONNECT mem_in1[6] core_instance1/mem_in[6]  (0.048::0.048) (0.048::0.048))
+	(INTERCONNECT mem_in1[5] core_instance1/mem_in[5]  (0.052::0.052) (0.052::0.052))
+	(INTERCONNECT mem_in1[4] core_instance1/mem_in[4]  (0.046::0.046) (0.046::0.046))
+	(INTERCONNECT mem_in1[3] core_instance1/mem_in[3]  (0.052::0.052) (0.052::0.052))
+	(INTERCONNECT mem_in1[2] core_instance1/mem_in[2]  (0.050::0.050) (0.050::0.050))
+	(INTERCONNECT mem_in1[1] core_instance1/mem_in[1]  (0.053::0.053) (0.053::0.053))
+	(INTERCONNECT mem_in1[0] core_instance1/mem_in[0]  (0.049::0.049) (0.049::0.049))
+	(INTERCONNECT mem_in2[127] core_instance2/mem_in[127]  (0.040::0.040) (0.040::0.040))
+	(INTERCONNECT mem_in2[126] core_instance2/mem_in[126]  (0.045::0.045) (0.045::0.045))
+	(INTERCONNECT mem_in2[125] core_instance2/mem_in[125]  (0.043::0.043) (0.043::0.043))
+	(INTERCONNECT mem_in2[124] core_instance2/mem_in[124]  (0.041::0.041) (0.041::0.041))
+	(INTERCONNECT mem_in2[123] core_instance2/mem_in[123]  (0.042::0.042) (0.042::0.042))
+	(INTERCONNECT mem_in2[122] core_instance2/mem_in[122]  (0.042::0.042) (0.042::0.042))
+	(INTERCONNECT mem_in2[121] core_instance2/mem_in[121]  (0.041::0.041) (0.041::0.041))
+	(INTERCONNECT mem_in2[120] core_instance2/mem_in[120]  (0.043::0.043) (0.043::0.043))
+	(INTERCONNECT mem_in2[119] core_instance2/mem_in[119]  (0.035::0.035) (0.035::0.035))
+	(INTERCONNECT mem_in2[118] core_instance2/mem_in[118]  (0.040::0.040) (0.040::0.040))
+	(INTERCONNECT mem_in2[117] core_instance2/mem_in[117]  (0.038::0.038) (0.038::0.038))
+	(INTERCONNECT mem_in2[116] core_instance2/mem_in[116]  (0.038::0.038) (0.038::0.038))
+	(INTERCONNECT mem_in2[115] core_instance2/mem_in[115]  (0.040::0.040) (0.040::0.040))
+	(INTERCONNECT mem_in2[114] core_instance2/mem_in[114]  (0.040::0.040) (0.040::0.040))
+	(INTERCONNECT mem_in2[113] core_instance2/mem_in[113]  (0.038::0.038) (0.038::0.038))
+	(INTERCONNECT mem_in2[112] core_instance2/mem_in[112]  (0.038::0.038) (0.038::0.038))
+	(INTERCONNECT mem_in2[111] core_instance2/mem_in[111]  (0.039::0.039) (0.039::0.039))
+	(INTERCONNECT mem_in2[110] core_instance2/mem_in[110]  (0.039::0.039) (0.039::0.039))
+	(INTERCONNECT mem_in2[109] core_instance2/mem_in[109]  (0.037::0.037) (0.037::0.037))
+	(INTERCONNECT mem_in2[108] core_instance2/mem_in[108]  (0.038::0.038) (0.038::0.038))
+	(INTERCONNECT mem_in2[107] core_instance2/mem_in[107]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in2[106] core_instance2/mem_in[106]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in2[105] core_instance2/mem_in[105]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in2[104] core_instance2/mem_in[104]  (0.037::0.037) (0.037::0.037))
+	(INTERCONNECT mem_in2[103] core_instance2/mem_in[103]  (0.039::0.039) (0.039::0.039))
+	(INTERCONNECT mem_in2[102] core_instance2/mem_in[102]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in2[101] core_instance2/mem_in[101]  (0.035::0.035) (0.035::0.035))
+	(INTERCONNECT mem_in2[100] core_instance2/mem_in[100]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in2[99] core_instance2/mem_in[99]  (0.039::0.039) (0.039::0.039))
+	(INTERCONNECT mem_in2[98] core_instance2/mem_in[98]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in2[97] core_instance2/mem_in[97]  (0.033::0.033) (0.033::0.033))
+	(INTERCONNECT mem_in2[96] core_instance2/mem_in[96]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in2[95] core_instance2/mem_in[95]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in2[94] core_instance2/mem_in[94]  (0.035::0.035) (0.035::0.035))
+	(INTERCONNECT mem_in2[93] core_instance2/mem_in[93]  (0.033::0.033) (0.033::0.033))
+	(INTERCONNECT mem_in2[92] core_instance2/mem_in[92]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in2[91] core_instance2/mem_in[91]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in2[90] core_instance2/mem_in[90]  (0.035::0.035) (0.035::0.035))
+	(INTERCONNECT mem_in2[89] core_instance2/mem_in[89]  (0.037::0.037) (0.037::0.037))
+	(INTERCONNECT mem_in2[88] core_instance2/mem_in[88]  (0.033::0.033) (0.033::0.033))
+	(INTERCONNECT mem_in2[87] core_instance2/mem_in[87]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in2[86] core_instance2/mem_in[86]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in2[85] core_instance2/mem_in[85]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in2[84] core_instance2/mem_in[84]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in2[83] core_instance2/mem_in[83]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in2[82] core_instance2/mem_in[82]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in2[81] core_instance2/mem_in[81]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in2[80] core_instance2/mem_in[80]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in2[79] core_instance2/mem_in[79]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in2[78] core_instance2/mem_in[78]  (0.039::0.039) (0.039::0.039))
+	(INTERCONNECT mem_in2[77] core_instance2/mem_in[77]  (0.033::0.033) (0.033::0.033))
+	(INTERCONNECT mem_in2[76] core_instance2/mem_in[76]  (0.035::0.035) (0.035::0.035))
+	(INTERCONNECT mem_in2[75] core_instance2/mem_in[75]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in2[74] core_instance2/mem_in[74]  (0.030::0.030) (0.030::0.030))
+	(INTERCONNECT mem_in2[73] core_instance2/mem_in[73]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in2[72] core_instance2/mem_in[72]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in2[71] core_instance2/mem_in[71]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in2[70] core_instance2/mem_in[70]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in2[69] core_instance2/mem_in[69]  (0.031::0.031) (0.031::0.031))
+	(INTERCONNECT mem_in2[68] core_instance2/mem_in[68]  (0.030::0.030) (0.030::0.030))
+	(INTERCONNECT mem_in2[67] core_instance2/mem_in[67]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in2[66] core_instance2/mem_in[66]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in2[65] core_instance2/mem_in[65]  (0.031::0.031) (0.031::0.031))
+	(INTERCONNECT mem_in2[64] core_instance2/mem_in[64]  (0.031::0.031) (0.031::0.031))
+	(INTERCONNECT mem_in2[63] core_instance2/mem_in[63]  (0.030::0.030) (0.030::0.030))
+	(INTERCONNECT mem_in2[62] core_instance2/mem_in[62]  (0.029::0.029) (0.029::0.029))
+	(INTERCONNECT mem_in2[61] core_instance2/mem_in[61]  (0.029::0.029) (0.029::0.029))
+	(INTERCONNECT mem_in2[60] core_instance2/mem_in[60]  (0.029::0.029) (0.029::0.029))
+	(INTERCONNECT mem_in2[59] core_instance2/mem_in[59]  (0.031::0.031) (0.031::0.031))
+	(INTERCONNECT mem_in2[58] core_instance2/mem_in[58]  (0.033::0.033) (0.033::0.033))
+	(INTERCONNECT mem_in2[57] core_instance2/mem_in[57]  (0.029::0.029) (0.029::0.029))
+	(INTERCONNECT mem_in2[56] core_instance2/mem_in[56]  (0.035::0.035) (0.035::0.035))
+	(INTERCONNECT mem_in2[55] core_instance2/mem_in[55]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in2[54] core_instance2/mem_in[54]  (0.033::0.033) (0.033::0.033))
+	(INTERCONNECT mem_in2[53] core_instance2/mem_in[53]  (0.029::0.029) (0.029::0.029))
+	(INTERCONNECT mem_in2[52] core_instance2/mem_in[52]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in2[51] core_instance2/mem_in[51]  (0.035::0.035) (0.035::0.035))
+	(INTERCONNECT mem_in2[50] core_instance2/mem_in[50]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in2[49] core_instance2/mem_in[49]  (0.035::0.035) (0.035::0.035))
+	(INTERCONNECT mem_in2[48] core_instance2/mem_in[48]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in2[47] core_instance2/mem_in[47]  (0.035::0.035) (0.035::0.035))
+	(INTERCONNECT mem_in2[46] core_instance2/mem_in[46]  (0.030::0.030) (0.030::0.030))
+	(INTERCONNECT mem_in2[45] core_instance2/mem_in[45]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in2[44] core_instance2/mem_in[44]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in2[43] core_instance2/mem_in[43]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in2[42] core_instance2/mem_in[42]  (0.038::0.038) (0.038::0.038))
+	(INTERCONNECT mem_in2[41] core_instance2/mem_in[41]  (0.037::0.037) (0.037::0.037))
+	(INTERCONNECT mem_in2[40] core_instance2/mem_in[40]  (0.038::0.038) (0.038::0.038))
+	(INTERCONNECT mem_in2[39] core_instance2/mem_in[39]  (0.034::0.034) (0.034::0.034))
+	(INTERCONNECT mem_in2[38] core_instance2/mem_in[38]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in2[37] core_instance2/mem_in[37]  (0.037::0.037) (0.037::0.037))
+	(INTERCONNECT mem_in2[36] core_instance2/mem_in[36]  (0.038::0.038) (0.038::0.038))
+	(INTERCONNECT mem_in2[35] core_instance2/mem_in[35]  (0.038::0.038) (0.038::0.038))
+	(INTERCONNECT mem_in2[34] core_instance2/mem_in[34]  (0.035::0.035) (0.035::0.035))
+	(INTERCONNECT mem_in2[33] core_instance2/mem_in[33]  (0.032::0.032) (0.032::0.032))
+	(INTERCONNECT mem_in2[32] core_instance2/mem_in[32]  (0.039::0.039) (0.039::0.039))
+	(INTERCONNECT mem_in2[31] core_instance2/mem_in[31]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in2[30] core_instance2/mem_in[30]  (0.039::0.039) (0.039::0.039))
+	(INTERCONNECT mem_in2[29] core_instance2/mem_in[29]  (0.039::0.039) (0.039::0.039))
+	(INTERCONNECT mem_in2[28] core_instance2/mem_in[28]  (0.035::0.035) (0.035::0.035))
+	(INTERCONNECT mem_in2[27] core_instance2/mem_in[27]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in2[26] core_instance2/mem_in[26]  (0.039::0.039) (0.039::0.039))
+	(INTERCONNECT mem_in2[25] core_instance2/mem_in[25]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in2[24] core_instance2/mem_in[24]  (0.036::0.036) (0.036::0.036))
+	(INTERCONNECT mem_in2[23] core_instance2/mem_in[23]  (0.038::0.038) (0.038::0.038))
+	(INTERCONNECT mem_in2[22] core_instance2/mem_in[22]  (0.040::0.040) (0.040::0.040))
+	(INTERCONNECT mem_in2[21] core_instance2/mem_in[21]  (0.038::0.038) (0.038::0.038))
+	(INTERCONNECT mem_in2[20] core_instance2/mem_in[20]  (0.039::0.039) (0.039::0.039))
+	(INTERCONNECT mem_in2[19] core_instance2/mem_in[19]  (0.041::0.041) (0.041::0.041))
+	(INTERCONNECT mem_in2[18] core_instance2/mem_in[18]  (0.040::0.040) (0.040::0.040))
+	(INTERCONNECT mem_in2[17] core_instance2/mem_in[17]  (0.040::0.040) (0.040::0.040))
+	(INTERCONNECT mem_in2[16] core_instance2/mem_in[16]  (0.043::0.043) (0.043::0.043))
+	(INTERCONNECT mem_in2[15] core_instance2/mem_in[15]  (0.042::0.042) (0.042::0.042))
+	(INTERCONNECT mem_in2[14] core_instance2/mem_in[14]  (0.042::0.042) (0.042::0.042))
+	(INTERCONNECT mem_in2[13] core_instance2/mem_in[13]  (0.043::0.043) (0.043::0.043))
+	(INTERCONNECT mem_in2[12] core_instance2/mem_in[12]  (0.042::0.042) (0.042::0.042))
+	(INTERCONNECT mem_in2[11] core_instance2/mem_in[11]  (0.040::0.040) (0.040::0.040))
+	(INTERCONNECT mem_in2[10] core_instance2/mem_in[10]  (0.042::0.042) (0.042::0.042))
+	(INTERCONNECT mem_in2[9] core_instance2/mem_in[9]  (0.040::0.040) (0.040::0.040))
+	(INTERCONNECT mem_in2[8] core_instance2/mem_in[8]  (0.039::0.039) (0.039::0.039))
+	(INTERCONNECT mem_in2[7] core_instance2/mem_in[7]  (0.040::0.040) (0.040::0.040))
+	(INTERCONNECT mem_in2[6] core_instance2/mem_in[6]  (0.040::0.040) (0.040::0.040))
+	(INTERCONNECT mem_in2[5] core_instance2/mem_in[5]  (0.043::0.043) (0.043::0.043))
+	(INTERCONNECT mem_in2[4] core_instance2/mem_in[4]  (0.038::0.038) (0.038::0.038))
+	(INTERCONNECT mem_in2[3] core_instance2/mem_in[3]  (0.042::0.042) (0.042::0.042))
+	(INTERCONNECT mem_in2[2] core_instance2/mem_in[2]  (0.042::0.042) (0.042::0.042))
+	(INTERCONNECT mem_in2[1] core_instance2/mem_in[1]  (0.044::0.044) (0.044::0.044))
+	(INTERCONNECT mem_in2[0] core_instance2/mem_in[0]  (0.040::0.040) (0.040::0.040))
+	(INTERCONNECT inst1[18] FE_OFC0_inst1_18_/I  (0.103::0.103) (0.103::0.103))
+	(INTERCONNECT inst1[18] core_instance1/inst[18]  (0.065::0.065) (0.065::0.065))
+	(INTERCONNECT inst1[17] core_instance1/inst[17]  (0.042::0.042) (0.042::0.042))
+	(INTERCONNECT inst1[16] core_instance1/inst[16]  (0.069::0.069) (0.069::0.069))
+	(INTERCONNECT inst1[15] core_instance1/inst[15]  (0.068::0.068) (0.068::0.068))
+	(INTERCONNECT inst1[14] core_instance1/inst[14]  (0.067::0.067) (0.067::0.067))
+	(INTERCONNECT inst1[13] core_instance1/inst[13]  (0.066::0.066) (0.066::0.066))
+	(INTERCONNECT inst1[12] core_instance1/inst[12]  (0.065::0.065) (0.065::0.065))
+	(INTERCONNECT inst1[11] core_instance1/inst[11]  (0.072::0.072) (0.072::0.072))
+	(INTERCONNECT inst1[10] core_instance1/inst[10]  (0.078::0.078) (0.078::0.078))
+	(INTERCONNECT inst1[9] core_instance1/inst[9]  (0.080::0.080) (0.080::0.080))
+	(INTERCONNECT inst1[8] core_instance1/inst[8]  (0.078::0.078) (0.078::0.078))
+	(INTERCONNECT inst1[7] core_instance1/inst[7]  (0.032::0.036) (0.032::0.036))
+	(INTERCONNECT inst1[6] core_instance1/inst[6]  (0.041::0.041) (0.041::0.041))
+	(INTERCONNECT inst1[5] core_instance1/inst[5]  (0.017::0.019) (0.017::0.019))
+	(INTERCONNECT inst1[4] core_instance1/inst[4]  (0.043::0.043) (0.043::0.043))
+	(INTERCONNECT inst1[3] core_instance1/inst[3]  (0.018::0.018) (0.018::0.018))
+	(INTERCONNECT inst1[2] core_instance1/inst[2]  (0.025::0.025) (0.025::0.025))
+	(INTERCONNECT inst1[1] core_instance1/inst[1]  (0.015::0.017) (0.015::0.017))
+	(INTERCONNECT inst1[0] core_instance1/inst[0]  (0.059::0.059) (0.059::0.059))
+	(INTERCONNECT inst2[18] FE_OFC2_inst2_18_/I  (0.095::0.095) (0.095::0.095))
+	(INTERCONNECT inst2[18] core_instance2/inst[18]  (0.071::0.071) (0.071::0.071))
+	(INTERCONNECT inst2[17] core_instance2/inst[17]  (0.038::0.060) (0.038::0.060))
+	(INTERCONNECT inst2[16] core_instance2/inst[16]  (0.071::0.090) (0.071::0.090))
+	(INTERCONNECT inst2[15] core_instance2/inst[15]  (0.076::0.076) (0.076::0.076))
+	(INTERCONNECT inst2[14] core_instance2/inst[14]  (0.064::0.091) (0.064::0.091))
+	(INTERCONNECT inst2[13] core_instance2/inst[13]  (0.075::0.075) (0.075::0.075))
+	(INTERCONNECT inst2[12] core_instance2/inst[12]  (0.067::0.087) (0.067::0.087))
+	(INTERCONNECT inst2[11] core_instance2/inst[11]  (0.078::0.086) (0.078::0.086))
+	(INTERCONNECT inst2[10] core_instance2/inst[10]  (0.075::0.102) (0.075::0.102))
+	(INTERCONNECT inst2[9] core_instance2/inst[9]  (0.081::0.106) (0.081::0.106))
+	(INTERCONNECT inst2[8] core_instance2/inst[8]  (0.085::0.085) (0.085::0.085))
+	(INTERCONNECT inst2[7] core_instance2/inst[7]  (0.036::0.040) (0.036::0.040))
+	(INTERCONNECT inst2[6] core_instance2/inst[6]  (0.042::0.052) (0.042::0.052))
+	(INTERCONNECT inst2[5] core_instance2/inst[5]  (0.016::0.026) (0.016::0.026))
+	(INTERCONNECT inst2[4] core_instance2/inst[4]  (0.049::0.049) (0.049::0.049))
+	(INTERCONNECT inst2[3] core_instance2/inst[3]  (0.019::0.021) (0.019::0.021))
+	(INTERCONNECT inst2[2] core_instance2/inst[2]  (0.030::0.030) (0.030::0.030))
+	(INTERCONNECT inst2[1] core_instance2/inst[1]  (0.017::0.025) (0.017::0.025))
+	(INTERCONNECT inst2[0] core_instance2/inst[0]  (0.067::0.067) (0.067::0.067))
+	(INTERCONNECT core_instance1/out[159] out1[159]  (0.003::0.004) (0.003::0.004))
+	(INTERCONNECT core_instance1/out[158] out1[158]  (0.003::0.004) (0.003::0.004))
+	(INTERCONNECT core_instance1/out[157] out1[157]  (0.003::0.004) (0.003::0.004))
+	(INTERCONNECT core_instance1/out[156] out1[156]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[155] out1[155]  (0.003::0.004) (0.003::0.004))
+	(INTERCONNECT core_instance1/out[154] out1[154]  (0.003::0.004) (0.003::0.004))
+	(INTERCONNECT core_instance1/out[153] out1[153]  (0.003::0.004) (0.003::0.004))
+	(INTERCONNECT core_instance1/out[152] out1[152]  (0.003::0.004) (0.003::0.004))
+	(INTERCONNECT core_instance1/out[151] out1[151]  (0.003::0.004) (0.003::0.004))
+	(INTERCONNECT core_instance1/out[150] out1[150]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[149] out1[149]  (0.003::0.004) (0.003::0.004))
+	(INTERCONNECT core_instance1/out[148] out1[148]  (0.003::0.004) (0.003::0.004))
+	(INTERCONNECT core_instance1/out[147] out1[147]  (0.003::0.004) (0.003::0.004))
+	(INTERCONNECT core_instance1/out[146] out1[146]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[145] out1[145]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[144] out1[144]  (0.003::0.004) (0.003::0.004))
+	(INTERCONNECT core_instance1/out[143] out1[143]  (0.003::0.004) (0.003::0.004))
+	(INTERCONNECT core_instance1/out[142] out1[142]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[141] out1[141]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[140] out1[140]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[139] out1[139]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[138] out1[138]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[137] out1[137]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[136] out1[136]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[135] out1[135]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[134] out1[134]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[133] out1[133]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[132] out1[132]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[131] out1[131]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[130] out1[130]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[129] out1[129]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[128] out1[128]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT FE_OFC5_out1_127_/Z out1[127]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC7_out1_126_/Z out1[126]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC9_out1_125_/Z out1[125]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC424_out1_124_/Z out1[124]  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance1/out[123] out1[123]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[122] out1[122]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[121] out1[121]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[120] out1[120]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[119] out1[119]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[118] out1[118]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[117] out1[117]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[116] out1[116]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[115] out1[115]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[114] out1[114]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[113] out1[113]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT FE_OFC11_out1_112_/Z out1[112]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[111] out1[111]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[110] out1[110]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT FE_OFC426_out1_109_/Z out1[109]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[108] out1[108]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[107] out1[107]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT FE_OFC13_out1_106_/Z out1[106]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[105] out1[105]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[104] out1[104]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[103] out1[103]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[102] out1[102]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT FE_OFC15_out1_101_/Z out1[101]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC17_out1_100_/Z out1[100]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC19_out1_99_/Z out1[99]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC21_out1_98_/Z out1[98]  (0.001::0.002) (0.001::0.002))
+	(INTERCONNECT FE_OFC23_out1_97_/Z out1[97]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC25_out1_96_/Z out1[96]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC27_out1_95_/Z out1[95]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC29_out1_94_/Z out1[94]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC31_out1_93_/Z out1[93]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC33_out1_92_/Z out1[92]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC35_out1_91_/Z out1[91]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC37_out1_90_/Z out1[90]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC39_out1_89_/Z out1[89]  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance1/out[88] out1[88]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT FE_OFC41_out1_87_/Z out1[87]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[86] out1[86]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/out[85] out1[85]  (0.002::0.003) (0.002::0.003))
+	(INTERCONNECT FE_OFC43_out1_84_/Z out1[84]  (0.001::0.002) (0.001::0.002))
+	(INTERCONNECT FE_OFC45_out1_83_/Z out1[83]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[82] out1[82]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT FE_OFC47_out1_81_/Z out1[81]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC49_out1_80_/Z out1[80]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC51_out1_79_/Z out1[79]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC53_out1_78_/Z out1[78]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC55_out1_77_/Z out1[77]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC57_out1_76_/Z out1[76]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/out[75] out1[75]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/out[74] out1[74]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/out[73] out1[73]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/out[72] out1[72]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/out[71] out1[71]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT FE_OFC59_out1_70_/Z out1[70]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[69] out1[69]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT FE_OFC61_out1_68_/Z out1[68]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC63_out1_67_/Z out1[67]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC65_out1_66_/Z out1[66]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC67_out1_65_/Z out1[65]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC69_out1_64_/Z out1[64]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[63] out1[63]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/out[62] out1[62]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/out[61] out1[61]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/out[60] out1[60]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/out[59] out1[59]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/out[58] out1[58]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/out[57] out1[57]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT FE_OFC71_out1_56_/Z out1[56]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[55] out1[55]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/out[54] out1[54]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/out[53] out1[53]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/out[52] out1[52]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT FE_OFC73_out1_51_/Z out1[51]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[50] out1[50]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/out[49] out1[49]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT FE_OFC75_out1_48_/Z out1[48]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[47] out1[47]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT FE_OFC77_out1_46_/Z out1[46]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC79_out1_45_/Z out1[45]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC430_out1_44_/Z out1[44]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT FE_OFC81_out1_43_/Z out1[43]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[42] out1[42]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/out[41] out1[41]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT FE_OFC83_out1_40_/Z out1[40]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC85_out1_39_/Z out1[39]  (0.001::0.002) (0.001::0.002))
+	(INTERCONNECT core_instance1/out[38] out1[38]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/out[37] out1[37]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[36] out1[36]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[35] out1[35]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[34] out1[34]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[33] out1[33]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT FE_OFC87_out1_32_/Z out1[32]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC89_out1_31_/Z out1[31]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/out[30] out1[30]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance1/out[29] out1[29]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT FE_OFC91_out1_28_/Z out1[28]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC93_out1_27_/Z out1[27]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC95_out1_26_/Z out1[26]  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT FE_OFC97_out1_25_/Z out1[25]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC99_out1_24_/Z out1[24]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC101_out1_23_/Z out1[23]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC103_out1_22_/Z out1[22]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC105_out1_21_/Z out1[21]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC107_out1_20_/Z out1[20]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC109_out1_19_/Z out1[19]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC111_out1_18_/Z out1[18]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC113_out1_17_/Z out1[17]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC115_out1_16_/Z out1[16]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC117_out1_15_/Z out1[15]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC119_out1_14_/Z out1[14]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC121_out1_13_/Z out1[13]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC123_out1_12_/Z out1[12]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC125_out1_11_/Z out1[11]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC127_out1_10_/Z out1[10]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC129_out1_9_/Z out1[9]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC131_out1_8_/Z out1[8]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC133_out1_7_/Z out1[7]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC135_out1_6_/Z out1[6]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC137_out1_5_/Z out1[5]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC139_out1_4_/Z out1[4]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC141_out1_3_/Z out1[3]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC143_out1_2_/Z out1[2]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC145_out1_1_/Z out1[1]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC147_out1_0_/Z out1[0]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/out[159] out2[159]  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT core_instance2/out[158] out2[158]  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT core_instance2/out[157] out2[157]  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT core_instance2/out[156] out2[156]  (0.003::0.004) (0.003::0.004))
+	(INTERCONNECT core_instance2/out[155] out2[155]  (0.003::0.004) (0.003::0.004))
+	(INTERCONNECT core_instance2/out[154] out2[154]  (0.003::0.004) (0.003::0.004))
+	(INTERCONNECT core_instance2/out[153] out2[153]  (0.003::0.004) (0.003::0.004))
+	(INTERCONNECT core_instance2/out[152] out2[152]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[151] out2[151]  (0.003::0.004) (0.003::0.004))
+	(INTERCONNECT core_instance2/out[150] out2[150]  (0.003::0.004) (0.003::0.004))
+	(INTERCONNECT core_instance2/out[149] out2[149]  (0.003::0.004) (0.003::0.004))
+	(INTERCONNECT core_instance2/out[148] out2[148]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[147] out2[147]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[146] out2[146]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[145] out2[145]  (0.003::0.004) (0.003::0.004))
+	(INTERCONNECT core_instance2/out[144] out2[144]  (0.003::0.004) (0.003::0.004))
+	(INTERCONNECT core_instance2/out[143] out2[143]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[142] out2[142]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[141] out2[141]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[140] out2[140]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[139] out2[139]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[138] out2[138]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[137] out2[137]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[136] out2[136]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[135] out2[135]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[134] out2[134]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[133] out2[133]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[132] out2[132]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[131] out2[131]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[130] out2[130]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[129] out2[129]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[128] out2[128]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[127] out2[127]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT FE_OFC149_out2_126_/Z out2[126]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC428_out2_125_/Z out2[125]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[124] out2[124]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[123] out2[123]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[122] out2[122]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[121] out2[121]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[120] out2[120]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[119] out2[119]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[118] out2[118]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[117] out2[117]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[116] out2[116]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[115] out2[115]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[114] out2[114]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[113] out2[113]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[112] out2[112]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[111] out2[111]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT core_instance2/out[110] out2[110]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[109] out2[109]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[108] out2[108]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[107] out2[107]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[106] out2[106]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[105] out2[105]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[104] out2[104]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[103] out2[103]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[102] out2[102]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[101] out2[101]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[100] out2[100]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[99] out2[99]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[98] out2[98]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[97] out2[97]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[96] out2[96]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[95] out2[95]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[94] out2[94]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[93] out2[93]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[92] out2[92]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[91] out2[91]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/out[90] out2[90]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT FE_OFC151_out2_89_/Z out2[89]  (0.001::0.002) (0.001::0.002))
+	(INTERCONNECT core_instance2/out[88] out2[88]  (0.002::0.003) (0.002::0.003))
+	(INTERCONNECT FE_OFC153_out2_87_/Z out2[87]  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/out[86] out2[86]  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT FE_OFC155_out2_85_/Z out2[85]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC157_out2_84_/Z out2[84]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC159_out2_83_/Z out2[83]  (0.001::0.002) (0.001::0.002))
+	(INTERCONNECT core_instance2/out[82] out2[82]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT FE_OFC161_out2_81_/Z out2[81]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC163_out2_80_/Z out2[80]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC165_out2_79_/Z out2[79]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC167_out2_78_/Z out2[78]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC169_out2_77_/Z out2[77]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC171_out2_76_/Z out2[76]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC173_out2_75_/Z out2[75]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC175_out2_74_/Z out2[74]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC177_out2_73_/Z out2[73]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC179_out2_72_/Z out2[72]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC181_out2_71_/Z out2[71]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC183_out2_70_/Z out2[70]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC185_out2_69_/Z out2[69]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC187_out2_68_/Z out2[68]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC189_out2_67_/Z out2[67]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT FE_OFC191_out2_66_/Z out2[66]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC193_out2_65_/Z out2[65]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC195_out2_64_/Z out2[64]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC197_out2_63_/Z out2[63]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC199_out2_62_/Z out2[62]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC201_out2_61_/Z out2[61]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC203_out2_60_/Z out2[60]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC205_out2_59_/Z out2[59]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC207_out2_58_/Z out2[58]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC209_out2_57_/Z out2[57]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC211_out2_56_/Z out2[56]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC213_out2_55_/Z out2[55]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC215_out2_54_/Z out2[54]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC217_out2_53_/Z out2[53]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC219_out2_52_/Z out2[52]  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT FE_OFC221_out2_51_/Z out2[51]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC223_out2_50_/Z out2[50]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC225_out2_49_/Z out2[49]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC227_out2_48_/Z out2[48]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC229_out2_47_/Z out2[47]  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT FE_OFC231_out2_46_/Z out2[46]  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT FE_OFC233_out2_45_/Z out2[45]  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT FE_OFC235_out2_44_/Z out2[44]  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT FE_OFC237_out2_43_/Z out2[43]  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT FE_OFC239_out2_42_/Z out2[42]  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT FE_OFC241_out2_41_/Z out2[41]  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT FE_OFC243_out2_40_/Z out2[40]  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT FE_OFC245_out2_39_/Z out2[39]  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT FE_OFC247_out2_38_/Z out2[38]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC249_out2_37_/Z out2[37]  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT FE_OFC251_out2_36_/Z out2[36]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC253_out2_35_/Z out2[35]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC255_out2_34_/Z out2[34]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC257_out2_33_/Z out2[33]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC259_out2_32_/Z out2[32]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC261_out2_31_/Z out2[31]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC263_out2_30_/Z out2[30]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC265_out2_29_/Z out2[29]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC267_out2_28_/Z out2[28]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC269_out2_27_/Z out2[27]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC271_out2_26_/Z out2[26]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC273_out2_25_/Z out2[25]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC275_out2_24_/Z out2[24]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC277_out2_23_/Z out2[23]  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OFC279_out2_22_/Z out2[22]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC281_out2_21_/Z out2[21]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC283_out2_20_/Z out2[20]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC285_out2_19_/Z out2[19]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC287_out2_18_/Z out2[18]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC289_out2_17_/Z out2[17]  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OFC291_out2_16_/Z out2[16]  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OFC293_out2_15_/Z out2[15]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC295_out2_14_/Z out2[14]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC297_out2_13_/Z out2[13]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC299_out2_12_/Z out2[12]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC301_out2_11_/Z out2[11]  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OFC303_out2_10_/Z out2[10]  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OFC305_out2_9_/Z out2[9]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC307_out2_8_/Z out2[8]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC309_out2_7_/Z out2[7]  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OFC311_out2_6_/Z out2[6]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC313_out2_5_/Z out2[5]  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OFC315_out2_4_/Z out2[4]  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OFC317_out2_3_/Z out2[3]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC319_out2_2_/Z out2[2]  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC321_out2_1_/Z out2[1]  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OFC323_out2_0_/Z out2[0]  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT clk CTS_ccl_BUF_clk_G0_L1_2/I  (0.006::0.006) (0.006::0.006))
+	(INTERCONNECT clk CTS_ccl_BUF_clk_G0_L1_1/I  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT reset core_instance1/reset  (0.007::0.007) (0.007::0.007))
+	(INTERCONNECT reset core_instance2/reset  (0.007::0.007) (0.007::0.007))
+	(INTERCONNECT core_instance2/sum_out[23] FE_OFC324_sum_out2_23_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/sum_out[22] FE_OFC326_sum_out2_22_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/sum_out[21] FE_OFC328_sum_out2_21_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/sum_out[20] FE_OFC330_sum_out2_20_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/sum_out[19] FE_OFC332_sum_out2_19_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/sum_out[18] FE_OFC334_sum_out2_18_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/sum_out[17] FE_OFC336_sum_out2_17_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/sum_out[16] FE_OFC338_sum_out2_16_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/sum_out[15] FE_OFC340_sum_out2_15_/I  (0.009::0.009) (0.009::0.009))
+	(INTERCONNECT core_instance2/sum_out[14] FE_OFC342_sum_out2_14_/I  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT core_instance2/sum_out[13] FE_OFC344_sum_out2_13_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/sum_out[12] FE_OFC346_sum_out2_12_/I  (0.008::0.008) (0.008::0.008))
+	(INTERCONNECT core_instance2/sum_out[11] FE_OFC348_sum_out2_11_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance2/sum_out[10] FE_OFC350_sum_out2_10_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/sum_out[9] FE_OFC352_sum_out2_9_/I  (0.000::0.001) (0.000::0.001))
+	(INTERCONNECT core_instance2/sum_out[8] FE_OFC354_sum_out2_8_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/sum_out[7] FE_OFC356_sum_out2_7_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/sum_out[6] FE_OFC358_sum_out2_6_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/sum_out[5] FE_OFC360_sum_out2_5_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/sum_out[4] FE_OFC362_sum_out2_4_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/sum_out[3] FE_OFC364_sum_out2_3_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/sum_out[2] FE_OFC366_sum_out2_2_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance2/sum_out[1] FE_OFC368_sum_out2_1_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance2/sum_out[0] FE_OFC370_sum_out2_0_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/sum_out[23] FE_OFC372_sum_out1_23_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance1/sum_out[22] FE_OFC374_sum_out1_22_/I  (0.056::0.056) (0.053::0.056))
+	(INTERCONNECT core_instance1/sum_out[21] FE_OFC377_sum_out1_21_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance1/sum_out[20] FE_OFC379_sum_out1_20_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance1/sum_out[19] FE_OFC381_sum_out1_19_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance1/sum_out[18] FE_OFC383_sum_out1_18_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance1/sum_out[17] FE_OFC385_sum_out1_17_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance1/sum_out[16] FE_OFC387_sum_out1_16_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance1/sum_out[15] FE_OFC389_sum_out1_15_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance1/sum_out[14] FE_OFC391_sum_out1_14_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance1/sum_out[13] FE_OFC393_sum_out1_13_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance1/sum_out[12] FE_OFC395_sum_out1_12_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance1/sum_out[11] FE_OFC397_sum_out1_11_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance1/sum_out[10] FE_OFC399_sum_out1_10_/I  (0.000::0.001) (0.000::0.001))
+	(INTERCONNECT core_instance1/sum_out[9] FE_OFC401_sum_out1_9_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance1/sum_out[8] FE_OFC403_sum_out1_8_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance1/sum_out[7] FE_OFC405_sum_out1_7_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance1/sum_out[6] FE_OFC407_sum_out1_6_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance1/sum_out[5] FE_OFC409_sum_out1_5_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance1/sum_out[4] FE_OFC411_sum_out1_4_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance1/sum_out[3] FE_OFC413_sum_out1_3_/I  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT core_instance1/sum_out[2] FE_OFC415_sum_out1_2_/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT core_instance1/sum_out[1] FE_OFC417_sum_out1_1_/I  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT core_instance1/sum_out[0] FE_OFC419_sum_out1_0_/I  (0.000::0.000) (0.000::0.000))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD16")
+    (INSTANCE  CTS_ccl_BUF_clk_G0_L1_2)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.050::0.050) (0.052::0.052))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD16")
+    (INSTANCE  CTS_ccl_BUF_clk_G0_L1_1)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.050::0.050) (0.052::0.052))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC430_out1_44_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.221::0.221) (0.195::0.195))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC428_out2_125_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.246::0.246) (0.216::0.216))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC426_out1_109_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.233::0.233) (0.206::0.206))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC424_out1_124_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.080::0.080) (0.077::0.077))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC420_sum_out1_0_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.349::0.509) (0.342::0.461))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC419_sum_out1_0_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.232::0.386) (0.198::0.306))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC418_sum_out1_1_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.342::0.498) (0.342::0.459))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC417_sum_out1_1_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.242::0.397) (0.211::0.320))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC416_sum_out1_2_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.400::0.400) (0.383::0.383))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC415_sum_out1_2_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.289::0.290) (0.246::0.246))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC414_sum_out1_3_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.285::0.615) (0.294::0.537))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC413_sum_out1_3_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.243::0.398) (0.213::0.323))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC412_sum_out1_4_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.283::0.628) (0.285::0.533))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC411_sum_out1_4_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.288::0.289) (0.247::0.248))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC410_sum_out1_5_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.349::0.509) (0.344::0.463))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC409_sum_out1_5_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.234::0.388) (0.202::0.312))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC408_sum_out1_6_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.343::0.508) (0.345::0.471))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC407_sum_out1_6_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.248::0.413) (0.214::0.331))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC406_sum_out1_7_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.285::0.643) (0.293::0.557))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC405_sum_out1_7_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.236::0.391) (0.204::0.315))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC404_sum_out1_8_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.363::0.518) (0.365::0.480))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC403_sum_out1_8_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.245::0.407) (0.211::0.328))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC402_sum_out1_9_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.298::0.631) (0.302::0.543))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC401_sum_out1_9_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.234::0.392) (0.200::0.312))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC400_sum_out1_10_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.357::0.514) (0.356::0.474))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC399_sum_out1_10_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.184::0.513) (0.162::0.393))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC398_sum_out1_11_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.415::0.415) (0.403::0.403))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC397_sum_out1_11_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.238::0.396) (0.208::0.320))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC396_sum_out1_12_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.298::0.631) (0.306::0.552))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC395_sum_out1_12_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.246::0.406) (0.213::0.327))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC394_sum_out1_13_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.296::0.636) (0.300::0.546))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC393_sum_out1_13_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.239::0.393) (0.208::0.317))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC392_sum_out1_14_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.367::0.523) (0.365::0.481))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC391_sum_out1_14_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.186::0.515) (0.164::0.393))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC390_sum_out1_15_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.373::0.526) (0.373::0.487))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC389_sum_out1_15_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.192::0.517) (0.169::0.397))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC388_sum_out1_16_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.299::0.637) (0.304::0.550))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC387_sum_out1_16_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.239::0.392) (0.207::0.315))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC386_sum_out1_17_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.353::0.517) (0.350::0.470))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC385_sum_out1_17_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.237::0.391) (0.207::0.314))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC384_sum_out1_18_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.425::0.425) (0.416::0.416))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC383_sum_out1_18_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.186::0.518) (0.163::0.395))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC382_sum_out1_19_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.355::0.520) (0.351::0.472))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC381_sum_out1_19_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.240::0.391) (0.208::0.317))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC380_sum_out1_20_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.356::0.519) (0.353::0.474))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC379_sum_out1_20_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.242::0.390) (0.212::0.316))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC378_sum_out1_21_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.339::0.499) (0.331::0.447))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC377_sum_out1_21_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.289::0.290) (0.248::0.250))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND2")
+    (INSTANCE  FE_OFC376_sum_out1_22_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.373::0.373) (0.330::0.330))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND2")
+    (INSTANCE  FE_OFC375_sum_out1_22_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.269::0.290) (0.258::0.276))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD3")
+    (INSTANCE  FE_OFC374_sum_out1_22_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.234::0.270) (0.190::0.228))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC373_sum_out1_23_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.403::0.403) (0.390::0.390))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC372_sum_out1_23_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.294::0.294) (0.253::0.253))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC371_sum_out2_0_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.346::0.498) (0.346::0.460))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC370_sum_out2_0_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.231::0.404) (0.200::0.323))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC369_sum_out2_1_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.347::0.500) (0.346::0.461))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC368_sum_out2_1_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.232::0.391) (0.201::0.314))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC367_sum_out2_2_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.359::0.506) (0.364::0.476))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC366_sum_out2_2_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.242::0.407) (0.206::0.324))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC365_sum_out2_3_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.297::0.612) (0.309::0.544))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC364_sum_out2_3_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.253::0.426) (0.218::0.345))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC363_sum_out2_4_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.271::0.583) (0.279::0.502))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND4")
+    (INSTANCE  FE_OFC362_sum_out2_4_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.184::0.298) (0.155::0.234))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC361_sum_out2_5_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.399::0.399) (0.390::0.390))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC360_sum_out2_5_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.292::0.293) (0.246::0.248))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC359_sum_out2_6_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.331::0.483) (0.329::0.440))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND4")
+    (INSTANCE  FE_OFC358_sum_out2_6_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.144::0.381) (0.122::0.282))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC357_sum_out2_7_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.349::0.503) (0.350::0.466))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC356_sum_out2_7_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.251::0.406) (0.216::0.328))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC355_sum_out2_8_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.404::0.404) (0.398::0.398))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC354_sum_out2_8_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.250::0.410) (0.217::0.332))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC353_sum_out2_9_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.358::0.505) (0.363::0.475))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC352_sum_out2_9_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.244::0.409) (0.209::0.326))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC351_sum_out2_10_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.279::0.598) (0.287::0.517))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC350_sum_out2_10_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.296::0.296) (0.255::0.256))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC349_sum_out2_11_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.278::0.597) (0.285::0.514))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC348_sum_out2_11_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.298::0.300) (0.260::0.261))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC347_sum_out2_12_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.348::0.502) (0.349::0.466))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC346_sum_out2_12_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.317::0.319) (0.278::0.279))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC345_sum_out2_13_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.330::0.477) (0.333::0.441))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND4")
+    (INSTANCE  FE_OFC344_sum_out2_13_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.164::0.403) (0.144::0.307))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC343_sum_out2_14_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.373::0.373) (0.365::0.365))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND4")
+    (INSTANCE  FE_OFC342_sum_out2_14_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.261::0.261) (0.226::0.226))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC341_sum_out2_15_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.327::0.477) (0.330::0.440))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND4")
+    (INSTANCE  FE_OFC340_sum_out2_15_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.277::0.278) (0.242::0.242))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC339_sum_out2_16_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.346::0.497) (0.350::0.465))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC338_sum_out2_16_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.324::0.324) (0.278::0.278))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC337_sum_out2_17_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.398::0.398) (0.390::0.390))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC336_sum_out2_17_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.244::0.396) (0.215::0.321))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC335_sum_out2_18_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.401::0.401) (0.393::0.393))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC334_sum_out2_18_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.242::0.394) (0.212::0.319))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC333_sum_out2_19_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.397::0.397) (0.388::0.388))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC332_sum_out2_19_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.298::0.298) (0.255::0.256))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC331_sum_out2_20_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.299::0.635) (0.304::0.548))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC330_sum_out2_20_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.237::0.389) (0.208::0.315))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC329_sum_out2_21_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.324::0.474) (0.325::0.434))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND4")
+    (INSTANCE  FE_OFC328_sum_out2_21_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.188::0.300) (0.158::0.235))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC327_sum_out2_22_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.329::0.479) (0.331::0.442))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND4")
+    (INSTANCE  FE_OFC326_sum_out2_22_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.155::0.386) (0.133::0.290))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC325_sum_out2_23_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.352::0.502) (0.355::0.468))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND3")
+    (INSTANCE  FE_OFC324_sum_out2_23_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.196::0.526) (0.177::0.408))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "BUFFD1")
+    (INSTANCE  FE_OFC323_out2_0_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.172::0.196) (0.126::0.139))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "BUFFD1")
+    (INSTANCE  FE_OFC321_out2_1_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.169::0.184) (0.130::0.137))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC319_out2_2_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.167::0.167) (0.151::0.151))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC317_out2_3_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.149::0.186) (0.134::0.162))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "BUFFD1")
+    (INSTANCE  FE_OFC315_out2_4_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.168::0.177) (0.131::0.136))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "BUFFD1")
+    (INSTANCE  FE_OFC313_out2_5_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.163::0.163) (0.132::0.132))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC311_out2_6_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.150::0.184) (0.135::0.161))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "BUFFD1")
+    (INSTANCE  FE_OFC309_out2_7_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.168::0.177) (0.131::0.136))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC307_out2_8_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.147::0.184) (0.133::0.161))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC305_out2_9_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.147::0.180) (0.133::0.157))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "BUFFD1")
+    (INSTANCE  FE_OFC303_out2_10_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.164::0.164) (0.133::0.133))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "BUFFD1")
+    (INSTANCE  FE_OFC301_out2_11_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.164::0.174) (0.128::0.133))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC299_out2_12_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.163::0.163) (0.147::0.147))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC297_out2_13_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.148::0.176) (0.134::0.155))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC295_out2_14_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.159::0.159) (0.144::0.144))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC293_out2_15_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.149::0.177) (0.135::0.157))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "BUFFD1")
+    (INSTANCE  FE_OFC291_out2_16_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.162::0.162) (0.132::0.132))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "BUFFD1")
+    (INSTANCE  FE_OFC289_out2_17_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.162::0.162) (0.132::0.132))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC287_out2_18_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.144::0.171) (0.130::0.151))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC285_out2_19_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.146::0.180) (0.126::0.151))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC283_out2_20_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.146::0.173) (0.132::0.153))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC281_out2_21_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.139::0.171) (0.126::0.151))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC279_out2_22_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.134::0.166) (0.122::0.146))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "BUFFD1")
+    (INSTANCE  FE_OFC277_out2_23_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.159::0.159) (0.130::0.130))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC275_out2_24_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.133::0.179) (0.121::0.155))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC273_out2_25_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.140::0.140) (0.127::0.127))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC271_out2_26_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.129::0.172) (0.117::0.150))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC269_out2_27_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.144::0.173) (0.125::0.146))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC267_out2_28_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.147::0.147) (0.133::0.133))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC265_out2_29_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.137::0.158) (0.125::0.140))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC263_out2_30_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.124::0.169) (0.112::0.147))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC261_out2_31_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.131::0.154) (0.120::0.136))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC259_out2_32_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.119::0.180) (0.108::0.154))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC257_out2_33_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.142::0.142) (0.129::0.129))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC255_out2_34_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.131::0.147) (0.119::0.132))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC253_out2_35_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.131::0.131) (0.120::0.120))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC251_out2_36_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.122::0.155) (0.112::0.136))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC249_out2_37_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.128::0.154) (0.112::0.131))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC247_out2_38_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.123::0.156) (0.113::0.138))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC245_out2_39_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.264::0.264) (0.232::0.232))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC243_out2_40_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.124::0.147) (0.114::0.132))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC241_out2_41_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.118::0.159) (0.109::0.140))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC239_out2_42_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.123::0.138) (0.113::0.125))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC237_out2_43_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.273::0.273) (0.238::0.238))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC235_out2_44_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.122::0.140) (0.112::0.127))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC233_out2_45_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.258::0.258) (0.227::0.227))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC231_out2_46_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.117::0.153) (0.108::0.135))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC229_out2_47_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.124::0.141) (0.114::0.127))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC227_out2_48_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.128::0.128) (0.118::0.118))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC225_out2_49_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.120::0.120) (0.111::0.111))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC223_out2_50_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.126::0.126) (0.116::0.116))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC221_out2_51_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.118::0.118) (0.109::0.109))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC219_out2_52_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.119::0.119) (0.110::0.110))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC217_out2_53_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.162::0.171) (0.140::0.146))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC215_out2_54_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.159::0.159) (0.144::0.144))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC213_out2_55_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.155::0.163) (0.134::0.140))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC211_out2_56_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.159::0.159) (0.143::0.143))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC209_out2_57_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.156::0.156) (0.141::0.141))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC207_out2_58_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.137::0.137) (0.125::0.125))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC205_out2_59_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.153::0.153) (0.138::0.138))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC203_out2_60_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.124::0.124) (0.114::0.114))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC201_out2_61_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.127::0.127) (0.117::0.117))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC199_out2_62_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.150::0.150) (0.136::0.136))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC197_out2_63_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.151::0.151) (0.136::0.136))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC195_out2_64_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.152::0.152) (0.138::0.138))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC193_out2_65_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.145::0.145) (0.132::0.132))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC191_out2_66_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.130::0.130) (0.119::0.119))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC189_out2_67_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.238::0.238) (0.210::0.210))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC187_out2_68_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.143::0.143) (0.130::0.130))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC185_out2_69_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.146::0.146) (0.133::0.133))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC183_out2_70_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.144::0.144) (0.131::0.131))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC181_out2_71_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.125::0.125) (0.115::0.115))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC179_out2_72_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.143::0.143) (0.130::0.130))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC177_out2_73_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.142::0.142) (0.129::0.129))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC175_out2_74_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.142::0.142) (0.130::0.130))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC173_out2_75_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.139::0.139) (0.127::0.127))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC171_out2_76_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.137::0.137) (0.125::0.125))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC169_out2_77_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.122::0.122) (0.113::0.113))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC167_out2_78_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.138::0.138) (0.126::0.126))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC165_out2_79_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.136::0.136) (0.124::0.124))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC163_out2_80_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.137::0.137) (0.125::0.125))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC161_out2_81_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.097::0.187) (0.091::0.162))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC159_out2_83_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.131::0.131) (0.120::0.120))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC157_out2_84_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.133::0.133) (0.122::0.122))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC155_out2_85_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.131::0.131) (0.120::0.120))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC153_out2_87_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.100::0.180) (0.094::0.156))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC151_out2_89_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.140::0.140) (0.128::0.128))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC149_out2_126_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.122::0.122) (0.112::0.112))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC147_out1_0_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.159::0.159) (0.143::0.143))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC145_out1_1_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.156::0.156) (0.141::0.141))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC143_out1_2_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.149::0.149) (0.135::0.135))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC141_out1_3_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.117::0.117) (0.108::0.108))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC139_out1_4_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.152::0.160) (0.132::0.138))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC137_out1_5_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.151::0.158) (0.131::0.137))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC135_out1_6_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.117::0.117) (0.109::0.109))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC133_out1_7_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.156::0.156) (0.141::0.141))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC131_out1_8_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.152::0.152) (0.137::0.137))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC129_out1_9_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.153::0.153) (0.138::0.138))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC127_out1_10_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.122::0.122) (0.113::0.113))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC125_out1_11_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.150::0.150) (0.136::0.136))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC123_out1_12_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.146::0.146) (0.133::0.133))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC121_out1_13_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.141::0.141) (0.128::0.128))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC119_out1_14_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.145::0.145) (0.131::0.131))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC117_out1_15_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.126::0.126) (0.116::0.116))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC115_out1_16_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.144::0.144) (0.131::0.131))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC113_out1_17_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.145::0.145) (0.132::0.132))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC111_out1_18_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.132::0.132) (0.121::0.121))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC109_out1_19_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.141::0.141) (0.129::0.129))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC107_out1_20_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.141::0.141) (0.128::0.128))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC105_out1_21_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.130::0.130) (0.119::0.119))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC103_out1_22_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.139::0.139) (0.127::0.127))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC101_out1_23_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.139::0.139) (0.127::0.127))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC99_out1_24_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.129::0.129) (0.118::0.118))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC97_out1_25_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.137::0.137) (0.125::0.125))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC95_out1_26_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.121::0.129) (0.112::0.119))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC93_out1_27_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.138::0.138) (0.126::0.126))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC91_out1_28_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.138::0.138) (0.126::0.126))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC89_out1_31_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.136::0.136) (0.124::0.124))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC87_out1_32_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.137::0.137) (0.125::0.125))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC85_out1_39_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.133::0.133) (0.121::0.121))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC83_out1_40_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.137::0.137) (0.125::0.125))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC81_out1_43_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.128::0.128) (0.118::0.118))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC79_out1_45_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.128::0.128) (0.118::0.118))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC77_out1_46_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.127::0.127) (0.116::0.116))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC75_out1_48_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.132::0.132) (0.120::0.120))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC73_out1_51_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.125::0.125) (0.115::0.115))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC71_out1_56_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.161::0.161) (0.146::0.146))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC69_out1_64_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.134::0.134) (0.123::0.123))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC67_out1_65_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.120::0.120) (0.111::0.111))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC65_out1_66_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.121::0.121) (0.112::0.112))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC63_out1_67_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.122::0.122) (0.113::0.113))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC61_out1_68_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.123::0.123) (0.114::0.114))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC59_out1_70_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.161::0.161) (0.145::0.145))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC57_out1_76_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.192::0.192) (0.171::0.171))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC55_out1_77_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.124::0.124) (0.115::0.115))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC53_out1_78_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.129::0.129) (0.119::0.119))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC51_out1_79_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.128::0.128) (0.118::0.118))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC49_out1_80_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.130::0.130) (0.119::0.119))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC47_out1_81_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.167::0.167) (0.150::0.150))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC45_out1_83_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.135::0.135) (0.123::0.123))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC43_out1_84_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.132::0.132) (0.121::0.121))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC41_out1_87_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.123::0.123) (0.113::0.113))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC39_out1_89_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.127::0.138) (0.117::0.126))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC37_out1_90_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.141::0.141) (0.128::0.128))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC35_out1_91_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.119::0.119) (0.109::0.109))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC33_out1_92_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.137::0.137) (0.125::0.125))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC31_out1_93_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.126::0.126) (0.116::0.116))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC29_out1_94_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.139::0.139) (0.127::0.127))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC27_out1_95_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.145::0.145) (0.132::0.132))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC25_out1_96_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.139::0.139) (0.127::0.127))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC23_out1_97_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.126::0.126) (0.116::0.116))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC21_out1_98_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.132::0.132) (0.121::0.121))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC19_out1_99_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.141::0.141) (0.129::0.129))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC17_out1_100_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.139::0.139) (0.127::0.127))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC15_out1_101_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.139::0.139) (0.127::0.127))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC13_out1_106_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.148::0.148) (0.134::0.134))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC11_out1_112_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.144::0.144) (0.131::0.131))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC9_out1_125_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.159::0.159) (0.144::0.144))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC7_out1_126_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.127::0.127) (0.117::0.117))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD0")
+    (INSTANCE  FE_OFC5_out1_127_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.143::0.184) (0.130::0.164))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND2")
+    (INSTANCE  FE_OFC3_inst2_18_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.280::0.280) (0.271::0.271))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND2")
+    (INSTANCE  FE_OFC2_inst2_18_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.245::0.245) (0.208::0.208))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND2")
+    (INSTANCE  FE_OFC1_inst1_18_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.283::0.283) (0.275::0.275))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND2")
+    (INSTANCE  FE_OFC0_inst1_18_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.253::0.253) (0.215::0.215))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "core")
+    (INSTANCE  core_instance1)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge clk) sum_out[0]  (1.510::1.709) (1.578::1.724))
+	(IOPATH (posedge clk) sum_out[1]  (1.522::1.711) (1.585::1.735))
+	(IOPATH (posedge clk) sum_out[2]  (1.520::1.706) (1.580::1.732))
+	(IOPATH (posedge clk) sum_out[3]  (1.537::1.722) (1.593::1.742))
+	(IOPATH (posedge clk) sum_out[4]  (1.524::1.714) (1.580::1.737))
+	(IOPATH (posedge clk) sum_out[5]  (1.521::1.704) (1.579::1.728))
+	(IOPATH (posedge clk) sum_out[6]  (1.525::1.704) (1.585::1.728))
+	(IOPATH (posedge clk) sum_out[7]  (1.521::1.710) (1.583::1.727))
+	(IOPATH (posedge clk) sum_out[8]  (1.530::1.710) (1.586::1.733))
+	(IOPATH (posedge clk) sum_out[9]  (1.497::1.717) (1.566::1.718))
+	(IOPATH (posedge clk) sum_out[10]  (1.510::1.726) (1.576::1.737))
+	(IOPATH (posedge clk) sum_out[11]  (1.509::1.709) (1.575::1.731))
+	(IOPATH (posedge clk) sum_out[12]  (1.520::1.717) (1.585::1.735))
+	(IOPATH (posedge clk) sum_out[13]  (1.511::1.714) (1.577::1.732))
+	(IOPATH (posedge clk) sum_out[14]  (1.525::1.720) (1.581::1.732))
+	(IOPATH (posedge clk) sum_out[15]  (1.517::1.734) (1.582::1.737))
+	(IOPATH (posedge clk) sum_out[16]  (1.522::1.723) (1.583::1.728))
+	(IOPATH (posedge clk) sum_out[17]  (1.511::1.724) (1.574::1.728))
+	(IOPATH (posedge clk) sum_out[18]  (1.510::1.722) (1.574::1.731))
+	(IOPATH (posedge clk) sum_out[19]  (1.527::1.725) (1.583::1.729))
+	(IOPATH (posedge clk) sum_out[20]  (1.530::1.721) (1.589::1.734))
+	(IOPATH (posedge clk) sum_out[21]  (1.507::1.722) (1.571::1.725))
+	(IOPATH (posedge clk) sum_out[22]  (1.627::1.816) (1.650::1.793))
+	(IOPATH (posedge clk) sum_out[23]  (1.512::1.715) (1.578::1.738))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (posedge clk) (0.213::0.213))
+	(WIDTH (negedge clk) (0.641::0.641))
+	(SETUPHOLD (posedge fifo_ext_rd) (posedge clk) (-0.772::-0.772) ())
+	(SETUPHOLD (negedge fifo_ext_rd) (posedge clk) (-0.748::-0.748) ())
+	(SETUPHOLD (posedge inst[6]) (posedge clk) (0.563::0.563) ())
+	(SETUPHOLD (negedge inst[6]) (posedge clk) (0.535::0.535) ())
+	(SETUPHOLD (posedge inst[7]) (posedge clk) (-0.468::-0.468) ())
+	(SETUPHOLD (negedge inst[7]) (posedge clk) (-0.566::-0.566) ())
+	(SETUPHOLD (posedge inst[16]) (posedge clk) (0.075::0.075) ())
+	(SETUPHOLD (negedge inst[16]) (posedge clk) (0.000::0.000) ())
+	(SETUPHOLD (posedge inst[17]) (posedge clk) (-0.560::-0.560) ())
+	(SETUPHOLD (negedge inst[17]) (posedge clk) (-0.613::-0.613) ())
+	(SETUPHOLD (posedge inst[18]) (posedge clk) (-0.908::-0.908) ())
+	(SETUPHOLD (negedge inst[18]) (posedge clk) (-0.921::-0.921) ())
+	(SETUPHOLD (posedge reset) (posedge clk) (0.685::0.685) ())
+	(SETUPHOLD (negedge reset) (posedge clk) (0.827::0.827) ())
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "core")
+    (INSTANCE  core_instance2)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge clk) sum_out[0]  (1.517::1.721) (1.583::1.734))
+	(IOPATH (posedge clk) sum_out[1]  (1.518::1.712) (1.582::1.736))
+	(IOPATH (posedge clk) sum_out[2]  (1.523::1.709) (1.582::1.734))
+	(IOPATH (posedge clk) sum_out[3]  (1.522::1.708) (1.582::1.731))
+	(IOPATH (posedge clk) sum_out[4]  (1.526::1.716) (1.582::1.738))
+	(IOPATH (posedge clk) sum_out[5]  (1.521::1.705) (1.579::1.728))
+	(IOPATH (posedge clk) sum_out[6]  (1.526::1.705) (1.586::1.729))
+	(IOPATH (posedge clk) sum_out[7]  (1.521::1.711) (1.583::1.727))
+	(IOPATH (posedge clk) sum_out[8]  (1.528::1.708) (1.585::1.732))
+	(IOPATH (posedge clk) sum_out[9]  (1.503::1.722) (1.570::1.722))
+	(IOPATH (posedge clk) sum_out[10]  (1.518::1.734) (1.582::1.742))
+	(IOPATH (posedge clk) sum_out[11]  (1.521::1.727) (1.584::1.745))
+	(IOPATH (posedge clk) sum_out[12]  (1.560::1.756) (1.613::1.764))
+	(IOPATH (posedge clk) sum_out[13]  (1.533::1.735) (1.593::1.749))
+	(IOPATH (posedge clk) sum_out[14]  (1.548::1.751) (1.598::1.754))
+	(IOPATH (posedge clk) sum_out[15]  (1.554::1.780) (1.610::1.769))
+	(IOPATH (posedge clk) sum_out[16]  (1.531::1.732) (1.590::1.735))
+	(IOPATH (posedge clk) sum_out[17]  (1.524::1.737) (1.584::1.738))
+	(IOPATH (posedge clk) sum_out[18]  (1.521::1.734) (1.583::1.740))
+	(IOPATH (posedge clk) sum_out[19]  (1.526::1.724) (1.582::1.728))
+	(IOPATH (posedge clk) sum_out[20]  (1.528::1.720) (1.588::1.732))
+	(IOPATH (posedge clk) sum_out[21]  (1.508::1.723) (1.572::1.726))
+	(IOPATH (posedge clk) sum_out[22]  (1.527::1.717) (1.584::1.733))
+	(IOPATH (posedge clk) sum_out[23]  (1.527::1.737) (1.590::1.754))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (posedge clk) (0.213::0.213))
+	(WIDTH (negedge clk) (0.641::0.641))
+	(SETUPHOLD (posedge fifo_ext_rd) (posedge clk) (-0.772::-0.772) ())
+	(SETUPHOLD (negedge fifo_ext_rd) (posedge clk) (-0.747::-0.747) ())
+	(SETUPHOLD (posedge inst[6]) (posedge clk) (0.567::0.567) ())
+	(SETUPHOLD (negedge inst[6]) (posedge clk) (0.539::0.539) ())
+	(SETUPHOLD (posedge inst[7]) (posedge clk) (-0.465::-0.465) ())
+	(SETUPHOLD (negedge inst[7]) (posedge clk) (-0.564::-0.564) ())
+	(SETUPHOLD (posedge inst[16]) (posedge clk) (0.082::0.082) ())
+	(SETUPHOLD (negedge inst[16]) (posedge clk) (0.007::0.007) ())
+	(SETUPHOLD (posedge inst[17]) (posedge clk) (-0.556::-0.556) ())
+	(SETUPHOLD (negedge inst[17]) (posedge clk) (-0.609::-0.609) ())
+	(SETUPHOLD (posedge inst[18]) (posedge clk) (-0.905::-0.905) ())
+	(SETUPHOLD (negedge inst[18]) (posedge clk) (-0.917::-0.917) ())
+	(SETUPHOLD (posedge reset) (posedge clk) (0.686::0.686) ())
+	(SETUPHOLD (negedge reset) (posedge clk) (0.828::0.828) ())
+      )
+  )
+)
